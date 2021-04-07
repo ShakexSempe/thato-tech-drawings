@@ -84,3 +84,27 @@ header {
       margin-top: 10px; }
       header .navbar .navbar-button .btn {
         display: block; }
+
+.sidebar {
+  position: fixed;
+  left: -992px;
+  top: 161.969px;
+  width: 100%;
+  height: calc(100vh - 161.969px);
+  background-color: #1e72bc;
+  opacity: .3;
+  transition: all .5s ease-in-out; }
+  .sidebar.open {
+    left: 0;
+    opacity: 1; }
+  .sidebar-nav-list {
+    padding: 10px; }
+    .sidebar-nav-list li {
+      padding: 10px;
+      text-align: center; }
+      .sidebar-nav-list li a {
+        color: #fff;
+        padding: 5px;
+        font-size: 19px; }
+        .sidebar-nav-list li a:hover {
+          color: #0aceb1; }

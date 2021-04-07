@@ -45,3 +45,38 @@ header {
         }
     }
 }
+
+.sidebar {
+    position: fixed;
+    left: -992px;
+    top: 161.969px;
+    width: 100%;
+    height: calc(100vh - 161.969px);
+    background-color: $primary-color;
+    opacity: .3;
+    transition: all .5s ease-in-out;
+
+    &.open {
+        left: 0;
+        opacity: 1;
+    }
+
+    &-nav-list {
+        padding: 10px;
+
+        li {
+            padding: 10px;
+            text-align: center;
+
+            a {
+                color: #fff;
+                padding: 5px;
+                font-size: 19px;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
