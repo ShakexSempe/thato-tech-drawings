@@ -27,7 +27,7 @@
 }
 
 //FLEXBOX
-@mixin flex($justify: center, $align: center, $direction: row, $wrap: wrap) {
+@mixin flex($justify, $align: center, $direction: row, $wrap: wrap) {
     display: flex;
     justify-content: $justify;
     align-items: $align;

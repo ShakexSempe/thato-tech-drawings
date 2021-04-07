@@ -28,3 +28,59 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 17px;
+  background-color: #1e72bc;
+  color: #fff;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer; }
+
+.btn:hover {
+  background-color: #000; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100px;
+  box-shadow: 0 8px 6px -6px #999; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    header .navbar-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      header .navbar-top img {
+        max-width: 235px; }
+    header .navbar .menu-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 5px;
+      color: #1e72bc;
+      border: 2px solid #1e72bc;
+      border-radius: 5px;
+      font-size: 25px;
+      cursor: pointer; }
+    header .navbar .nav-list {
+      display: none; }
+    header .navbar .navbar-button {
+      margin-top: 10px; }
+      header .navbar .navbar-button .btn {
+        display: block; }

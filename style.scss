@@ -1,3 +1,47 @@
 @import 'variables';
 @import 'reset';
+@import 'mxins';
 @import 'utils';
+
+header {
+    @include flex(center); //MXINS
+    min-height: 100px;
+    box-shadow: 0 8px 6px -6px #999;
+
+    .navbar {
+        @include flex(space-between, stretch, column);
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &-top {
+            @include flex(space-between);
+            
+            img {
+                max-width: 235px;
+            }
+        }
+
+        .menu-toggle {
+            @include flex(center);
+            padding: 5px;
+            color: $primary-color;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .nav-list {
+            display: none;
+        }
+
+        .navbar-button {
+            margin-top: 10px;
+
+            .btn {
+                display: block;
+            }
+        }
+    }
+}
