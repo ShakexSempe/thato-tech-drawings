@@ -121,5 +121,47 @@ header {
     }
 }
 //END OF HEADER
+// main {
+//     background: url('../img/Optimized-techthat.png') no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//       }
 
+    
+// 
 //BANNER 
+
+.banner {
+    min-height: 60vh;
+    background: url('/img/slide1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        @include grid(1, 10px);
+
+        .banner-content {
+            font-size: 1.35em;
+            color: #fff;
+
+            h2,
+            p,
+            .btn {
+                margin: 25px 0;
+            }
+
+            .btn {
+                background-color: #fff;
+                color: $primary-color;
+                font-size: 0.9em;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}

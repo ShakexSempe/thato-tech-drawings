@@ -34,3 +34,10 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+//CSS GRID
+@mixin grid($columns, $gap: 0px) {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: repeat($columns, 1fr);
+}

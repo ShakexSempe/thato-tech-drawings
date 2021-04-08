@@ -133,3 +133,27 @@ header {
         font-size: 19px; }
         .sidebar-nav-list li a:hover {
           color: #0aceb1; }
+
+.banner {
+  min-height: 60vh;
+  background: url("/img/slide1.png") no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .banner .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr); }
+    .banner .container .banner-content {
+      font-size: 1.35em;
+      color: #fff; }
+      .banner .container .banner-content h2,
+      .banner .container .banner-content p,
+      .banner .container .banner-content .btn {
+        margin: 25px 0; }
+      .banner .container .banner-content .btn {
+        background-color: #fff;
+        color: #1e72bc;
+        font-size: 0.9em; }
+        .banner .container .banner-content .btn:hover {
+          background-color: #000;
+          color: #fff; }
