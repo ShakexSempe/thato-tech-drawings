@@ -106,9 +106,9 @@ header {
 .sidebar {
   position: fixed;
   left: -992px;
-  top: 161.969px;
+  top: 262.312px;
   width: 100%;
-  height: calc(100vh - 161.969px);
+  height: calc(100vh - 262.312px);
   background-color: #1e72bc;
   opacity: .3;
   transition: all .5s ease-in-out; }
