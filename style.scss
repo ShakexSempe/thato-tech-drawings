@@ -23,7 +23,7 @@ header {
         &-top {
             @include flex(space-between);
             flex: 1;
-            
+
             img {
                 max-width: 235px;
             }
@@ -45,14 +45,14 @@ header {
 
         .nav-list {
             display: none;
-            
+
             @include lg {
                 display: flex;
             }
 
             a {
                 padding: 5px 15px;
-                
+
                 &:hover {
                     color: $secondary-color;
                 }
@@ -61,7 +61,7 @@ header {
 
         }
 
-        
+
 
         .navbar-button {
             margin-top: 10px;
@@ -120,6 +120,7 @@ header {
         }
     }
 }
+
 //END OF HEADER
 // main {
 //     background: url('../img/Optimized-techthat.png') no-repeat;
@@ -128,22 +129,37 @@ header {
 //     background-attachment: fixed;
 //       }
 
-    
+
 // 
 //BANNER 
 
 .banner {
     min-height: 60vh;
-    background: url('/img/slide1.png') no-repeat;
+    background: url('../img/IMG_20201229_222950.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    overflow: hidden;
+
+    @include md {
+        @include flex(stretch, center);
+    }
 
     .container {
         @include grid(1, 10px);
 
+        @include md {
+            @include grid(2, 10px);
+        }
+
         .banner-content {
             font-size: 1.35em;
             color: #fff;
+
+
+            @include md {
+                @include flex(center, center, column)
+            }
 
             h2,
             p,
@@ -155,11 +171,19 @@ header {
                 background-color: #fff;
                 color: $primary-color;
                 font-size: 0.9em;
+                border: 1px solid $secondary-color;
 
                 &:hover {
                     background-color: #000;
                     color: #fff;
                 }
+            }
+        }
+
+        .banner-image {
+            @include md {
+                width: 165%;
+                margin-top: 100px;
             }
         }
     }

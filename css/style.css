@@ -136,16 +136,37 @@ header {
 
 .banner {
   min-height: 60vh;
-  background: url("/img/slide1.png") no-repeat;
+  background: url("../img/IMG_20201229_222950.jpg") no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  text-align: center;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .banner {
+      display: flex;
+      justify-content: stretch;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap; } }
   .banner .container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 768px) {
+      .banner .container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr); } }
     .banner .container .banner-content {
       font-size: 1.35em;
       color: #fff; }
+      @media (min-width: 768px) {
+        .banner .container .banner-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap; } }
       .banner .container .banner-content h2,
       .banner .container .banner-content p,
       .banner .container .banner-content .btn {
@@ -153,7 +174,12 @@ header {
       .banner .container .banner-content .btn {
         background-color: #fff;
         color: #1e72bc;
-        font-size: 0.9em; }
+        font-size: 0.9em;
+        border: 1px solid #0aceb1; }
         .banner .container .banner-content .btn:hover {
           background-color: #000;
           color: #fff; }
+    @media (min-width: 768px) {
+      .banner .container .banner-image {
+        width: 165%;
+        margin-top: 100px; } }
