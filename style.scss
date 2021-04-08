@@ -14,8 +14,14 @@ header {
         padding-top: 10px;
         padding-bottom: 10px;
 
+        @include sm {
+            flex-direction: row;
+            align-items: center;
+        }
+
         &-top {
             @include flex(space-between);
+            flex: 1;
             
             img {
                 max-width: 235px;
@@ -30,14 +36,38 @@ header {
             border-radius: 5px;
             font-size: 25px;
             cursor: pointer;
+
+            @include lg {
+                display: none;
+            }
         }
 
         .nav-list {
             display: none;
+            
+            @include lg {
+                display: flex;
+            }
+
+            a {
+                padding: 5px 15px;
+                
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+
+
         }
+
+        
 
         .navbar-button {
             margin-top: 10px;
+
+            @include sm {
+                margin: 0 0 0 10px;
+            }
 
             .btn {
                 display: block;
@@ -59,6 +89,15 @@ header {
     &.open {
         left: 0;
         opacity: 1;
+    }
+
+    @include sm {
+        top: 100px;
+        height: calc(100vh - 100px);
+    }
+
+    @include lg {
+        display: none;
     }
 
     &-nav-list {
