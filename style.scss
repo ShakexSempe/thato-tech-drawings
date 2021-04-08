@@ -3,6 +3,7 @@
 @import 'mxins';
 @import 'utils';
 
+//HEADER
 header {
     @include flex(center); //MXINS
     min-height: 100px;
@@ -119,3 +120,6 @@ header {
         }
     }
 }
+//END OF HEADER
+
+//BANNER 
