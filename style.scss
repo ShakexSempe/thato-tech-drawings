@@ -145,6 +145,7 @@ header {
     background: url('../img/IMG_20201229_222950.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -220,6 +221,7 @@ header {
 
 .about {
     margin: 50px 0;
+    overflow: hidden;
 
     &-items {
         text-align: center;
@@ -240,7 +242,7 @@ header {
             &-content {
                 h1 {
                     margin: 10px 0 20px;
-                    font-size: 35px;
+                    font-size: 1.7em;
                     background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
                     background-clip: text;
                     -webkit-background-clip: text;

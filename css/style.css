@@ -140,6 +140,7 @@ header {
   background: url("../img/IMG_20201229_222950.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   overflow: hidden;
   position: relative; }
@@ -199,7 +200,8 @@ header {
           margin-top: 100px; } }
 
 .about {
-  margin: 50px 0; }
+  margin: 50px 0;
+  overflow: hidden; }
   .about-items {
     text-align: center; }
     .about-items .about-item {
@@ -213,7 +215,7 @@ header {
             order: -1; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 20px;
-        font-size: 35px;
+        font-size: 1.7em;
         background: linear-gradient(to right, #1e72bc 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
