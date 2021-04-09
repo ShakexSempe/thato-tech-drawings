@@ -137,6 +137,7 @@ header {
 
 
 // 
+
 //BANNER 
 
 .banner {
@@ -148,7 +149,7 @@ header {
     overflow: hidden;
     position: relative;
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -164,7 +165,7 @@ header {
     }
 
     .container {
-        
+
         @include grid(1, 10px);
 
         @include md {
@@ -175,7 +176,7 @@ header {
             font-size: 1.35em;
             color: #fff;
             z-index: 2;
-            
+
 
 
             @include md {
@@ -203,7 +204,7 @@ header {
 
         .banner-image {
             z-index: 2;
-            
+
             @include md {
                 width: 165%;
                 margin-top: 100px;
@@ -212,3 +213,55 @@ header {
     }
 
 }
+
+// END OF BANNER
+
+//ABOUT
+
+.about {
+    margin: 50px 0;
+
+    &-items {
+        text-align: center;
+
+        .about-item {
+            margin-bottom: 20px;
+
+            @include sm {
+                @include grid(2, 20px);
+
+                &:nth-child(even) {
+                    .about-item-image {
+                        order: -1;
+                    }
+                }
+            }
+
+            &-content {
+                h1 {
+                    margin: 10px 0 20px;
+                    font-size: 35px;
+                    background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                p {
+                    margin: 10px 0;
+                }
+
+                @include sm {
+                    @include flex(center, flex-start, column)
+                }
+            }
+
+            &-image {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//END OF ABOUT
