@@ -215,7 +215,7 @@ header {
             order: -1; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 20px;
-        font-size: 1.7em;
+        font-size: 3em;
         background: linear-gradient(to right, #1e72bc 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;

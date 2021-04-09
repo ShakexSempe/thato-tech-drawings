@@ -237,16 +237,18 @@ header {
                         order: -1;
                     }
                 }
+
             }
 
             &-content {
                 h1 {
                     margin: 10px 0 20px;
-                    font-size: 1.7em;
+                    font-size: 3em;
                     background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    
                 }
 
                 p {
@@ -254,7 +256,8 @@ header {
                 }
 
                 @include sm {
-                    @include flex(center, flex-start, column)
+                    @include flex(center, flex-start, column);
+                    
                 }
             }
 
