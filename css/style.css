@@ -41,6 +41,26 @@ img {
 .btn:hover {
   background-color: #000; }
 
+.bg-gradient {
+  min-height: 420px;
+  padding: 100px 0;
+  background: url("../img/bg_gradient.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @media (min-width: 576px) {
+    .bg-gradient {
+      padding: 150px 0; } }
+  .bg-gradient::before, .bg-gradient::after {
+    content: '';
+    width: 100%;
+    height: 20px;
+    display: block;
+    position: absolute; }
+    @media (min-width: 576px) {
+      .bg-gradient::before, .bg-gradient::after {
+        height: 120px; } }
+
 header {
   display: flex;
   justify-content: center;
@@ -200,8 +220,7 @@ header {
           margin-top: 100px; } }
 
 .about {
-  margin: 50px 0;
-  overflow: hidden; }
+  margin: 50px 0; }
   .about-items {
     text-align: center; }
     .about-items .about-item {
@@ -215,7 +234,7 @@ header {
             order: -1; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 20px;
-        font-size: 3em;
+        font-size: 2.5em;
         background: linear-gradient(to right, #1e72bc 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -230,5 +249,39 @@ header {
           flex-direction: column;
           flex-wrap: wrap; } }
       .about-items .about-item-image {
-        max-width: 300px;
-        margin: 0 auto; }
+        max-width: 300px; }
+
+@media (min-width: 576px) {
+  .services .container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 768px) {
+  .services .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr); } }
+
+.services .container .service {
+  padding: 25px;
+  margin: 60px 0;
+  background-color: #fff;
+  text-align: center; }
+  .services .container .service-icon {
+    width: 125px;
+    height: 125px;
+    margin: -85px 0 30px;
+    padding: 5px;
+    border: 5px solid #eee;
+    border-radius: 50%;
+    background-color: #fff; }
+    @media (min-width: 768px) {
+      .services .container .service-icon {
+        width: 160px;
+        height: 160px;
+        margin: -110px 0 30px; } }
+  .services .container .service p {
+    padding: 50px; }
+  .services .container .service a {
+    color: red; }
