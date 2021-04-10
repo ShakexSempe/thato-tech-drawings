@@ -4,7 +4,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: 0; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -265,9 +265,10 @@ header {
 
 .services .container .service {
   padding: 25px;
-  margin: 60px 0;
+  margin: 80px 0;
   background-color: #fff;
-  text-align: center; }
+  text-align: center;
+  border-radius: 5px; }
   .services .container .service-icon {
     width: 125px;
     height: 125px;
