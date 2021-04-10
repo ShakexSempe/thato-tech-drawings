@@ -400,3 +400,38 @@ header {
         font-size: 1.3em;
         color: #333;
         line-height: 3; }
+
+.contact {
+  margin: 50px 0;
+  background-color: #1e72bc;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .contact {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: repeat(2, 1fr); } }
+  .contact .google-map {
+    width: 100%;
+    min-height: 400px; }
+  .contact .contact-form {
+    width: 500px;
+    max-width: 100%;
+    padding: 25px;
+    margin: auto; }
+    .contact .contact-form .section-title {
+      color: #fff; }
+    .contact .contact-form p {
+      margin: 40px 0; }
+    .contact .contact-form input,
+    .contact .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 13px;
+      border: none;
+      outline: none; }
+    .contact .contact-form .btn {
+      background-color: #0aceb1; }
+      .contact .contact-form .btn:hover {
+        background-color: #eee;
+        color: #333; }

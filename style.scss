@@ -450,3 +450,54 @@ header {
     }
 }
 //END OF TABLE PRICE
+
+//CONTACT
+.contact {
+    margin: 50px 0;
+    background-color: $primary-color;
+    color: #fff;
+
+    @include md {
+        @include grid(2)
+    }
+
+    .google-map {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .contact-form {
+        width: 500px;
+        max-width: 100%;
+        padding: 25px;
+        margin: auto;
+
+        .section-title {
+            color: #fff;
+        }
+
+        p {
+            margin: 40px 0;
+        }
+
+        input, 
+        textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 13px;
+            border: none;
+            outline: none;
+        }
+
+        .btn {
+            background-color: $secondary-color;
+
+            &:hover {
+                background-color: #eee;
+                color: #333;
+            }
+        }
+    }
+}
+//END OF CONTACT
