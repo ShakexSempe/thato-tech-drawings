@@ -61,6 +61,28 @@ img {
       .bg-gradient::before, .bg-gradient::after {
         height: 120px; } }
 
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2.7em;
+  color: #333; }
+  .section-title::after {
+    content: '';
+    width: 110px;
+    height: 5px;
+    margin: 15px 0 30px;
+    background-color: #ddd;
+    display: block; }
+
+.section-title.center {
+  text-align: center; }
+  .section-title.center::after {
+    margin-left: auto;
+    margin-right: auto; }
+
+.section-title > span {
+  color: #1e72bc; }
+
 header {
   display: flex;
   justify-content: center;
@@ -90,7 +112,8 @@ header {
       flex-wrap: wrap;
       flex: 1; }
       header .navbar-top img {
-        max-width: 235px; }
+        max-width: 235px;
+        border-radius: 5px; }
     header .navbar .menu-toggle {
       display: flex;
       justify-content: center;
@@ -121,7 +144,8 @@ header {
         header .navbar .navbar-button {
           margin: 0 0 0 10px; } }
       header .navbar .navbar-button .btn {
-        display: block; }
+        display: block;
+        border-radius: 5px; }
 
 .sidebar {
   position: fixed;
@@ -250,6 +274,8 @@ header {
           flex-wrap: wrap; } }
       .about-items .about-item-image {
         max-width: 300px; }
+        .about-items .about-item-image img {
+          border-radius: 5px; }
 
 @media (min-width: 576px) {
   .services .container {
@@ -286,3 +312,40 @@ header {
     padding: 50px; }
   .services .container .service a {
     color: red; }
+
+.features {
+  margin: 50px 0; }
+  @media (min-width: 768px) {
+    .features-grid {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(3, 1fr); } }
+  .features-grid .feature-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; }
+    .features-grid .feature-item-icon {
+      padding: 20px;
+      margin-right: 20px;
+      border: 2px solid #0aceb1;
+      border-radius: 50%;
+      text-align: center;
+      color: #0aceb1; }
+      .features-grid .feature-item-icon i {
+        width: 100%;
+        font-size: 2.8em; }
+      .features-grid .feature-item-icon:hover {
+        background-color: #1e72bc;
+        color: #fff;
+        border-color: #1e72bc; }
+  .features-grid .feature-image {
+    max-width: 200px;
+    margin: auto; }
+    @media (min-width: 768px) {
+      .features-grid .feature-image {
+        max-width: 350px; } }

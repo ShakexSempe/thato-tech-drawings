@@ -46,5 +46,35 @@
         }
     }
 
+        
     
+}
+
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.7em;
+    color: #333;
+
+    &::after{
+        content: '';
+        width: 110px;
+        height: 5px;
+        margin: 15px 0 30px;
+        background-color:#ddd;
+        display: block;
+    }
+}
+
+.section-title.center {
+    text-align: center;
+
+    &::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section-title > span {
+    color: $primary-color;
 }
