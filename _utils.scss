@@ -24,10 +24,14 @@
 .bg-gradient {
     min-height: 420px;
     padding: 100px 0;
-    background: url('../img/bg_gradient.png') no-repeat;
+    background: url('../img/Optimized-techthat.png') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
+    z-index: 2;
+
+    
 
     @include sm {
         padding: 150px 0;

@@ -44,10 +44,12 @@ img {
 .bg-gradient {
   min-height: 420px;
   padding: 100px 0;
-  background: url("../img/bg_gradient.png") no-repeat;
+  background: url("../img/Optimized-techthat.png") no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative; }
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2; }
   @media (min-width: 576px) {
     .bg-gradient {
       padding: 150px 0; } }
@@ -258,11 +260,14 @@ header {
             order: -1; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 20px;
-        font-size: 2.5em;
+        font-size: 2em;
         background: linear-gradient(to right, #1e72bc 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
+        @media (min-width: 576px) {
+          .about-items .about-item-content h1 {
+            font-size: 2em; } }
       .about-items .about-item-content p {
         margin: 10px 0; }
       @media (min-width: 576px) {
@@ -273,7 +278,8 @@ header {
           flex-direction: column;
           flex-wrap: wrap; } }
       .about-items .about-item-image {
-        max-width: 300px; }
+        max-width: 300px;
+        margin: 0 auto; }
         .about-items .about-item-image img {
           border-radius: 5px; }
 
