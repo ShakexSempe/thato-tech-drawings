@@ -5,6 +5,12 @@
 
 //HEADER
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    background: #fff;
     @include flex(center); //MXINS
     min-height: 100px;
     box-shadow: 0 8px 6px -6px #999;
@@ -82,9 +88,9 @@ header {
 .sidebar {
     position: fixed;
     left: -992px;
-    top: 262.312px;
+    top: 100px;
     width: 100%;
-    height: calc(100vh - 262.312px);
+    height: calc(100vh - 100px);
     background-color: $primary-color;
     opacity: .3;
     transition: all .5s ease-in-out;
@@ -96,8 +102,8 @@ header {
     }
 
     @include sm {
-        top: 215px;
-        height: calc(100vh - 215px);
+        top: 100px;
+        height: calc(100vh - 100px);
     }
 
     // @include md {

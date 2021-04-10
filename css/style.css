@@ -86,6 +86,12 @@ img {
   color: #1e72bc; }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,9 +158,9 @@ header {
 .sidebar {
   position: fixed;
   left: -992px;
-  top: 262.312px;
+  top: 100px;
   width: 100%;
-  height: calc(100vh - 262.312px);
+  height: calc(100vh - 100px);
   background-color: #1e72bc;
   opacity: .3;
   transition: all .5s ease-in-out;
@@ -164,8 +170,8 @@ header {
     opacity: 1; }
   @media (min-width: 576px) {
     .sidebar {
-      top: 215px;
-      height: calc(100vh - 215px); } }
+      top: 100px;
+      height: calc(100vh - 100px); } }
   @media (min-width: 992px) {
     .sidebar {
       display: none; } }
