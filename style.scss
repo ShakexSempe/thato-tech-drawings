@@ -29,7 +29,8 @@ header {
         &-top {
             @include flex(space-between);
             flex: 1;
-
+            
+            font-family: 'Train One', cursive;
             img {
                 max-width: 235px;
                 border-radius: 5px;

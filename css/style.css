@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Train+One&display=swap");
 *,
 *::before,
 *::after {
@@ -118,7 +118,8 @@ header {
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
-      flex: 1; }
+      flex: 1;
+      font-family: 'Train One', cursive; }
       header .navbar-top img {
         max-width: 235px;
         border-radius: 5px; }
