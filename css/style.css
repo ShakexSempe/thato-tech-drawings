@@ -188,8 +188,9 @@ header {
         .sidebar-nav-list li a:hover {
           color: #0aceb1; }
 
-main {
-  margin-top: 100px; }
+@media (min-width: 576px) {
+  main {
+    margin-top: 100px; } }
 
 .banner {
   min-height: 60vh;
@@ -445,3 +446,50 @@ main {
       .contact .contact-form .btn:hover {
         background-color: #eee;
         color: #333; }
+
+.footer-top {
+  padding-top: 70px;
+  padding-bottom: 40px; }
+  @media (min-width: 576px) {
+    .footer-top {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 768px) {
+    .footer-top {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(4, 1fr); } }
+  .footer-top .footer-item {
+    margin-bottom: 50px; }
+    .footer-top .footer-item h3 {
+      margin-bottom: 20px;
+      color: #333; }
+  .footer-top .brand .footer-logo {
+    width: 45%;
+    margin-bottom: 30px;
+    border-radius: 10px; }
+  .footer-top .social li {
+    padding: 20px 0;
+    border-bottom: 1px dashed #333;
+    cursor: pointer; }
+    .footer-top .social li i {
+      margin-right: 10px; }
+    .footer-top .social li:hover {
+      color: #1e72bc; }
+  .footer-top .blog .post {
+    display: flex;
+    margin-bottom: 10px; }
+    .footer-top .blog .post img {
+      max-width: 100px;
+      margin-right: 15px; }
+    .footer-top .blog .post-date {
+      margin-bottom: 10px; }
+    .footer-top .blog .post-head {
+      color: #333; }
+
+.footer-bottom {
+  padding: 20px;
+  background-color: #1e72bc;
+  color: #fff;
+  text-align: center; }
