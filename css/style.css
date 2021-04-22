@@ -132,9 +132,15 @@ header {
       padding: 5px;
       color: #000080;
       border: 2px solid #000080;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 25px;
-      cursor: pointer; }
+      cursor: pointer;
+      animation: toggle 2s linear infinite; }
+
+@keyframes toggle {
+  50% {
+    transform: scale(1.1);
+    border-radius: 5px; } }
       @media (min-width: 992px) {
         header .navbar .menu-toggle {
           display: none; } }
