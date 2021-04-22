@@ -32,7 +32,7 @@ img {
 .btn {
   display: inline-block;
   padding: 10px 17px;
-  background-color: #1e72bc;
+  background-color: #000080;
   color: #fff;
   text-align: center;
   border-radius: 1px;
@@ -83,7 +83,7 @@ img {
     margin-right: auto; }
 
 .section-title > span {
-  color: #1e72bc; }
+  color: #000080; }
 
 header {
   position: fixed;
@@ -130,8 +130,8 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
       padding: 5px;
-      color: #1e72bc;
-      border: 2px solid #1e72bc;
+      color: #000080;
+      border: 2px solid #000080;
       border-radius: 5px;
       font-size: 25px;
       cursor: pointer; }
@@ -154,7 +154,8 @@ header {
           margin: 0 0 0 10px; } }
       header .navbar .navbar-button .btn {
         display: block;
-        border-radius: 5px; }
+        border-radius: 5px;
+        background-image: linear-gradient(0deg, navy, #048dc4); }
 
 .sidebar {
   position: fixed;
@@ -162,7 +163,7 @@ header {
   top: 100px;
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: #1e72bc;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.968), navy);
   opacity: .3;
   transition: all .5s ease-in-out;
   z-index: 3; }
@@ -177,20 +178,26 @@ header {
     .sidebar {
       display: none; } }
   .sidebar-nav-list {
-    padding: 10px; }
+    padding: 10px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
     .sidebar-nav-list li {
       padding: 10px;
       text-align: center; }
       .sidebar-nav-list li a {
         color: #fff;
         padding: 5px;
-        font-size: 19px; }
+        font-size: 1.3em; }
         .sidebar-nav-list li a:hover {
           color: #0aceb1; }
 
-@media (min-width: 576px) {
-  main {
-    margin-top: 100px; } }
+main {
+  margin-top: 100px; }
+  @media (min-width: 576px) {
+    main {
+      margin-top: 100px; } }
 
 .banner {
   min-height: 60vh;
@@ -243,7 +250,7 @@ header {
         margin: 25px 0; }
       .banner .container .banner-content .btn {
         background-color: #fff;
-        color: #1e72bc;
+        color: #000080;
         font-size: 0.9em;
         border: 1px solid #0aceb1; }
         .banner .container .banner-content .btn:hover {
@@ -272,7 +279,7 @@ header {
       .about-items .about-item-content h1 {
         margin: 10px 0 20px;
         font-size: 2em;
-        background: linear-gradient(to right, #1e72bc 0%, #0aceb1 100%);
+        background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
@@ -357,9 +364,9 @@ header {
         width: 100%;
         font-size: 2.8em; }
       .features-grid .feature-item-icon:hover {
-        background-color: #1e72bc;
+        background-color: #000080;
         color: #fff;
-        border-color: #1e72bc; }
+        border-color: #000080; }
   .features-grid .feature-image {
     max-width: 200px;
     margin: auto; }
@@ -385,7 +392,7 @@ header {
     text-align: center;
     border: 1px solid #ddd; }
     .table-price .price-grid .price-card:nth-child(2) h2 {
-      background-color: #1e72bc; }
+      background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
       background-color: #0aceb1; }
       .table-price .price-grid .price-card:nth-child(2) .btn:hover {
@@ -400,7 +407,7 @@ header {
     .table-price .price-grid .price-card .price {
       padding: 10px 10px 20px;
       margin: 10px 50px;
-      color: #1e72bc; }
+      color: #000080; }
       .table-price .price-grid .price-card .price p {
         font-size: 2.5em; }
       .table-price .price-grid .price-card .price small {
@@ -414,7 +421,7 @@ header {
 
 .contact {
   margin: 50px 0;
-  background-color: #1e72bc;
+  background-color: #000080;
   color: #fff; }
   @media (min-width: 768px) {
     .contact {
@@ -476,7 +483,7 @@ header {
     .footer-top .social li i {
       margin-right: 10px; }
     .footer-top .social li:hover {
-      color: #1e72bc; }
+      color: #000080; }
   .footer-top .blog .post {
     display: flex;
     margin-bottom: 10px; }
@@ -490,6 +497,6 @@ header {
 
 .footer-bottom {
   padding: 20px;
-  background-color: #1e72bc;
+  background-color: #000080;
   color: #fff;
   text-align: center; }

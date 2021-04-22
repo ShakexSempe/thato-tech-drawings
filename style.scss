@@ -81,6 +81,7 @@ header {
             .btn {
                 display: block;
                 border-radius: 5px;
+                background-image: $secondary-gradient;
             }
         }
     }
@@ -92,7 +93,7 @@ header {
     top: 100px;
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: $primary-color;
+    background-image: $primary-gradient;
     opacity: .3;
     transition: all .5s ease-in-out;
     z-index: 3;
@@ -118,6 +119,11 @@ header {
 
     &-nav-list {
         padding: 10px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
 
         li {
             padding: 10px;
@@ -126,7 +132,7 @@ header {
             a {
                 color: #fff;
                 padding: 5px;
-                font-size: 19px;
+                font-size: 1.3em;
 
                 &:hover {
                     color: $secondary-color;
@@ -153,6 +159,8 @@ main {
     @include sm {
         margin-top: 100px;
     }
+    margin-top: 100px;
+    
 }
 
 .banner {
