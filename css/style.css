@@ -175,6 +175,8 @@ header {
         border-radius: 5px;
         background-image: linear-gradient(0deg, #000080 0%, #0aceb1 100%);
         font-family: 'Red Rose', cursive; }
+        header .navbar .navbar-button .you-btn a {
+          color: #fff; }
         header .navbar .navbar-button .you-btn:hover {
           color: #0aceb1;
           background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%); }

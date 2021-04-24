@@ -113,6 +113,10 @@ header {
                 background-image: $secondary-gradient-reverse;
                 font-family: 'Red Rose', cursive;
 
+                a {
+                    color: #fff;
+                }
+
 
                 &:hover {
                     color: $secondary-color;
