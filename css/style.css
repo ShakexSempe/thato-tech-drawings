@@ -102,7 +102,10 @@ header {
   header h1 {
     font-family: 'Fredericka the Great', cursive;
     font-size: 2em;
-    font-weight: 500; }
+    font-weight: 500;
+    text-shadow: 0 0 1px #000080; }
+    header h1 span {
+      text-shadow: 0 0 1px #0aceb1; }
     @media (min-width: 576px) {
       header h1 {
         font-size: 4em; } }
@@ -142,6 +145,9 @@ header {
       font-size: 25px;
       cursor: pointer;
       animation: toggle 2s linear infinite; }
+      header .navbar .menu-toggle:hover {
+        color: #0aceb1;
+        border: 2px solid #0aceb1; }
 
 @keyframes toggle {
   50% {
@@ -167,7 +173,10 @@ header {
       header .navbar .navbar-button .you-btn {
         display: block;
         border-radius: 5px;
-        background-image: linear-gradient(90deg, maroon, #a70c0c, maroon); }
+        background-image: linear-gradient(0deg, #000080 0%, #0aceb1 100%); }
+        header .navbar .navbar-button .you-btn:hover {
+          color: #0aceb1;
+          background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%); }
 
 .sidebar {
   position: fixed;
@@ -176,7 +185,7 @@ header {
   width: 100%;
   padding-top: 1.5em;
   height: calc(100vh - 100px);
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.968), navy);
+  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
   opacity: .3;
   transition: all .5s ease-in-out;
   z-index: 3; }
@@ -233,7 +242,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.73);
+    background: rgba(51, 51, 51, 0.83);
     z-index: 1; }
   @media (min-width: 768px) {
     .banner {
@@ -261,10 +270,12 @@ main {
       .banner .container .banner-content h2, .banner .container .banner-content p {
         font-family: 'Red Rose', cursive; }
       .banner .container .banner-content h2 {
-        font-weight: 600; }
+        font-weight: 600;
+        text-shadow: 1px 1px 1px #0aceb1; }
       .banner .container .banner-content p {
         font-size: 0.7em;
-        font-weight: 200; }
+        font-weight: 200;
+        text-shadow: 0px 0px 3px #0aceb1; }
       @media (min-width: 768px) {
         .banner .container .banner-content {
           display: flex;
