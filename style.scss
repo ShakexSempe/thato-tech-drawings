@@ -201,7 +201,7 @@ main {
 }
 
 .banner {
-    min-height: 60vh;
+    min-height: 100vh;
     background: url('../img/IMG_20201229_222950.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -227,7 +227,10 @@ main {
 
     .container {
 
-        @include grid(1, 10px);
+        // @include grid(1, 10px);
+        @include flex(space-evenly, center, column, nowrap);
+        height: 100vh;
+        
 
         @include md {
             @include grid(2, 10px);
@@ -280,10 +283,12 @@ main {
         }
 
         .banner-image {
+            // background: rgba(255, 255, 255, 0.69);
+            border-radius: 10px;
             z-index: 2;
-
+            width: 60%;
             @include md {
-                width: 165%;
+                width: 70%;
                 margin-top: 100px;
             }
         }
