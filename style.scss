@@ -10,10 +10,20 @@ header {
     left: 0;
     width: 100%;
     z-index: 4;
-    background: #fff;
+    background: $primary-background-lt-grey;
     @include flex(center); //MXINS
     min-height: 100px;
     box-shadow: 0 8px 6px -6px #999;
+
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2em;
+            font-weight: 500;
+            @include sm {
+                font-size: 4em
+            }
+        }
+
 
     .navbar {
         @include flex(space-between, stretch, column);
@@ -30,7 +40,7 @@ header {
             @include flex(space-between);
             flex: 1;
             
-            font-family: 'Train One', cursive;
+            
             img {
                 max-width: 235px;
                 border-radius: 5px;
@@ -87,10 +97,10 @@ header {
                 margin: 0 0 0 10px;
             }
 
-            .btn {
+            .you-btn {
                 display: block;
                 border-radius: 5px;
-                background-image: $secondary-gradient;
+                background-image: $primary-red-gradient;
             }
         }
     }
@@ -101,6 +111,7 @@ header {
     left: -992px;
     top: 100px;
     width: 100%;
+    padding-top: 1.5em;
     height: calc(100vh - 100px);
     background-image: $primary-gradient;
     opacity: .3;
@@ -117,10 +128,10 @@ header {
         height: calc(100vh - 100px);
     }
 
-    // @include md {
-    //     top: 210px;
-    //     height: calc(100vh - 210px);
-    // }
+    @include md {
+        top: 210px;
+        height: calc(100vh - 210px);
+    }
 
     @include lg {
         display: none;
@@ -168,6 +179,7 @@ main {
     @include sm {
         margin-top: 100px;
     }
+    background-color: $primary-background-lt-grey;
     margin-top: 100px;
     
 }
@@ -189,7 +201,7 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(51, 51, 51, 0.63);
+        background: rgba(51, 51, 51, 0.73);
         z-index: 1;
     }
 
@@ -206,10 +218,24 @@ main {
         }
 
         .banner-content {
+            @include sm {
+                font-size: 2.5em;
+            }
             font-size: 1.35em;
             color: #fff;
             z-index: 2;
-
+            
+            h2, p{
+                font-family: 'Red Rose', cursive;
+                
+            }
+            h2 {
+                font-weight: 600;
+            }
+            p {
+                font-size: 0.7em;
+                font-weight: 200;
+            }
 
 
             @include md {

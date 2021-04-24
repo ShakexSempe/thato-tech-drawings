@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400?family=Dancing+Script:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -91,7 +91,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 4;
-  background: #fff;
+  background: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,6 +99,13 @@ header {
   flex-wrap: wrap;
   min-height: 100px;
   box-shadow: 0 8px 6px -6px #999; }
+  header h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2em;
+    font-weight: 500; }
+    @media (min-width: 576px) {
+      header h1 {
+        font-size: 4em; } }
   header .navbar {
     display: flex;
     justify-content: space-between;
@@ -118,8 +125,7 @@ header {
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
-      flex: 1;
-      font-family: 'Train One', cursive; }
+      flex: 1; }
       header .navbar-top img {
         max-width: 235px;
         border-radius: 5px; }
@@ -158,16 +164,17 @@ header {
       @media (min-width: 576px) {
         header .navbar .navbar-button {
           margin: 0 0 0 10px; } }
-      header .navbar .navbar-button .btn {
+      header .navbar .navbar-button .you-btn {
         display: block;
         border-radius: 5px;
-        background-image: linear-gradient(0deg, navy, #048dc4); }
+        background-image: linear-gradient(90deg, maroon, #a70c0c, maroon); }
 
 .sidebar {
   position: fixed;
   left: -992px;
   top: 100px;
   width: 100%;
+  padding-top: 1.5em;
   height: calc(100vh - 100px);
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.968), navy);
   opacity: .3;
@@ -180,6 +187,10 @@ header {
     .sidebar {
       top: 100px;
       height: calc(100vh - 100px); } }
+  @media (min-width: 768px) {
+    .sidebar {
+      top: 210px;
+      height: calc(100vh - 210px); } }
   @media (min-width: 992px) {
     .sidebar {
       display: none; } }
@@ -200,6 +211,7 @@ header {
           color: #0aceb1; }
 
 main {
+  background-color: #f4f4f4;
   margin-top: 100px; }
   @media (min-width: 576px) {
     main {
@@ -221,7 +233,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.63);
+    background: rgba(51, 51, 51, 0.73);
     z-index: 1; }
   @media (min-width: 768px) {
     .banner {
@@ -243,6 +255,16 @@ main {
       font-size: 1.35em;
       color: #fff;
       z-index: 2; }
+      @media (min-width: 576px) {
+        .banner .container .banner-content {
+          font-size: 2.5em; } }
+      .banner .container .banner-content h2, .banner .container .banner-content p {
+        font-family: 'Red Rose', cursive; }
+      .banner .container .banner-content h2 {
+        font-weight: 600; }
+      .banner .container .banner-content p {
+        font-size: 0.7em;
+        font-weight: 200; }
       @media (min-width: 768px) {
         .banner .container .banner-content {
           display: flex;
