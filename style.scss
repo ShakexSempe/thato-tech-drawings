@@ -111,6 +111,8 @@ header {
                 display: block;
                 border-radius: 5px;
                 background-image: $secondary-gradient-reverse;
+                font-family: 'Red Rose', cursive;
+
 
                 &:hover {
                     color: $secondary-color;
@@ -133,6 +135,8 @@ header {
     opacity: .3;
     transition: all .5s ease-in-out;
     z-index: 3;
+    font-family: 'Red Rose', cursive;
+
 
     &.open {
         left: 0;
@@ -305,9 +309,15 @@ main {
 
     &-items {
         text-align: center;
+        font-family: 'Raleway', sans-serif;
+        
+
 
         .about-item {
             margin-bottom: 20px;
+            border: 1px solid rgba(25, 106, 138, 0.46);
+            border-radius: 10px;
+            padding: 5px; 
 
             @include sm {
                 @include grid(2, 20px);
@@ -323,12 +333,13 @@ main {
             &-content {
                 h1 {
                     
-                    margin: 10px 0 20px;
+                    margin: 10px 0 30px;
                     font-size: 2em;
                     background: $primary-gradient;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    font-weight: 800;
                     @include sm {
                         font-size: 2em;
                     }
@@ -336,6 +347,11 @@ main {
 
                 p {
                     margin: 10px 0;
+                    font-weight: 600;
+                    @include md{
+                        text-align: left;
+                    }
+                    
                 }
 
                 
