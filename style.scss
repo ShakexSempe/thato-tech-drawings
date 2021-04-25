@@ -187,15 +187,6 @@ header {
 }
 
 //END OF HEADER
-// main {
-//     background: url('../img/Optimized-techthat.png') no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     background-attachment: fixed;
-//       }
-
-
-// 
 
 //BANNER 
 
@@ -257,11 +248,12 @@ main {
                 
             }
             h2 {
+                font-size: 1.8em;
                 font-weight: 600;
                 text-shadow: 1px 1px 1px $secondary-color
             }
             p {
-                font-size: 0.7em;
+                font-size: 0.8em;
                 font-weight: 200;
                 text-shadow: 0px 0px 3px $secondary-color;
             }
