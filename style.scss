@@ -197,6 +197,7 @@ main {
     background-color: $primary-background-lt-grey;
     margin-top: 100px;
     
+    font-family: 'Raleway', sans-serif;
 }
 
 .banner {
@@ -532,6 +533,10 @@ main {
             text-align: center;
             border: 1px solid #ddd;
 
+            .btn{
+                border-radius: 5px;
+            }
+
             &:nth-child(1) {
                 h2 {
                     background-color: $secondary-color;
@@ -662,10 +667,12 @@ main {
             padding: 13px;
             border: none;
             outline: none;
+            border-radius: 5px;
         }
 
         .btn {
             background-color: $secondary-color;
+            border-radius: 5px;
 
             &:hover {
                 background-color: #eee;
