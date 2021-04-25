@@ -418,7 +418,7 @@ main {
   margin: 50px 0; }
   .features h1 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: 500;
     text-shadow: 0 0 1px #000080; }
     .features h1 span {
@@ -458,7 +458,9 @@ main {
         border-color: #000080; }
   .features-grid .feature-image {
     max-width: 200px;
-    margin: auto; }
+    margin: auto;
+    border: 2px solid #0aceb1;
+    border-radius: 5px; }
     @media (min-width: 768px) {
       .features-grid .feature-image {
         max-width: 350px; } }
@@ -466,6 +468,13 @@ main {
 .table-price {
   margin: 100px 0;
   font-family: 'Raleway', sans-serif; }
+  .table-price h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-shadow: 0 0 1px #000080; }
+    .table-price h1 span {
+      text-shadow: 0 0 1px #0aceb1; }
   @media (min-width: 576px) {
     .table-price .price-grid {
       display: grid;
@@ -483,36 +492,48 @@ main {
     border: 1px solid #ddd; }
     .table-price .price-grid .price-card .btn {
       border-radius: 5px; }
-    .table-price .price-grid .price-card:nth-child(1) h2 {
-      background-color: #0aceb1; }
-    .table-price .price-grid .price-card:nth-child(1) .btn {
-      background-color: #0aceb1; }
-      .table-price .price-grid .price-card:nth-child(1) .btn:hover {
-        background-color: #333;
-        color: #ddd; }
-    .table-price .price-grid .price-card:nth-child(1) .price p {
-      color: #0aceb1; }
-    .table-price .price-grid .price-card:nth-child(2) h2 {
-      background-color: #000080; }
-    .table-price .price-grid .price-card:nth-child(2) .btn {
-      background-color: #000080; }
-      .table-price .price-grid .price-card:nth-child(2) .btn:hover {
-        background-color: #333;
-        color: #ddd; }
-    .table-price .price-grid .price-card:nth-child(2) .price p {
-      color: #000080; }
-    .table-price .price-grid .price-card:nth-child(3) h2 {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
-    .table-price .price-grid .price-card:nth-child(3) .btn {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
-      .table-price .price-grid .price-card:nth-child(3) .btn:hover {
-        background-color: #333;
-        color: #ddd; }
-    .table-price .price-grid .price-card:nth-child(3) .price {
-      background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+    .table-price .price-grid .price-card:nth-child(1) {
+      border: 1px solid #0aceb1;
+      border-radius: 5px; }
+      .table-price .price-grid .price-card:nth-child(1) h2 {
+        background-color: #0aceb1; }
+      .table-price .price-grid .price-card:nth-child(1) .btn {
+        background-color: #0aceb1; }
+        .table-price .price-grid .price-card:nth-child(1) .btn:hover {
+          background-color: #333;
+          color: #ddd; }
+      .table-price .price-grid .price-card:nth-child(1) .price p {
+        color: #0aceb1; }
+    .table-price .price-grid .price-card:nth-child(2) {
+      border: 1px solid #000080;
+      border-radius: 5px; }
+      .table-price .price-grid .price-card:nth-child(2) h2 {
+        background-color: #000080; }
+      .table-price .price-grid .price-card:nth-child(2) .btn {
+        background-color: #000080; }
+        .table-price .price-grid .price-card:nth-child(2) .btn:hover {
+          background-color: #333;
+          color: #ddd; }
+      .table-price .price-grid .price-card:nth-child(2) .price p {
+        color: #000080; }
+    .table-price .price-grid .price-card:nth-child(3) {
+      border-top: 2px solid #0aceb1;
+      border-right: 2px solid #0aceb1;
+      border-bottom: 2px solid #000080;
+      border-left: 2px solid #000080;
+      border-radius: 5px; }
+      .table-price .price-grid .price-card:nth-child(3) h2 {
+        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      .table-price .price-grid .price-card:nth-child(3) .btn {
+        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+        .table-price .price-grid .price-card:nth-child(3) .btn:hover {
+          background-color: #333;
+          color: #ddd; }
+      .table-price .price-grid .price-card:nth-child(3) .price {
+        background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card h2 {
       padding: 30px;
       border-radius: 5px;

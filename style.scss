@@ -23,6 +23,7 @@ header {
             span {
                 text-shadow: 0 0 1px $secondary-color;
             }
+            
             @include sm {
                 font-size: 4em
             }
@@ -451,7 +452,7 @@ main {
 
     h1 {
         font-family: 'Fredericka the Great', cursive;
-        font-size: 2em;
+        font-size: 2.4em;
         font-weight: 500;
         text-shadow: 0 0 1px $primary-color;
         span {
@@ -502,6 +503,8 @@ main {
         .feature-image {
             max-width: 200px;
             margin: auto;
+            border: 2px solid $secondary-color;
+            border-radius: 5px;
 
             @include md {
                 max-width: 350px;
@@ -517,6 +520,16 @@ main {
 .table-price {
     margin: 100px 0;
     font-family: 'Raleway', sans-serif;
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 3.5em;
+        font-weight: 500;
+            text-shadow: 0 0 1px $primary-color;
+            span {
+                text-shadow: 0 0 1px $secondary-color;
+            }
+    }
 
 
     .price-grid {
@@ -538,6 +551,8 @@ main {
             }
 
             &:nth-child(1) {
+                border: 1px solid $secondary-color;
+                border-radius: 5px;
                 h2 {
                     background-color: $secondary-color;
                 }
@@ -555,6 +570,8 @@ main {
                 }
             }
             &:nth-child(2) {
+                border: 1px solid $primary-color;
+                border-radius: 5px;
                 h2 {
                     background-color: $primary-color;
                 }
@@ -572,6 +589,11 @@ main {
                     }
             }
             &:nth-child(3) {
+                border-top: 2px solid $secondary-color;
+                border-right: 2px solid $secondary-color;
+                border-bottom: 2px solid $primary-color;
+                border-left: 2px solid $primary-color;
+                border-radius: 5px;
                 h2 {
                     background-image: $primary-gradient;
                 }
