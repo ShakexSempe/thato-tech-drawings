@@ -73,7 +73,8 @@ img {
     width: 110px;
     height: 5px;
     margin: 15px 0 30px;
-    background-color: #ddd;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     display: block; }
 
 .section-title.center {
@@ -305,6 +306,7 @@ main {
           color: #fff; }
     .banner .container .banner-image {
       border-radius: 10px;
+      backdrop-filter: blur(0.08em);
       z-index: 2;
       width: 60%; }
       @media (min-width: 768px) {
@@ -313,7 +315,10 @@ main {
           margin-top: 100px; } }
 
 .about {
-  margin: 50px 0; }
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-size: 140%; }
   .about-items {
     text-align: center;
     font-family: 'Raleway', sans-serif; }
@@ -321,7 +326,8 @@ main {
       margin-bottom: 20px;
       border: 1px solid rgba(25, 106, 138, 0.46);
       border-radius: 10px;
-      padding: 5px; }
+      padding: 5px;
+      background: #fff; }
       @media (min-width: 576px) {
         .about-items .about-item {
           display: grid;
@@ -342,7 +348,7 @@ main {
             font-size: 2em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
-        font-weight: 600; }
+        font-weight: 500; }
         @media (min-width: 768px) {
           .about-items .about-item-content p {
             text-align: left; } }
@@ -374,31 +380,37 @@ main {
 .services .container .service {
   padding: 25px;
   margin: 80px 0;
-  background-color: #f4f4f4;
+  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   text-align: center;
   border-radius: 5px;
-  border: 5px solid #d9e8ee;
+  border: 5px solid #000080;
+  border-right: 5px solid #0aceb1;
+  border-left: 5px solid #000080;
+  border-bottom: 5px solid #0aceb1;
   font-family: 'Raleway', sans-serif; }
+  .services .container .service-title {
+    color: #eee; }
   .services .container .service-icon {
     width: 125px;
     height: 125px;
     margin: -85px 0 30px;
     padding: 5px;
-    border: 5px solid #d9e8ee;
+    border: 5px solid #000080;
     border-radius: 50%;
-    background-color: #fff; }
+    background-color: #0aceb1; }
     @media (min-width: 768px) {
       .services .container .service-icon {
         width: 160px;
         height: 160px;
         margin: -110px 0 30px; } }
   .services .container .service p {
-    padding: 50px; }
+    padding: 50px;
+    color: #eee; }
   .services .container .service a {
-    border: 1px solid #000080;
+    border: 1px solid #eee;
     border-radius: 5px;
     padding: 3px;
-    color: #000080; }
+    color: #fff; }
 
 .features {
   margin: 50px 0; }

@@ -6,6 +6,7 @@ $primary-gradient-reverse: linear-gradient(to right, $secondary-color 0%, $prima
 $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 $text-color: #333;
+$text-color-white: #eee;
 $primary-red: #dc143c; 
 $primary-red-gradient: linear-gradient(90deg, maroon, rgb(167, 12, 12), maroon ) ; 
 $container-width: 1200px;

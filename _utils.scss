@@ -65,7 +65,8 @@
         width: 110px;
         height: 5px;
         margin: 15px 0 30px;
-        background-color:#ddd;
+        border-radius: 5px;
+        background-image: $primary-gradient ;
         display: block;
     }
 }
