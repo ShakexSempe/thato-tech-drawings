@@ -315,7 +315,7 @@ main {
 
         .about-item {
             margin-bottom: 20px;
-            border: 1px solid rgba(25, 106, 138, 0.46);
+            border: 1px solid #000;
             border-radius: 10px;
             padding: 5px; 
             background: #fff;
@@ -424,7 +424,8 @@ main {
             }
 
             p {
-                padding: 50px;
+                margin: 10px 0;
+                padding: 20px 10px;
                 color: $text-color-white;
                 // font-family: 'Red Rose', cursive;
 
@@ -514,6 +515,8 @@ main {
 //TABLE PRICE
 .table-price {
     margin: 100px 0;
+    font-family: 'Raleway', sans-serif;
+
 
     .price-grid {
         @include sm {
@@ -529,9 +532,9 @@ main {
             text-align: center;
             border: 1px solid #ddd;
 
-            &:nth-child(2) {
+            &:nth-child(1) {
                 h2 {
-                    background-color: $primary-color;
+                    background-color: $secondary-color;
                 }
 
                 .btn {
@@ -542,21 +545,62 @@ main {
                         color: #ddd;
                     }
                 }
+                .price p { 
+                color: $secondary-color;
+                }
+            }
+            &:nth-child(2) {
+                h2 {
+                    background-color: $primary-color;
+                }
 
+                .btn {
+                    background-color: $primary-color;
+
+                    &:hover {
+                        background-color: #333;
+                        color: #ddd;
+                    }
+                }
+                .price p { 
+                    color: $primary-color;
+                    }
+            }
+            &:nth-child(3) {
+                h2 {
+                    background-image: $primary-gradient;
+                }
+
+                .btn {
+                    background-image: $primary-gradient;
+
+
+                    &:hover {
+                        background-color: #333;
+                        color: #ddd;
+                    }
+                }
+                .price {
+                    background: $primary-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
 
             h2 {
                 padding: 30px;
+                border-radius: 5px;
                 margin-bottom: 15px;
                 background-color: $secondary-color;
                 color: #fff;
                 text-transform: uppercase;
+                
             }
 
             .price {
                 padding: 10px 10px 20px;
                 margin: 10px 50px;
-                color: $primary-color;
                 
                 p {
                     font-size: 2.5em;

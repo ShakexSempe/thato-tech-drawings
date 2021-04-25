@@ -324,7 +324,7 @@ main {
     font-family: 'Raleway', sans-serif; }
     .about-items .about-item {
       margin-bottom: 20px;
-      border: 1px solid rgba(25, 106, 138, 0.46);
+      border: 1px solid #000;
       border-radius: 10px;
       padding: 5px;
       background: #fff; }
@@ -404,7 +404,8 @@ main {
         height: 160px;
         margin: -110px 0 30px; } }
   .services .container .service p {
-    padding: 50px;
+    margin: 10px 0;
+    padding: 20px 10px;
     color: #eee; }
   .services .container .service a {
     border: 1px solid #eee;
@@ -462,7 +463,8 @@ main {
         max-width: 350px; } }
 
 .table-price {
-  margin: 100px 0; }
+  margin: 100px 0;
+  font-family: 'Raleway', sans-serif; }
   @media (min-width: 576px) {
     .table-price .price-grid {
       display: grid;
@@ -478,23 +480,46 @@ main {
     margin-bottom: 30px;
     text-align: center;
     border: 1px solid #ddd; }
+    .table-price .price-grid .price-card:nth-child(1) h2 {
+      background-color: #0aceb1; }
+    .table-price .price-grid .price-card:nth-child(1) .btn {
+      background-color: #0aceb1; }
+      .table-price .price-grid .price-card:nth-child(1) .btn:hover {
+        background-color: #333;
+        color: #ddd; }
+    .table-price .price-grid .price-card:nth-child(1) .price p {
+      color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) h2 {
       background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
-      background-color: #0aceb1; }
+      background-color: #000080; }
       .table-price .price-grid .price-card:nth-child(2) .btn:hover {
         background-color: #333;
         color: #ddd; }
+    .table-price .price-grid .price-card:nth-child(2) .price p {
+      color: #000080; }
+    .table-price .price-grid .price-card:nth-child(3) h2 {
+      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+    .table-price .price-grid .price-card:nth-child(3) .btn {
+      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      .table-price .price-grid .price-card:nth-child(3) .btn:hover {
+        background-color: #333;
+        color: #ddd; }
+    .table-price .price-grid .price-card:nth-child(3) .price {
+      background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card h2 {
       padding: 30px;
+      border-radius: 5px;
       margin-bottom: 15px;
       background-color: #0aceb1;
       color: #fff;
       text-transform: uppercase; }
     .table-price .price-grid .price-card .price {
       padding: 10px 10px 20px;
-      margin: 10px 50px;
-      color: #000080; }
+      margin: 10px 50px; }
       .table-price .price-grid .price-card .price p {
         font-size: 2.5em; }
       .table-price .price-grid .price-card .price small {
