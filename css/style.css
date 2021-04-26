@@ -643,12 +643,14 @@ main {
       color: #dc143c; }
     .footer-top .footer-item a:hover {
       color: #dc143c; }
+    .footer-top .footer-item p {
+      text-shadow: 0 0 1px #0aceb1; }
   .footer-top .brand .footer-logo {
     width: 100%;
     margin-bottom: 30px;
     border-radius: 10px;
     border: 1px solid #0aceb1;
-    box-shadow: 0 0 10px #000080; }
+    box-shadow: 0 0 10px #0aceb1; }
   .footer-top .social li {
     padding: 20px 0;
     border-bottom: 1px dashed #333;
