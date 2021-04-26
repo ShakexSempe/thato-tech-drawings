@@ -324,7 +324,7 @@ main {
     text-align: center;
     font-family: 'Raleway', sans-serif; }
     .about-items .about-item {
-      margin-bottom: 20px;
+      margin: 80px 0;
       border: 1px solid #000;
       border-radius: 10px;
       padding: 5px;
@@ -517,10 +517,10 @@ main {
       .table-price .price-grid .price-card:nth-child(2) .price p {
         color: #000080; }
     .table-price .price-grid .price-card:nth-child(3) {
-      border-top: 2px solid #0aceb1;
-      border-right: 2px solid #0aceb1;
-      border-bottom: 2px solid #000080;
-      border-left: 2px solid #000080;
+      border-top: 1px solid #0aceb1;
+      border-right: 1px solid #0aceb1;
+      border-bottom: 1px solid #000080;
+      border-left: 1px solid #000080;
       border-radius: 5px; }
       .table-price .price-grid .price-card:nth-child(3) h2 {
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
