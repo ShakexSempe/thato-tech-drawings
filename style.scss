@@ -449,7 +449,7 @@ main {
 
 .features {
     margin: 50px 0;
-
+    padding-top: 80px;
     h1 {
         font-family: 'Fredericka the Great', cursive;
         font-size: 2.4em;
@@ -654,6 +654,7 @@ main {
 
 //CONTACT
 .contact {
+    padding-top: 180px;
     margin: 50px 0;
     background-color: $primary-color;
     color: #fff;
@@ -708,7 +709,7 @@ main {
 //FOOTER
 .footer {
     &-top {
-        padding-top: 70px;
+        padding-top: 180px;
         padding-bottom: 40px;
 
         @include sm {

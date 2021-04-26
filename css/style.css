@@ -4,7 +4,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -415,7 +416,8 @@ main {
     color: #fff; }
 
 .features {
-  margin: 50px 0; }
+  margin: 50px 0;
+  padding-top: 80px; }
   .features h1 {
     font-family: 'Fredericka the Great', cursive;
     font-size: 2.4em;
@@ -556,6 +558,7 @@ main {
         line-height: 3; }
 
 .contact {
+  padding-top: 180px;
   margin: 50px 0;
   background-color: #000080;
   color: #fff; }
@@ -593,7 +596,7 @@ main {
         color: #333; }
 
 .footer-top {
-  padding-top: 70px;
+  padding-top: 180px;
   padding-bottom: 40px; }
   @media (min-width: 576px) {
     .footer-top {
