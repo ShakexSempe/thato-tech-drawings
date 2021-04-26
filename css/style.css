@@ -691,7 +691,7 @@ main {
 
 .footer-bottom {
   padding: 20px;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
   color: #fff;
   text-align: center; }
   .footer-bottom a {
