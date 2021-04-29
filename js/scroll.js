@@ -5,7 +5,6 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 
 scrollLinks.forEach(link => {
-  console.log(link)
     //prevent default
     link.addEventListener('click', e => {
         e.preventDefault();
@@ -27,3 +26,18 @@ scrollLinks.forEach(link => {
         // linksContainer.style.height = 0;
     });
 });
+
+
+//progress bar
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+  
+  
+}
+/*end of progress bar*/

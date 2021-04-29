@@ -75,6 +75,19 @@ img {
 .section-title > span {
   color: #000080; }
 
+.progress-container {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  position: fixed;
+  z-index: 10; }
+
+.progress-bar {
+  height: 4px;
+  background-image: linear-gradient(90deg, #0aceb1, #000080, #0aceb1);
+  border-radius: 5px;
+  width: 0%; }
+
 header {
   position: fixed;
   top: 0;
