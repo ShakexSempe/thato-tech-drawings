@@ -22,20 +22,20 @@
 }
 
 .bg-gradient {
-    min-height: 420px;
-    padding: 100px 0;
-    background: url('../img/Optimized-techthat.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 2;
+    // min-height: 420px;
+    // padding: 100px 0;
+    // background: url('../img/Optimized-techthat.png') no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    // position: relative;
+    // z-index: 2;
 
     
 
-    @include sm {
-        padding: 150px 0;
-    }
+    // @include sm {
+    //     padding: 150px 0;
+    // }
 
     &::before,
     &::after {
@@ -55,8 +55,8 @@
 }
 
 .section-title {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0px;
     font-size: 2.7em;
     color: #333;
 

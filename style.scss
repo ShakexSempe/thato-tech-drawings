@@ -281,6 +281,8 @@ main {
                 color: $primary-color;
                 font-size: 0.9em;
                 border: 1px solid $secondary-color;
+                border-radius: 5px;
+                margin: 5px 0;
 
                 &:hover {
                     background-color: #000;
@@ -310,8 +312,7 @@ main {
 //ABOUT
 
 .about {
-    margin: 0;
-    padding: 60px 0;
+    padding: 1em 0;
     background-image: $primary-gradient;
     background-size: 140%;
     &-items {
@@ -321,7 +322,7 @@ main {
 
 
         .about-item {
-            margin: 80px 0;
+            margin: 1em auto;
             border: 1px solid #000;
             border-radius: 10px;
             padding: 5px; 
@@ -386,6 +387,13 @@ main {
 
 .services {
     position: relative;
+    background: url('../img/Optimized-techthat.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 5px;
+    z-index: 2;
     
     &::before{
         content: '';
@@ -428,7 +436,7 @@ main {
         }
 
         .service {
-            padding: 25px;
+            padding: 10px;
             margin: 80px 0;
             background-image: $primary-gradient;
             text-align: center;
@@ -487,8 +495,8 @@ main {
 //FEATURES
 
 .features {
-    margin: 50px 0;
-    padding-top: 80px;
+    margin: 0;
+    padding-top: 1em;
     background-color: #fff;
     h1 {
         font-family: 'Fredericka the Great', cursive;
@@ -563,8 +571,8 @@ main {
 
 //TABLE PRICE
 .table-price {
-    padding-top: 100px;
-    margin: 100px 0;
+    padding: 1em 0;
+    margin: 10px 0;
     font-family: 'Raleway', sans-serif;
 
     h1 {
@@ -700,7 +708,7 @@ main {
 
 //CONTACT
 .contact {
-    padding-top: 180px;
+    padding: 1em 0;
     margin: 50px 0;
     background-image: $primary-gradient;
     color: #fff;
