@@ -41,3 +41,17 @@ function myFunction() {
   
 }
 /*end of progress bar*/
+
+/*back to top button*/
+document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    const topLink = document.querySelector('.top-link');
+    const scrollHeight = window.pageYOffset;
+
+    if (scrollHeight > 400) {
+      topLink.classList.add('show-link');
+    } else {
+      topLink.classList.remove('show-link');
+    }
+});
+/*end of back to top button*/

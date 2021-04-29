@@ -832,6 +832,11 @@ main {
         }
 
         .blog {
+           
+            display: none;
+            @include sm {
+                display: flex;
+            }
             .post {
                 display: flex;
                 margin-bottom: 10px;
