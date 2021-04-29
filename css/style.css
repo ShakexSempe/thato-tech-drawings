@@ -348,14 +348,17 @@ main {
       .banner .container .banner-content .btn {
         margin: 25px 0; }
       .banner .container .banner-content .btn {
-        background-color: #fff;
-        color: #000080;
+        font-family: 'Fredericka the Great', cursive;
+        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        color: #eee;
         font-size: 0.9em;
         border: 1px solid #0aceb1;
         border-radius: 5px;
-        margin: 5px 0; }
+        margin: 5px 0;
+        transition: all .5s ease-in-out; }
         .banner .container .banner-content .btn:hover {
-          background-color: #000;
+          transition: all .5s ease-in-out;
+          background-image: linear-gradient(to right, #0808df8e 0%, #0aceb18f 100%);
           color: #fff; }
     .banner .container .banner-image {
       border-radius: 10px;

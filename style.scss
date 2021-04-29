@@ -280,16 +280,22 @@ main {
             }
 
             .btn {
-                background-color: #fff;
-                color: $primary-color;
+            font-family: 'Fredericka the Great', cursive;
+
+                background-image: $primary-gradient;
+                color: $text-color-white;
                 font-size: 0.9em;
                 border: 1px solid $secondary-color;
                 border-radius: 5px;
                 margin: 5px 0;
+                transition: all .5s ease-in-out;
+                
 
                 &:hover {
-                    background-color: #000;
+                    transition: all .5s ease-in-out;
+                    background-image: $primary-gradient-trans;
                     color: #fff;
+
                 }
             }
         }
