@@ -4,6 +4,10 @@
     height: 30px;
     background: transparent;
     position: fixed;
+    top: 105px;
+    @include sm {
+      top: 100px;
+    }
     z-index: 10;
   }
   
