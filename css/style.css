@@ -650,16 +650,19 @@ main {
 .contact {
   padding: 1em 0;
   margin: 50px 0;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
-  color: #fff; }
+  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
   @media (min-width: 768px) {
     .contact {
       display: grid;
       grid-gap: 0px;
       grid-template-columns: repeat(2, 1fr); } }
-  .contact .google-map {
-    width: 100%;
-    min-height: 400px; }
+  .contact .google-maps {
+    margin: 10px;
+    height: auto; }
+    .contact .google-maps #map {
+      width: 100%;
+      height: 80%;
+      border-radius: 10px; }
   .contact .contact-form {
     width: 500px;
     max-width: 100%;
