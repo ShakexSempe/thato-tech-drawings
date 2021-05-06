@@ -762,3 +762,6 @@ main {
   text-align: center; }
   .footer-bottom a {
     color: #eee; }
+    .footer-bottom a:hover {
+      transition: .3s ease-in-out;
+      color: #fff000; }

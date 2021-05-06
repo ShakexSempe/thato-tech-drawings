@@ -886,6 +886,10 @@ main {
 
         a{
             color: $text-color-white;
+            &:hover {
+                transition: .3s ease-in-out;
+                color: #fff000;
+            }
         }
     }
 }
