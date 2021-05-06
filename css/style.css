@@ -715,6 +715,7 @@ main {
       margin-bottom: 20px;
       color: #000080; }
     .footer-top .footer-item i {
+      font-size: 1.5em;
       margin-bottom: 1em;
       color: #dc143c; }
     .footer-top .footer-item a:hover {
@@ -732,6 +733,7 @@ main {
     border-bottom: 1px dashed #333;
     cursor: pointer; }
     .footer-top .social li i {
+      font-size: 2em;
       margin-right: 10px;
       color: #000080; }
     .footer-top .social li:hover {
