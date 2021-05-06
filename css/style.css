@@ -532,7 +532,8 @@ main {
     border-bottom: 1px solid #ddd; }
     .features-grid .feature-item h4 {
       font-family: 'Raleway', sans-serif;
-      color: #0aceb1; }
+      color: #0aceb1;
+      text-transform: capitalize; }
     .features-grid .feature-item-icon {
       padding: 20px;
       margin-right: 20px;
@@ -550,8 +551,8 @@ main {
   .features-grid .feature-image {
     max-width: 200px;
     margin: auto;
-    border: 2px solid #0aceb1;
-    border-radius: 5px; }
+    box-shadow: 5px 3px 10px #000080;
+    border-radius: 10px; }
     @media (min-width: 768px) {
       .features-grid .feature-image {
         max-width: 350px; } }
@@ -669,9 +670,10 @@ main {
     padding: 25px;
     margin: auto; }
     .contact .contact-form .section-title {
-      color: #fff; }
+      color: #eee; }
     .contact .contact-form p {
-      margin: 40px 0; }
+      margin: 40px 0;
+      color: #eee; }
     .contact .contact-form input,
     .contact .contact-form textarea {
       display: block;

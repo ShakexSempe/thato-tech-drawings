@@ -538,6 +538,7 @@ main {
             h4 {
             font-family: 'Raleway', sans-serif;
             color: $secondary-color;
+            text-transform: capitalize;
 
             }
 
@@ -565,8 +566,9 @@ main {
         .feature-image {
             max-width: 200px;
             margin: auto;
-            border: 2px solid $secondary-color;
-            border-radius: 5px;
+            // border: 1px solid $primary-color;
+            box-shadow: 5px 3px 10px $primary-color;
+            border-radius: 10px;
 
             @include md {
                 max-width: 350px;
@@ -743,11 +745,13 @@ main {
         margin: auto;
 
         .section-title {
-            color: #fff;
+            color: $text-color-white;
+
         }
 
         p {
             margin: 40px 0;
+            color: $text-color-white;
         }
 
         input, 

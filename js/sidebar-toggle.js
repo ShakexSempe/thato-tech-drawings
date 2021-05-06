@@ -34,6 +34,8 @@ sideLinks.forEach(link => {
 
 
 
+
+
 // console.log(sideLinks);
 // menuToggleButton.addEventListener('click', () => {
 //     console.log(sideLinks)
