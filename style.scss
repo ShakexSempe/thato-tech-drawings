@@ -234,6 +234,7 @@ main {
     }
 
     .container {
+        position: relative;
 
         // @include grid(1, 10px);
         @include flex(space-evenly, center, column, nowrap);
@@ -260,7 +261,8 @@ main {
                 padding-top: 100px;
                 font-size: 1.8em;
                 font-weight: 600;
-                text-shadow: 1px 1px 1px $secondary-color
+                text-shadow: 1px 1px 1px $secondary-color;
+                
             }
             p {
                 font-size: 0.8em;
