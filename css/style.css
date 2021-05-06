@@ -371,7 +371,7 @@ main {
           margin-top: 100px; } }
 
 .about {
-  padding: 1em 0;
+  padding: 2em 0;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-size: 140%; }
   .about-items {
@@ -427,7 +427,7 @@ main {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding-top: 5px;
+  padding: 1em 0;
   z-index: 2; }
   .services::before {
     content: '';
@@ -504,18 +504,18 @@ main {
   background-color: #fff; }
   .features h1 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 500;
+    text-shadow: 0 0 1px #000080;
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 1px #000080; }
+    -webkit-text-fill-color: transparent; }
     .features h1 span {
       text-shadow: 0 0 1px #0aceb1; }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       .features h1 {
-        font-size: 4em; } }
+        font-size: 3.5em; } }
   @media (min-width: 768px) {
     .features-grid {
       display: grid;

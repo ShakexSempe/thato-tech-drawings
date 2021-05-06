@@ -321,7 +321,7 @@ main {
 //ABOUT
 
 .about {
-    padding: 1em 0;
+    padding: 2em 0;
     background-image: $primary-gradient;
     background-size: 140%;
     &-items {
@@ -401,7 +401,7 @@ main {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding-top: 5px;
+    padding: 1em 0;
     z-index: 2;
     
     &::before{
@@ -509,19 +509,19 @@ main {
     background-color: #fff;
     h1 {
         font-family: 'Fredericka the Great', cursive;
-        font-size: 2.4em;
+        font-size: 3em;
         font-weight: 500;
-        background-image: $primary-gradient;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
         text-shadow: 0 0 1px $primary-color;
         span {
             text-shadow: 0 0 1px $secondary-color;
         }
-        @include sm {
-            font-size: 4em
-        }
+           background-image: $primary-gradient;
+           background-clip: text;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           @include md {
+               font-size: 3.5em;
+           }
     }
 
     &-grid {
