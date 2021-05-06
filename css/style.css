@@ -675,6 +675,9 @@ main {
     .contact .contact-form p {
       margin: 40px 0;
       color: #eee; }
+      .contact .contact-form p i {
+        font-size: 3em;
+        margin-right: .5em; }
     .contact .contact-form input,
     .contact .contact-form textarea {
       display: block;
@@ -695,8 +698,7 @@ main {
         color: #000; }
 
 .footer-top {
-  padding-top: 180px;
-  padding-bottom: 40px; }
+  padding: 2em; }
   @media (min-width: 576px) {
     .footer-top {
       display: grid;

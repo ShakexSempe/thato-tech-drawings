@@ -754,6 +754,11 @@ main {
         p {
             margin: 40px 0;
             color: $text-color-white;
+
+            i {
+                font-size: 3em;
+                margin-right: .5em;
+            }
         }
 
         input, 
@@ -786,8 +791,7 @@ main {
 //FOOTER
 .footer {
     &-top {
-        padding-top: 180px;
-        padding-bottom: 40px;
+        padding: 2em;
 
         @include sm {
             @include grid(2, 20px);
