@@ -88,6 +88,7 @@ img {
 
 .progress-bar {
   height: 4px;
+  margin: 5px 0;
   background-image: linear-gradient(90deg, #0aceb1, #000080, #0aceb1);
   border-radius: 5px;
   width: 0%;
@@ -197,7 +198,7 @@ header {
       border-radius: 50%;
       cursor: pointer;
       transform: scale(0.8);
-      margin: 10px; }
+      margin: 0 5px; }
       header .navbar .menu-toggle::before {
         position: absolute;
         content: '';
