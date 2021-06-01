@@ -850,6 +850,9 @@ main {
             h3 {
                 margin-bottom: 20px;
                 color: $primary-color;
+                text-decoration: .2em underline;
+                text-decoration-color: $secondary-color;
+                text-underline-offset: .3em;
             }
 
             i{
