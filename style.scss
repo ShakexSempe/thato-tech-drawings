@@ -139,9 +139,12 @@ header {
 
             a {
                 padding: 5px 15px;
+                font-size: 1.2em;
 
                 &:hover {
                     color: $secondary-color;
+                    text-decoration: .3em underline;
+                    text-underline-offset: .3em;
                 }
             }
 

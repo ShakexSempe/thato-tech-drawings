@@ -245,9 +245,12 @@ header {
         header .navbar .nav-list {
           display: flex; } }
       header .navbar .nav-list a {
-        padding: 5px 15px; }
+        padding: 5px 15px;
+        font-size: 1.2em; }
         header .navbar .nav-list a:hover {
-          color: #0aceb1; }
+          color: #0aceb1;
+          text-decoration: .3em underline;
+          text-underline-offset: .3em; }
     header .navbar .navbar-button {
       margin-top: 10px; }
       @media (min-width: 576px) {
