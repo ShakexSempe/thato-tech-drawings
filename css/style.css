@@ -249,7 +249,7 @@ header {
         font-size: 1.2em; }
         header .navbar .nav-list a:hover {
           color: #0aceb1;
-          text-decoration: .3em underline;
+          text-decoration: .2em underline;
           text-underline-offset: .3em; }
     header .navbar .navbar-button {
       margin-top: 10px; }
