@@ -187,8 +187,8 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
       position: relative;
-      height: 3em;
-      width: 3em;
+      height: 2.9em;
+      width: 2.9em;
       padding: 0px;
       border: 3px solid #050580;
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
@@ -197,8 +197,13 @@ header {
       -webkit-text-fill-color: transparent;
       border-radius: 50%;
       cursor: pointer;
-      transform: scale(0.8);
-      margin: 0 5px; }
+      margin: 0 5px;
+      box-shadow: inset 2px 2px 5px #ddda, inset -1px -1px 5px #000a;
+      transition: .3s ease; }
+      header .navbar .menu-toggle:hover {
+        box-shadow: inset 2px 2px 5px #000a, inset -1px -1px 5px #ddda;
+        transition: .3s ease;
+        transform: scale(0.96); }
       header .navbar .menu-toggle::before {
         position: absolute;
         content: '';
@@ -226,9 +231,6 @@ header {
           top: 8px; }
         header .navbar .menu-toggle .bar::after {
           bottom: 8px; }
-      header .navbar .menu-toggle:hover {
-        color: #0aceb1;
-        border: 2px solid #0aceb1; }
 
 @keyframes toggle {
   50% {

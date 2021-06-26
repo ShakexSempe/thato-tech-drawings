@@ -59,8 +59,8 @@ header {
         .menu-toggle {
             @include flex(center);
             position: relative;
-            height: 3em;
-            width: 3em;
+            height: 2.9em;
+            width: 2.9em;
             padding: 0px;
             border: 3px solid rgb(5, 5, 128);
             background-image: $primary-gradient;
@@ -69,8 +69,18 @@ header {
                     -webkit-text-fill-color: transparent;
             border-radius: 50%;
             cursor: pointer;
-            transform: scale(0.8);
             margin: 0 5px;
+            box-shadow: inset 2px 2px 5px #ddda,
+                        inset -1px -1px 5px #000a;
+            transition: .3s ease;
+
+            &:hover {
+                box-shadow: 
+                            inset 2px 2px 5px #000a,
+                            inset -1px -1px 5px #ddda;
+                transition: .3s ease;
+                transform: scale(.96);
+            }
             
             &::before {
                 position: absolute;
@@ -107,10 +117,6 @@ header {
                     bottom: 8px;
                 }
             
-            }
-            &:hover {
-                color: $secondary-color;
-                border: 2px solid $secondary-color
             }
 
             @keyframes toggle {
