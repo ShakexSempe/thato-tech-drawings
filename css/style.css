@@ -713,12 +713,20 @@ main {
     width: 500px;
     max-width: 100%;
     padding: 25px;
-    margin: auto; }
+    margin: auto;
+    cursor: pointer; }
     .contact .contact-form .section-title {
       color: #eee; }
     .contact .contact-form p {
       margin: 40px 0;
-      color: #eee; }
+      color: #eee;
+      transition: .3s ease; }
+      .contact .contact-form p:hover {
+        letter-spacing: .1em;
+        transition: .3s ease;
+        transform: scale(1.015); }
+        .contact .contact-form p:hover i {
+          color: #0aceb1; }
       .contact .contact-form p i {
         font-size: 3em;
         margin-right: .5em; }
