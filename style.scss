@@ -679,25 +679,35 @@ main {
             margin-bottom: 30px;
             text-align: center;
             border: 1px solid #ddd;
+            
 
             .btn{
                 border-radius: 5px;
+                box-shadow: inset -5px -5px 3px #000a,
+                        inset 5px 5px 3px #ddda;
+                transition: .3s ease;
+                &:hover {
+                transition: .3s ease;
+                transform: scale(.98);
+                box-shadow: 0 0 5px #000,
+                            inset -2px -2px 3px #ddda,
+                            inset 2px 2px 3px #000a;
+                }
             }
-
+            h2 {
+                box-shadow: inset -5px -5px 5px #000a,
+                        inset 5px 5px 5px #ddda;
+            }
             &:nth-child(1) {
                 border: 1px solid $secondary-color;
                 border-radius: 5px;
                 h2 {
                     background-color: $secondary-color;
+                    
                 }
 
                 .btn {
                     background-color: $secondary-color;
-
-                    &:hover {
-                        background-color: #333;
-                        color: #ddd;
-                    }
                 }
                 .price p { 
                 color: $secondary-color;
@@ -712,11 +722,6 @@ main {
 
                 .btn {
                     background-color: $primary-color;
-
-                    &:hover {
-                        background-color: #333;
-                        color: #ddd;
-                    }
                 }
                 .price p { 
                     color: $primary-color;
@@ -735,11 +740,6 @@ main {
                 .btn {
                     background-image: $primary-gradient;
 
-
-                    &:hover {
-                        background-color: #333;
-                        color: #ddd;
-                    }
                 }
                 .price {
                     background: $primary-gradient;

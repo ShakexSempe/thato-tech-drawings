@@ -631,7 +631,15 @@ main {
     text-align: center;
     border: 1px solid #ddd; }
     .table-price .price-grid .price-card .btn {
-      border-radius: 5px; }
+      border-radius: 5px;
+      box-shadow: inset -5px -5px 3px #000a, inset 5px 5px 3px #ddda;
+      transition: .3s ease; }
+      .table-price .price-grid .price-card .btn:hover {
+        transition: .3s ease;
+        transform: scale(0.98);
+        box-shadow: 0 0 5px #000, inset -2px -2px 3px #ddda, inset 2px 2px 3px #000a; }
+    .table-price .price-grid .price-card h2 {
+      box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #ddda; }
     .table-price .price-grid .price-card:nth-child(1) {
       border: 1px solid #0aceb1;
       border-radius: 5px; }
@@ -639,9 +647,6 @@ main {
         background-color: #0aceb1; }
       .table-price .price-grid .price-card:nth-child(1) .btn {
         background-color: #0aceb1; }
-        .table-price .price-grid .price-card:nth-child(1) .btn:hover {
-          background-color: #333;
-          color: #ddd; }
       .table-price .price-grid .price-card:nth-child(1) .price p {
         color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) {
@@ -651,9 +656,6 @@ main {
         background-color: #000080; }
       .table-price .price-grid .price-card:nth-child(2) .btn {
         background-color: #000080; }
-        .table-price .price-grid .price-card:nth-child(2) .btn:hover {
-          background-color: #333;
-          color: #ddd; }
       .table-price .price-grid .price-card:nth-child(2) .price p {
         color: #000080; }
     .table-price .price-grid .price-card:nth-child(3) {
@@ -666,9 +668,6 @@ main {
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
       .table-price .price-grid .price-card:nth-child(3) .btn {
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
-        .table-price .price-grid .price-card:nth-child(3) .btn:hover {
-          background-color: #333;
-          color: #ddd; }
       .table-price .price-grid .price-card:nth-child(3) .price {
         background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         background-clip: text;
