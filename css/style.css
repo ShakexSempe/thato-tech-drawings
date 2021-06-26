@@ -264,7 +264,9 @@ header {
         background-image: linear-gradient(0deg, #000080 0%, #0aceb1 100%);
         font-family: 'Red Rose', cursive;
         transition: .2s ease;
-        box-shadow: inset -3px -3px 5px #000a, -3px -3px 5px #ddd, 3px 3px 5px #000; }
+        border: none;
+        outline: none;
+        box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a; }
         header .navbar .navbar-button .you-btn a {
           color: #fff; }
         header .navbar .navbar-button .you-btn:hover {
@@ -730,10 +732,12 @@ main {
         transition: .3s ease;
         transform: scale(1.015); }
         .contact .contact-form p:hover i {
+          transition: .3s ease;
           color: #0aceb1; }
       .contact .contact-form p i {
         font-size: 3em;
-        margin-right: .5em; }
+        margin-right: .5em;
+        transition: .3s ease; }
     .contact .contact-form input,
     .contact .contact-form textarea {
       display: block;

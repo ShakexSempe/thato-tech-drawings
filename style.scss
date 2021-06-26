@@ -171,10 +171,10 @@ header {
                 background-image: $secondary-gradient-reverse;
                 font-family: 'Red Rose', cursive;
                 transition: .2s ease;
-                box-shadow: 
-                            inset -3px -3px 5px #000a,
-                            -3px -3px 5px #ddd,
-                            3px 3px 5px #000;
+                border: none;
+                outline: none;
+                box-shadow: inset 3px 3px 5px #ddd,
+                            inset -3px -3px 5px #000a;
 
                 a {
                     color: #fff;
@@ -837,6 +837,7 @@ main {
                 transform: scale(1.015);
 
                 i {
+                    transition: .3s ease;
                     color: $secondary-color;
                 }
             }
@@ -845,6 +846,7 @@ main {
             i {
                 font-size: 3em;
                 margin-right: .5em;
+                transition: .3s ease;
             }
         }
 
