@@ -848,13 +848,19 @@ main {
         .btn {
             background-image: $primary-gradient;
             border-radius: 5px;
-            border: 1px solid #fff;
+            border: none;
+            outline: none;
             width: 30%;
+            transition: .2s ease;
+            box-shadow: inset -5px -5px 5px #111,
+                        inset 5px 5px 5px #ddda;
 
             &:hover {
-                background-image: $primary-gradient-trans;
-                background-color: #eee;
-                color: #000;
+            transition: .2s ease;
+            transform: scale(.98);
+                box-shadow: 0 0 5px #000,
+                            inset -5px -5px 5px #ddda,
+                            inset 5px 5px 5px #000a;
             }
         }
     }
