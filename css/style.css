@@ -260,12 +260,16 @@ header {
         display: block;
         border-radius: 5px;
         background-image: linear-gradient(0deg, #000080 0%, #0aceb1 100%);
-        font-family: 'Red Rose', cursive; }
+        font-family: 'Red Rose', cursive;
+        transition: .2s ease;
+        box-shadow: inset -3px -3px 5px #000a, -3px -3px 5px #ddd, 3px 3px 5px #000; }
         header .navbar .navbar-button .you-btn a {
           color: #fff; }
         header .navbar .navbar-button .you-btn:hover {
-          color: #0aceb1;
-          background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%); }
+          transition: .2s ease;
+          transform: scale(0.98);
+          background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+          box-shadow: inset -3px -3px 5px #ddda, inset 3px 3px 5px #000, 0 0 5px #000a; }
 
 .sidebar {
   position: fixed;
@@ -389,14 +393,18 @@ main {
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         color: #eee;
         font-size: 0.9em;
-        border: 1px solid #0aceb1;
-        border-radius: 5px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
         margin: 5px 0;
-        transition: all .5s ease-in-out; }
+        padding: .2em 1em;
+        transition: all .3s ease;
+        box-shadow: 0 5px 5px #000, inset 5px 5px 5px #fffa, inset -5px -5px 5px #000a; }
         .banner .container .banner-content .btn:hover {
-          transition: all .5s ease-in-out;
-          background-image: linear-gradient(to right, #0808df8e 0%, #0aceb18f 100%);
-          color: #fff; }
+          transition: all .3s ease;
+          transform: scale(0.98);
+          color: #fff;
+          box-shadow: 0 0 5px #000, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
     .banner .container .banner-image {
       border-radius: 10px;
       backdrop-filter: blur(0.08em);

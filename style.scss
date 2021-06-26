@@ -164,6 +164,11 @@ header {
                 border-radius: 5px;
                 background-image: $secondary-gradient-reverse;
                 font-family: 'Red Rose', cursive;
+                transition: .2s ease;
+                box-shadow: 
+                            inset -3px -3px 5px #000a,
+                            -3px -3px 5px #ddd,
+                            3px 3px 5px #000;
 
                 a {
                     color: #fff;
@@ -171,8 +176,12 @@ header {
 
 
                 &:hover {
-                    color: $secondary-color;
+                    transition: .2s ease;
+                    transform: scale(.98);
                     background-image: $secondary-gradient;
+                    box-shadow: inset -3px -3px 5px #ddda,
+                                inset 3px 3px 5px #000,
+                                0 0 5px #000a;
                 }
             }
 
@@ -332,17 +341,24 @@ main {
                 background-image: $primary-gradient;
                 color: $text-color-white;
                 font-size: 0.9em;
-                border: 1px solid $secondary-color;
-                border-radius: 5px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
                 margin: 5px 0;
-                transition: all .5s ease-in-out;
-                
+                padding: .2em 1em;
+                transition: all .3s ease;
+                box-shadow: 0 5px 5px #000,
+                            inset 5px 5px 5px #fffa,
+                            inset -5px -5px 5px #000a;
 
                 &:hover {
-                    transition: all .5s ease-in-out;
-                    background-image: $primary-gradient-trans;
+                    transition: all .3s ease;
+                    transform: scale(.98);
+                    // background-image: $primary-gradient-trans;
                     color: #fff;
-
+                    box-shadow: 0 0 5px #000,
+                            inset 5px 5px 5px #000a,
+                            inset -5px -5px 5px #ddda;
                 }
             }
         }
