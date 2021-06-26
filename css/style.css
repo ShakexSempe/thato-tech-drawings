@@ -753,11 +753,13 @@ main {
       border: none;
       outline: none;
       width: 30%;
-      transition: .2s ease;
+      transition: .3s ease;
       box-shadow: inset -5px -5px 5px #111, inset 5px 5px 5px #ddda; }
       .contact .contact-form .btn:hover {
-        transition: .2s ease;
+        transition: .3s ease;
         transform: scale(0.98);
+        border: none;
+        outline: none;
         box-shadow: 0 0 5px #000, inset -5px -5px 5px #ddda, inset 5px 5px 5px #000a; }
 
 .footer-top {
