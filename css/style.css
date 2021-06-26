@@ -584,17 +584,20 @@ main {
     .features-grid .feature-item-icon {
       padding: 20px;
       margin-right: 20px;
-      border: 2px solid #0aceb1;
+      border: none;
+      outline: none;
       border-radius: 50%;
       text-align: center;
-      color: #0aceb1; }
+      color: #0aceb1;
+      transition: .3s ease;
+      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #000a; }
       .features-grid .feature-item-icon i {
         width: 100%;
         font-size: 2.8em; }
       .features-grid .feature-item-icon:hover {
-        background-color: #000080;
-        color: #fff;
-        border-color: #000080; }
+        transition: .3s ease;
+        transform: scale(0.95);
+        box-shadow: 0 0 5px #0aceb1, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
   .features-grid .feature-image {
     max-width: 200px;
     margin: auto;
