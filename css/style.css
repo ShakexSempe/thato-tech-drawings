@@ -403,12 +403,12 @@ main {
         margin: 5px 0;
         padding: .3em 1.3em;
         transition: all .3s ease;
-        box-shadow: 0 5px 5px #000, inset 5px 5px 5px #fffa, inset -5px -5px 5px #000a; }
+        box-shadow: 0 5px 5px #000a, inset 5px 5px 5px #fffa, inset -5px -5px 5px #000; }
         .banner .container .banner-content .btn:hover {
           transition: all .3s ease;
           transform: scale(0.98);
           color: #fff;
-          box-shadow: 0 0 5px #000, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
+          box-shadow: 0 5px 5px #000, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
     .banner .container .banner-image {
       border-radius: 10px;
       backdrop-filter: blur(0.08em);

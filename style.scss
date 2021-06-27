@@ -353,16 +353,16 @@ main {
                 margin: 5px 0;
                 padding: .3em 1.3em;
                 transition: all .3s ease;
-                box-shadow: 0 5px 5px #000,
+                box-shadow: 0 5px 5px #000a,
                             inset 5px 5px 5px #fffa,
-                            inset -5px -5px 5px #000a;
+                            inset -5px -5px 5px #000;
 
                 &:hover {
                     transition: all .3s ease;
                     transform: scale(.98);
                     // background-image: $primary-gradient-trans;
                     color: #fff;
-                    box-shadow: 0 0 5px #000,
+                    box-shadow: 0 5px 5px #000,
                             inset 5px 5px 5px #000a,
                             inset -5px -5px 5px #ddda;
                 }
