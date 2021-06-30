@@ -48,7 +48,7 @@ document.addEventListener('scroll', () => {
     const topLink = document.querySelector('.top-link');
     const scrollHeight = window.pageYOffset;
 
-    if (scrollHeight > 1000) {
+    if (scrollHeight > 700) {
       topLink.classList.add('show-link');
     } else {
       topLink.classList.remove('show-link');
