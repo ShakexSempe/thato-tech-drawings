@@ -833,13 +833,18 @@ main {
         font-size: 3em;
         margin-right: 10px;
         transition: .2s ease;
-        color: #000080; }
+        color: #000080;
+        padding: .2em;
+        border-radius: 30px;
+        box-shadow: inset 3px 3px 5px #e9e8e8aa, inset -3px -3px 5px #8a8989aa; }
       .footer-top .social .social-icons li:hover {
         color: #000a;
+        transform: scale(0.98);
         transition: .2s ease; }
         .footer-top .social .social-icons li:hover i {
           transition: .2s ease;
-          color: #000a; }
+          color: #000a;
+          box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #929090aa; }
   @media (min-width: 992px) {
     .footer-top .social li {
       color: #000a; }

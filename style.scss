@@ -994,15 +994,23 @@ main {
                         margin-right: 10px;
                         transition: .2s ease;
                         color: $primary-color;
+                        padding: .2em;
+                        border-radius: 30px;
+                        box-shadow: 
+                                    inset 3px 3px 5px #e9e8e8aa,
+                                    inset -3px -3px 5px #8a8989aa;
                     }
 
                     &:hover {
                         color: #000a;
+                        transform: scale(.98);
                         transition: .2s ease;
 
                         i {
                             transition: .2s ease;
                             color: #000a;
+                            box-shadow: inset 3px 3px 5px #000a,
+                                    inset -3px -3px 5px #929090aa;
                         }
                     }
                 }
