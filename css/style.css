@@ -587,7 +587,8 @@ main {
     flex-wrap: nowrap;
     margin-bottom: 20px;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; }
     .features-grid .feature-item h4 {
       font-family: 'Raleway', sans-serif;
       color: #0aceb1;
@@ -607,10 +608,14 @@ main {
       .features-grid .feature-item-icon i {
         width: 100%;
         font-size: 2.8em; }
-      .features-grid .feature-item-icon:hover {
-        transition: .3s ease;
-        transform: scale(0.95);
-        box-shadow: 0 0 5px #0aceb1, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
+    .features-grid .feature-item:hover .feature-item-icon {
+      transition: .3s ease;
+      transform: scale(0.95);
+      box-shadow: inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
+    .features-grid .feature-item:hover .features-item-description h4 {
+      transition: .3s ease;
+      letter-spacing: .1em;
+      text-decoration: underline 1px #0aceb1; }
   .features-grid .feature-image {
     max-width: 200px;
     margin: auto;

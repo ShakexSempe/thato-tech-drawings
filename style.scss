@@ -626,6 +626,7 @@ main {
             margin-bottom: 20px;
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
+            cursor: pointer;
             h4 {
             font-family: 'Raleway', sans-serif;
             color: $secondary-color;
@@ -652,13 +653,21 @@ main {
                     font-size: 2.8em;
                 }
 
-                &:hover {
+            }
+            &:hover {
+                .feature-item-icon {
                     transition: .3s ease;
                     transform: scale(.95);
-                    box-shadow: 0 0 5px $secondary-color,
+                    box-shadow: 
                                 inset 5px 5px 5px #000a,
                                 inset -5px -5px 5px #ddda;
-
+                }
+                .features-item-description {
+                    h4 {
+                    transition: .3s ease;
+                        letter-spacing: .1em;
+                        text-decoration: underline 1px $secondary-color;
+                    }
                 }
             }
         }
