@@ -546,7 +546,12 @@ main {
       position: absolute;
       bottom: 1em;
       left: 50%;
-      transform: translate(-50%); }
+      transform: translate(-50%);
+      transition: .2s ease; }
+      .services .container .service a:hover {
+        transition: .2s ease;
+        transform: translate(-50%) scale(0.95);
+        box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
 
 .features {
   margin: 0;

@@ -564,7 +564,7 @@ main {
                 padding: 20px 10px;
                 color: $text-color-white;
                 // font-family: 'Red Rose', cursive;
-
+                
             }
 
             a {
@@ -578,7 +578,14 @@ main {
                 bottom: 1em;
                 left: 50%;
                 transform: translate(-50%);
-                
+                transition: .2s ease;
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: translate(-50%) scale(.95);
+                    box-shadow: inset 3px 3px 5px #000a,
+                            inset -3px -3px 5px #ddda;
+                }
             }
         }
     }
