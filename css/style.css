@@ -532,7 +532,7 @@ main {
       margin: -85px 0 30px;
       padding: 5px;
       border-radius: 50%;
-      box-shadow: -2px -2px 2px #ddda, 3px 3px 5px #000, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080; }
+      box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px #333a, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080; }
       @media (min-width: 768px) {
         .services .container .service-icon {
           width: 160px;
