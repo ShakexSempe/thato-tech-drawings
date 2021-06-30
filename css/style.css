@@ -452,7 +452,8 @@ main {
             font-size: 2em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
-        font-weight: 500; }
+        font-weight: 500;
+        font-family: 'Red Rose', cursive; }
         @media (min-width: 768px) {
           .about-items .about-item-content p {
             text-align: left; } }
@@ -591,6 +592,8 @@ main {
       font-family: 'Raleway', sans-serif;
       color: #0aceb1;
       text-transform: capitalize; }
+    .features-grid .feature-item p {
+      font-family: "Red Rose", cursive; }
     .features-grid .feature-item-icon {
       padding: 20px;
       margin-right: 20px;
@@ -701,11 +704,14 @@ main {
       .table-price .price-grid .price-card .price small {
         font-size: 1.3em; }
     .table-price .price-grid .price-card .card-list {
-      padding: 30px 0; }
+      padding: 1em;
+      font-family: "Red Rose", cursive;
+      text-align: left; }
       .table-price .price-grid .price-card .card-list li {
         font-size: 1.3em;
         color: #333;
-        line-height: 3; }
+        line-height: 3;
+        list-style: decimal; }
 
 .contact {
   padding: 1em 0;
