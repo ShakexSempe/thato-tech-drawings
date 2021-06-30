@@ -314,7 +314,7 @@ main {
             z-index: 2;
             
             h2, p{
-                font-family: 'Red Rose', cursive;
+                font-family: $font-rose;
             }
             h2 {
                 padding-top: 100px;
@@ -488,7 +488,7 @@ main {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding: 1.5em 0;
+    padding: 2em 0;
     z-index: 2;
     
     &::before{
@@ -503,9 +503,9 @@ main {
     }
 
     h1 {
-        font-family: 'Fredericka the Great', cursive;
+        font-family: $font-rose;
         color: $text-color-white;
-        font-size: 3.4em;
+        font-size: 3em;
         letter-spacing: .3em;
         font-weight: 500;
         text-shadow: 0 0 1px #fff,
