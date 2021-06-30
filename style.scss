@@ -519,10 +519,12 @@ main {
             background-image: $primary-gradient;
             text-align: center;
             border-radius: 5px;
-            border: 5px solid $primary-color;
-            border-right: 5px solid $secondary-color;
-            border-left: 5px solid $primary-color;
-            border-bottom: 5px solid $secondary-color;
+            box-shadow: inset 3px 3px 5px rgba(135, 207, 235, 0.904),
+                        inset -3px -3px 5px $primary-color;
+            // border: 5px solid $primary-color;
+            // border-right: 5px solid $secondary-color;
+            // border-left: 5px solid $primary-color;
+            // border-bottom: 5px solid $secondary-color;
             font-family: 'Raleway', sans-serif;
 
 

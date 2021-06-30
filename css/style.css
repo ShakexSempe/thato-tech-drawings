@@ -517,10 +517,7 @@ main {
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     text-align: center;
     border-radius: 5px;
-    border: 5px solid #000080;
-    border-right: 5px solid #0aceb1;
-    border-left: 5px solid #000080;
-    border-bottom: 5px solid #0aceb1;
+    box-shadow: inset 3px 3px 5px rgba(135, 207, 235, 0.904), inset -3px -3px 5px #000080;
     font-family: 'Raleway', sans-serif; }
     .services .container .service-title {
       color: #eee; }
