@@ -210,7 +210,7 @@ header {
         height: 100%;
         width: 100%;
         border-radius: 50%;
-        border: 2px solid #050580;
+        border: 2px solid rgba(5, 5, 128, 0.651);
         opacity: 0;
         animation: toggle 2s ease infinite; }
       header .navbar .menu-toggle .bar {
