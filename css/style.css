@@ -704,13 +704,13 @@ main {
       .table-price .price-grid .price-card .price small {
         font-size: 1.3em; }
     .table-price .price-grid .price-card .card-list {
-      padding: 1em;
+      padding-left: .5em;
       font-family: "Red Rose", cursive;
       text-align: left; }
       .table-price .price-grid .price-card .card-list li {
-        font-size: 1.3em;
+        font-size: 1.1em;
         color: #333;
-        line-height: 3;
+        line-height: 1.5;
         list-style: decimal; }
 
 .contact {
