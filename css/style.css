@@ -423,7 +423,7 @@ main {
           margin-top: 100px; } }
 
 .about {
-  padding: 2em 0;
+  padding: 4em 0;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-size: 140%; }
   .about-items {
@@ -469,9 +469,21 @@ main {
           flex-wrap: wrap; } }
       .about-items .about-item-image {
         max-width: 300px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        position: relative; }
         .about-items .about-item-image img {
           border-radius: 5px; }
+        .about-items .about-item-image::after {
+          position: absolute;
+          content: 'soon to be link to channel';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #000a;
+          color: #ddda;
+          border-radius: 5px;
+          box-shadow: inset -3px -3px 5px #000a, inset 3px 3px 5px #ddda; }
 
 .services {
   position: relative;
