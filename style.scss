@@ -514,7 +514,7 @@ main {
         }
 
         .service {
-            padding: 10px;
+            padding: 1em 1em;
             margin: 80px 0;
             background-image: $primary-gradient;
             text-align: center;
@@ -526,6 +526,8 @@ main {
             // border-left: 5px solid $primary-color;
             // border-bottom: 5px solid $secondary-color;
             font-family: 'Raleway', sans-serif;
+            position: relative;
+            
 
 
             &-title {
@@ -558,7 +560,7 @@ main {
             }
 
             p {
-                margin: 10px 0;
+                margin: 20px 0;
                 padding: 20px 10px;
                 color: $text-color-white;
                 // font-family: 'Red Rose', cursive;
@@ -566,10 +568,17 @@ main {
             }
 
             a {
-                border: 1px solid $text-color-white;
+                // border: 1px solid $text-color-white;
+                box-shadow: inset 3px 3px 5px #ddda,
+                            inset -3px -3px 5px #000a;
                 border-radius: 5px;
-                padding: 3px;
+                padding: .3em 1em;
                 color: #fff;
+                position: absolute;
+                bottom: 1em;
+                left: 50%;
+                transform: translate(-50%);
+                
             }
         }
     }

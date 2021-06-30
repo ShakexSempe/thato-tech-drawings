@@ -512,13 +512,14 @@ main {
       grid-gap: 20px;
       grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
-    padding: 10px;
+    padding: 1em 1em;
     margin: 80px 0;
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     text-align: center;
     border-radius: 5px;
     box-shadow: inset 3px 3px 5px rgba(135, 207, 235, 0.904), inset -3px -3px 5px #000080;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Raleway', sans-serif;
+    position: relative; }
     .services .container .service-title {
       color: #eee; }
     .services .container .service-icon {
@@ -534,14 +535,18 @@ main {
           height: 160px;
           margin: -110px 0 30px; } }
     .services .container .service p {
-      margin: 10px 0;
+      margin: 20px 0;
       padding: 20px 10px;
       color: #eee; }
     .services .container .service a {
-      border: 1px solid #eee;
+      box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
       border-radius: 5px;
-      padding: 3px;
-      color: #fff; }
+      padding: .3em 1em;
+      color: #fff;
+      position: absolute;
+      bottom: 1em;
+      left: 50%;
+      transform: translate(-50%); }
 
 .features {
   margin: 0;
