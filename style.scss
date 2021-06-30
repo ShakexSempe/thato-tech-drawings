@@ -894,6 +894,9 @@ main {
             border: none;
             outline: none;
             border-radius: 5px;
+            background-color: #f4f4f4;
+            box-shadow: inset 3px 3px 5px #ddd,
+                        inset -3px -3px 5px #000a;
         }
 
         .btn {

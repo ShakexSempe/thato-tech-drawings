@@ -765,7 +765,9 @@ main {
       padding: 13px;
       border: none;
       outline: none;
-      border-radius: 5px; }
+      border-radius: 5px;
+      background-color: #f4f4f4;
+      box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a; }
     .contact .contact-form .btn {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       border-radius: 5px;
