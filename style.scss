@@ -1072,6 +1072,8 @@ main {
         background-image: $secondary-gradient;
         color: #fff;
         text-align: center;
+        box-shadow: inset 5px 5px 5px #ddda,
+                    inset -5px -5px 5px #000a;
 
         a{
             color: $text-color-white;

@@ -880,7 +880,8 @@ main {
   padding: 20px;
   background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a; }
   .footer-bottom a {
     color: #eee; }
     .footer-bottom a:hover {
