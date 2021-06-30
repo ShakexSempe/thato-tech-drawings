@@ -506,9 +506,11 @@ main {
   .services h1 {
     font-family: "Red Rose", cursive;
     color: #eee;
-    font-size: 3em;
-    letter-spacing: .3em;
+    font-size: 2.5em;
+    backdrop-filter: blur(3px);
+    letter-spacing: .2em;
     font-weight: 500;
+    text-transform: uppercase;
     text-shadow: 0 0 1px #fff, 0 0 5px #fff000; }
     .services h1::after {
       background-image: none;
@@ -554,7 +556,8 @@ main {
       margin: 20px 0;
       padding: 20px 10px;
       color: #eee;
-      font-family: 'Red Rose', cursive; }
+      font-family: 'Red Rose', cursive;
+      text-transform: lowercase; }
     .services .container .service a {
       box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
       border-radius: 5px;
