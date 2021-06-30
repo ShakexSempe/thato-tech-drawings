@@ -107,6 +107,7 @@ img {
   place-items: center;
   border-radius: 5px;
   color: #fff;
+  box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
   animation: bounce 2s ease-in-out infinite;
   transition: .5s ease-in;
   opacity: 0;
@@ -117,6 +118,8 @@ img {
       width: 3rem;
       height: 3rem;
       font-size: 2.25rem; } }
+  .top-link:hover {
+    animation: none; }
 
 .show-link {
   transition: opacity .5s ease-in-out;
@@ -428,7 +431,7 @@ main {
     font-family: 'Raleway', sans-serif; }
     .about-items .about-item {
       margin: 1em auto;
-      box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a;
+      box-shadow: inset 3px 3px 5px rgba(71, 71, 71, 0.667), inset -3px -3px 5px #000a;
       border-radius: 10px;
       padding: 2em .3em;
       background: #fff; }

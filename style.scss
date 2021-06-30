@@ -401,7 +401,7 @@ main {
         .about-item {
             margin: 1em auto;
             // border: 1px solid #000;
-            box-shadow: inset 3px 3px 5px #ddd,
+            box-shadow: inset 3px 3px 5px rgba(71, 71, 71, 0.667),
                         inset -3px -3px 5px #000a;
             border-radius: 10px;
             padding: 2em .3em; 
