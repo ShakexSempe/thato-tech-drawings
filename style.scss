@@ -542,15 +542,11 @@ main {
                 height: 125px;
                 margin: -85px 0 30px;
                 padding: 5px;
-                box-shadow: -2px -2px 5px #ddda,
-                            5px 5px 5px #000,
+                border-radius: 50%;
+                box-shadow: -2px -2px 2px #ddda,
+                            3px 3px 5px #000,
                             inset 5px 5px 5px $secondary-color,
                             inset -5px -5px $primary-color;
-                // border: 5px solid rgb(217, 232, 238);
-                // border: 5px solid $primary-color;
-                border-radius: 50%;
-                // background-color: $secondary-color;
-                // background-color: $secondary-color;
                 
                 @include md {
                     width: 160px;
@@ -563,12 +559,11 @@ main {
                 margin: 20px 0;
                 padding: 20px 10px;
                 color: $text-color-white;
-                // font-family: 'Red Rose', cursive;
+                font-family: 'Red Rose', cursive;
                 
             }
 
             a {
-                // border: 1px solid $text-color-white;
                 box-shadow: inset 3px 3px 5px #ddda,
                             inset -3px -3px 5px #000a;
                 border-radius: 5px;
@@ -579,6 +574,8 @@ main {
                 left: 50%;
                 transform: translate(-50%);
                 transition: .2s ease;
+                font-family: 'Red Rose', cursive;
+
 
                 &:hover {
                     transition: .2s ease;
