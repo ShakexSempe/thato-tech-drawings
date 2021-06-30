@@ -1,0 +1,1041 @@
+@import 'variables';
+@import 'reset';
+@import 'mxins';
+@import 'utils';
+@import 'progress';
+
+
+
+//HEADER
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    background: $primary-background-lt-grey;
+    @include flex(center); //MXINS
+    min-height: 100px;
+    box-shadow: 0 8px 6px -6px #999;
+
+        h1 {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 2em;
+            font-weight: 500;
+            text-shadow: 0 0 1px $primary-color;
+            span {
+                text-shadow: 0 0 1px $secondary-color;
+            }
+            
+            @include sm {
+                font-size: 4em
+            }
+        }
+
+
+    .navbar {
+        @include flex(space-between, stretch, column);
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @include sm {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-top {
+            @include flex(space-between);
+            flex: 1;
+            
+            
+            img {
+                max-width: 235px;
+                border-radius: 5px;
+                
+            }
+        }
+
+        .menu-toggle {
+            @include flex(center);
+            position: relative;
+            height: 2.9em;
+            width: 2.9em;
+            padding: 0px;
+            border: 3px solid rgb(5, 5, 128);
+            background-image: $primary-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 5px;
+            box-shadow: inset 2px 2px 5px #ddda,
+                        inset -1px -1px 5px #000a;
+            transition: .3s ease;
+
+            &:hover {
+                box-shadow: 
+                            inset 2px 2px 5px #000a,
+                            inset -1px -1px 5px #ddda;
+                transition: .3s ease;
+                transform: scale(.96);
+            }
+            
+            &::before {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                border: 2px solid rgba(5, 5, 128, 0.651);
+                opacity: 0;
+                animation: toggle 2s ease infinite;
+
+                
+            }
+            .bar {
+                height: 2px;
+                width: 30px;
+                position: relative;
+                background-image: $primary-gradient;
+
+                &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-image: $primary-gradient;
+                    left: 0;
+                    transition: .3s ease;
+                    transition-property: top, bottom;
+                }
+                &::before {
+                    top: 8px;
+                }
+                &::after {
+                    bottom: 8px;
+                }
+            
+            }
+
+            @keyframes toggle {
+                50% {
+                    opacity: 0.4;
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1.5);
+                }
+            }
+
+
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .nav-list {
+            display: none;
+
+            @include lg {
+                display: flex;
+            }
+
+            a {
+                padding: 5px 15px;
+                font-size: 1.2em;
+
+                &:hover {
+                    color: $secondary-color;
+                    text-decoration: .2em underline;
+                    text-underline-offset: .3em;
+                }
+            }
+
+        }
+
+
+
+        .navbar-button {
+            margin-top: 10px;
+
+            @include sm {
+                margin: 0 0 0 10px;
+            }
+
+            .you-btn {
+                display: block;
+                border-radius: 5px;
+                background-image: $secondary-gradient-reverse;
+                font-family: 'Red Rose', cursive;
+                transition: .2s ease;
+                border: none;
+                outline: none;
+                box-shadow: inset 3px 3px 5px #ddd,
+                            inset -3px -3px 5px #000a;
+
+                a {
+                    color: #fff;
+                }
+
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: scale(.98);
+                    background-image: $secondary-gradient;
+                    box-shadow: inset -3px -3px 5px #ddda,
+                                inset 3px 3px 5px #000,
+                                0 0 5px #000a;
+                }
+            }
+
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: -992px;
+    top: 100px;
+    width: 100%;
+    padding-top: 1.5em;
+    height: calc(100vh - 100px);
+    background-image: $secondary-gradient;
+    opacity: .3;
+    transition: all .5s ease-in-out;
+    z-index: 3;
+    font-family: 'Red Rose', cursive;
+
+
+    &.open {
+        left: 0;
+        opacity: 1;
+    }
+
+    @include sm {
+        top: 100px;
+        height: calc(100vh - 100px);
+    }
+
+    @include md {
+        top: 210px;
+        height: calc(100vh - 210px);
+    }
+
+    @include lg {
+        display: none;
+    }
+
+    &-nav-list {
+        padding: 10px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+        li {
+            padding: 10px;
+            text-align: center;
+
+            a {
+                color: #fff;
+                padding: 5px;
+                font-size: 1.3em;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+//END OF HEADER
+
+//BANNER 
+
+main {
+    @include lg {
+        margin-top: 100px;
+
+    }
+    background-color: $primary-background-lt-grey;
+    margin-top: 100px;
+    
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner {
+    min-height: 100vh;
+    background: url('../img/Optimized-techthat.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(12, 12, 12, 0.63);
+        z-index: 1;
+    }
+
+    @include md {
+        @include flex(stretch, center);
+    }
+
+    .container {
+        position: relative;
+
+        // @include grid(1, 10px);
+        @include flex(space-evenly, center, column, nowrap);
+        height: 100vh;
+        
+
+        @include md {
+            @include grid(2, 10px);
+        }
+
+        .banner-content {
+            @include sm {
+                font-size: 2.5em;
+            }
+            font-size: 1.35em;
+            color: #fff;
+            z-index: 2;
+            
+            h2, p{
+                font-family: 'Red Rose', cursive;
+            }
+            h2 {
+                padding-top: 100px;
+                font-size: 1.8em;
+                font-weight: 600;
+                text-shadow: 1px 1px 1px $secondary-color;
+                
+            }
+            p {
+                font-size: 0.8em;
+                font-weight: 200;
+                text-shadow: 0px 0px 3px $secondary-color;
+            }
+
+
+            @include md {
+                @include flex(center, center, column)
+            }
+
+            h2,
+            p,
+            .btn {
+                margin: 25px 0;
+            }
+
+            .btn {
+            font-family: 'Fredericka the Great', cursive;
+
+                background-image: $primary-gradient;
+                color: $text-color-white;
+                font-size: 0.9em;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                margin: 5px 0;
+                padding: .3em 1.3em;
+                transition: all .3s ease;
+                box-shadow: 0 5px 5px #000a,
+                            inset 5px 5px 5px #fffa,
+                            inset -5px -5px 5px #000;
+
+                &:hover {
+                    transition: all .3s ease;
+                    transform: scale(.98);
+                    // background-image: $primary-gradient-trans;
+                    color: #fff;
+                    box-shadow: 0 5px 5px #000,
+                            inset 5px 5px 5px #000a,
+                            inset -5px -5px 5px #ddda;
+                }
+            }
+        }
+
+        .banner-image {
+            background: rgba(255, 255, 255, 0.29);
+            // background-image: linear-gradient(0deg, rgba(21, 21, 31, 0.13) 0%, transparent 100%);
+            border-radius: 10px;
+            backdrop-filter: blur(0.08em);
+            z-index: 2;
+            width: 60%;
+            @include md {
+                width: 70%;
+                margin-top: 100px;
+            }
+        }
+    }
+
+}
+
+// END OF BANNER
+
+//ABOUT
+
+.about {
+    padding: 2em 0;
+    background-image: $primary-gradient;
+    background-size: 140%;
+    &-items {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        
+
+
+        .about-item {
+            margin: 1em auto;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 5px; 
+            background: #fff;
+
+            @include sm {
+                @include grid(2, 20px);
+
+                &:nth-child(even) {
+                    .about-item-image {
+                        order: -1;
+                    }
+                }
+
+            }
+
+            &-content {
+                h1 {
+                    
+                    margin: 10px 0 30px;
+                    font-size: 2em;
+                    background: $primary-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
+                    @include sm {
+                        font-size: 2em;
+                    }
+                }
+
+                p {
+                    margin: 10px 0;
+                    font-weight: 500;
+                    font-family: 'Red Rose', cursive;
+
+                    @include md{
+                        text-align: left;
+                    }
+                    
+                }
+
+                
+                @include sm {
+                    @include flex(center, flex-start, column);
+                    
+                }
+            }
+
+            &-image {
+                max-width: 300px;
+                margin: 0 auto;
+                img {
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+//END OF ABOUT
+
+//SERVICES
+
+.services {
+    position: relative;
+    background: url('../img/Optimized-techthat.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 1em 0;
+    z-index: 2;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: $primary-gradient-trans;
+        z-index: -1;
+    }
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        color: $text-color-white;
+        font-size: 3.4em;
+        letter-spacing: .3em;
+        font-weight: 500;
+        text-shadow: 0 0 1px #fff,
+                    0 0 5px #fff000;
+
+        &::after {
+            background-image: none;
+            background-color: #fff;
+            box-shadow: 0 0 1px #fff,
+            0 0 5px #fff000;
+        }
+        
+        @include sm {
+            font-size: 4em
+        }
+    }
+    .container {
+
+        @include sm {
+            @include grid(2, 15px)
+        }
+        @include md {
+            @include grid(3, 20px)
+        }
+
+        .service {
+            padding: 1em 1em;
+            margin: 80px 0;
+            background-image: $primary-gradient;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: inset 3px 3px 5px rgba(135, 207, 235, 0.904),
+                        inset -3px -3px 5px $primary-color;
+            // border: 5px solid $primary-color;
+            // border-right: 5px solid $secondary-color;
+            // border-left: 5px solid $primary-color;
+            // border-bottom: 5px solid $secondary-color;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            
+
+
+            &-title {
+                color: $text-color-white;
+            }
+
+            
+            
+
+            &-icon {
+                width: 125px;
+                height: 125px;
+                margin: -85px 0 30px;
+                padding: 5px;
+                border-radius: 50%;
+                box-shadow: -2px -2px 2px #ddda,
+                            3px 3px 5px #000,
+                            inset 5px 5px 5px $secondary-color,
+                            inset -5px -5px $primary-color;
+                
+                @include md {
+                    width: 160px;
+                    height: 160px;
+                    margin: -110px 0 30px;
+                }
+            }
+
+            p {
+                margin: 20px 0;
+                padding: 20px 10px;
+                color: $text-color-white;
+                font-family: 'Red Rose', cursive;
+                
+            }
+
+            a {
+                box-shadow: inset 3px 3px 5px #ddda,
+                            inset -3px -3px 5px #000a;
+                border-radius: 5px;
+                padding: .3em 1em;
+                color: #fff;
+                position: absolute;
+                bottom: 1em;
+                left: 50%;
+                transform: translate(-50%);
+                transition: .2s ease;
+                font-family: 'Red Rose', cursive;
+
+
+                &:hover {
+                    transition: .2s ease;
+                    transform: translate(-50%) scale(.95);
+                    box-shadow: inset 3px 3px 5px #000a,
+                            inset -3px -3px 5px #ddda;
+                }
+            }
+        }
+    }
+}
+
+//END OF SERVICES
+
+//FEATURES
+
+.features {
+    margin: 0;
+    padding-top: 1em;
+    background-color: #fff;
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 3em;
+        font-weight: 500;
+        text-shadow: 0 0 1px $primary-color;
+        span {
+            text-shadow: 0 0 1px $secondary-color;
+        }
+           background-image: $primary-gradient;
+           background-clip: text;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           @include md {
+               font-size: 3.5em;
+           }
+    }
+
+    &-grid {
+
+        @include md {
+            @include grid(3, 50px)
+        }
+
+        .feature-item {
+            @include flex(flex-start, center, row, nowrap);
+            margin-bottom: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            h4 {
+            font-family: 'Raleway', sans-serif;
+            color: $secondary-color;
+            text-transform: capitalize;
+            }
+            p {
+                font-family: $font-rose;
+            }
+            &-icon {
+                padding: 20px;
+                margin-right: 20px;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+                text-align: center;
+                color: $secondary-color;
+                transition: .3s ease;
+                box-shadow: 
+                            inset 5px 5px 5px #ddd,
+                            inset -5px -5px 5px #000a;
+
+                i {
+                    width: 100%;
+                    font-size: 2.8em;
+                }
+
+            }
+            &:hover {
+                .feature-item-icon {
+                    transition: .3s ease;
+                    transform: scale(.95);
+                    box-shadow: 
+                                inset 5px 5px 5px #000a,
+                                inset -5px -5px 5px #ddda;
+                }
+                .features-item-description {
+                    h4 {
+                    transition: .3s ease;
+                        letter-spacing: .1em;
+                        text-decoration: underline 1px $secondary-color;
+                    }
+                }
+            }
+        }
+        
+        .feature-image {
+            max-width: 200px;
+            margin: auto;
+            // border: 1px solid $primary-color;
+            box-shadow: 5px 3px 10px $primary-color;
+            border-radius: 10px;
+
+            @include md {
+                max-width: 350px;
+            }
+        }
+    }
+
+}
+
+//END OF FEATURES
+
+//TABLE PRICE
+.table-price {
+    padding: 1em 0;
+    margin: 10px 0;
+    font-family: 'Raleway', sans-serif;
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 3.5em;
+        font-weight: 500;
+            text-shadow: 0 0 1px $primary-color;
+            span {
+                text-shadow: 0 0 1px $secondary-color;
+            }
+    }
+
+
+    .price-grid {
+        @include sm {
+            @include grid(2, 20px)
+        }
+
+        @include md {
+            @include grid(3, 30px)
+        }
+        .price-card {
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid #ddd;
+            
+
+            .btn{
+                border-radius: 5px;
+                box-shadow: inset -5px -5px 3px #000a,
+                        inset 5px 5px 3px #ddda;
+                transition: .3s ease;
+                &:hover {
+                transition: .3s ease;
+                transform: scale(.98);
+                box-shadow: 0 0 5px #000,
+                            inset -2px -2px 3px #ddda,
+                            inset 2px 2px 3px #000a;
+                }
+            }
+            h2 {
+                box-shadow: inset -5px -5px 5px #000a,
+                        inset 5px 5px 5px #ddda;
+            }
+            &:nth-child(1) {
+                border: 1px solid $secondary-color;
+                border-radius: 5px;
+                h2 {
+                    background-color: $secondary-color;
+                    
+                }
+
+                .btn {
+                    background-color: $secondary-color;
+                }
+                .price p { 
+                color: $secondary-color;
+                }
+            }
+            &:nth-child(2) {
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+                h2 {
+                    background-color: $primary-color;
+                }
+
+                .btn {
+                    background-color: $primary-color;
+                }
+                .price p { 
+                    color: $primary-color;
+                    }
+            }
+            &:nth-child(3) {
+                border-top: 1px solid $secondary-color;
+                border-right: 1px solid $secondary-color;
+                border-bottom: 1px solid $primary-color;
+                border-left: 1px solid $primary-color;
+                border-radius: 5px;
+                h2 {
+                    background-image: $primary-gradient;
+                }
+
+                .btn {
+                    background-image: $primary-gradient;
+
+                }
+                .price {
+                    background: $primary-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            h2 {
+                padding: 30px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                background-color: $secondary-color;
+                color: #fff;
+                text-transform: uppercase;
+                
+            }
+
+            .price {
+                padding: 10px 10px 20px;
+                margin: 10px 50px;
+                
+                p {
+                    font-size: 2.5em;
+                }
+
+                small {
+                    font-size: 1.3em;
+                }
+            }
+            
+            .card-list {
+                padding-left: .5em;
+                font-family: $font-rose;
+                text-align: left;
+                li {
+                    font-size: 1.1em;
+                    color: #333;
+                    line-height: 1.5;
+                    list-style: decimal;
+                }
+            
+            }
+        }
+    }
+}
+//END OF TABLE PRICE
+
+//CONTACT
+.contact {
+    padding: 1em 0;
+    margin: 50px 0;
+    background-image: $primary-gradient;
+
+    @include md {
+        @include grid(2)
+    }
+
+    .google-maps {
+        margin: 10px;
+        height: auto;
+
+        #map {
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+        }
+    }
+
+    .contact-form {
+        width: 500px;
+        max-width: 100%;
+        padding: 25px;
+        margin: auto;
+        cursor: pointer;
+
+        .section-title {
+            color: $text-color-white;
+
+        }
+
+        p {
+            margin: 40px 0;
+            color: $text-color-white;
+            transition: .3s ease;
+            &:hover {
+                letter-spacing: .1em;
+                transition: .3s ease;
+                transform: scale(1.015);
+
+                i {
+                    transition: .3s ease;
+                    color: $secondary-color;
+                }
+            }
+            
+
+            i {
+                font-size: 3em;
+                margin-right: .5em;
+                transition: .3s ease;
+            }
+        }
+
+        input, 
+        textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 13px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            box-shadow: inset 3px 3px 5px #ddd,
+                        inset -3px -3px 5px #000a;
+        }
+
+        .btn {
+            background-image: $primary-gradient;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            width: 30%;
+            transition: .3s ease;
+            box-shadow: inset -5px -5px 5px #111,
+                        inset 5px 5px 5px #ddda;
+
+            &:hover {
+            transition: .3s ease;
+            transform: scale(.98);
+            border: none;
+            outline: none;
+                box-shadow: 0 0 5px #000,
+                            inset -5px -5px 5px #ddda,
+                            inset 5px 5px 5px #000a;
+            }
+        }
+    }
+}
+//END OF CONTACT
+
+//FOOTER
+.footer {
+    &-top {
+        padding: 2em;
+
+        @include sm {
+            @include grid(2, 20px);
+        }
+
+        @include md {
+            @include grid(4, 40px);
+        }
+
+        .footer-item {
+            margin-bottom: 50px;
+
+            h3 {
+                margin-bottom: 20px;
+                color: $primary-color;
+                text-decoration: .2em underline;
+                text-decoration-color: $secondary-color;
+                text-underline-offset: .3em;
+            }
+
+            i{
+                font-size: 1.5em;
+                margin-bottom: 1em;
+                color: $primary-red;
+                
+            }
+            a:hover {
+                color: $primary-red;
+            }
+            p {
+                text-shadow: 0 0 1px $secondary-color;
+            }
+
+        }
+
+        .brand {
+            .footer-logo {
+                width: 100%;
+                margin-bottom: 30px;
+                border-radius: 10px;
+                border: 1px solid $secondary-color;
+                box-shadow: 0 0 10px $secondary-color;
+
+                
+            }
+        }
+
+        .social {
+            li {
+                padding: 20px 0;
+                border-bottom: 1px dashed #333;
+                cursor: pointer;
+
+                i {
+                    font-size: 2em;
+                    margin-right: 10px;
+                    color: $primary-color;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .blog {
+           
+            display: none;
+            @include sm {
+                display: flex;
+            }
+            .post {
+                display: flex;
+                margin-bottom: 10px;
+
+                img {
+                    max-width: 100px;
+                    margin-right: 15px;
+                    border: 1px solid $secondary-color;
+                    border-radius: 5px;
+                }
+
+                &-date {
+                    margin-bottom: 10px;
+                    color: #000;
+                    text-shadow: none;
+                    font-weight: 600;
+                }
+
+                &-head {
+                    color: #333;
+                    text-shadow: none;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        padding: 20px;
+        background-image: $secondary-gradient;
+        color: #fff;
+        text-align: center;
+
+        a{
+            color: $text-color-white;
+            &:hover {
+                transition: .3s ease-in-out;
+                color: #fff000;
+            }
+        }
+    }
+}
+//END OF FOOTER
