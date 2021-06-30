@@ -540,11 +540,16 @@ main {
                 height: 125px;
                 margin: -85px 0 30px;
                 padding: 5px;
+                box-shadow: -2px -2px 5px #ddda,
+                            5px 5px 5px #000,
+                            inset 5px 5px 5px $secondary-color,
+                            inset -5px -5px $primary-color;
                 // border: 5px solid rgb(217, 232, 238);
-                border: 5px solid $primary-color;
+                // border: 5px solid $primary-color;
                 border-radius: 50%;
-                background-color: $secondary-color;
-
+                // background-color: $secondary-color;
+                // background-color: $secondary-color;
+                
                 @include md {
                     width: 160px;
                     height: 160px;

@@ -526,9 +526,8 @@ main {
       height: 125px;
       margin: -85px 0 30px;
       padding: 5px;
-      border: 5px solid #000080;
-      border-radius: 50%;
-      background-color: #0aceb1; }
+      box-shadow: -2px -2px 5px #ddda, 5px 5px 5px #000, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080;
+      border-radius: 50%; }
       @media (min-width: 768px) {
         .services .container .service-icon {
           width: 160px;
