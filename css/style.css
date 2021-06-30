@@ -341,7 +341,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.43);
+    background: rgba(12, 12, 12, 0.63);
     z-index: 1; }
   @media (min-width: 768px) {
     .banner {
@@ -428,9 +428,9 @@ main {
     font-family: 'Raleway', sans-serif; }
     .about-items .about-item {
       margin: 1em auto;
-      border: 1px solid #000;
+      box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a;
       border-radius: 10px;
-      padding: 5px;
+      padding: 2em .3em;
       background: #fff; }
       @media (min-width: 576px) {
         .about-items .about-item {
@@ -441,7 +441,7 @@ main {
             order: -1; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 30px;
-        font-size: 2em;
+        font-size: 1.7em;
         background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -449,7 +449,7 @@ main {
         font-weight: 800; }
         @media (min-width: 576px) {
           .about-items .about-item-content h1 {
-            font-size: 2em; } }
+            font-size: 2.3em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
         font-weight: 500;
