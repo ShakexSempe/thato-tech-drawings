@@ -423,7 +423,7 @@ main {
           margin-top: 100px; } }
 
 .about {
-  padding: 4em 0;
+  padding: 2em 0;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-size: 140%; }
   .about-items {
@@ -492,7 +492,7 @@ main {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  padding: 2em 0;
+  padding: 1em 0;
   z-index: 2; }
   .services::before {
     content: '';

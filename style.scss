@@ -389,7 +389,7 @@ main {
 //ABOUT
 
 .about {
-    padding: 4em 0;
+    padding: 2em 0;
     background-image: $primary-gradient;
     background-size: 140%;
     &-items {
@@ -488,7 +488,7 @@ main {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    padding: 2em 0;
+    padding: 1em 0;
     z-index: 2;
     
     &::before{
