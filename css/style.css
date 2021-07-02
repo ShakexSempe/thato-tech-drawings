@@ -666,10 +666,13 @@ main {
       grid-gap: 30px;
       grid-template-columns: repeat(3, 1fr); } }
   .table-price .price-grid .price-card {
-    padding: 15px;
+    padding: 1em 1.5em;
     margin-bottom: 30px;
+    border-radius: 50px;
     text-align: center;
-    border: 1px solid #ddd; }
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 5px 5px 5px #d6d5d5, inset -5px -5px 5px #000a; }
     .table-price .price-grid .price-card .btn {
       border-radius: 5px;
       box-shadow: inset -5px -5px 3px #000a, inset 5px 5px 3px #ddda;
@@ -681,7 +684,6 @@ main {
     .table-price .price-grid .price-card h2 {
       box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #ddda; }
     .table-price .price-grid .price-card:nth-child(1) {
-      border: 1px solid #0aceb1;
       border-radius: 5px; }
       .table-price .price-grid .price-card:nth-child(1) h2 {
         background-color: #0aceb1; }
@@ -690,7 +692,6 @@ main {
       .table-price .price-grid .price-card:nth-child(1) .price p {
         color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) {
-      border: 1px solid #000080;
       border-radius: 5px; }
       .table-price .price-grid .price-card:nth-child(2) h2 {
         background-color: #000080; }
@@ -699,10 +700,6 @@ main {
       .table-price .price-grid .price-card:nth-child(2) .price p {
         color: #000080; }
     .table-price .price-grid .price-card:nth-child(3) {
-      border-top: 1px solid #0aceb1;
-      border-right: 1px solid #0aceb1;
-      border-bottom: 1px solid #000080;
-      border-left: 1px solid #000080;
       border-radius: 5px; }
       .table-price .price-grid .price-card:nth-child(3) h2 {
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }

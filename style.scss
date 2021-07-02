@@ -730,10 +730,14 @@ main {
             @include grid(3, 30px)
         }
         .price-card {
-            padding: 15px;
+            padding: 1em 1.5em;
             margin-bottom: 30px;
+            border-radius: 50px;
             text-align: center;
-            border: 1px solid #ddd;
+            border: none;
+            cursor: pointer;
+            box-shadow: inset 5px 5px 5px rgb(214, 213, 213),
+                        inset -5px -5px 5px #000a;
             
 
             .btn{
@@ -751,10 +755,10 @@ main {
             }
             h2 {
                 box-shadow: inset -5px -5px 5px #000a,
-                        inset 5px 5px 5px #ddda;
+                        inset 5px 5px 5px #ddda;     
             }
             &:nth-child(1) {
-                border: 1px solid $secondary-color;
+                // border: 1px solid $secondary-color;
                 border-radius: 5px;
                 h2 {
                     background-color: $secondary-color;
@@ -769,7 +773,7 @@ main {
                 }
             }
             &:nth-child(2) {
-                border: 1px solid $primary-color;
+                // border: 1px solid $primary-color;
                 border-radius: 5px;
                 h2 {
                     background-color: $primary-color;
@@ -783,10 +787,10 @@ main {
                     }
             }
             &:nth-child(3) {
-                border-top: 1px solid $secondary-color;
-                border-right: 1px solid $secondary-color;
-                border-bottom: 1px solid $primary-color;
-                border-left: 1px solid $primary-color;
+                // border-top: 1px solid $secondary-color;
+                // border-right: 1px solid $secondary-color;
+                // border-bottom: 1px solid $primary-color;
+                // border-left: 1px solid $primary-color;
                 border-radius: 5px;
                 h2 {
                     background-image: $primary-gradient;
