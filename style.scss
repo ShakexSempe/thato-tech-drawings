@@ -748,13 +748,38 @@ main {
         .price-card {
             padding: 1em 1.5em;
             margin-bottom: 30px;
-            border-radius: 50px;
+            border-radius: 10px;
+            outline: none;
             text-align: center;
             border: none;
             cursor: pointer;
-            box-shadow: inset 5px 5px 5px rgb(214, 213, 213),
-                        inset -5px -5px 5px #000a;
             
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                transition: .5s ease;
+                box-shadow: inset 5px 5px 5px #d6d5d5,
+                        inset -5px -5px 5px #000a;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                opacity: 0;
+                transition: .5s ease;
+                
+            }
 
             .btn{
                 border-radius: 5px;
@@ -773,9 +798,18 @@ main {
                 box-shadow: inset -5px -5px 5px #000a,
                         inset 5px 5px 5px #ddda;     
             }
+
+            &:hover {
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+                    
             &:nth-child(1) {
                 // border: 1px solid $secondary-color;
-                border-radius: 5px;
                 h2 {
                     background-color: $secondary-color;
                     
@@ -787,10 +821,13 @@ main {
                 .price p { 
                 color: $secondary-color;
                 }
+                &::after {
+                    box-shadow: inset 5px 5px 5px $secondary-color,
+                        inset -5px -5px 5px #333a;
+                }
             }
             &:nth-child(2) {
                 // border: 1px solid $primary-color;
-                border-radius: 5px;
                 h2 {
                     background-color: $primary-color;
                 }
@@ -801,13 +838,16 @@ main {
                 .price p { 
                     color: $primary-color;
                     }
+                    &::after {
+                        box-shadow: inset 5px 5px 5px $primary-color,
+                            inset -5px -5px 5px #333a;
+                    }
             }
             &:nth-child(3) {
                 // border-top: 1px solid $secondary-color;
                 // border-right: 1px solid $secondary-color;
                 // border-bottom: 1px solid $primary-color;
                 // border-left: 1px solid $primary-color;
-                border-radius: 5px;
                 h2 {
                     background-image: $primary-gradient;
                 }
@@ -821,6 +861,10 @@ main {
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                }
+                &::after {
+                    box-shadow: inset 5px 5px 5px $secondary-color,
+                        inset -5px -5px 5px $primary-color;
                 }
             }
 
