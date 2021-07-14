@@ -258,6 +258,11 @@ header {
                 i {
                     color: #fffa;
                     margin-right: .5em;
+                    padding: .5em;
+                    border-radius: 10px;
+                    position: relative;
+                    box-shadow: inset 3px 3px 5px #ddda,
+                                inset -3px -3px 5px #000a;
                 }
             }
         }

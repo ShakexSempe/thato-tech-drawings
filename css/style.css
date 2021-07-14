@@ -326,7 +326,11 @@ header {
           color: #0aceb1; }
         .sidebar-nav-list li a i {
           color: #fffa;
-          margin-right: .5em; }
+          margin-right: .5em;
+          padding: .5em;
+          border-radius: 10px;
+          position: relative;
+          box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
 
 main {
   background-color: #f4f4f4;
