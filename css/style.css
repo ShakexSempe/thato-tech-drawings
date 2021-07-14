@@ -280,7 +280,7 @@ header {
 
 .sidebar {
   position: fixed;
-  left: -992px;
+  left: -100%;
   top: 100px;
   width: 100%;
   padding-top: 1.5em;
@@ -290,8 +290,13 @@ header {
   transition: all .5s ease-in-out;
   z-index: 3;
   font-family: 'Red Rose', cursive; }
+  .sidebar .links-container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 10%; }
   .sidebar.open {
-    left: 0;
+    left: -20%;
     opacity: 1; }
   @media (min-width: 576px) {
     .sidebar {
@@ -312,13 +317,16 @@ header {
     justify-content: space-evenly; }
     .sidebar-nav-list li {
       padding: 10px;
-      text-align: center; }
+      text-align: left; }
       .sidebar-nav-list li a {
         color: #fff;
         padding: 5px;
         font-size: 1.3em; }
         .sidebar-nav-list li a:hover {
           color: #0aceb1; }
+        .sidebar-nav-list li a i {
+          color: #fffa;
+          margin-right: .5em; }
 
 main {
   background-color: #f4f4f4;

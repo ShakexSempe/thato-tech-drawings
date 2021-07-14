@@ -197,7 +197,7 @@ header {
 
 .sidebar {
     position: fixed;
-    left: -992px;
+    left: -100%;
     top: 100px;
     width: 100%;
     padding-top: 1.5em;
@@ -208,9 +208,15 @@ header {
     z-index: 3;
     font-family: 'Red Rose', cursive;
 
+    .links-container {
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 10%;
+    }
 
     &.open {
-        left: 0;
+        left: -20%;
         opacity: 1;
     }
 
@@ -238,7 +244,7 @@ header {
 
         li {
             padding: 10px;
-            text-align: center;
+            text-align: left;
 
             a {
                 color: #fff;
@@ -247,6 +253,11 @@ header {
 
                 &:hover {
                     color: $secondary-color;
+                }
+
+                i {
+                    color: #fffa;
+                    margin-right: .5em;
                 }
             }
         }
