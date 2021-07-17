@@ -782,7 +782,6 @@ main {
             outline: none;
             text-align: center;
             border: none;
-            cursor: pointer;
             transition: .3s;
             position: relative;
 
@@ -812,6 +811,8 @@ main {
             }
 
             .btn{
+            cursor: pointer;
+
                 border-radius: 5px;
                 box-shadow: inset -5px -5px 3px #000a,
                         inset 5px 5px 3px #ddda;
@@ -833,9 +834,11 @@ main {
                 transform: scale(.97);
                 &::before {
                     opacity: 0;
+                    z-index: -1;
                 }
                 &::after {
                     opacity: 1;
+                    z-index: -1;
                 }
             }
                     

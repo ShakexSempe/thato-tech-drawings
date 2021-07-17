@@ -704,7 +704,6 @@ main {
     outline: none;
     text-align: center;
     border: none;
-    cursor: pointer;
     transition: .3s;
     position: relative; }
     .table-price .price-grid .price-card::before {
@@ -728,6 +727,7 @@ main {
       opacity: 0;
       transition: 1s ease; }
     .table-price .price-grid .price-card .btn {
+      cursor: pointer;
       border-radius: 5px;
       box-shadow: inset -5px -5px 3px #000a, inset 5px 5px 3px #ddda;
       transition: .3s ease; }
@@ -740,9 +740,11 @@ main {
     .table-price .price-grid .price-card:hover {
       transform: scale(0.97); }
       .table-price .price-grid .price-card:hover::before {
-        opacity: 0; }
+        opacity: 0;
+        z-index: -1; }
       .table-price .price-grid .price-card:hover::after {
-        opacity: 1; }
+        opacity: 1;
+        z-index: -1; }
     .table-price .price-grid .price-card:nth-child(1) h2 {
       background-color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1) .btn {
