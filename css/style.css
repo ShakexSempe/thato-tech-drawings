@@ -408,7 +408,7 @@ main {
       margin-top: 100px; } }
   @media (min-width: 768px) {
     main {
-      margin-top: 150px; } }
+      margin-top: 0px; } }
 
 .banner {
   min-height: 100vh;
@@ -677,8 +677,12 @@ main {
   @media (min-width: 768px) {
     .features-grid {
       display: grid;
-      grid-gap: 50px;
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-gap: 5em;
+      grid-template-columns: repeat(1, 1fr); }
+      .features-grid .features-list {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(2, 1fr); } }
   .features-grid .feature-item {
     display: flex;
     justify-content: flex-start;
@@ -730,10 +734,9 @@ main {
         max-width: 350px; } }
     @media (min-width: 992px) {
       .features-grid .feature-image {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
-        width: 100%;
-        height: 50%; } }
+        width: 100%; } }
     .features-grid .feature-image::before {
       position: absolute;
       content: '';
@@ -770,6 +773,11 @@ main {
       grid-gap: 20px;
       grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 768px) {
+    .table-price .price-grid {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 992px) {
     .table-price .price-grid {
       display: grid;
       grid-gap: 30px;
@@ -829,7 +837,7 @@ main {
     .table-price .price-grid .price-card:nth-child(1) .price p {
       color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1)::after {
-      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #0aceb1; }
+      box-shadow: inset 5px 5px 5px #0aceb1, inset -5px -5px 5px #ddda; }
     .table-price .price-grid .price-card:nth-child(2) h2 {
       background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
@@ -1008,9 +1016,6 @@ main {
         color: #000080; } }
   .footer-top .blog {
     display: none; }
-    @media (min-width: 576px) {
-      .footer-top .blog {
-        display: flex; } }
     .footer-top .blog .post {
       display: flex;
       margin-bottom: 10px; }
