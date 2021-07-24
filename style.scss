@@ -17,6 +17,7 @@ header {
     @include flex(center); //MXINS
     min-height: 100px;
     box-shadow: 0 8px 6px -6px #999;
+    
 
         h1 {
             font-family: 'Fredericka the Great', cursive;
@@ -29,6 +30,9 @@ header {
             
             @include sm {
                 font-size: 4em
+            }
+            @include md {
+                font-size: 3.2em;
             }
         }
 
@@ -235,24 +239,71 @@ header {
     }
 
     &-nav-list {
+        margin: 1em;
         padding: 10px;
         height: 60vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
 
 
         li {
-            padding: 10px;
+            margin-left: 5em;
             text-align: left;
+            width: 60%;
+            border: none;
+            outline: none;
+
+            
 
             a {
                 color: #fff;
                 padding: 5px;
-                font-size: 1.3em;
+                font-size: 1.1em;
+                cursor: pointer;
+                display: block;
+                position: relative;
+                border: none;
+                outline: none;
+                transition: .3s;
+                margin-bottom: 1em;
 
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    transition: .3s;
+                }
+
+                &::before {
+                    box-shadow: inset 2px 2px 4px #ddda,
+                                inset -2px -2px 4px #000a;
+                }
+                &::after{
+                    opacity: 0;
+                    box-shadow: inset 2px 2px 4px #000a,
+                                inset -2px -2px 4px #ddda;
+                }
                 &:hover {
                     color: $secondary-color;
+                    &::before {
+                        opacity: 0;
+                    }
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &:active {
+                    transform: scale(.8);
+                    i {
+                        color:$secondary-color;
+                    }
                 }
 
                 i {
@@ -261,8 +312,6 @@ header {
                     padding: .5em;
                     border-radius: 10px;
                     position: relative;
-                    box-shadow: inset 3px 3px 5px #ddda,
-                                inset -3px -3px 5px #000a;
                 }
             }
         }
@@ -276,11 +325,9 @@ header {
 main {
     @include lg {
         margin-top: 100px;
-
     }
     background-color: $primary-background-lt-grey;
     margin-top: 100px;
-    
     font-family: 'Raleway', sans-serif;
 }
 
