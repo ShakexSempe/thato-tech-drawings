@@ -806,7 +806,7 @@ main {
                 height: 100%;
                 border-radius: 10px;
                 opacity: 0;
-                transition: 1s ease;
+                transition: 1s;
                 
             }
 
@@ -897,8 +897,8 @@ main {
                     -webkit-text-fill-color: transparent;
                 }
                 &::after {
-                    box-shadow: inset 5px 5px 5px $secondary-color,
-                        inset -5px -5px 5px $primary-color;
+                    box-shadow: inset 5px 5px 5px $primary-color,
+                        inset -5px -5px 5px $secondary-color;
                 }
             }
 

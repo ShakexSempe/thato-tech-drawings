@@ -725,7 +725,7 @@ main {
       height: 100%;
       border-radius: 10px;
       opacity: 0;
-      transition: 1s ease; }
+      transition: 1s; }
     .table-price .price-grid .price-card .btn {
       cursor: pointer;
       border-radius: 5px;
@@ -771,7 +771,7 @@ main {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card:nth-child(3)::after {
-      box-shadow: inset 5px 5px 5px #0aceb1, inset -5px -5px 5px #000080; }
+      box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h2 {
       padding: 30px;
       border-radius: 5px;
