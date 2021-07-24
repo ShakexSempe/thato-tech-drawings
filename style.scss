@@ -50,6 +50,9 @@ header {
             @include grid(center);
             gap: 1em;
         }
+        @include lg {
+            @include flex(row)
+        }
 
         &-top {
             @include flex(space-between);
@@ -235,7 +238,7 @@ header {
 
     @include md {
         top: 200px;
-        height: calc(100vh - 210px);
+        height: calc(100vh - 200px);
     }
 
     @include lg {
@@ -375,7 +378,7 @@ main {
         
 
         @include md {
-            @include grid(1fr);
+            @include grid(2, 10px);
         }
 
         .banner-content {
@@ -765,10 +768,16 @@ main {
                 max-width: 350px;
             }
             max-width: 200px;
-            margin: auto;
+            margin: 1em auto;
+            padding: 1em 0;
             border-radius: 10px;
             cursor: pointer;
-
+            @include lg {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 50%;
+            }
             overflow: hidden;
             position: relative;
             transition: 1s ease;
