@@ -85,6 +85,9 @@ img {
   @media (min-width: 576px) {
     .progress-container {
       top: 100px; } }
+  @media (min-width: 768px) {
+    .progress-container {
+      display: none; } }
 
 .progress-bar {
   height: 4px;
@@ -176,6 +179,12 @@ header {
       header .navbar {
         flex-direction: row;
         align-items: center; } }
+    @media (min-width: 768px) {
+      header .navbar {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat(center, 1fr);
+        gap: 1em; } }
     header .navbar-top {
       display: flex;
       justify-content: space-between;
@@ -252,6 +261,9 @@ header {
       @media (min-width: 992px) {
         header .navbar .nav-list {
           display: flex; } }
+      @media (min-width: 768px) {
+        header .navbar .nav-list {
+          display: flex; } }
       header .navbar .nav-list a {
         padding: 5px 15px;
         font-size: 1.2em; }
@@ -307,7 +319,7 @@ header {
       height: calc(100vh - 100px); } }
   @media (min-width: 768px) {
     .sidebar {
-      top: 210px;
+      top: 200px;
       height: calc(100vh - 210px); } }
   @media (min-width: 992px) {
     .sidebar {
@@ -326,6 +338,10 @@ header {
       width: 60%;
       border: none;
       outline: none; }
+      @media (min-width: 768px) {
+        .sidebar-nav-list li {
+          margin: 0 auto;
+          width: 40%; } }
       .sidebar-nav-list li a {
         color: #fff;
         padding: 5px;
@@ -375,6 +391,9 @@ main {
   @media (min-width: 992px) {
     main {
       margin-top: 100px; } }
+  @media (min-width: 768px) {
+    main {
+      margin-top: 150px; } }
 
 .banner {
   min-height: 100vh;
@@ -412,8 +431,8 @@ main {
     @media (min-width: 768px) {
       .banner .container {
         display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-gap: 0px;
+        grid-template-columns: repeat(1fr, 1fr); } }
     .banner .container .banner-content {
       font-size: 1.35em;
       color: #fff;
@@ -466,7 +485,7 @@ main {
       width: 60%; }
       @media (min-width: 768px) {
         .banner .container .banner-image {
-          width: 70%;
+          width: 100%;
           margin-top: 100px; } }
 
 .about {

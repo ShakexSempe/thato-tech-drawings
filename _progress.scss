@@ -8,6 +8,9 @@
     @include sm {
       top: 100px;
     }
+    @include md {
+      display: none;
+    }
     z-index: 10;
   }
   
