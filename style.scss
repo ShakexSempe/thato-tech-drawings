@@ -72,7 +72,6 @@ header {
             height: 2.9em;
             width: 2.9em;
             padding: 0px;
-            border: 3px solid rgb(5, 5, 128);
             background-image: $primary-gradient;
                     background-clip: text;
                     -webkit-background-clip: text;
@@ -80,29 +79,35 @@ header {
             border-radius: 50%;
             cursor: pointer;
             margin: 0 5px;
-            box-shadow: inset 2px 2px 5px #ddda,
-                        inset -1px -1px 5px #000a;
             transition: .3s ease;
 
-            &:hover {
-                box-shadow: 
-                            inset 2px 2px 5px #000a,
-                            inset -1px -1px 5px #ddda;
-                transition: .3s ease;
-                transform: scale(.96);
-            }
-            
-            &::before {
+            &::before,
+            &::after {
                 position: absolute;
                 content: '';
                 height: 100%;
                 width: 100%;
                 border-radius: 50%;
+                border: none;
+                outline: none;
+                box-shadow: inset 0 0 5px $secondary-color;
+            }
+            &::before {
                 border: 2px solid rgba(5, 5, 128, 0.651);
                 opacity: 0;
-                animation: toggle 2s ease infinite;
-
-                
+                animation: toggle 2s ease infinite;     
+            }
+            &::after {
+                box-shadow: inset 2px 2px 5px #ddd,
+                            inset -3px -3px 5px #000a;      
+            }
+            &:hover {
+                &::before {
+                    animation: none;
+                }
+            }
+            &:active {
+                transform: scale(.8);
             }
             .bar {
                 height: 2px;
@@ -126,16 +131,24 @@ header {
                 &::after {
                     bottom: 8px;
                 }
-            
             }
-
+            &:active {
+                .bar {
+                    &::before {
+                        top: 0;
+                    }
+                    &::after {
+                        bottom: 0;
+                    }
+                }
+            }
             @keyframes toggle {
                 50% {
-                    opacity: 0.4;
+                    opacity: .6;
                 }
                 100% {
                     opacity: 0;
-                    transform: scale(1.5);
+                    transform: scale(1.3);
                 }
             }
             
