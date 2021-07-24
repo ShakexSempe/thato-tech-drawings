@@ -913,8 +913,8 @@ main {
                 color: $secondary-color;
                 }
                 &::after {
-                    box-shadow: inset 5px 5px 5px $secondary-color,
-                        inset -5px -5px 5px #333a;
+                    box-shadow: inset 5px 5px 5px #ddd,
+                        inset -5px -5px 5px $secondary-color;
                 }
             }
             &:nth-child(2) {
@@ -931,7 +931,7 @@ main {
                     }
                     &::after {
                         box-shadow: inset 5px 5px 5px $primary-color,
-                            inset -5px -5px 5px #333a;
+                            inset -5px -5px 5px #ddda;
                     }
             }
             &:nth-child(3) {

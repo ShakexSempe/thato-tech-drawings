@@ -807,7 +807,7 @@ main {
     .table-price .price-grid .price-card:nth-child(1) .price p {
       color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1)::after {
-      box-shadow: inset 5px 5px 5px #0aceb1, inset -5px -5px 5px #333a; }
+      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) h2 {
       background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
@@ -815,7 +815,7 @@ main {
     .table-price .price-grid .price-card:nth-child(2) .price p {
       color: #000080; }
     .table-price .price-grid .price-card:nth-child(2)::after {
-      box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #333a; }
+      box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #ddda; }
     .table-price .price-grid .price-card:nth-child(3) h2 {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
