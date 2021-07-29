@@ -34,7 +34,8 @@
                 <li><a href="#features" class="scroll-link">Curriculum</a></li>
                 <li><a href="#price" class="scroll-link">Pricing</a></li>
                 <li><a href="#contact" class="scroll-link">Contact</a></li>
-                <li><a href="#footer" class="scroll-link">Footer</a></li>
+                <!-- <li><a href="#form" class="scroll-link">form</a></li> -->
+                <li><a href="#footer" class="scroll-link">Socials</a></li>
             </ul>
             <div class="navbar-button">
                 <a type="button" class="btn you-btn" href="https://youtube.com" target="_blank">YouTube</a>
@@ -56,6 +57,7 @@
                 <li><a href="#features" class="scroll-link"><i class="fas fa-pencil-ruler"></i>Curriculum</a></li>
                 <li><a href="#price" class="scroll-link"><i class="fas fa-tags"></i>Pricing</a></li>
                 <li><a href="#contact" class="scroll-link"><i class="fas fa-id-card"></i></i>Contact</a></li>
+                <!-- <li><a href="#form" class="scroll-link"><i class="fas fa-id-card"></i></i>form</a></li> -->
                 <li><a href="#footer" class="scroll-link"><i class="fas fa-users"></i>Socials</a></li>
         </ul>
     </div>
@@ -312,19 +314,43 @@
                 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6973.13347830368!2d26.221092632073987!3d-29.08894529445121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fdaabed270fbb%3A0x7a865b33f8f8a397!2s103A%20Waverley%20Rd%2C%20Waverley%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1619946186595!5m2!1sen!2sza"
                  allowfullscreen="" loading="lazy"></iframe>
              </div>
-            <div class="contact-form">
+            <form class="contact-form" id="form">
                 <h1 class="section-title">Contact Me</h1>
-                <p><i class="fas fa-mobile-alt"></i>+2734567899</p> 
-                <p><i class="far fa-envelope"></i>thato@emailaddress.com</p> 
+                <p><i class="fas fa-mobile-alt"></i>+2734567899</p>
+                <p><i class="far fa-envelope"></i>thato@emailaddress.com</p>
                 <p><i class="fas fa-map-marked-alt"></i>Bloemfontein</p>
                 <p><i class="fas fa-calendar-check"></i>weekdays: 17:00 - 21:00</p>
                 <p><i class="far fa-calendar-check"></i>weekends: 10:00 - 16:00</p>
-                <input type="text" placeholder="Name">
-                <input type="tel" placeholder="Phone Number">
-                <input type="email" placeholder="Email Address">
-                <textarea cols="30" rows="10" placeholder="Leave A Message"></textarea>
+
+                <fieldset>
+                    <legend>enter your contact details</legend>
+                    <input type="text" placeholder="Name">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address">
+                </fieldset>
+                <fieldset>
+                    <legend>select grade and package</legend>
+                    <select>
+                        <optgroup label="Grade 10" name="grade 10">
+                            <option>Basic Package</option>
+                            <option>Standard Package</option>
+                            <option>Premium</option>
+                        </optgroup>
+                        <optgroup label="Grade 11-12" name="grade 11-12">
+                            <option>Basic Package</option>
+                            <option>Standard Package</option>
+                            <option>Premium</option>
+                        </optgroup>
+                        <optgroup label="Tertiary/Professional" name="tertiary-professional">
+                            <option>Basic</option>
+                            <option>Standard Package</option>
+                            <option>Premium</option>
+                        </optgroup>
+                    </select>
+                    <textarea name="subject" cols="30" rows="10" placeholder="Study topic/subject of interest.."></textarea>
+                </fieldset>
                 <div class="btn">Send</div>
-            </div>
+            </form>
         </section>
 
     </main>

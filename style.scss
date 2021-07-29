@@ -33,6 +33,9 @@ header {
             @include md {
                 font-size: 3.2em;
             }
+            @include lg {
+                font-size: 3em;
+            }
         }
 
 
@@ -601,7 +604,6 @@ main {
     h1 {
         font-family: $font-rose;
         color: $text-color-white;
-        font-size: 2.5em;
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: (3px);
         letter-spacing: .2em;
@@ -1034,6 +1036,12 @@ main {
     margin: 50px 0;
     background-image: $primary-gradient;
 
+    h1 {
+        &::after {
+            width: 35%;
+        }
+    }
+
     @include md {
         @include grid(2)
     }
@@ -1056,9 +1064,16 @@ main {
         margin: auto;
         cursor: pointer;
 
+        fieldset {
+            color: #fff;
+            border: 1px solid $secondary-color;
+            padding: .2em 1em;
+            margin: .3em auto;
+            border-radius: 5px;
+        }
+
         .section-title {
             color: $text-color-white;
-
         }
 
         p {
