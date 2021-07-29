@@ -510,7 +510,7 @@ main {
           transform: translateY(-50%); } }
       @media (min-width: 992px) {
         .banner .container .banner-image {
-          width: 40%;
+          width: 30%;
           right: 4em; } }
 
 .about {
