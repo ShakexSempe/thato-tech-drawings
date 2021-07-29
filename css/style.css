@@ -513,11 +513,11 @@ main {
       .banner .container .banner-content h2, .banner .container .banner-content p {
         font-family: "Red Rose", cursive; }
       .banner .container .banner-content h2 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         font-weight: 600;
         text-shadow: 1px 1px 1px #0aceb1; }
       .banner .container .banner-content p {
-        font-size: 0.5em;
+        font-size: .9em;
         font-weight: 200;
         text-shadow: 0px 0px 3px #0aceb1; }
       @media (min-width: 768px) {
