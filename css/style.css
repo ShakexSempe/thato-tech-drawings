@@ -419,6 +419,9 @@ main {
   text-align: center;
   overflow: hidden;
   position: relative; }
+  @media (min-width: 992px) {
+    .banner {
+      background: #f4f4f4; } }
   .banner::after {
     content: '';
     position: absolute;
@@ -500,8 +503,15 @@ main {
       width: 60%; }
       @media (min-width: 768px) {
         .banner .container .banner-image {
-          width: 100%;
-          margin-top: 100px; } }
+          position: absolute;
+          width: 40%;
+          right: 1em;
+          top: 50%;
+          transform: translateY(-50%); } }
+      @media (min-width: 992px) {
+        .banner .container .banner-image {
+          width: 40%;
+          right: 4em; } }
 
 .about {
   padding: 2em 0;

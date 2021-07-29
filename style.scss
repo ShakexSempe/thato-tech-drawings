@@ -366,7 +366,9 @@ main {
     text-align: center;
     overflow: hidden;
     position: relative;
-
+    @include lg {
+        background: #f4f4f4;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -458,15 +460,20 @@ main {
         }
 
         .banner-image {
-            // background: rgba(255, 255, 255, 0.69);
-            // background-image: linear-gradient(0deg, rgba(21, 21, 31, 0.13) 0%, transparent 100%);
             border-radius: 10px;
             backdrop-filter: blur(0.08em);
             z-index: 2;
             width: 60%;
             @include md {
-                width: 100%;
-                margin-top: 100px;
+                position: absolute;
+                width: 40%;
+                right: 1em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            @include lg {
+                width: 40%;
+                right: 4em;
             }
         }
     }
