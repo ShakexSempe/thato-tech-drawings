@@ -1173,3 +1173,10 @@ main {
     .footer-bottom a:hover {
       transition: .3s ease-in-out;
       color: #fff000; }
+
+#thanks p {
+  font-size: .8em; }
+
+#thanks a {
+  margin-bottom: 1em;
+  width: 60%; }
