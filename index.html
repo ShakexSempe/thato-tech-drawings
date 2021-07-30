@@ -333,20 +333,19 @@
                 </fieldset>
                 <fieldset>
                     <legend>select grade and package</legend>
+                    <label for="level">Grade/level</label><select name="level" required>
+                        <optgroup label="Grade" name="grade">
+                            <option>Grade 10</option>
+                            <option>Grade 11</option>
+                            <option>Matric</option>
+                            <option>Tertiary</option>
+                        </optgroup>
+                    </select>
+
                     <label for="package">package</label><select name="package" required>
-                        <optgroup label="Grade 10" name="grade 10">
-                            <option>Basic Package</option>
-                            <option>Standard Package</option>
-                            <option>Premium</option>
-                        </optgroup>
-                        <optgroup label="Grade 11-12" name="grade 11-12">
-                            <option>Basic Package</option>
-                            <option>Standard Package</option>
-                            <option>Premium</option>
-                        </optgroup>
-                        <optgroup label="Tertiary/Professional" name="tertiary-professional">
+                        <optgroup label="membership" name="membership">
+                            <option>Standard</option>
                             <option>Basic</option>
-                            <option>Standard Package</option>
                             <option>Premium</option>
                         </optgroup>
                     </select>
