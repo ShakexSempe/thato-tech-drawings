@@ -158,7 +158,7 @@ header {
                 }
             }
             
-            @include md {
+            @include lg {
                 display: none;
             }
         }
@@ -1163,10 +1163,14 @@ main {
             background-color: #f4f4f4;
             box-shadow: inset 3px 3px 5px #ddd,
                         inset -3px -3px 5px #000a;
+            
         } 
+
         label {
             color: #ddd;
             text-transform: capitalize;
+            position: relative;
+            display: block;
         }
         .btn {
             background-image: $primary-gradient;
@@ -1217,6 +1221,7 @@ main {
             }
         }
     }
+    
 }
 //END OF CONTACT
 
