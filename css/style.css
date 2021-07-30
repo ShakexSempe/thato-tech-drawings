@@ -984,6 +984,7 @@ main {
       color: #eee; }
     .contact .contact-form p {
       margin: 40px 0;
+      font-size: 1em;
       color: #eee;
       transition: .3s ease; }
       .contact .contact-form p:hover {
@@ -993,8 +994,11 @@ main {
         .contact .contact-form p:hover i {
           transition: .3s ease;
           color: #0aceb1; }
+      @media (max-width: 330px) {
+        .contact .contact-form p {
+          font-size: .8em; } }
       .contact .contact-form p i {
-        font-size: 3em;
+        font-size: 2em;
         margin-right: .5em;
         transition: .3s ease; }
     .contact .contact-form input,
@@ -1009,7 +1013,8 @@ main {
       background-color: #f4f4f4;
       box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a; }
     .contact .contact-form label {
-      color: #ddd; }
+      color: #ddd;
+      text-transform: capitalize; }
     .contact .contact-form .btn {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       border: none;

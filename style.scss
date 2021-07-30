@@ -1126,6 +1126,7 @@ main {
 
         p {
             margin: 40px 0;
+            font-size: 1em;
             color: $text-color-white;
             transition: .3s ease;
             &:hover {
@@ -1139,9 +1140,12 @@ main {
                 }
             }
             
-
+            @media (max-width: 330px){
+                font-size: .8em;
+                
+            }
             i {
-                font-size: 3em;
+                font-size: 2em;
                 margin-right: .5em;
                 transition: .3s ease;
             }
@@ -1162,6 +1166,7 @@ main {
         } 
         label {
             color: #ddd;
+            text-transform: capitalize;
         }
         .btn {
             background-image: $primary-gradient;

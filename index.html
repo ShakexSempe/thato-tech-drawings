@@ -313,26 +313,27 @@
         <section id="contact" class="contact">
             <div id="maps" class="google-maps">
                 <!-- GOOGLE MAPS -->
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6973.13347830368!2d26.221092632073987!3d-29.08894529445121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fdaabed270fbb%3A0x7a865b33f8f8a397!2s103A%20Waverley%20Rd%2C%20Waverley%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1619946186595!5m2!1sen!2sza"
-                 allowfullscreen="" loading="lazy"></iframe>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13947.284688422602!2d26.229653174549274!3d-29.081428913286945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fd005c33b491d%3A0xec18ac54fa6e45f6!2sBayswater%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1627630181941!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
              </div>
             <form class="contact-form" id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                 <h1 class="section-title">Contact Me</h1>
-                <p><i class="fas fa-mobile-alt"></i>+2734567899</p>
-                <p><i class="far fa-envelope"></i>thato@emailaddress.com</p>
-                <p><i class="fas fa-map-marked-alt"></i>Bloemfontein</p>
-                <p><i class="fas fa-calendar-check"></i>weekdays: 17:00 - 21:00</p>
-                <p><i class="far fa-calendar-check"></i>weekends: 10:00 - 16:00</p>
-
+                <fieldset>
+                    <legend>Thato Sempe</legend>
+                    <p><i class="fas fa-mobile-alt"></i>+2734567899</p>
+                    <p><i class="far fa-envelope"></i>thato@emailaddress.com</p>
+                    <p><i class="fas fa-map-marked-alt"></i>Bloemfontein</p>
+                    <p><i class="fas fa-calendar-check"></i>weekdays: 17:00 - 21:00</p>
+                    <p><i class="far fa-calendar-check"></i>weekends: 10:00 - 16:00</p>
+                </fieldset>
                 <fieldset>
                     <legend>enter your contact details</legend>
-                    <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name" placeholder="name" required>
+                    <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name" placeholder="first name and surname" required>
                     <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number" placeholder="phone number (optional)">
                     <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email" placeholder="email address" required>
                 </fieldset>
                 <fieldset>
                     <legend>select grade and package</legend>
-                    <select name="package" required>
+                    <label for="package">package</label><select name="package" required>
                         <optgroup label="Grade 10" name="grade 10">
                             <option>Basic Package</option>
                             <option>Standard Package</option>
@@ -349,7 +350,7 @@
                             <option>Premium</option>
                         </optgroup>
                     </select>
-                    <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10" rows="10" placeholder="eg.. Grade 10 Assembly Drawing" required></textarea>
+                    <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10" rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
                 </fieldset>
                 <button class="btn">Send</button>
                 <!-- form options -->
