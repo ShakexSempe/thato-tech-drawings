@@ -1104,7 +1104,7 @@ main {
             color: $secondary-color;
             border: 1px solid $secondary-color;
             padding: .5em 1em;
-            margin: .3em auto;
+            margin: 2em auto;
             border-radius: 5px;
 
             select {
@@ -1153,6 +1153,7 @@ main {
 
         input, 
         textarea {
+            font-family: $font-rose;
             display: block;
             width: 100%;
             margin: 1em auto;
@@ -1173,6 +1174,7 @@ main {
             display: block;
         }
         .btn {
+            font-family: $font-rose;
             background-image: $primary-gradient;
             border: none;
             outline: none;
@@ -1239,8 +1241,8 @@ main {
         }
 
         .footer-item {
+            display: none;
             margin-bottom: 50px;
-
             h3 {
                 margin-bottom: 20px;
                 color: $primary-color;
@@ -1302,6 +1304,7 @@ main {
         }
 
         .social {
+            display: none;
             .social-icons {
                 display: flex;
                 justify-content: space-evenly;
@@ -1389,18 +1392,29 @@ main {
     }
 
     &-bottom {
-        padding: 20px;
+        font-family: $font-rose;
+        padding: 1em;
+        font-size: .7em;
+        @include sm {
+          font-size: 1em
+        }
         background-image: $secondary-gradient;
         color: #fff;
         text-align: center;
         box-shadow: inset 5px 5px 5px #ddda,
-                    inset -5px -5px 5px #000a;
+            inset -5px -5px 5px #000a;
 
-        a{
-            color: $text-color-white;
-            &:hover {
-                transition: .3s ease-in-out;
-                color: #fff000;
+        p {
+            line-height: 1.5;
+
+
+            a {
+                color: $text-color-white;
+
+                &:hover {
+                    transition: .3s ease-in-out;
+                    color: #fff000;
+                }
             }
         }
     }

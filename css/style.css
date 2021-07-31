@@ -970,7 +970,7 @@ main {
       color: #0aceb1;
       border: 1px solid #0aceb1;
       padding: .5em 1em;
-      margin: .3em auto;
+      margin: 2em auto;
       border-radius: 5px; }
       .contact .contact-form fieldset select {
         border-radius: 5px;
@@ -1003,6 +1003,7 @@ main {
         transition: .3s ease; }
     .contact .contact-form input,
     .contact .contact-form textarea {
+      font-family: "Red Rose", cursive;
       display: block;
       width: 100%;
       margin: 1em auto;
@@ -1018,6 +1019,7 @@ main {
       position: relative;
       display: block; }
     .contact .contact-form .btn {
+      font-family: "Red Rose", cursive;
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       border: none;
       outline: none;
@@ -1070,6 +1072,7 @@ main {
       grid-gap: 40px;
       grid-template-columns: repeat(4, 1fr); } }
   .footer-top .footer-item {
+    display: none;
     margin-bottom: 50px; }
     .footer-top .footer-item h3 {
       margin-bottom: 20px;
@@ -1112,39 +1115,41 @@ main {
     .footer-top .brand:hover .footer-logo {
       transform: scale(1.15);
       transform-origin: right; }
-  .footer-top .social .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2em; }
-    .footer-top .social .social-icons li {
-      cursor: pointer;
-      transition: .2s ease; }
-      .footer-top .social .social-icons li i {
-        font-size: 3em;
-        margin-right: 10px;
-        transition: .2s ease;
-        color: #000080;
-        padding: .2em;
-        border-radius: 30px;
-        box-shadow: inset 3px 3px 5px #e9e8e8aa, inset -3px -3px 5px #8a8989aa; }
-      .footer-top .social .social-icons li:hover {
-        color: #000a;
-        transform: scale(0.98);
+  .footer-top .social {
+    display: none; }
+    .footer-top .social .social-icons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 2em; }
+      .footer-top .social .social-icons li {
+        cursor: pointer;
         transition: .2s ease; }
-        .footer-top .social .social-icons li:hover i {
+        .footer-top .social .social-icons li i {
+          font-size: 3em;
+          margin-right: 10px;
           transition: .2s ease;
+          color: #000080;
+          padding: .2em;
+          border-radius: 30px;
+          box-shadow: inset 3px 3px 5px #e9e8e8aa, inset -3px -3px 5px #8a8989aa; }
+        .footer-top .social .social-icons li:hover {
           color: #000a;
-          box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #929090aa; }
-  @media (min-width: 992px) {
-    .footer-top .social li {
-      color: #000a; }
-      .footer-top .social li i {
+          transform: scale(0.98);
+          transition: .2s ease; }
+          .footer-top .social .social-icons li:hover i {
+            transition: .2s ease;
+            color: #000a;
+            box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #929090aa; }
+    @media (min-width: 992px) {
+      .footer-top .social li {
         color: #000a; }
-    .footer-top .social:hover li {
-      color: #000080; }
-      .footer-top .social:hover li i {
-        color: #000080; } }
+        .footer-top .social li i {
+          color: #000a; }
+      .footer-top .social:hover li {
+        color: #000080; }
+        .footer-top .social:hover li i {
+          color: #000080; } }
   .footer-top .blog {
     display: none; }
     .footer-top .blog .post {
@@ -1165,16 +1170,23 @@ main {
         text-shadow: none; }
 
 .footer-bottom {
-  padding: 20px;
+  font-family: "Red Rose", cursive;
+  padding: 1em;
+  font-size: .7em;
   background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
   color: #fff;
   text-align: center;
   box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a; }
-  .footer-bottom a {
-    color: #eee; }
-    .footer-bottom a:hover {
-      transition: .3s ease-in-out;
-      color: #fff000; }
+  @media (min-width: 576px) {
+    .footer-bottom {
+      font-size: 1em; } }
+  .footer-bottom p {
+    line-height: 1.5; }
+    .footer-bottom p a {
+      color: #eee; }
+      .footer-bottom p a:hover {
+        transition: .3s ease-in-out;
+        color: #fff000; }
 
 #thanks p {
   font-size: .8em; }
