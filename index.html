@@ -269,8 +269,8 @@
                             <li>Service item {lesson}</li>
                             <li>service item {study material}</li>
                         </ul>
-                        <a href="#contact" class="scroll-link">
-                            <div class="btn">Make Enquiry</div>
+                        <a href="#form" class="scroll-link">
+                            <button class="btn">Make Enquiry</button>
                         </a>
                     </div>
 
@@ -285,8 +285,8 @@
                             <li>service item {study material}</li>
                             <li>Service item {student support}</li>
                         </ul>
-                        <a href="#contact" class="scroll-link">
-                            <div class="btn">Make Enquiry</div>
+                        <a href="#form" class="scroll-link">
+                            <button class="btn">Make Enquiry</button>
                         </a>
                     </div>
 
@@ -302,8 +302,8 @@
                             <li>Service item {student support}</li>
                             <li>Service item {videos}</li>
                         </ul>
-                        <a href="#contact" class="scroll-link">
-                            <div class="btn">Make Enquiry</div>
+                        <a href="#form" class="scroll-link">
+                            <button class="btn">Make Enquiry</button>
                         </a>
                     </div>
                 </div>
@@ -331,7 +331,8 @@
                     <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number" placeholder="phone number (optional)">
                     <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email" placeholder="email address" required>
                 </fieldset>
-                <fieldset>
+                <!-- grade and package -->
+                <fieldset id="contact-details">
                     <legend>select grade and package</legend>
                     <label for="level">Grade/level</label>
                     <select name="level" required>
@@ -352,6 +353,8 @@
                     </select>
                     <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10" rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
                 </fieldset>
+                <!-- grade and package -->
+
                 <button class="btn">Send</button>
                 <!-- form options -->
                 <input type="hidden" name="_subject" value="New order has been made">

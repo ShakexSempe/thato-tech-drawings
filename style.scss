@@ -5,7 +5,6 @@
 @import 'progress';
 
 
-
 //HEADER
 header {
     position: fixed;
@@ -939,20 +938,46 @@ main {
                 
             }
 
-            .btn{
-            cursor: pointer;
-
+            .btn {
+                margin: .5em auto;
+                cursor: pointer;
+                font-family: $font-rose;
+                border: none;
+                outline: none;
                 border-radius: 5px;
-                box-shadow: inset -5px -5px 3px #000a,
-                        inset 5px 5px 3px #ddda;
                 transition: .3s ease;
-                &:hover {
-                transition: .3s ease;
-                transform: scale(.98);
-                box-shadow: 0 0 5px #000,
-                            inset -2px -2px 3px #ddda,
-                            inset 2px 2px 3px #000a;
+                position: relative;
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: .3s;
+                    overflow: hidden;
+
+                    border-radius: 5px;
                 }
+                &::before{
+                    box-shadow: inset 2px 2px 4px#fff,
+                                inset -2px -2px 4px #000a;
+                }
+                &::after{
+                    opacity: 0;
+                    box-shadow: inset 2px 2px 4px #000a,
+                                inset -2px -2px 4px #fff;
+                }
+                
+                &:hover {
+                    &::before {opacity: 0}
+                    &::after {opacity: 1}
+                }
+                &:active {
+                    transform: scale(.9);
+                }
+
             }
             h2 {
                 box-shadow: inset -5px -5px 5px #000a,
@@ -1113,6 +1138,7 @@ main {
                 padding: .2em 1em;
                 display: block;
                 margin: .5em 0;
+                font-family: $font-rose;
 
                 optgroup {
                     font-size: 1em;
