@@ -1010,10 +1010,10 @@ main {
       line-height: 1.5;
       font-style: italic; }
       .contact .contact-form .form-info-link a {
-        color: #ddd;
+        color: #0aceb1;
         text-decoration: underline; }
         .contact .contact-form .form-info-link a:hover {
-          color: #0aceb1; }
+          color: #ddd; }
     .contact .contact-form fieldset {
       color: #0aceb1;
       border: 1px solid #0aceb1;

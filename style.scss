@@ -1152,11 +1152,11 @@ main {
             line-height: 1.5;
             font-style: italic;
             a {
-                color: #ddd;
+                color: $secondary-color;
                 text-decoration: underline;
-
+                
                 &:hover {
-                    color: $secondary-color;
+                color: #ddd;
                 }
             }
         }
