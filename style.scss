@@ -1101,7 +1101,7 @@ main {
 .contact {
     padding: 1em 0;
     margin: 50px 0;
-    background-image: $primary-gradient;
+    background-color: $primary-color;
 
     h1 {
         &::after {
@@ -1131,6 +1131,21 @@ main {
         margin: auto;
         cursor: pointer;
 
+        .form-info-link {
+            padding: .5em;
+            text-align: center;
+            line-height: 1.5;
+            a {
+                color: #ddd;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+        
+
         fieldset {
             color: $secondary-color;
             border: 1px solid $secondary-color;
@@ -1151,20 +1166,23 @@ main {
                 }
             }
         }
-
+        #thato-contact {
+            p {
+                margin: 40px 0;
+            font-size: 1em;
+            transition: .3s ease;
+            }
+        }
+        
         .section-title {
             color: $text-color-white;
         }
-
+        
         p {
-            margin: 40px 0;
-            font-size: 1em;
             color: $text-color-white;
-            transition: .3s ease;
+            
             &:hover {
-                letter-spacing: .1em;
                 transition: .3s ease;
-                transform: scale(1.015);
 
                 i {
                     transition: .3s ease;

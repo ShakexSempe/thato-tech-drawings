@@ -969,7 +969,7 @@ main {
 .contact {
   padding: 1em 0;
   margin: 50px 0;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+  background-color: #000080; }
   .contact h1::after {
     width: 35%; }
   @media (min-width: 768px) {
@@ -990,6 +990,15 @@ main {
     padding: 25px;
     margin: auto;
     cursor: pointer; }
+    .contact .contact-form .form-info-link {
+      padding: .5em;
+      text-align: center;
+      line-height: 1.5; }
+      .contact .contact-form .form-info-link a {
+        color: #ddd;
+        text-decoration: underline; }
+        .contact .contact-form .form-info-link a:hover {
+          color: #0aceb1; }
     .contact .contact-form fieldset {
       color: #0aceb1;
       border: 1px solid #0aceb1;
@@ -1005,17 +1014,16 @@ main {
         font-family: "Red Rose", cursive; }
         .contact .contact-form fieldset select optgroup {
           font-size: 1em; }
+    .contact .contact-form #thato-contact p {
+      margin: 40px 0;
+      font-size: 1em;
+      transition: .3s ease; }
     .contact .contact-form .section-title {
       color: #eee; }
     .contact .contact-form p {
-      margin: 40px 0;
-      font-size: 1em;
-      color: #eee;
-      transition: .3s ease; }
+      color: #eee; }
       .contact .contact-form p:hover {
-        letter-spacing: .1em;
-        transition: .3s ease;
-        transform: scale(1.015); }
+        transition: .3s ease; }
         .contact .contact-form p:hover i {
           transition: .3s ease;
           color: #0aceb1; }

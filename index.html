@@ -313,11 +313,17 @@
         <section id="contact" class="contact">
             <div id="maps" class="google-maps">
                 <!-- GOOGLE MAPS -->
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13947.284688422602!2d26.229653174549274!3d-29.081428913286945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fd005c33b491d%3A0xec18ac54fa6e45f6!2sBayswater%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1627630181941!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-             </div>
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13947.284688422602!2d26.229653174549274!3d-29.081428913286945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fd005c33b491d%3A0xec18ac54fa6e45f6!2sBayswater%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1627630181941!5m2!1sen!2sza"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
             <form class="contact-form" id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                 <h1 class="section-title">Contact Me</h1>
-                <fieldset>
+                <div class="form-info-link">
+                    <p>Enter your contact details in the <a href="#contact-details" class="scroll-link">form</a> below
+                        and await a confirmation email</p>
+                </div>
+                <fieldset id="thato-contact">
                     <legend>Thato Sempe</legend>
                     <p><i class="fas fa-mobile-alt"></i>+2734567899</p>
                     <p><i class="far fa-envelope"></i>thato@emailaddress.com</p>
@@ -327,9 +333,12 @@
                 </fieldset>
                 <fieldset>
                     <legend>enter your contact details</legend>
-                    <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name" placeholder="first name and surname" required>
-                    <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number" placeholder="phone number (optional)">
-                    <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email" placeholder="email address" required>
+                    <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name"
+                        placeholder="first name and surname" required>
+                    <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number"
+                        placeholder="phone number (optional)">
+                    <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email"
+                        placeholder="email address" required>
                 </fieldset>
                 <!-- grade and package -->
                 <fieldset id="contact-details">
@@ -346,12 +355,13 @@
 
                     <label for="package">package</label><select name="package" required>
                         <optgroup label="membership" name="membership">
+                            <option>Free</option>
                             <option>Standard</option>
-                            <option>Basic</option>
                             <option>Premium</option>
                         </optgroup>
                     </select>
-                    <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10" rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
+                    <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10"
+                        rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
                 </fieldset>
                 <!-- grade and package -->
 
