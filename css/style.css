@@ -993,7 +993,8 @@ main {
     .contact .contact-form .form-info-link {
       padding: .5em;
       text-align: center;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-style: italic; }
       .contact .contact-form .form-info-link a {
         color: #ddd;
         text-decoration: underline; }
