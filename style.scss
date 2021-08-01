@@ -964,7 +964,7 @@ main {
                 outline: none;
                 border-radius: 5px;
                 transition: .3s ease;
-                position: relative;;
+                position: relative;
                 &::before,
                 &::after {
                     content: '';
@@ -1070,11 +1070,11 @@ main {
             }
 
             h2 {
-                padding: 1.5em;
+                padding: 1em 1.3em;
                 border-radius: 5px;
                 margin: .5em auto;
                 background-color: $secondary-color;
-                color: #ddd;
+                color: #fff;
                 letter-spacing: .1em;
                 text-transform: uppercase;
                 font-family: $font-rose;
