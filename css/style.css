@@ -471,9 +471,6 @@ main {
   text-align: center;
   overflow: hidden;
   position: relative; }
-  @media (min-width: 992px) {
-    .banner {
-      background: #f4f4f4; } }
   .banner::after {
     content: '';
     position: absolute;
@@ -481,7 +478,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(12, 12, 12, 0.553);
+    background: rgba(12, 12, 12, 0.653);
     z-index: 1; }
   @media (min-width: 768px) {
     .banner {
@@ -513,11 +510,11 @@ main {
       .banner .container .banner-content h2, .banner .container .banner-content p {
         font-family: "Red Rose", cursive; }
       .banner .container .banner-content h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         font-weight: 600;
         text-shadow: 1px 1px 1px #0aceb1; }
       .banner .container .banner-content p {
-        font-size: .9em;
+        font-size: .7em;
         font-weight: 200;
         text-shadow: 0px 0px 3px #0aceb1; }
       @media (min-width: 768px) {
@@ -552,7 +549,9 @@ main {
       border-radius: 10px;
       backdrop-filter: blur(0.08em);
       z-index: 2;
-      width: 60%; }
+      width: 60%;
+      padding: .5em;
+      background: #fffa; }
       @media (min-width: 768px) {
         .banner .container .banner-image {
           position: absolute;
@@ -674,15 +673,27 @@ main {
       grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
     padding: 1em 1em;
-    margin: 80px 0;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    margin: 80px auto;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: inset 3px 3px 5px rgba(135, 207, 235, 0.904), inset -3px -3px 5px #000080;
     font-family: 'Raleway', sans-serif;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
+    .services .container .service::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      box-shadow: inset 3px 3px 5px #87cfebe7, inset -3px -3px 5px #000080; }
     .services .container .service-title {
-      color: #eee; }
+      color: #eee;
+      font-size: 1.5em;
+      text-transform: capitalize;
+      font-family: "Raleway", sans-serif; }
     .services .container .service-icon {
       width: 125px;
       height: 125px;
@@ -696,11 +707,13 @@ main {
           height: 160px;
           margin: -110px 0 30px; } }
     .services .container .service p {
-      margin: 20px 0;
+      margin: 1em auto;
       padding: 20px 10px;
       color: #eee;
       font-family: 'Red Rose', cursive;
-      text-transform: lowercase; }
+      text-transform: capitalize;
+      color: #ddd;
+      text-shadow: 0 1px 1px #000; }
     .services .container .service a {
       box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
       border-radius: 5px;
@@ -960,7 +973,7 @@ main {
       font-family: "Red Rose", cursive;
       text-align: left; }
       .table-price .price-grid .price-card .card-list li {
-        font-size: 1.1em;
+        font-size: 1em;
         color: #333;
         line-height: 1.5;
         list-style: decimal;
