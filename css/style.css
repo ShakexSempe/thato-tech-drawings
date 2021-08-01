@@ -655,13 +655,13 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     text-shadow: 0 0 1px #fff, 0 0 5px #fff000; }
+    @media (min-width: 576px) {
+      .services h1 {
+        font-size: 3em; } }
     .services h1::after {
       background-image: none;
       background-color: #fff;
       box-shadow: 0 0 1px #fff, 0 0 5px #fff000; }
-    @media (min-width: 576px) {
-      .services h1 {
-        font-size: 4em; } }
   @media (min-width: 576px) {
     .services .container {
       display: grid;
@@ -823,7 +823,7 @@ main {
   font-family: 'Raleway', sans-serif; }
   .table-price h1 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 500;
     text-shadow: 0 0 1px #000080; }
     .table-price h1 span {
@@ -940,17 +940,19 @@ main {
     .table-price .price-grid .price-card:nth-child(3)::after {
       box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h2 {
-      padding: 30px;
+      padding: 1.5em;
       border-radius: 5px;
-      margin-bottom: 15px;
+      margin: .5em auto;
       background-color: #0aceb1;
-      color: #fff;
-      text-transform: uppercase; }
+      color: #ddd;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-family: "Red Rose", cursive; }
     .table-price .price-grid .price-card .price {
       padding: 10px 10px 20px;
       margin: 10px 50px; }
       .table-price .price-grid .price-card .price p {
-        font-size: 2.5em; }
+        font-size: 2em; }
       .table-price .price-grid .price-card .price small {
         font-size: 1.3em; }
     .table-price .price-grid .price-card .card-list {
@@ -961,7 +963,8 @@ main {
         font-size: 1.1em;
         color: #333;
         line-height: 1.5;
-        list-style: decimal; }
+        list-style: decimal;
+        text-transform: capitalize; }
 
 .contact {
   padding: 1em 0;

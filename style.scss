@@ -637,6 +637,9 @@ main {
     }
 
     h1 {
+        @include sm {
+            font-size: 3em;
+        }
         font-family: $font-rose;
         color: $text-color-white;
         backdrop-filter: blur(3px);
@@ -654,9 +657,6 @@ main {
             0 0 5px #fff000;
         }
         
-        @include sm {
-            font-size: 4em
-        }
     }
     .container {
 
@@ -886,7 +886,7 @@ main {
 
     h1 {
         font-family: 'Fredericka the Great', cursive;
-        font-size: 3.5em;
+        font-size: 3em;
         font-weight: 500;
             text-shadow: 0 0 1px $primary-color;
             span {
@@ -1055,12 +1055,14 @@ main {
             }
 
             h2 {
-                padding: 30px;
+                padding: 1.5em;
                 border-radius: 5px;
-                margin-bottom: 15px;
+                margin: .5em auto;
                 background-color: $secondary-color;
-                color: #fff;
+                color: #ddd;
+                letter-spacing: .1em;
                 text-transform: uppercase;
+                font-family: $font-rose;
                 
             }
 
@@ -1069,7 +1071,7 @@ main {
                 margin: 10px 50px;
                 
                 p {
-                    font-size: 2.5em;
+                    font-size: 2em;
                 }
 
                 small {
@@ -1086,6 +1088,7 @@ main {
                     color: #333;
                     line-height: 1.5;
                     list-style: decimal;
+                    text-transform: capitalize;
                 }
             
             }
