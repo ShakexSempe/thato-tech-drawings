@@ -175,11 +175,28 @@ header {
             a {
                 padding: 5px 15px;
                 font-size: 1.2em;
+                position: relative;
+                transition: .2s;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(1em);
+                    width: 50%;
+                    height: 2px;
+                    background-color: $secondary-color;
+                    transition: .3s;
+                    opacity: 0;
+                }
 
                 &:hover {
                     color: $secondary-color;
-                    text-decoration: .2em underline;
-                    text-underline-offset: .3em;
+                    &::before {
+                        opacity: 1;
+                        transform: translate(-50%, 0);
+                    }
                 }
             }
 
@@ -639,6 +656,7 @@ main {
         @include sm {
             font-size: 3em;
         }
+        margin: .5em;
         font-family: $font-rose;
         color: $text-color-white;
         backdrop-filter: blur(3px);

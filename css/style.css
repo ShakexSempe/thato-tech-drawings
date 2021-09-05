@@ -302,11 +302,25 @@ header {
           display: flex; } }
       header .navbar .nav-list a {
         padding: 5px 15px;
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        position: relative;
+        transition: .2s; }
+        header .navbar .nav-list a::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%) translateY(1em);
+          width: 50%;
+          height: 2px;
+          background-color: #0aceb1;
+          transition: .3s;
+          opacity: 0; }
         header .navbar .nav-list a:hover {
-          color: #0aceb1;
-          text-decoration: .2em underline;
-          text-underline-offset: .3em; }
+          color: #0aceb1; }
+          header .navbar .nav-list a:hover::before {
+            opacity: 1;
+            transform: translate(-50%, 0); }
     header .navbar .navbar-top {
       display: flex;
       justify-content: space-between; }
@@ -646,6 +660,7 @@ main {
     background-image: linear-gradient(to right, #0808df8e 0%, #0aceb18f 100%);
     z-index: -1; }
   .services h1 {
+    margin: .5em;
     font-family: "Red Rose", cursive;
     color: #eee;
     backdrop-filter: blur(3px);
