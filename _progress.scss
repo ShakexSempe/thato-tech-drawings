@@ -4,12 +4,12 @@
     height: 30px;
     background: transparent;
     position: fixed;
-    top: 11%;
+    top: 8.5vh;
     @include sm {
       top: 100px;
     }
     @include md {
-      top: 13%;
+      top: 8.5vh;
     }
     z-index: 6;
   }
