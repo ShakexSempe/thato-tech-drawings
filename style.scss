@@ -542,6 +542,10 @@ main {
                 }
                 // end of button hover state
                 // button active state
+                &:active {
+                    transition: .2s;
+                    transform: scale(.95);
+                }
                 // end of button active state
 
             }

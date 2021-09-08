@@ -590,6 +590,9 @@ main {
             opacity: 0; }
           .banner .container .banner-content .btn:hover::after {
             opacity: 1; }
+        .banner .container .banner-content .btn:active {
+          transition: .2s;
+          transform: scale(0.95); }
     .banner .container .banner-image {
       border-radius: 10px;
       backdrop-filter: blur(0.08em);
