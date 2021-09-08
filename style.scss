@@ -428,7 +428,8 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(12, 12, 12, 0.653);
+        background: rgba(1, 1, 66, 0.881);
+        // background: rgba(12, 12, 12, 0.653);
         z-index: 1;
     }
 
@@ -455,6 +456,9 @@ main {
             font-size: 1.35em;
             color: #fff;
             z-index: 2;
+            border: 1px solid #fffa;
+            border-radius: 5px;
+            margin: 1em auto;
             
             h2, p{
                 font-family: $font-rose;
@@ -467,8 +471,10 @@ main {
                 
             }
             p {
+                text-transform: capitalize;
                 font-size: .7em;
                 font-weight: 200;
+                padding: 0 1.5em;
                 text-shadow: 0px 0px 3px $secondary-color;
             }
 
@@ -484,30 +490,63 @@ main {
             }
 
             .btn {
-            font-family: 'Fredericka the Great', cursive;
-
-                background-image: $primary-gradient;
+            font-family: $font-rose;
+                text-transform: uppercase;
                 color: $text-color-white;
                 font-size: 0.9em;
+                font-weight: 500;
                 border: none;
                 outline: none;
+                background: none;
                 border-radius: 5px;
+                letter-spacing: .1em;
                 margin: 5px 0;
-                padding: .4em 1.4em;
+                padding: .5em 1.5em;
                 transition: all .3s ease;
-                box-shadow: 0 5px 5px #000a,
-                            inset 5px 5px 5px #fffa,
-                            inset -5px -5px 5px #000;
-
+                position: relative;
+                // button shadow
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: $primary-gradient;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    z-index: -1;
+                    box-shadow: inset 2px 2px 5px #fff,
+                                inset -2px -2px 5px #000a;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: $secondary-gradient;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    z-index: -1;
+                    opacity: 0;
+                    box-shadow: inset 2px 2px 5px #000a,
+                                inset -2px -2px 5px #fffa;
+                }
+                // end of button shadow
+                // button hover state
                 &:hover {
                     transition: all .3s ease;
+                    letter-spacing: 0;
                     transform: scale(.98);
-                    // background-image: $primary-gradient-trans;
-                    color: #fff;
-                    box-shadow: 0 5px 5px #000,
-                            inset 5px 5px 5px #000a,
-                            inset -5px -5px 5px #ddda;
+                    &::before {opacity: 0}
+                    &::after {opacity: 1}
                 }
+                // end of button hover state
+
             }
         }
 

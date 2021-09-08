@@ -492,7 +492,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(12, 12, 12, 0.653);
+    background: rgba(1, 1, 66, 0.881);
     z-index: 1; }
   @media (min-width: 768px) {
     .banner {
@@ -517,7 +517,10 @@ main {
     .banner .container .banner-content {
       font-size: 1.35em;
       color: #fff;
-      z-index: 2; }
+      z-index: 2;
+      border: 1px solid #fffa;
+      border-radius: 5px;
+      margin: 1em auto; }
       @media (min-width: 576px) {
         .banner .container .banner-content {
           font-size: 2.5em; } }
@@ -528,8 +531,10 @@ main {
         font-weight: 600;
         text-shadow: 1px 1px 1px #0aceb1; }
       .banner .container .banner-content p {
+        text-transform: capitalize;
         font-size: .7em;
         font-weight: 200;
+        padding: 0 1.5em;
         text-shadow: 0px 0px 3px #0aceb1; }
       @media (min-width: 768px) {
         .banner .container .banner-content {
@@ -543,22 +548,55 @@ main {
       .banner .container .banner-content .btn {
         margin: 25px 0; }
       .banner .container .banner-content .btn {
-        font-family: 'Fredericka the Great', cursive;
-        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        font-family: "Red Rose", cursive;
+        text-transform: uppercase;
         color: #eee;
         font-size: 0.9em;
+        font-weight: 500;
         border: none;
         outline: none;
+        background: none;
         border-radius: 5px;
+        letter-spacing: .1em;
         margin: 5px 0;
-        padding: .4em 1.4em;
+        padding: .5em 1.5em;
         transition: all .3s ease;
-        box-shadow: 0 5px 5px #000a, inset 5px 5px 5px #fffa, inset -5px -5px 5px #000; }
+        position: relative; }
+        .banner .container .banner-content .btn::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          z-index: -1;
+          box-shadow: inset 2px 2px 5px #fff, inset -2px -2px 5px #000a; }
+        .banner .container .banner-content .btn::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          z-index: -1;
+          opacity: 0;
+          box-shadow: inset 2px 2px 5px #000a, inset -2px -2px 5px #fffa; }
         .banner .container .banner-content .btn:hover {
           transition: all .3s ease;
-          transform: scale(0.98);
-          color: #fff;
-          box-shadow: 0 5px 5px #000, inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
+          letter-spacing: 0;
+          transform: scale(0.98); }
+          .banner .container .banner-content .btn:hover::before {
+            opacity: 0; }
+          .banner .container .banner-content .btn:hover::after {
+            opacity: 1; }
     .banner .container .banner-image {
       border-radius: 10px;
       backdrop-filter: blur(0.08em);
