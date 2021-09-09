@@ -67,8 +67,8 @@ header {
         .menu-toggle {
             @include flex(center);
             position: relative;
-            height: 2.7em;
-            width: 2.7em;
+            height: 2.5em;
+            width: 2.5em;
             padding: 0px;
             background-image: $primary-gradient;
                     background-clip: text;

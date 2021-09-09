@@ -221,8 +221,8 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
       position: relative;
-      height: 2.7em;
-      width: 2.7em;
+      height: 2.5em;
+      width: 2.5em;
       padding: 0px;
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       background-clip: text;
