@@ -696,16 +696,17 @@ main {
   .services h1 {
     margin: .5em;
     font-family: "Red Rose", cursive;
+    background-color: #000080;
     color: #eee;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: 3px;
     letter-spacing: .2em;
     font-weight: 500;
-    text-transform: uppercase;
-    text-shadow: 0 0 1px #fff, 0 0 5px #fff000; }
+    text-transform: uppercase; }
     @media (min-width: 576px) {
       .services h1 {
         font-size: 3em; } }
+    @media (min-width: 992px) {
+      .services h1 {
+        margin: 5vh 10vw; } }
     .services h1::after {
       background-image: none;
       background-color: #fff;
@@ -721,7 +722,7 @@ main {
       grid-gap: 20px;
       grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
-    padding: 1em 1em;
+    padding: 1em 1.5em;
     margin: 80px auto;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -736,14 +737,16 @@ main {
       height: 100%;
       z-index: -1;
       border-radius: 5px;
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
-      box-shadow: inset 3px 3px 5px #87cfebe7, inset -3px -3px 5px #000080; }
+      background-color: #000080;
+      box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
     .services .container .service-title {
       color: #eee;
       font-size: 1.5em;
+      font-weight: 500;
       text-transform: capitalize;
-      font-family: "Raleway", sans-serif;
-      letter-spacing: .1em; }
+      font-family: "Red Rose", cursive;
+      letter-spacing: .1em;
+      text-decoration: underline rgba(255, 255, 255, 0.432); }
     .services .container .service-icon {
       width: 125px;
       height: 125px;
@@ -758,26 +761,40 @@ main {
           margin: -110px 0 30px; } }
     .services .container .service p {
       margin: 1em auto;
-      padding: 20px 10px;
+      padding: 5vh 0;
       color: #eee;
-      font-family: "Red Rose", cursive;
+      font-family: "Raleway", sans-serif;
       text-transform: capitalize;
       color: #ddd; }
-    .services .container .service a {
-      box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
+    .services .container .service button {
+      font-size: 1em;
       border-radius: 5px;
-      padding: .3em 1em;
-      color: #fff;
+      padding: .4em 1.5em;
+      color: #000;
+      font-weight: 500;
+      background-color: #0aceb1;
       position: absolute;
+      border: none;
+      outline: none;
       bottom: 1em;
       left: 50%;
       transform: translate(-50%);
       transition: .2s ease;
       font-family: 'Red Rose', cursive; }
-      .services .container .service a:hover {
+      .services .container .service button::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: inset 3px 3px 3px #fff, inset -3px -3px 3px #000; }
+      .services .container .service button:hover {
         transition: .2s ease;
-        transform: translate(-50%) scale(0.95);
-        box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
+        transform: translate(-50%) scale(0.95); }
 
 .features {
   margin: 0;
