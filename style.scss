@@ -752,7 +752,7 @@ main {
                 font-size: 1.5em;
                 text-transform: capitalize;
                 font-family: $font-rale;
-                text-shadow: 3px 0px 1px #000a;
+                letter-spacing: .1em;
             }
 
             
@@ -780,10 +780,9 @@ main {
                 margin: 1em auto;
                 padding: 20px 10px;
                 color: $text-color-white;
-                font-family: 'Red Rose', cursive;
+                font-family: $font-rose;
                 text-transform: capitalize;
                 color: #ddd;
-                text-shadow: 0 1px 1px #000;
             }
 
             a {

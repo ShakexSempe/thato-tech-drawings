@@ -743,7 +743,7 @@ main {
       font-size: 1.5em;
       text-transform: capitalize;
       font-family: "Raleway", sans-serif;
-      text-shadow: 3px 0px 1px #000a; }
+      letter-spacing: .1em; }
     .services .container .service-icon {
       width: 125px;
       height: 125px;
@@ -760,10 +760,9 @@ main {
       margin: 1em auto;
       padding: 20px 10px;
       color: #eee;
-      font-family: 'Red Rose', cursive;
+      font-family: "Red Rose", cursive;
       text-transform: capitalize;
-      color: #ddd;
-      text-shadow: 0 1px 1px #000; }
+      color: #ddd; }
     .services .container .service a {
       box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
       border-radius: 5px;
