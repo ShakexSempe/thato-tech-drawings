@@ -25,10 +25,7 @@ img {
 .container {
   width: 1200px;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding: 0 5vw; }
 
 .btn {
   display: inline-block;
@@ -181,7 +178,7 @@ header {
     @media (min-width: 768px) {
       header h1 {
         font-size: 2em; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       header h1 {
         font-size: 3em; } }
   header .navbar {
@@ -197,7 +194,7 @@ header {
       header .navbar {
         flex-direction: row;
         align-items: center; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       header .navbar {
         display: flex;
         justify-content: row;
@@ -280,12 +277,12 @@ header {
   100% {
     opacity: 0;
     transform: scale(1.3); } }
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         header .navbar .menu-toggle {
           display: none; } }
     header .navbar .nav-list {
       display: none; }
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         header .navbar .nav-list {
           display: flex; } }
       header .navbar .nav-list a {
@@ -390,7 +387,7 @@ header {
     .sidebar {
       top: 200px;
       height: calc(100vh - 200px); } }
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .sidebar {
       display: none; } }
   .sidebar-nav-list {
@@ -457,7 +454,7 @@ main {
   background-color: #f4f4f4;
   margin-top: 10%;
   font-family: 'Raleway', sans-serif; }
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     main {
       margin-top: 100px; } }
   @media (min-width: 768px) {
@@ -486,7 +483,7 @@ main {
     height: 100%;
     background: rgba(1, 1, 66, 0.85);
     z-index: 1; }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .banner::after {
         background: rgba(1, 1, 66, 0.25); } }
   @media (min-width: 768px) {
@@ -522,7 +519,7 @@ main {
       @media (min-width: 576px) {
         .banner .container .banner-content {
           font-size: 2em; } }
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         .banner .container .banner-content {
           position: absolute;
           right: 0;
@@ -628,7 +625,7 @@ main {
           right: 1em;
           top: 50%;
           transform: translateY(-50%); } }
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         .banner .container .banner-image {
           display: none; } }
 
@@ -728,9 +725,9 @@ main {
     @media (min-width: 576px) {
       .services h1 {
         font-size: 3em; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .services h1 {
-        margin: 5vh 10vw; } }
+        margin: 5vh 5vw; } }
     .services h1::before {
       content: '';
       position: absolute;
@@ -897,7 +894,7 @@ main {
     @media (min-width: 768px) {
       .features-grid .feature-image {
         max-width: 350px; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .features-grid .feature-image {
         margin: 0 auto;
         padding: 0;
@@ -942,7 +939,7 @@ main {
       display: grid;
       grid-gap: 30px;
       grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     .table-price .price-grid {
       display: grid;
       grid-gap: 30px;
@@ -1302,7 +1299,7 @@ main {
             transition: .2s ease;
             color: #000a;
             box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #929090aa; }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .footer-top .social li {
         color: #000a; }
         .footer-top .social li i {
