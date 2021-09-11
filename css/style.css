@@ -25,6 +25,8 @@ img {
 .container {
   width: 1200px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 5vw; }
 
 .btn {
@@ -710,8 +712,7 @@ main {
     height: 100%;
     background-color: #0808df8e;
     z-index: -1; }
-  .services h1 {
-    margin: 5vh 5vw 10vh;
+  .services .section-title {
     padding-bottom: 3vh;
     font-family: "Red Rose", cursive;
     font-weight: 700;
@@ -723,12 +724,9 @@ main {
     font-weight: 500;
     text-transform: uppercase; }
     @media (min-width: 576px) {
-      .services h1 {
+      .services .section-title {
         font-size: 3em; } }
-    @media (min-width: 1024px) {
-      .services h1 {
-        margin: 5vh 5vw; } }
-    .services h1::before {
+    .services .section-title::before {
       content: '';
       position: absolute;
       top: 0;
@@ -737,16 +735,18 @@ main {
       height: 100%;
       z-index: -1;
       background: #ffff; }
-  @media (min-width: 576px) {
-    .services .container {
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 768px) {
-    .services .container {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: repeat(3, 1fr); } }
+  .services .container .service-grid {
+    margin-top: 10vh; }
+    @media (min-width: 576px) {
+      .services .container .service-grid {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 768px) {
+      .services .container .service-grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
     padding: 1em;
     margin: 80px auto;
@@ -765,17 +765,10 @@ main {
       border-radius: 5px;
       background-color: #000080;
       box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
-    .services .container .service-title {
-      color: #eee;
-      font-size: 1.3em;
-      font-weight: 600;
-      text-transform: capitalize;
-      font-family: "Raleway", sans-serif;
-      letter-spacing: .1em; }
     .services .container .service-icon {
       width: 125px;
       height: 125px;
-      margin: -85px 0 30px;
+      margin: -25% 0 30px;
       padding: 5px;
       border-radius: 50%;
       box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px #333a, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080; }
@@ -784,13 +777,22 @@ main {
           width: 160px;
           height: 160px;
           margin: -110px 0 30px; } }
-    .services .container .service p {
-      margin: 1em auto;
-      padding: 5vh 0;
-      color: #eee;
-      font-family: "Red Rose", cursive;
-      text-transform: capitalize;
-      color: #ddd; }
+    .services .container .service .service-info {
+      margin: 0 .5em 10vh; }
+      .services .container .service .service-info h1 {
+        color: #eee;
+        font-size: 1.25em;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: .1em;
+        text-decoration: underline rgba(255, 255, 255, 0.432); }
+      .services .container .service .service-info p {
+        margin: 1em auto;
+        color: #eee;
+        font-family: "Red Rose", cursive;
+        text-transform: capitalize;
+        color: #ddd; }
     .services .container .service button {
       font-size: 1em;
       border-radius: 5px;
