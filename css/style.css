@@ -473,6 +473,10 @@ main {
   text-align: center;
   overflow: hidden;
   position: relative; }
+  @media (min-width: 768px) {
+    .banner {
+      background: url("../img/joanna-kosinska-7ACuHoezUYk-unsplash.jpg");
+      background-attachment: fixed; } }
   .banner::after {
     content: '';
     position: absolute;
@@ -482,6 +486,9 @@ main {
     height: 100%;
     background: rgba(1, 1, 66, 0.85);
     z-index: 1; }
+    @media (min-width: 992px) {
+      .banner::after {
+        background: rgba(1, 1, 66, 0.25); } }
   @media (min-width: 768px) {
     .banner {
       display: flex;
@@ -515,6 +522,11 @@ main {
       @media (min-width: 576px) {
         .banner .container .banner-content {
           font-size: 2em; } }
+      @media (min-width: 992px) {
+        .banner .container .banner-content {
+          position: absolute;
+          right: 0;
+          margin: 0; } }
       .banner .container .banner-content h2, .banner .container .banner-content p {
         font-family: "Red Rose", cursive; }
       .banner .container .banner-content h2 {
@@ -609,8 +621,7 @@ main {
           transform: translateY(-50%); } }
       @media (min-width: 992px) {
         .banner .container .banner-image {
-          width: 30%;
-          right: 4em; } }
+          display: none; } }
 
 .about {
   padding: 2em 0;
@@ -731,7 +742,7 @@ main {
       grid-gap: 20px;
       grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
-    padding: 1em 1.5em;
+    padding: 1em;
     margin: 80px auto;
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -750,10 +761,10 @@ main {
       box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
     .services .container .service-title {
       color: #eee;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 500;
       text-transform: capitalize;
-      font-family: "Raleway", sans-serif;
+      font-family: "Red Rose", cursive;
       letter-spacing: .1em; }
     .services .container .service-icon {
       width: 125px;

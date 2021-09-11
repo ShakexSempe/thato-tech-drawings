@@ -404,6 +404,11 @@ main {
 
 .banner {
     min-height: 100vh;
+    @include md {
+        background: url('../img/joanna-kosinska-7ACuHoezUYk-unsplash.jpg');
+        background-attachment: fixed;
+    
+    }
     background: url('../img/Optimized-techthat.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -412,6 +417,9 @@ main {
     overflow: hidden;
     position: relative;
     &::after {
+        @include lg {
+        background: rgba(1, 1, 66, 0.250);
+        }
         content: '';
         position: absolute;
         top: 0;
@@ -442,6 +450,11 @@ main {
         .banner-content {
             @include sm {
                 font-size: 2em;
+            }
+            @include lg {
+                position: absolute;
+                right: 0;
+                margin: 0;
             }
             font-size: 1.35em;
             color: #fff;
@@ -566,8 +579,9 @@ main {
                 transform: translateY(-50%);
             }
             @include lg {
-                width: 30%;
-                right: 4em;
+                display: none;
+                // width: 30%;
+                // right: 4em;
             }
         }
     }
@@ -735,7 +749,7 @@ main {
         }
 
         .service {
-            padding: 1em 1.5em;
+            padding: 1em;
             margin: 80px auto;
             text-align: center;
             font-family: 'Raleway', sans-serif;
@@ -751,7 +765,6 @@ main {
                 height: 100%;
                 z-index: -1;
                 border-radius: 5px;
-                // background-image: $primary-gradient;
                 background-color: $primary-color;
                 box-shadow: inset 3px 3px 5px #fffa,
                             inset -3px -3px 5px #000a;
@@ -760,10 +773,10 @@ main {
 
             &-title {
                 color: $text-color-white;
-                font-size: 1.5em;
+                font-size: 1.3em;
                 font-weight: 500;
                 text-transform: capitalize;
-                font-family: $font-rale;
+                font-family: $font-rose;
                 letter-spacing: .1em;
                 // text-decoration: underline rgba(255, 255, 255, 0.432);
 
