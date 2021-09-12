@@ -69,7 +69,7 @@ img {
     bottom: .2em;
     left: 50%;
     transform: translateX(-50%);
-    height: 5px;
+    height: 3px;
     border-radius: 10px;
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     display: block; }
@@ -525,14 +525,12 @@ main {
       padding: .5em .7em;
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px); }
-      @media (min-width: 576px) {
-        .banner .container .banner-content {
-          font-size: 2em; } }
       @media (min-width: 1024px) {
         .banner .container .banner-content {
           position: absolute;
           right: 0;
-          margin: 0; } }
+          margin: 0;
+          backdrop-filter: blur(0.5em); } }
       .banner .container .banner-content::before {
         position: absolute;
         content: '';
@@ -542,18 +540,22 @@ main {
         height: 100%;
         border-radius: 5px;
         box-shadow: inset 3px 3px 4px skyblue, inset -3px -3px 4px #0aceb1; }
-      .banner .container .banner-content h2, .banner .container .banner-content p {
-        font-family: "Red Rose", cursive; }
-      .banner .container .banner-content h2 {
+      .banner .container .banner-content h1 {
         font-size: 1.5em;
         font-weight: 600;
-        text-shadow: 1px 1px 1px #0aceb1; }
+        font-family: "Red Rose", cursive; }
+        @media (max-width: 360px) {
+          .banner .container .banner-content h1 {
+            font-size: 1.4em; } }
+        @media (min-width: 1024px) {
+          .banner .container .banner-content h1 {
+            font-size: 2.5em; } }
       .banner .container .banner-content p {
         text-transform: capitalize;
         font-size: .7em;
         font-weight: 200;
         padding: 0 1.5em;
-        text-shadow: 0px 0px 3px #0aceb1; }
+        color: #0aceb1; }
       @media (min-width: 768px) {
         .banner .container .banner-content {
           display: flex;
@@ -689,7 +691,8 @@ main {
         margin: 10px 0;
         font-weight: 500;
         font-size: 1em;
-        font-family: 'Red Rose', cursive; }
+        font-family: 'Red Rose', cursive;
+        padding: 0 .5em; }
       @media (min-width: 576px) {
         .about-items .about-item-content {
           display: flex;

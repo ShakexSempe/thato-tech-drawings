@@ -1,3 +1,9 @@
+// Extra SMALL DEVICES 
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-max}) {
+        @content;
+    }
+}
 //SMALL DEVICES 
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
