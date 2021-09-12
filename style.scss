@@ -494,10 +494,14 @@ main {
             }
             p {
                 text-transform: capitalize;
-                font-size: .7em;
+                font-size: .9em;
                 font-weight: 200;
-                padding: 0 1.5em;
+                padding: 0;
                 color: $secondary-color;
+
+                @include md {
+                    font-size: 1em;
+                }
             }
 
 
@@ -1217,7 +1221,7 @@ main {
 
             h1 {
                 padding: .7em 1em;
-                font-size: 1.5em;
+                font-size: 1.3em;
                 border-radius: 5px;
                 margin: .5em auto;
                 background-color: $secondary-color;
@@ -1417,7 +1421,7 @@ main {
         }
         .btn {
             font-family: $font-rose;
-            color: #fff000;
+            color: $text-color-white;
             letter-spacing: .2em;
             font-weight: 500;
             border: none;

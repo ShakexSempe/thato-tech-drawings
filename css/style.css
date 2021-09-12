@@ -53,7 +53,7 @@ img {
 
 .section-title {
   margin: .5em auto;
-  font-size: 2.3em;
+  font-size: 2.5em;
   color: #333;
   padding: .2em .5em;
   position: relative;
@@ -552,10 +552,13 @@ main {
             font-size: 2.5em; } }
       .banner .container .banner-content p {
         text-transform: capitalize;
-        font-size: .7em;
+        font-size: .9em;
         font-weight: 200;
-        padding: 0 1.5em;
+        padding: 0;
         color: #0aceb1; }
+        @media (min-width: 768px) {
+          .banner .container .banner-content p {
+            font-size: 1em; } }
       @media (min-width: 768px) {
         .banner .container .banner-content {
           display: flex;
@@ -1078,7 +1081,7 @@ main {
       box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h1 {
       padding: .7em 1em;
-      font-size: 1.5em;
+      font-size: 1.3em;
       border-radius: 5px;
       margin: .5em auto;
       background-color: #0aceb1;
@@ -1216,7 +1219,7 @@ main {
       display: block; }
     .contact .contact-form .btn {
       font-family: "Red Rose", cursive;
-      color: #fff000;
+      color: #eee;
       letter-spacing: .2em;
       font-weight: 500;
       border: none;
