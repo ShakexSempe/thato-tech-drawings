@@ -57,7 +57,8 @@ img {
   color: #333;
   padding: .2em .5em;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  font-family: "Red Rose", cursive; }
   .section-title::after {
     content: '';
     width: 20%;
@@ -292,7 +293,8 @@ header {
         font-size: 1.2em;
         position: relative;
         transition: .2s;
-        display: block; }
+        display: block;
+        text-transform: capitalize; }
         header .navbar .nav-list a::before {
           content: '';
           position: absolute;
@@ -422,7 +424,8 @@ header {
         border: none;
         outline: none;
         transition: .3s;
-        margin-bottom: 1em; }
+        margin-bottom: 1em;
+        text-transform: capitalize; }
         .sidebar-nav-list li a::before, .sidebar-nav-list li a::after {
           position: absolute;
           content: '';
@@ -637,6 +640,18 @@ main {
   padding: 2em 0;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-size: 140%; }
+  .about .section-title {
+    position: relative;
+    z-index: 1;
+    color: #000080;
+    letter-spacing: .2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 2vh;
+    margin-bottom: 5vh; }
+    .about .section-title::before {
+      background-color: #fff;
+      z-index: -2; }
   .about-items {
     text-align: center;
     font-family: 'Raleway', sans-serif; }
@@ -681,9 +696,12 @@ main {
       .about-items .about-item-image {
         max-width: 300px;
         margin: 0 auto;
-        position: relative; }
+        position: relative;
+        cursor: pointer;
+        overflow: hidden; }
         .about-items .about-item-image img {
-          border-radius: 5px; }
+          border-radius: 5px;
+          transition: .3s ease; }
         .about-items .about-item-image::after {
           position: absolute;
           content: 'soon to be link to channel';
@@ -695,6 +713,8 @@ main {
           color: #ddda;
           border-radius: 5px;
           box-shadow: inset -3px -3px 5px #000a, inset 3px 3px 5px #ddda; }
+        .about-items .about-item-image:hover img {
+          transform: scale(1.1); }
 
 .services {
   position: relative;
@@ -786,13 +806,12 @@ main {
         font-size: 1.25em;
         font-weight: 700;
         text-transform: capitalize;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: .1em;
-        text-decoration: underline rgba(255, 255, 255, 0.432); }
+        font-family: "Red Rose", cursive;
+        letter-spacing: .1em; }
       .services .container .service .service-info p {
         margin: 1em auto;
         color: #eee;
-        font-family: "Red Rose", cursive;
+        font-family: "Raleway", sans-serif;
         text-transform: capitalize;
         color: #ddd; }
     .services .container .service button {

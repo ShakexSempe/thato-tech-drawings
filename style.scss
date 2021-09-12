@@ -168,6 +168,8 @@ header {
                 position: relative;
                 transition: .2s;
                 display: block;
+                text-transform: capitalize;
+
 
                 &::before {
                     content: '';
@@ -338,6 +340,7 @@ header {
                 outline: none;
                 transition: .3s;
                 margin-bottom: 1em;
+                text-transform: capitalize;
 
                 &::before,
                 &::after {
@@ -608,8 +611,28 @@ main {
 
 .about {
     padding: 2em 0;
+    // background-color: $primary-color;
     background-image: $primary-gradient;
     background-size: 140%;
+
+    .section-title {
+        position: relative;
+        z-index: 1;
+        color: $primary-color;
+        // background-image: $primary-gradient;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        letter-spacing: .2em;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 2vh;
+        margin-bottom: 5vh;
+        &::before {
+            background-color: #fff;
+            z-index: -2;
+        }
+    }
     &-items {
         text-align: center;
         font-family: 'Raleway', sans-serif;
@@ -673,8 +696,11 @@ main {
                 max-width: 300px;
                 margin: 0 auto;
                 position: relative;
+                cursor: pointer;
+                overflow: hidden;
                 img {
                     border-radius: 5px;
+                    transition: .3s ease;
                 }
                 &::after {
                     position: absolute;
@@ -689,6 +715,11 @@ main {
                     box-shadow: inset -3px -3px 5px #000a,
                                 inset 3px 3px 5px #ddda;
 
+                }
+                &:hover {
+                    img {
+                        transform:scale(1.1);
+                    }
                 }
             }
         }
@@ -819,16 +850,16 @@ main {
                 font-size: 1.25em;
                 font-weight: 700;
                 text-transform: capitalize;
-                font-family: $font-rale;
+                font-family: $font-rose;
                 letter-spacing: .1em;
-                text-decoration: underline rgba(255, 255, 255, 0.432);
+                // text-decoration: underline rgba(255, 255, 255, 0.432);
             }
 
             // end of title
             p {
                 margin: 1em auto;
                 color: $text-color-white;
-                font-family: $font-rose;
+                font-family: $font-rale;
                 text-transform: capitalize;
                 color: #ddd;
             }
