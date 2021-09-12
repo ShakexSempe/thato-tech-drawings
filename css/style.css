@@ -1054,7 +1054,7 @@ main {
     .table-price .price-grid .price-card:nth-child(1) .price p {
       color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1)::after {
-      box-shadow: inset 5px 5px 5px #0aceb1, inset -5px -5px 5px #ddda; }
+      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) h1 {
       background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
@@ -1062,7 +1062,7 @@ main {
     .table-price .price-grid .price-card:nth-child(2) .price p {
       color: #000080; }
     .table-price .price-grid .price-card:nth-child(2)::after {
-      box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #ddda; }
+      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #000080; }
     .table-price .price-grid .price-card:nth-child(3) h1 {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
@@ -1075,7 +1075,7 @@ main {
     .table-price .price-grid .price-card:nth-child(3)::after {
       box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h1 {
-      padding: .5em 1em;
+      padding: .7em 1em;
       font-size: 1.5em;
       border-radius: 5px;
       margin: .5em auto;
@@ -1214,12 +1214,12 @@ main {
       display: block; }
     .contact .contact-form .btn {
       font-family: "Red Rose", cursive;
-      background-color: #0aceb1;
-      color: #000;
+      color: #fff000;
       letter-spacing: .2em;
-      font-weight: 600;
+      font-weight: 500;
       border: none;
       outline: none;
+      z-index: 2;
       width: 30%;
       transition: .3s;
       border-radius: 5px;
@@ -1235,6 +1235,8 @@ main {
         transition: .3s;
         height: 100%;
         border-radius: 5px;
+        z-index: -1;
+        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         box-shadow: inset -3px -3px 5px #000, inset 3px 3px 5px #fff; }
       .contact .contact-form .btn::after {
         position: absolute;
@@ -1245,6 +1247,8 @@ main {
         height: 100%;
         border-radius: 5px;
         opacity: 0;
+        z-index: -1;
+        background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
         transition: .3s;
         box-shadow: inset -3px -3px 5px #ddda, inset 3px 3px 5px #000a; }
       .contact .contact-form .btn:hover {
