@@ -667,20 +667,21 @@ main {
                 h1 {
                     
                     margin: 10px 0 30px;
-                    font-size: 1.7em;
+                    font-size: 1.5em;
                     background: $primary-gradient;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: 800;
                     @include sm {
-                        font-size: 2.3em;
+                        font-size: 2em;
                     }
                 }
 
                 p {
                     margin: 10px 0;
                     font-weight: 500;
+                    font-size: 1em;
                     font-family: 'Red Rose', cursive;
                     
                 }
@@ -858,6 +859,7 @@ main {
                 font-family: $font-rale;
                 text-transform: lowercase;
                 color: #ddd;
+                font-size: 1em;
             }
         }
             // end of service info
@@ -1043,7 +1045,7 @@ main {
     margin: 10px 0;
     font-family: 'Raleway', sans-serif;
 
-    h1 {
+    .section-title {
         font-family: $font-rose;
         font-weight: 500;
         background-image: $primary-gradient;
@@ -1141,7 +1143,7 @@ main {
                 }
 
             }
-            h2 {
+            h1 {
                 box-shadow: inset -5px -5px 5px #000a,
                         inset 5px 5px 5px #ddda;     
             }
@@ -1160,7 +1162,7 @@ main {
                     
             &:nth-child(1) {
                 // border: 1px solid $secondary-color;
-                h2 {
+                h1 {
                     background-color: $secondary-color;
                     
                 }
@@ -1177,7 +1179,7 @@ main {
                 }
             }
             &:nth-child(2) {
-                h2 {
+                h1 {
                     background-color: $primary-color;
                 }
 
@@ -1193,7 +1195,7 @@ main {
                     }
             }
             &:nth-child(3) {
-                h2 {
+                h1 {
                     background-image: $primary-gradient;
                 }
 
@@ -1213,8 +1215,9 @@ main {
                 }
             }
 
-            h2 {
-                padding: 1em 1.3em;
+            h1 {
+                padding: .5em 1em;
+                font-size: 1.5em;
                 border-radius: 5px;
                 margin: .5em auto;
                 background-color: $secondary-color;
@@ -1222,6 +1225,7 @@ main {
                 letter-spacing: .1em;
                 text-transform: uppercase;
                 font-family: $font-rose;
+                font-weight: 500;
                 
             }
 
@@ -1230,7 +1234,7 @@ main {
                 margin: 10px 50px;
                 
                 p {
-                    font-size: 2em;
+                    font-size: 1.8em;
                 }
 
                 small {

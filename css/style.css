@@ -53,7 +53,7 @@ img {
 
 .section-title {
   margin: .5em auto;
-  font-size: 2em;
+  font-size: 2.3em;
   color: #333;
   padding: .2em .5em;
   position: relative;
@@ -677,7 +677,7 @@ main {
           border-radius: 5px; } }
       .about-items .about-item-content h1 {
         margin: 10px 0 30px;
-        font-size: 1.7em;
+        font-size: 1.5em;
         background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -685,10 +685,11 @@ main {
         font-weight: 800; }
         @media (min-width: 576px) {
           .about-items .about-item-content h1 {
-            font-size: 2.3em; } }
+            font-size: 2em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
         font-weight: 500;
+        font-size: 1em;
         font-family: 'Red Rose', cursive; }
       @media (min-width: 576px) {
         .about-items .about-item-content {
@@ -820,7 +821,8 @@ main {
         color: #eee;
         font-family: "Raleway", sans-serif;
         text-transform: lowercase;
-        color: #ddd; }
+        color: #ddd;
+        font-size: 1em; }
     .services .container .service button {
       font-size: 1em;
       border-radius: 5px;
@@ -953,7 +955,7 @@ main {
   padding: 5vh 0;
   margin: 10px 0;
   font-family: 'Raleway', sans-serif; }
-  .table-price h1 {
+  .table-price .section-title {
     font-family: "Red Rose", cursive;
     font-weight: 500;
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
@@ -1035,7 +1037,7 @@ main {
         opacity: 1; }
       .table-price .price-grid .price-card .btn:active {
         transform: scale(0.9); }
-    .table-price .price-grid .price-card h2 {
+    .table-price .price-grid .price-card h1 {
       box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #ddda; }
     .table-price .price-grid .price-card:hover {
       transform: scale(0.97); }
@@ -1045,7 +1047,7 @@ main {
       .table-price .price-grid .price-card:hover::after {
         opacity: 1;
         z-index: -1; }
-    .table-price .price-grid .price-card:nth-child(1) h2 {
+    .table-price .price-grid .price-card:nth-child(1) h1 {
       background-color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1) .btn {
       background-color: #0aceb1; }
@@ -1053,7 +1055,7 @@ main {
       color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1)::after {
       box-shadow: inset 5px 5px 5px #0aceb1, inset -5px -5px 5px #ddda; }
-    .table-price .price-grid .price-card:nth-child(2) h2 {
+    .table-price .price-grid .price-card:nth-child(2) h1 {
       background-color: #000080; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
       background-color: #000080; }
@@ -1061,7 +1063,7 @@ main {
       color: #000080; }
     .table-price .price-grid .price-card:nth-child(2)::after {
       box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #ddda; }
-    .table-price .price-grid .price-card:nth-child(3) h2 {
+    .table-price .price-grid .price-card:nth-child(3) h1 {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
@@ -1072,20 +1074,22 @@ main {
       -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card:nth-child(3)::after {
       box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
-    .table-price .price-grid .price-card h2 {
-      padding: 1em 1.3em;
+    .table-price .price-grid .price-card h1 {
+      padding: .5em 1em;
+      font-size: 1.5em;
       border-radius: 5px;
       margin: .5em auto;
       background-color: #0aceb1;
       color: #fff;
       letter-spacing: .1em;
       text-transform: uppercase;
-      font-family: "Red Rose", cursive; }
+      font-family: "Red Rose", cursive;
+      font-weight: 500; }
     .table-price .price-grid .price-card .price {
       padding: 10px 10px 20px;
       margin: 10px 50px; }
       .table-price .price-grid .price-card .price p {
-        font-size: 2em; }
+        font-size: 1.8em; }
       .table-price .price-grid .price-card .price small {
         font-size: 1.3em; }
     .table-price .price-grid .price-card .card-list {
