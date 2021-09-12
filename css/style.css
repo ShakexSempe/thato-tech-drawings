@@ -291,7 +291,8 @@ header {
         padding: 5px 15px;
         font-size: 1.2em;
         position: relative;
-        transition: .2s; }
+        transition: .2s;
+        display: block; }
         header .navbar .nav-list a::before {
           content: '';
           position: absolute;
@@ -304,6 +305,7 @@ header {
           transition: .3s;
           opacity: 0; }
         header .navbar .nav-list a:hover {
+          transform: scale(1.1);
           color: #0aceb1; }
           header .navbar .nav-list a:hover::before {
             opacity: 1;

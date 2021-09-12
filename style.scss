@@ -154,7 +154,7 @@ header {
                 display: none;
             }
         }
-
+        // desktop nav list
         .nav-list {
             display: none;
 
@@ -167,6 +167,7 @@ header {
                 font-size: 1.2em;
                 position: relative;
                 transition: .2s;
+                display: block;
 
                 &::before {
                     content: '';
@@ -182,6 +183,7 @@ header {
                 }
 
                 &:hover {
+                    transform: scale(1.1);
                     color: $secondary-color;
                     &::before {
                         opacity: 1;
@@ -189,8 +191,8 @@ header {
                     }
                 }
             }
-
         }
+        // end of desktop nav list
 
         .navbar-top {
             display: flex;
