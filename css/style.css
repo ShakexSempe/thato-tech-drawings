@@ -811,7 +811,7 @@ main {
         margin: 1em auto;
         color: #eee;
         font-family: "Raleway", sans-serif;
-        text-transform: capitalize;
+        text-transform: lowercase;
         color: #ddd; }
     .services .container .service button {
       font-size: 1em;
@@ -820,6 +820,7 @@ main {
       color: #000;
       font-weight: 500;
       background-color: #0aceb1;
+      color: #000080;
       position: absolute;
       border: none;
       outline: none;
@@ -827,7 +828,10 @@ main {
       left: 50%;
       transform: translate(-50%);
       transition: .2s ease;
-      font-family: 'Red Rose', cursive; }
+      font-family: "Red Rose", cursive;
+      cursor: pointer;
+      letter-spacing: .1em;
+      text-transform: capitalize; }
       .services .container .service button::after {
         position: absolute;
         content: '';
@@ -1094,6 +1098,8 @@ main {
   padding: 1em 0;
   margin: 50px 0;
   background-color: #000080; }
+  .contact .section-title {
+    color: #eee; }
   .contact h1::after {
     width: 35%; }
   @media (min-width: 768px) {
@@ -1166,8 +1172,6 @@ main {
           opacity: 0; }
         .contact .contact-form #thato-contact p:hover::after {
           opacity: 1; }
-    .contact .contact-form .section-title {
-      color: #eee; }
     .contact .contact-form p {
       color: #eee; }
       .contact .contact-form p:hover {

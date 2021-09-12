@@ -856,7 +856,7 @@ main {
                 margin: 1em auto;
                 color: $text-color-white;
                 font-family: $font-rale;
-                text-transform: capitalize;
+                text-transform: lowercase;
                 color: #ddd;
             }
         }
@@ -869,6 +869,7 @@ main {
                 color: #000;
                 font-weight: 500;
                 background-color: $secondary-color;
+                color: $primary-color;
                 position: absolute;
                 border: none;
                 outline: none;
@@ -876,7 +877,10 @@ main {
                 left: 50%;
                 transform: translate(-50%);
                 transition: .2s ease;
-                font-family: 'Red Rose', cursive;
+                font-family: $font-rose;
+                cursor: pointer;
+                letter-spacing: .1em;
+                text-transform: capitalize;
 
                 &::after {
                     position: absolute;
@@ -1266,7 +1270,9 @@ main {
     padding: 1em 0;
     margin: 50px 0;
     background-color: $primary-color;
-
+    .section-title {
+        color: $text-color-white;
+    }
     h1 {
         &::after {
             width: 35%;
@@ -1367,9 +1373,7 @@ main {
             }
         }
         
-        .section-title {
-            color: $text-color-white;
-        }
+        
         
         p {
             color: $text-color-white;
