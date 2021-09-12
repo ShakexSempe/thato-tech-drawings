@@ -761,14 +761,10 @@ main {
         // margin: 5vh 5vw 10vh;
         padding-bottom: 3vh;
         font-family: $font-rose;
-        font-weight: 700;
-        // background-image: $primary-gradient;
         background-image: $primary-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        // backdrop-filter: blur(3px);
-        // -webkit-backdrop-filter: (3px);
         letter-spacing: .2em;
         font-weight: 500;
         text-transform: uppercase;
@@ -913,7 +909,7 @@ main {
 
 .features {
     margin: 0;
-    padding-top: 1em;
+    padding: 5vh;
     background-color: #fff;
     h1 {
         font-family: $font-rose;
@@ -1048,18 +1044,19 @@ main {
 
 //TABLE PRICE
 .table-price {
-    padding: 1em 0;
+    padding: 5vh 0;
     margin: 10px 0;
     font-family: 'Raleway', sans-serif;
 
     h1 {
-        font-family: 'Fredericka the Great', cursive;
+        font-family: $font-rose;
         font-size: 3em;
         font-weight: 500;
-            text-shadow: 0 0 1px $primary-color;
-            span {
-                text-shadow: 0 0 1px $secondary-color;
-            }
+        background-image: $primary-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10vh;
     }
 
 
