@@ -752,9 +752,7 @@ main {
     }
 
     .section-title {
-        @include sm {
-            font-size: 3em;
-        }
+        
         @include lg {
             // margin: 5vh 10vw;
         }
@@ -913,24 +911,15 @@ main {
 
 .features {
     margin: 0;
+    padding: 5vh 0;
     background-color: #fff;
     h1 {
         font-family: $font-rose;
-        font-size: 3em;
         font-weight: 500;
-
-        // span {
-        //     text-shadow: 0 0 1px $secondary-color;
-        // }
-
         background-image: $primary-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        @include md {
-            font-size: 3.5em;
-        }
     }
 
     &-grid {
@@ -1053,7 +1042,6 @@ main {
 
     h1 {
         font-family: $font-rose;
-        font-size: 3em;
         font-weight: 500;
         background-image: $primary-gradient;
         background-clip: text;
