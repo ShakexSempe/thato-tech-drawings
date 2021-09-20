@@ -192,6 +192,18 @@ header {
                         transform: translate(-50%, 0);
                     }
                 }
+                &:active {
+                    transition: .2s;
+                    transform: scale(.95);
+                }
+                &:focus {
+                    transition: .3s;
+                    background-color: $secondary-color;
+                    color: #fff;
+                    border-radius: 5px;
+                    box-shadow: inset 2px 2px 4px #fffa,
+                                inset -2px -2px 4px #000a;
+                }
             }
         }
         // end of desktop nav list
@@ -932,12 +944,12 @@ main {
     }
 
     &-grid {
-
+        margin-top: 5vh;
         @include md {
             @include grid(1, 5em); 
             
             .features-list {
-                @include grid(2, 2em)
+                @include grid(2, 2em);
             }
         }
         .feature-item {
@@ -1490,16 +1502,23 @@ main {
         padding: 2em;
 
         @include sm {
-            @include grid(2, 20px);
+            @include grid(2, 1fr);
+            gap: 5vw;
+            .footer-item {
+                margin: 0;
+            }
         }
 
         @include md {
-            @include grid(4, 40px);
+            @include grid(2, 1fr);
+        }
+        @include lg {
+            @include grid(3, 1fr);
         }
 
         .footer-item {
-            display: none;
-            margin-bottom: 50px;
+            // display: none;
+            // margin: 5vh 5vw;
             h3 {
                 margin-bottom: 20px;
                 color: $primary-color;
@@ -1525,6 +1544,9 @@ main {
         }
 
         .brand {
+            margin-bottom: 5vh;
+            @include sm {
+            }
             width: 100%;
             object-fit: cover;
             overflow: hidden;
@@ -1561,7 +1583,7 @@ main {
         }
 
         .social {
-            display: none;
+            // display: none;
             .social-icons {
                 display: flex;
                 justify-content: space-evenly;
@@ -1649,9 +1671,12 @@ main {
     }
 
     &-bottom {
+        height: auto;
         font-family: $font-rose;
         padding: 1em;
-        font-size: .7em;
+        font-size: 1em;
+        padding: 5vh 0;
+        line-height: 2;
         @include sm {
           font-size: 1em
         }
@@ -1662,7 +1687,7 @@ main {
             inset -5px -5px 5px #000a;
 
         p {
-            line-height: 1.5;
+            line-height: 1.7;
 
 
             a {
