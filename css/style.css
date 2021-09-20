@@ -841,7 +841,6 @@ main {
       font-size: 1em;
       border-radius: 5px;
       padding: .4em 1.5em;
-      color: #000;
       font-weight: 500;
       background-color: #0aceb1;
       color: #000080;
@@ -1223,6 +1222,9 @@ main {
       border-radius: 5px;
       background-color: #f4f4f4;
       box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a; }
+      .contact .contact-form input:invalid,
+      .contact .contact-form textarea:invalid {
+        background-color: #e0cecb; }
     .contact .contact-form label {
       color: #ddd;
       text-transform: capitalize;
