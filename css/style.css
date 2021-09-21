@@ -481,7 +481,7 @@ main {
 
 .banner {
   min-height: 100vh;
-  background: url("/img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg") no-repeat;
+  background: url("../img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: top left;
   background-attachment: fixed;
