@@ -1,5 +1,5 @@
 // more fonts
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;400;700&display=swap');
 // end of more fonts
 
 $primary-color: #000080;
@@ -29,6 +29,7 @@ $screen-md-min: 768px;
 $screen-lg-min: 1024px;
 $screen-xl-min: 1400px;
 
+$font-text: 'Noto Sans Display', sans-serif;
 $font-rose: 'Red Rose', cursive;
 $font-rale: 'Raleway', sans-serif;
 $font-fred: 'Fredericka the Great', cursive;
