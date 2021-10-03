@@ -750,25 +750,14 @@ main {
 .services {
     position: relative;
     // background: url('../img/Optimized-techthat.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    // background-image: $primary-gradient-reverse;
-    background-image: $primary-gradient;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    background-image: $primary-gradient-reverse;
+    // background-image: $primary-gradient;
     position: relative;
     padding: 1em 0;
     z-index: 2;
-    
-    // &::before{
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: $primary-color-trans;
-    //     z-index: -1;
-    // }
 
     .section-title {
         
