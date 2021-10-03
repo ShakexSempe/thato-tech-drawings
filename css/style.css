@@ -99,9 +99,6 @@ img {
   position: fixed;
   top: 8.5vh;
   z-index: 6; }
-  @media (min-width: 576px) {
-    .progress-container {
-      top: 100px; } }
   @media (min-width: 768px) {
     .progress-container {
       top: 8.5vh; } }
@@ -746,10 +743,6 @@ main {
 
 .services {
   position: relative;
-  background: url("../img/Optimized-techthat.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
   padding: 1em 0;
   z-index: 2; }

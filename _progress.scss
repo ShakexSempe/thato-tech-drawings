@@ -5,9 +5,6 @@
     background: transparent;
     position: fixed;
     top: 8.5vh;
-    @include sm {
-      top: 100px;
-    }
     @include md {
       top: 8.5vh;
     }
