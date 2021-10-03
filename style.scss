@@ -959,17 +959,20 @@ main {
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
-            h4 {
-            font-family: 'Raleway', sans-serif;
+            h2 {
+            font-family: $font-rose;
             color: $secondary-color;
             text-transform: capitalize;
+            font-size: 1em;
+            margin-bottom: .5em;
+            letter-spacing: .03em;
             }
             p {
-                font-family: $font-rose;
+                font-family: $font-rale;
             }
             &-icon {
                 padding: 20px;
-                margin-right: 20px;
+                margin-right: 1em;
                 border: none;
                 outline: none;
                 border-radius: 50%;
@@ -977,12 +980,12 @@ main {
                 color: $secondary-color;
                 transition: .3s ease;
                 box-shadow: 
-                            inset 5px 5px 5px #ddd,
-                            inset -5px -5px 5px #000a;
+                            inset 4px 4px 4px #ddd,
+                            inset -4px -4px 4px #000a;
 
                 i {
                     width: 100%;
-                    font-size: 2.8em;
+                    font-size: 1.5em;
                 }
 
             }
@@ -995,10 +998,9 @@ main {
                                 inset -5px -5px 5px #ddda;
                 }
                 .features-item-description {
-                    h4 {
-                    transition: .3s ease;
-                        letter-spacing: .1em;
-                        text-decoration: underline 1px $secondary-color;
+                    h2 {
+                        transition: .3s ease;
+                        letter-spacing: .07em;
                     }
                 }
             }

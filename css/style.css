@@ -898,33 +898,35 @@ main {
       padding: 20px 0;
       border-bottom: 1px solid #ddd;
       cursor: pointer; }
-      .features-grid .feature-item h4 {
-        font-family: 'Raleway', sans-serif;
+      .features-grid .feature-item h2 {
+        font-family: "Red Rose", cursive;
         color: #0aceb1;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        font-size: 1em;
+        margin-bottom: .5em;
+        letter-spacing: .03em; }
       .features-grid .feature-item p {
-        font-family: "Red Rose", cursive; }
+        font-family: "Raleway", sans-serif; }
       .features-grid .feature-item-icon {
         padding: 20px;
-        margin-right: 20px;
+        margin-right: 1em;
         border: none;
         outline: none;
         border-radius: 50%;
         text-align: center;
         color: #0aceb1;
         transition: .3s ease;
-        box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #000a; }
+        box-shadow: inset 4px 4px 4px #ddd, inset -4px -4px 4px #000a; }
         .features-grid .feature-item-icon i {
           width: 100%;
-          font-size: 2.8em; }
+          font-size: 1.5em; }
       .features-grid .feature-item:hover .feature-item-icon {
         transition: .3s ease;
         transform: scale(0.95);
         box-shadow: inset 5px 5px 5px #000a, inset -5px -5px 5px #ddda; }
-      .features-grid .feature-item:hover .features-item-description h4 {
+      .features-grid .feature-item:hover .features-item-description h2 {
         transition: .3s ease;
-        letter-spacing: .1em;
-        text-decoration: underline 1px #0aceb1; }
+        letter-spacing: .07em; }
     .features-grid .feature-image {
       max-width: 200px;
       margin: 1em auto;
