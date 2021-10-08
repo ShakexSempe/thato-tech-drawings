@@ -181,9 +181,6 @@ header {
     @media (min-width: 768px) {
       header h1 {
         font-size: 2em; } }
-    @media (min-width: 1024px) {
-      header h1 {
-        font-size: 3em; } }
   header .navbar {
     display: flex;
     justify-content: space-between;
@@ -378,10 +375,10 @@ header {
 .sidebar {
   position: fixed;
   left: -100%;
-  top: 10%;
+  top: 10vh;
   width: 100%;
   padding-top: 1.5em;
-  height: calc(100vh - 10%);
+  height: calc(100vh - 10vh);
   background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
   opacity: .3;
   transition: all .5s ease-in-out;
@@ -395,14 +392,6 @@ header {
   .sidebar.open {
     left: -20%;
     opacity: 1; }
-  @media (min-width: 576px) {
-    .sidebar {
-      top: 100px;
-      height: calc(100vh - 100px); } }
-  @media (min-width: 768px) {
-    .sidebar {
-      top: 200px;
-      height: calc(100vh - 200px); } }
   @media (min-width: 1024px) {
     .sidebar {
       display: none; } }

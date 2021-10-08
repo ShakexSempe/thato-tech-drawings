@@ -32,9 +32,6 @@ header {
             @include md {
                 font-size: 2em;
             }
-            @include lg {
-                font-size: 3em;
-            }
         }
 
 
@@ -284,10 +281,10 @@ header {
 .sidebar {
     position: fixed;
     left: -100%;
-    top: 10%;
+    top: 10vh;
     width: 100%;
     padding-top: 1.5em;
-    height: calc(100vh - 10%);
+    height: calc(100vh - 10vh);
     background-image: $secondary-gradient;
     opacity: .3;
     transition: all .5s ease-in-out;
@@ -306,15 +303,15 @@ header {
         opacity: 1;
     }
 
-    @include sm {
-        top: 100px;
-        height: calc(100vh - 100px);
-    }
+    // @include sm {
+    //     top: 100px;
+    //     height: calc(100vh - 100px);
+    // }
 
-    @include md {
-        top: 200px;
-        height: calc(100vh - 200px);
-    }
+    // @include md {
+    //     top: 200px;
+    //     height: calc(100vh - 200px);
+    // }
 
     @include lg {
         display: none;
