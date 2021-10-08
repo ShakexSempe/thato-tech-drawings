@@ -753,8 +753,8 @@ main {
     // background-size: cover;
     // background-position: center;
     // background-attachment: fixed;
-    background-image: $primary-gradient-reverse;
-    // background-image: $primary-gradient;
+    // background-image: $primary-gradient-reverse;
+    background-color: $primary-background-lt-grey;
     position: relative;
     padding: 1em 0;
     z-index: 2;
@@ -819,7 +819,8 @@ main {
                 border-radius: 5px;
                 background-color: $primary-color;
                 box-shadow: inset 3px 3px 5px #fffa,
-                            inset -3px -3px 5px #000a;
+                            inset -3px -3px 5px #000a,
+                            5px 10px 5px rgba(0, 0, 0, 0.455);
             }
 
 
