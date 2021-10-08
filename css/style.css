@@ -678,7 +678,7 @@ main {
         .about-items .about-item-content {
           border: 3px solid rgba(0, 0, 128, 0.308);
           border-radius: 5px; } }
-      .about-items .about-item-content h1 {
+      .about-items .about-item-content h2 {
         margin: 10px 0 30px;
         font-size: 1.5em;
         font-family: "Red Rose", cursive;
@@ -688,7 +688,7 @@ main {
         -webkit-text-fill-color: transparent;
         font-weight: 500; }
         @media (min-width: 576px) {
-          .about-items .about-item-content h1 {
+          .about-items .about-item-content h2 {
             font-size: 2em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
@@ -1286,7 +1286,7 @@ main {
       display: grid;
       grid-gap: 1fr;
       grid-template-columns: repeat(3, 1fr); } }
-  .footer-top .footer-item h3 {
+  .footer-top .footer-item h2 {
     margin-bottom: 20px;
     color: #000080;
     text-align: center;
