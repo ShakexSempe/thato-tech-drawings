@@ -198,6 +198,7 @@ header {
                 }
                 &:focus {
                     transition: .3s;
+                    transition-delay: .5s;
                     background-color: $secondary-color;
                     color: #fff;
                     border-radius: 5px;

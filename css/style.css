@@ -317,6 +317,7 @@ header {
           transform: scale(0.95); }
         header .navbar .nav-list a:focus {
           transition: .3s;
+          transition-delay: .5s;
           background-color: #0aceb1;
           color: #fff;
           border-radius: 5px;
