@@ -220,7 +220,8 @@ header {
       position: relative;
       height: 2.5em;
       width: 2.5em;
-      padding: 0px;
+      transform: scale(0.8);
+      padding: .3em;
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -243,14 +244,14 @@ header {
         opacity: 0;
         animation: toggle 2s ease infinite; }
       header .navbar .menu-toggle::after {
-        box-shadow: inset 2px 2px 5px #ddd, inset -3px -3px 5px #000a; }
+        box-shadow: inset 2px 2px 3px #ddd, inset -2px -2px 3px #000a; }
       header .navbar .menu-toggle:hover::before {
         animation: none; }
       header .navbar .menu-toggle:active {
         transform: scale(0.8); }
       header .navbar .menu-toggle .bar {
         height: 2px;
-        width: 30px;
+        width: 25px;
         position: relative;
         background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
         header .navbar .menu-toggle .bar::before, header .navbar .menu-toggle .bar::after {
@@ -263,9 +264,9 @@ header {
           transition: .3s ease;
           transition-property: top, bottom; }
         header .navbar .menu-toggle .bar::before {
-          top: 8px; }
+          top: 7px; }
         header .navbar .menu-toggle .bar::after {
-          bottom: 8px; }
+          bottom: 7px; }
       header .navbar .menu-toggle:active .bar::before {
         top: 0; }
       header .navbar .menu-toggle:active .bar::after {

@@ -66,7 +66,8 @@ header {
             position: relative;
             height: 2.5em;
             width: 2.5em;
-            padding: 0px;
+            transform: scale(.8);
+            padding: .3em;
             background-image: $primary-gradient;
                     background-clip: text;
                     -webkit-background-clip: text;
@@ -93,8 +94,8 @@ header {
                 animation: toggle 2s ease infinite;     
             }
             &::after {
-                box-shadow: inset 2px 2px 5px #ddd,
-                            inset -3px -3px 5px #000a;      
+                box-shadow: inset 2px 2px 3px #ddd,
+                            inset -2px -2px 3px #000a;      
             }
             &:hover {
                 &::before {
@@ -106,7 +107,7 @@ header {
             }
             .bar {
                 height: 2px;
-                width: 30px;
+                width: 25px;
                 position: relative;
                 background-image: $primary-gradient;
 
@@ -121,10 +122,10 @@ header {
                     transition-property: top, bottom;
                 }
                 &::before {
-                    top: 8px;
+                    top: 7px;
                 }
                 &::after {
-                    bottom: 8px;
+                    bottom: 7px;
                 }
             }
             &:active {
