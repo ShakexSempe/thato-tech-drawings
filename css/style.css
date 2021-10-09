@@ -220,7 +220,7 @@ header {
       position: relative;
       height: 2.5em;
       width: 2.5em;
-      transform: scale(0.8);
+      transform: scale(0.85);
       padding: .3em;
       background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
       background-clip: text;
