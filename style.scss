@@ -215,14 +215,15 @@ header {
         .navbar-button {
             margin-top: .2em auto;
             padding:0;
-
+            height: 2em;
+            width: 2.5em;
             @include sm {
                 margin: 0 auto;
             }
 
             .you-btn {
-                height: 2em;
-                width: 2.5em;
+                height: 100%;
+                width: 100%;
                 background-color: $primary-background-lt-grey;
                 color: #ff0000;
                 font-family: 'Red Rose', cursive;
@@ -233,7 +234,6 @@ header {
                 display: grid;
                 place-items: center;
                 position: relative;
-                
 
                 &::before {
                     position: absolute;
@@ -286,7 +286,7 @@ header {
     width: 100%;
     padding-top: 1.5em;
     height: calc(100vh - 10vh);
-    background-image: $secondary-gradient;
+    background-image: $primary-gradient;
     opacity: .3;
     transition: all .5s ease-in-out;
     z-index: 3;

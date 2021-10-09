@@ -325,13 +325,15 @@ header {
       justify-content: space-between; }
     header .navbar .navbar-button {
       margin-top: .2em auto;
-      padding: 0; }
+      padding: 0;
+      height: 2em;
+      width: 2.5em; }
       @media (min-width: 576px) {
         header .navbar .navbar-button {
           margin: 0 auto; } }
       header .navbar .navbar-button .you-btn {
-        height: 2em;
-        width: 2.5em;
+        height: 100%;
+        width: 100%;
         background-color: #f4f4f4;
         color: #ff0000;
         font-family: 'Red Rose', cursive;
@@ -380,7 +382,7 @@ header {
   width: 100%;
   padding-top: 1.5em;
   height: calc(100vh - 10vh);
-  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   opacity: .3;
   transition: all .5s ease-in-out;
   z-index: 3;
