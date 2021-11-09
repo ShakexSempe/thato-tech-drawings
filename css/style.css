@@ -309,7 +309,7 @@ header {
             transform: translate(-50%, 0); }
         header .navbar .nav-list a:active {
           transition: .2s;
-          transform: scale(0.95); }
+          transform: scale(0.98); }
         header .navbar .nav-list a:focus {
           transition: .3s;
           transition-delay: .5s;
@@ -379,9 +379,9 @@ header {
   width: 100%;
   padding-top: 1.5em;
   height: calc(100vh - 10vh);
-  background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
-  opacity: .3;
-  transition: all .5s ease-in-out;
+  background-color: #000066;
+  border-right: 2px solid #fffa;
+  transition: .3s ease;
   z-index: 3;
   font-family: 'Red Rose', cursive; }
   .sidebar .links-container {
@@ -390,8 +390,22 @@ header {
     position: relative;
     top: 10%; }
   .sidebar.open {
-    left: -20%;
-    opacity: 1; }
+    left: -20%; }
+    .sidebar.open ul li {
+      transform: translateX(0);
+      opacity: 1; }
+      .sidebar.open ul li:nth-child(1) {
+        transition-delay: .2s; }
+      .sidebar.open ul li:nth-child(2) {
+        transition-delay: .25s; }
+      .sidebar.open ul li:nth-child(3) {
+        transition-delay: .3s; }
+      .sidebar.open ul li:nth-child(4) {
+        transition-delay: .35s; }
+      .sidebar.open ul li:nth-child(5) {
+        transition-delay: .4s; }
+      .sidebar.open ul li:nth-child(6) {
+        transition-delay: .45s; }
   @media (min-width: 1024px) {
     .sidebar {
       display: none; } }
@@ -402,30 +416,38 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    isolation: isolate; }
     .sidebar-nav-list li {
       margin-left: 5em;
+      margin-bottom: 1em;
       text-align: left;
       width: 60%;
-      border: none;
-      outline: none; }
+      outline: none;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: 1s;
+      z-index: 1; }
+      .sidebar-nav-list li:active {
+        transform: scale(0.98); }
       @media (min-width: 768px) {
         .sidebar-nav-list li {
-          margin: 0 auto;
           width: 40%; } }
       .sidebar-nav-list li a {
         color: #fff;
+        background-color: navy;
         padding: 5px;
         font-size: 1.1em;
         cursor: pointer;
+        pointer-events: visible;
         display: block;
-        position: relative;
         border: none;
         outline: none;
         transition: .3s;
-        margin-bottom: 1em;
-        text-transform: capitalize; }
-        .sidebar-nav-list li a::before, .sidebar-nav-list li a::after {
+        text-transform: capitalize;
+        z-index: 5;
+        position: relative; }
+        .sidebar-nav-list li a::before {
           position: absolute;
           content: '';
           top: 0;
@@ -436,17 +458,8 @@ header {
           transition: .3s; }
         .sidebar-nav-list li a::before {
           box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a; }
-        .sidebar-nav-list li a::after {
-          opacity: 0;
-          box-shadow: inset 2px 2px 4px #000a, inset -2px -2px 4px #ddda; }
-        .sidebar-nav-list li a:hover {
-          color: #0aceb1; }
-          .sidebar-nav-list li a:hover::before {
-            opacity: 0; }
-          .sidebar-nav-list li a:hover::after {
-            opacity: 1; }
         .sidebar-nav-list li a:active {
-          transform: scale(0.8); }
+          transform: scale(0.95); }
           .sidebar-nav-list li a:active i {
             color: #0aceb1; }
         .sidebar-nav-list li a i {
@@ -1055,8 +1068,6 @@ main {
         transform: scale(0.9); }
     .table-price .price-grid .price-card h1 {
       box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #ddda; }
-    .table-price .price-grid .price-card:hover {
-      transform: scale(0.97); }
     .table-price .price-grid .price-card:nth-child(1) h1 {
       background-color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1) .btn {

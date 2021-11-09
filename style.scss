@@ -192,7 +192,7 @@ header {
                 }
                 &:active {
                     transition: .2s;
-                    transform: scale(.95);
+                    transform: scale(.98);
                 }
                 &:focus {
                     transition: .3s;
@@ -286,9 +286,9 @@ header {
     width: 100%;
     padding-top: 1.5em;
     height: calc(100vh - 10vh);
-    background-image: $primary-gradient;
-    opacity: .3;
-    transition: all .5s ease-in-out;
+    background-color: $primary-color-dark;
+    border-right: 2px solid #fffa;
+    transition: .3s ease;
     z-index: 3;
     font-family: 'Red Rose', cursive;
 
@@ -298,21 +298,35 @@ header {
         position: relative;
         top: 10%;
     }
-
+    // active sidebar
     &.open {
         left: -20%;
-        opacity: 1;
+
+        ul {
+            li {
+                transform: translateX(0);
+                opacity: 1;
+                &:nth-child(1) {
+                    transition-delay: .2s;
+                }
+                &:nth-child(2) {
+                    transition-delay: .25s;
+                }
+                &:nth-child(3) {
+                    transition-delay: .3s;
+                }
+                &:nth-child(4) {
+                    transition-delay: .35s;
+                }
+                &:nth-child(5) {
+                    transition-delay: .4s;
+                }
+                &:nth-child(6) {
+                    transition-delay: .45s;
+                }
+            }
+        }
     }
-
-    // @include sm {
-    //     top: 100px;
-    //     height: calc(100vh - 100px);
-    // }
-
-    // @include md {
-    //     top: 200px;
-    //     height: calc(100vh - 200px);
-    // }
 
     @include lg {
         display: none;
@@ -326,65 +340,65 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        isolation: isolate;
+
 
 
         li {
             margin-left: 5em;
+            margin-bottom: 1em;
             text-align: left;
             width: 60%;
-            border: none;
+            // border: 2px solid yellow;
             outline: none;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 1s;
+            z-index: 1;
+            
+                &:active {
+                    transform: scale(.98);
+                }
+                // end of list item box shadow
             @include md {
-                margin: 0 auto;
                 width: 40%;
             }
             
 
             a {
                 color: #fff;
+                background-color: $primary-color;
                 padding: 5px;
                 font-size: 1.1em;
                 cursor: pointer;
+            pointer-events: visible;
                 display: block;
-                position: relative;
                 border: none;
                 outline: none;
                 transition: .3s;
-                margin-bottom: 1em;
                 text-transform: capitalize;
+                z-index: 5;
+                position: relative;
+                    // list item box shadow
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                transition: .3s;
+            }
 
-                &::before,
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    transition: .3s;
-                }
+            &::before {
+                box-shadow: inset 2px 2px 4px #ddda,
+                            inset -2px -2px 4px #000a;
+            }
 
-                &::before {
-                    box-shadow: inset 2px 2px 4px #ddda,
-                                inset -2px -2px 4px #000a;
-                }
-                &::after{
-                    opacity: 0;
-                    box-shadow: inset 2px 2px 4px #000a,
-                                inset -2px -2px 4px #ddda;
-                }
-                &:hover {
-                    color: $secondary-color;
-                    &::before {
-                        opacity: 0;
-                    }
-                    &::after {
-                        opacity: 1;
-                    }
-                }
+                
                 &:active {
-                    transform: scale(.8);
+                    transform: scale(.95);
                     i {
                         color:$secondary-color;
                     }
@@ -1174,11 +1188,6 @@ main {
             h1 {
                 box-shadow: inset -5px -5px 5px #000a,
                         inset 5px 5px 5px #ddda;     
-            }
-
-            &:hover {
-                transform: scale(.97);
-                
             }
                     
             &:nth-child(1) {
