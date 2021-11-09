@@ -1381,8 +1381,6 @@ main {
         
         p {
             
-            
-            
             @media (max-width: 330px){
                 font-size: .8em;
                 
@@ -1393,7 +1391,9 @@ main {
                 transition: .3s ease;
             }
         }
-
+        .input-div{
+            padding: .5em;
+        
         input, 
         textarea {
             font-family: $font-rose;
@@ -1405,11 +1405,16 @@ main {
             outline: none;
             border-radius: 5px;
             background-color: #f4f4f4;
-            box-shadow: inset 3px 3px 5px #ddd,
-                        inset -3px -3px 5px #000a;
             
             &:invalid {
                 background-color: rgb(224, 206, 203);
+            }
+            &:valid {
+                transition: .3s ease;
+                background-color: $valid;
+            }
+            &:focus {
+                outline: 2px dashed #fff;
             }
         } 
 
@@ -1418,67 +1423,57 @@ main {
             text-transform: capitalize;
             position: relative;
             display: block;
+            transition: .2s ease;
         }
-        .btn {
-            font-family: $font-rose;
-            color: $text-color-white;
-            letter-spacing: .2em;
-            font-weight: 500;
-            border: none;
-            outline: none;
-            z-index: 2;
-            width: 30%;
+        
+        &:hover {
+            label {
+                transform: translateY(50%) translateX(.5em);
+            }
+        }
+    }
+    .btn {
+        font-family: $font-rose;
+        color: $text-color-white;
+        letter-spacing: .2em;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        z-index: 2;
+        width: 100%;
+        transition: .3s;
+        border-radius: 5px;
+        margin-top: 1em;
+        padding: 1em;
+        position: relative;
+        text-transform: uppercase;
+        isolation: isolate;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
             transition: .3s;
+            height: 100%;
             border-radius: 5px;
-            margin-top: 1em;
-            position: relative;
-            text-transform: uppercase;
-            &::before {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                transition: .3s;
-                height: 100%;
-                border-radius: 5px;
-                z-index: -1;
-                background-image: $primary-gradient;
-                box-shadow: inset -3px -3px 5px #000,
-                            inset 3px 3px 5px #fff;
-            }
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-                opacity: 0;
-                z-index: -1;
-                background-image: $secondary-gradient;
-                transition: .3s;
-                box-shadow: inset -3px -3px 5px #ddda,
-                            inset 3px 3px 5px #000a;
-            }
-            &:hover {
-                transition: .3s;
-                letter-spacing: .1em;
-                transform: scale(.98);
-            &::before {
-                opacity: 0;
-            }
-            &::after {
-                opacity: 1;
-            }
-            }
-            &:active {
-                transition: .3s;
-                letter-spacing: 0;
-                transform: scale(.9);
-            }
+            z-index: -1;
+            background-color: #dc143c;
+            box-shadow: inset 3px 3px 3px #fffa,
+                        inset -3px -3px 3px #000a;
         }
+        &:hover {
+            transition: .3s;
+            letter-spacing: .1em;
+            transform: scale(.98);
+        }
+        &:active {
+            transition: .3s;
+            letter-spacing: 0;
+            transform: scale(.9);
+        }
+    }
+
     }
     
 }

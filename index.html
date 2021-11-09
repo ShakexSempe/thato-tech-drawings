@@ -336,12 +336,18 @@
                 </fieldset>
                 <fieldset id="contact-details">
                     <legend>enter your contact details</legend>
+                    <div class="input-div">
                     <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name"
-                        placeholder="first name and surname" required>
+                        placeholder="first name and surname" minlength="2" required>
+                    </div>
+                    <div class="input-div">
                     <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number"
-                        placeholder="phone number (optional)">
+                        placeholder="phone number" min="10" required>
+                    </div>
+                    <div class="input-div">
                     <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email"
                         placeholder="email address" required>
+                    </div>
                 </fieldset>
                 <!-- grade and package -->
                 <fieldset >
@@ -363,8 +369,10 @@
                             <option>Premium</option>
                         </optgroup>
                     </select>
+                    <div class="input-div">
                     <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10"
                         rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
+                    </div>
                 </fieldset>
                 <!-- grade and package -->
 

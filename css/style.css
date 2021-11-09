@@ -1190,26 +1190,37 @@ main {
       font-size: 2em;
       margin-right: .5em;
       transition: .3s ease; }
-    .contact .contact-form input,
-    .contact .contact-form textarea {
-      font-family: "Red Rose", cursive;
-      display: block;
-      width: 100%;
-      margin: 1em auto;
-      padding: .8em 1em;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-      background-color: #f4f4f4;
-      box-shadow: inset 3px 3px 5px #ddd, inset -3px -3px 5px #000a; }
-      .contact .contact-form input:invalid,
-      .contact .contact-form textarea:invalid {
-        background-color: #e0cecb; }
-    .contact .contact-form label {
-      color: #ddd;
-      text-transform: capitalize;
-      position: relative;
-      display: block; }
+    .contact .contact-form .input-div {
+      padding: .5em; }
+      .contact .contact-form .input-div input,
+      .contact .contact-form .input-div textarea {
+        font-family: "Red Rose", cursive;
+        display: block;
+        width: 100%;
+        margin: 1em auto;
+        padding: .8em 1em;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #f4f4f4; }
+        .contact .contact-form .input-div input:invalid,
+        .contact .contact-form .input-div textarea:invalid {
+          background-color: #e0cecb; }
+        .contact .contact-form .input-div input:valid,
+        .contact .contact-form .input-div textarea:valid {
+          transition: .3s ease;
+          background-color: skyblue; }
+        .contact .contact-form .input-div input:focus,
+        .contact .contact-form .input-div textarea:focus {
+          outline: 2px dashed #fff; }
+      .contact .contact-form .input-div label {
+        color: #ddd;
+        text-transform: capitalize;
+        position: relative;
+        display: block;
+        transition: .2s ease; }
+      .contact .contact-form .input-div:hover label {
+        transform: translateY(50%) translateX(0.5em); }
     .contact .contact-form .btn {
       font-family: "Red Rose", cursive;
       color: #eee;
@@ -1218,12 +1229,14 @@ main {
       border: none;
       outline: none;
       z-index: 2;
-      width: 30%;
+      width: 100%;
       transition: .3s;
       border-radius: 5px;
       margin-top: 1em;
+      padding: 1em;
       position: relative;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      isolation: isolate; }
       .contact .contact-form .btn::before {
         position: absolute;
         content: '';
@@ -1234,29 +1247,12 @@ main {
         height: 100%;
         border-radius: 5px;
         z-index: -1;
-        background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
-        box-shadow: inset -3px -3px 5px #000, inset 3px 3px 5px #fff; }
-      .contact .contact-form .btn::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        opacity: 0;
-        z-index: -1;
-        background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
-        transition: .3s;
-        box-shadow: inset -3px -3px 5px #ddda, inset 3px 3px 5px #000a; }
+        background-color: #dc143c;
+        box-shadow: inset 3px 3px 3px #fffa, inset -3px -3px 3px #000a; }
       .contact .contact-form .btn:hover {
         transition: .3s;
         letter-spacing: .1em;
         transform: scale(0.98); }
-        .contact .contact-form .btn:hover::before {
-          opacity: 0; }
-        .contact .contact-form .btn:hover::after {
-          opacity: 1; }
       .contact .contact-form .btn:active {
         transition: .3s;
         letter-spacing: 0;
