@@ -33,7 +33,7 @@ img {
 .btn {
   display: inline-block;
   padding: 10px 17px;
-  background-color: #000080;
+  background-color: navy;
   color: #fff;
   text-align: center;
   border-radius: 1px;
@@ -72,7 +72,7 @@ img {
     transform: translateX(-50%);
     height: 5px;
     border-radius: 10px;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
     display: block; }
   .section-title::before {
     content: '';
@@ -91,7 +91,7 @@ img {
     margin-right: auto; }
 
 .section-title > span {
-  color: #000080; }
+  color: navy; }
 
 .progress-container {
   width: 100%;
@@ -107,7 +107,7 @@ img {
 .progress-bar {
   height: 4px;
   margin: 5px 0;
-  background-image: linear-gradient(90deg, #0aceb1, #000080, #0aceb1);
+  background-image: linear-gradient(90deg, #0aceb1, navy, #0aceb1);
   width: 0%;
   border-bottom: 1px solid #f7e92985; }
 
@@ -117,7 +117,7 @@ img {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+  background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
   width: 2.5rem;
   height: 2.5rem;
   display: grid;
@@ -175,7 +175,7 @@ header {
     font-family: 'Fredericka the Great', cursive;
     font-size: 1.5em;
     font-weight: 500;
-    text-shadow: 0 0 1px #000080; }
+    text-shadow: 0 0 1px navy; }
     header h1 span {
       text-shadow: 0 0 1px #0aceb1; }
     @media (min-width: 768px) {
@@ -222,7 +222,7 @@ header {
       width: 2.5em;
       transform: scale(0.85);
       padding: .3em;
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -253,13 +253,13 @@ header {
         height: 2px;
         width: 25px;
         position: relative;
-        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+        background-image: linear-gradient(to right, navy 0%, #0aceb1 100%); }
         header .navbar .menu-toggle .bar::before, header .navbar .menu-toggle .bar::after {
           content: '';
           position: absolute;
           height: 100%;
           width: 100%;
-          background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+          background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
           left: 0;
           transition: .3s ease;
           transition-property: top, bottom; }
@@ -382,7 +382,7 @@ header {
   width: 100%;
   padding-top: 1.5em;
   height: calc(100vh - 10vh);
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
   opacity: .3;
   transition: all .5s ease-in-out;
   z-index: 3;
@@ -593,7 +593,7 @@ main {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+          background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
           border-radius: 5px;
           border: none;
           outline: none;
@@ -607,7 +607,7 @@ main {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+          background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
           border-radius: 5px;
           border: none;
           outline: none;
@@ -647,12 +647,12 @@ main {
 
 .about {
   padding: 2em 0;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
   background-size: 140%; }
   .about .section-title {
     position: relative;
     z-index: 1;
-    color: #000080;
+    color: navy;
     letter-spacing: .2em;
     font-weight: 500;
     text-transform: uppercase;
@@ -685,7 +685,7 @@ main {
         margin: 10px 0 30px;
         font-size: 1.5em;
         font-family: "Red Rose", cursive;
-        background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        background: linear-gradient(to right, navy 0%, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -747,7 +747,7 @@ main {
   .services .section-title {
     padding-bottom: 3vh;
     font-family: "Red Rose", cursive;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -791,7 +791,7 @@ main {
       height: 100%;
       z-index: -1;
       border-radius: 5px;
-      background-color: #000080;
+      background-color: navy;
       box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a, 5px 10px 5px rgba(0, 0, 0, 0.455); }
     .services .container .service-icon {
       width: 125px;
@@ -799,7 +799,7 @@ main {
       margin: -25% 0 30px;
       padding: 5px;
       border-radius: 50%;
-      box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px #333a, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080; }
+      box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px #333a, inset 5px 5px 5px #0aceb1, inset -5px -5px navy; }
       @media (min-width: 768px) {
         .services .container .service-icon {
           width: 160px;
@@ -828,7 +828,7 @@ main {
       padding: .4em 1.5em;
       font-weight: 500;
       background-color: #0aceb1;
-      color: #000080;
+      color: navy;
       position: absolute;
       border: none;
       outline: none;
@@ -863,7 +863,7 @@ main {
   .features h1 {
     font-family: "Red Rose", cursive;
     font-weight: 500;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -960,7 +960,7 @@ main {
   .table-price .section-title {
     font-family: "Red Rose", cursive;
     font-weight: 500;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1058,24 +1058,24 @@ main {
     .table-price .price-grid .price-card:nth-child(1)::after {
       box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) h1 {
-      background-color: #000080; }
+      background-color: navy; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
-      background-color: #000080; }
+      background-color: navy; }
     .table-price .price-grid .price-card:nth-child(2) .price p {
-      color: #000080; }
+      color: navy; }
     .table-price .price-grid .price-card:nth-child(2)::after {
-      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #000080; }
+      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px navy; }
     .table-price .price-grid .price-card:nth-child(3) h1 {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      background-image: linear-gradient(to right, navy 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      background-image: linear-gradient(to right, navy 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .price {
-      background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      background: linear-gradient(to right, navy 0%, #0aceb1 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card:nth-child(3)::after {
-      box-shadow: inset 5px 5px 5px #000080, inset -5px -5px 5px #0aceb1; }
+      box-shadow: inset 5px 5px 5px navy, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h1 {
       padding: .7em 1em;
       font-size: 1.3em;
@@ -1108,7 +1108,7 @@ main {
 .contact {
   padding: 1em 0;
   margin: 50px 0;
-  background-color: #000080; }
+  background-color: navy; }
   .contact .section-title {
     color: #eee; }
   .contact h1::after {
@@ -1135,15 +1135,18 @@ main {
       padding: .5em;
       text-align: center;
       line-height: 1.5;
-      font-style: italic; }
+      font-style: italic;
+      color: #fff; }
       .contact .contact-form .form-info-link a {
         color: #0aceb1;
-        text-decoration: underline; }
+        text-decoration: underline;
+        transition: .2s; }
         .contact .contact-form .form-info-link a:hover {
-          color: #ddd; }
+          color: #ddd;
+          text-decoration: none; }
     .contact .contact-form fieldset {
       color: #0aceb1;
-      border: 1px solid #0aceb1;
+      border: 3px solid #0aceb1;
       padding: .5em 1em;
       margin: 2em auto;
       border-radius: 5px; }
@@ -1158,10 +1161,12 @@ main {
           font-size: 1em; }
     .contact .contact-form #thato-contact p {
       margin: 40px 0;
-      font-size: .8em;
-      transition: .3s ease;
+      font-size: 1em;
       padding: 1em 0 1em 1em;
-      position: relative; }
+      color: #fff;
+      background-color: #000066;
+      position: relative;
+      transition: .3s ease; }
       .contact .contact-form #thato-contact p::before, .contact .contact-form #thato-contact p::after {
         position: absolute;
         content: '';
@@ -1172,31 +1177,19 @@ main {
         border-radius: 5px;
         transition: .3s; }
       .contact .contact-form #thato-contact p::before {
-        box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 4px #ddda; }
-      .contact .contact-form #thato-contact p::after {
-        opacity: 0;
         box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 4px #000a; }
       .contact .contact-form #thato-contact p:hover {
-        transform: translateY(-0.5em);
-        letter-spacing: .1em; }
-        .contact .contact-form #thato-contact p:hover::before {
-          opacity: 0; }
-        .contact .contact-form #thato-contact p:hover::after {
-          opacity: 1; }
-    .contact .contact-form p {
-      color: #eee; }
-      .contact .contact-form p:hover {
-        transition: .3s ease; }
-        .contact .contact-form p:hover i {
-          transition: .3s ease;
+        color: #0aceb1; }
+        .contact .contact-form #thato-contact p:hover i {
+          transition: .5s;
           color: #0aceb1; }
-      @media (max-width: 330px) {
-        .contact .contact-form p {
-          font-size: .8em; } }
-      .contact .contact-form p i {
-        font-size: 2em;
-        margin-right: .5em;
-        transition: .3s ease; }
+    @media (max-width: 330px) {
+      .contact .contact-form p {
+        font-size: .8em; } }
+    .contact .contact-form p i {
+      font-size: 2em;
+      margin-right: .5em;
+      transition: .3s ease; }
     .contact .contact-form input,
     .contact .contact-form textarea {
       font-family: "Red Rose", cursive;
@@ -1241,7 +1234,7 @@ main {
         height: 100%;
         border-radius: 5px;
         z-index: -1;
-        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
         box-shadow: inset -3px -3px 5px #000, inset 3px 3px 5px #fff; }
       .contact .contact-form .btn::after {
         position: absolute;
@@ -1253,7 +1246,7 @@ main {
         border-radius: 5px;
         opacity: 0;
         z-index: -1;
-        background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+        background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
         transition: .3s;
         box-shadow: inset -3px -3px 5px #ddda, inset 3px 3px 5px #000a; }
       .contact .contact-form .btn:hover {
@@ -1291,7 +1284,7 @@ main {
       grid-template-columns: repeat(3, 1fr); } }
   .footer-top .footer-item h2 {
     margin-bottom: 20px;
-    color: #000080;
+    color: navy;
     text-align: center;
     text-decoration: .2em underline;
     text-decoration-color: #0aceb1;
@@ -1343,7 +1336,7 @@ main {
         font-size: 3em;
         margin-right: 10px;
         transition: .2s ease;
-        color: #000080;
+        color: navy;
         padding: .2em;
         border-radius: 30px;
         box-shadow: inset 3px 3px 5px #e9e8e8aa, inset -3px -3px 5px #8a8989aa; }
@@ -1361,9 +1354,9 @@ main {
       .footer-top .social li i {
         color: #000a; }
     .footer-top .social:hover li {
-      color: #000080; }
+      color: navy; }
       .footer-top .social:hover li i {
-        color: #000080; } }
+        color: navy; } }
   .footer-top .blog {
     display: none; }
     .footer-top .blog .post {
@@ -1390,7 +1383,7 @@ main {
   font-size: 1em;
   padding: 5vh 0;
   line-height: 2;
-  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+  background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
   color: #fff;
   text-align: center;
   box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a; }

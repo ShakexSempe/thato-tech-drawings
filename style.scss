@@ -1309,12 +1309,15 @@ main {
             text-align: center;
             line-height: 1.5;
             font-style: italic;
+            color: $text-light;
             a {
                 color: $secondary-color;
                 text-decoration: underline;
-                
+                transition: .2s;
+
                 &:hover {
                 color: #ddd;
+                text-decoration: none;
                 }
             }
         }
@@ -1322,7 +1325,7 @@ main {
 
         fieldset {
             color: $secondary-color;
-            border: 1px solid $secondary-color;
+            border: 3px solid $secondary-color;
             padding: .5em 1em;
             margin: 2em auto;
             border-radius: 5px;
@@ -1342,53 +1345,43 @@ main {
         }
         #thato-contact {
             p {
-            margin: 40px 0;
-            font-size: .8em;
-            transition: .3s ease;
-            padding: 1em 0 1em 1em;
-            position: relative;
-            &::before,
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-                transition: .3s;
-            }
-            &::before {
-                box-shadow: inset 2px 2px 3px #000a,
-                        inset -2px -2px 4px #ddda;
-            }
-            &::after {
-                opacity: 0;
-                box-shadow: inset 2px 2px 3px #ddda,
-                inset -2px -2px 4px #000a;
-            }
-            &:hover {
-                transform: translateY(-.5em);
-                letter-spacing: .1em;
-                &::before {opacity: 0} 
-                &::after {opacity: 1} 
-            } 
+                margin: 40px 0;
+                font-size: 1em;
+                padding: 1em 0 1em 1em;
+                color: $text-light;
+                background-color: $primary-color-dark;
+                position: relative;
+                transition: .3s ease;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    transition: .3s;
+                }
+
+                &::before {
+                    box-shadow: inset 2px 2px 3px #ddda,
+                        inset -2px -2px 4px #000a;
+                }
+                &:hover {
+                    color: $secondary-color;
+                    i {
+                        transition: .5s;
+                        color: $secondary-color;
+                    }
+                }
             }
         }
         
-        
-        
         p {
-            color: $text-color-white;
             
-            &:hover {
-                transition: .3s ease;
-
-                i {
-                    transition: .3s ease;
-                    color: $secondary-color;
-                }
-            }
+            
             
             @media (max-width: 330px){
                 font-size: .8em;
