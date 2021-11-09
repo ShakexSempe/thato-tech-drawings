@@ -678,6 +678,15 @@ main {
     @media (max-width: 500px) {
       .section-padding.pad3 {
         background-size: 100%; } }
+  .section-padding.pad4 {
+    height: 60vh;
+    background-color: #ddd;
+    background-position: center;
+    background-image: url(../img/Optimized-techthat.png); }
+    @media (min-width: 1025px) {
+      .section-padding.pad4 {
+        background-position: center bottom;
+        height: 100vh; } }
 
 .about {
   padding: 2em 0;
@@ -1119,8 +1128,7 @@ main {
         text-transform: capitalize; }
 
 .contact {
-  padding: 1em 0;
-  margin: 50px 0;
+  padding: 10vh 0;
   background-color: navy; }
   .contact .section-title {
     color: #eee; }

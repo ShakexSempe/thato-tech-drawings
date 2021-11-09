@@ -661,6 +661,18 @@ main {
             background-size: 100%;
         }
     }
+    &.pad4 {
+        height: 60vh;
+        background-color: #ddd;
+        background-position: center;
+        @media (min-width: 1025px){
+            background-position: center bottom;
+            height: 100vh;
+
+        }
+        background-image:url(../img/Optimized-techthat.png);
+
+    }
 }
 
 // VIDEOS
@@ -1278,8 +1290,7 @@ main {
 
 //CONTACT
 .contact {
-    padding: 1em 0;
-    margin: 50px 0;
+    padding: 10vh 0;
     background-color: $primary-color;
     .section-title {
         color: $text-color-white;
