@@ -621,6 +621,34 @@ main {
 
 // END OF BANNER
 
+// section padding
+.section-padding {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-image: url(../img/about1.jpg);
+    @media (max-width: 768px){
+        background-size: 100%;
+    }
+    &.pad1 {
+        background-size: cover;
+        background-image: url(/img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg);
+    }
+    &.pad3 {
+        background-image: url(/img/tpsempe.jpg);
+        background-size: 40%;
+        background-position: center;
+        @media (min-width: 768px){
+            background-size: 30%;
+        }
+        @media (max-width: 500px) {
+            background-size: 100%;
+        }
+    }
+}
+
 // VIDEOS
 
 .about {

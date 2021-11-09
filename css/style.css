@@ -645,6 +645,30 @@ main {
         .banner .container .banner-image {
           display: none; } }
 
+.section-padding {
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-image: url(../img/about1.jpg); }
+  @media (max-width: 768px) {
+    .section-padding {
+      background-size: 100%; } }
+  .section-padding.pad1 {
+    background-size: cover;
+    background-image: url(/img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg); }
+  .section-padding.pad3 {
+    background-image: url(/img/tpsempe.jpg);
+    background-size: 40%;
+    background-position: center; }
+    @media (min-width: 768px) {
+      .section-padding.pad3 {
+        background-size: 30%; } }
+    @media (max-width: 500px) {
+      .section-padding.pad3 {
+        background-size: 100%; } }
+
 .about {
   padding: 2em 0;
   background-image: linear-gradient(to right, navy 0%, #0aceb1 100%);
