@@ -22,30 +22,29 @@
 
   /*back to top button*/
 .top-link {
-  @include sm {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.25rem;
-  }
-  font-size: 1.8rem;
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 5vh;
+  right: 5vw;
   background-image: $secondary-gradient;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: auto;
+  height: auto;
   display: grid;
   place-items: center;
   border-radius: 5px;
   color: #fff;
   box-shadow: inset 3px 3px 5px #ddda,
               inset -3px -3px 5px #000a;
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 1.5s ease-in-out infinite;
   transition: .5s ease-in;
   opacity: 0;
   visibility: hidden;
-  z-index: -100;
+  z-index: -10;
 
+  i {
+  font-size: 1.5em;
+  padding: .4em;
+
+  }
   &:hover {
     animation: none;
   }
@@ -53,7 +52,7 @@
 .show-link {
   transition: opacity .5s ease-in-out;
   visibility: visible;
-  z-index: 1000000;
+  z-index: 10;
   opacity: 1;
 }
 @keyframes bounce {
@@ -61,7 +60,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.12);
   }
   100% {
     transform: scale(1);

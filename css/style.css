@@ -113,42 +113,39 @@ img {
 
 /*back to top button*/
 .top-link {
-  font-size: 1.8rem;
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 5vh;
+  right: 5vw;
   background-image: linear-gradient(0deg, #0aceb1 0%, navy 100%);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: auto;
+  height: auto;
   display: grid;
   place-items: center;
   border-radius: 5px;
   color: #fff;
   box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 1.5s ease-in-out infinite;
   transition: .5s ease-in;
   opacity: 0;
   visibility: hidden;
-  z-index: -100; }
-  @media (min-width: 576px) {
-    .top-link {
-      width: 3rem;
-      height: 3rem;
-      font-size: 2.25rem; } }
+  z-index: -10; }
+  .top-link i {
+    font-size: 1.5em;
+    padding: .4em; }
   .top-link:hover {
     animation: none; }
 
 .show-link {
   transition: opacity .5s ease-in-out;
   visibility: visible;
-  z-index: 1000000;
+  z-index: 10;
   opacity: 1; }
 
 @keyframes bounce {
   0% {
     transform: scale(1); }
   50% {
-    transform: scale(1.2); }
+    transform: scale(1.12); }
   100% {
     transform: scale(1); } }
 
@@ -1011,8 +1008,9 @@ main {
     outline: none;
     text-align: center;
     border: none;
-    transition: .3s;
-    position: relative; }
+    transition: .2s ease;
+    position: relative;
+    isolation: isolate; }
     .table-price .price-grid .price-card::before {
       position: absolute;
       content: '';
@@ -1022,17 +1020,9 @@ main {
       height: 100%;
       border-radius: 10px;
       transition: 1s ease;
-      box-shadow: inset 5px 5px 5px #d6d5d5, inset -5px -5px 5px #000a; }
-    .table-price .price-grid .price-card::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      opacity: 0;
-      transition: 1s; }
+      background-image: linear-gradient(-40deg, #ddd, #f4f4f4);
+      z-index: -1;
+      box-shadow: inset 5px 5px 4px #d6d5d5, inset -5px -5px 4px #000a, 5px 10px 5px rgba(0, 0, 0, 0.367); }
     .table-price .price-grid .price-card .btn {
       margin: .5em auto;
       cursor: pointer;
@@ -1067,28 +1057,18 @@ main {
       box-shadow: inset -5px -5px 5px #000a, inset 5px 5px 5px #ddda; }
     .table-price .price-grid .price-card:hover {
       transform: scale(0.97); }
-      .table-price .price-grid .price-card:hover::before {
-        opacity: 0;
-        z-index: -1; }
-      .table-price .price-grid .price-card:hover::after {
-        opacity: 1;
-        z-index: -1; }
     .table-price .price-grid .price-card:nth-child(1) h1 {
       background-color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1) .btn {
       background-color: #0aceb1; }
     .table-price .price-grid .price-card:nth-child(1) .price p {
       color: #0aceb1; }
-    .table-price .price-grid .price-card:nth-child(1)::after {
-      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card:nth-child(2) h1 {
       background-color: navy; }
     .table-price .price-grid .price-card:nth-child(2) .btn {
       background-color: navy; }
     .table-price .price-grid .price-card:nth-child(2) .price p {
       color: navy; }
-    .table-price .price-grid .price-card:nth-child(2)::after {
-      box-shadow: inset 5px 5px 5px #ddd, inset -5px -5px 5px navy; }
     .table-price .price-grid .price-card:nth-child(3) h1 {
       background-image: linear-gradient(to right, navy 0%, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
@@ -1098,8 +1078,6 @@ main {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .table-price .price-grid .price-card:nth-child(3)::after {
-      box-shadow: inset 5px 5px 5px navy, inset -5px -5px 5px #0aceb1; }
     .table-price .price-grid .price-card h1 {
       padding: .7em 1em;
       font-size: 1.3em;
