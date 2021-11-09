@@ -381,7 +381,7 @@ header {
   height: calc(100vh - 10vh);
   background-color: #000066;
   border-right: 2px solid #fffa;
-  transition: .3s ease;
+  transition: .5s ease;
   z-index: 3;
   font-family: 'Red Rose', cursive; }
   .sidebar .links-container {
