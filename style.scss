@@ -435,11 +435,11 @@ main {
 .banner {
     min-height: 100vh;
     @include md {
-        background: url('../img/joanna-kosinska-7ACuHoezUYk-unsplash.jpg');
+        background: url('../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg');
         background-attachment: fixed;
     
     }
-    background: url('../img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg') no-repeat;
+    background: url('../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg') no-repeat;
     background-size: cover;
     background-position: top left;
     background-attachment: fixed;
@@ -642,16 +642,16 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    background-image: url(../img/about1.jpg);
+    background-image: url(../img/about1-min.jpg);
     @media (max-width: 768px){
         background-size: 100%;
     }
     &.pad1 {
         background-size: cover;
-        background-image: url(../img/sergey-zolkin-m9qMoh-scfE-unsplash.jpg);
+        background-image: url(../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg);
     }
     &.pad3 {
-        background-image: url(../img/tpsempe.jpg);
+        background-image: url(../img/tpsempe-min.jpg);
         background-size: 40%;
         background-position: center;
         @media (min-width: 768px){
