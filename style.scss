@@ -636,19 +636,7 @@ main {
 // END OF BANNER
 
 // section padding
-.banner-pad {
-    height: 70vh;
-    background-image: url(../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg);
-    background-attachment: fixed;
 
-    @media (max-width: 768px) {
-        background-size: cover;
-        height: 100vh;
-
-        background-image: url(../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg);
-
-    }
-}
 .section-padding {
     height: 100vh;
     background-attachment: fixed;
