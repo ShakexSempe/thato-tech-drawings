@@ -4,6 +4,9 @@
 @import 'utils';
 @import 'progress';
 
+* {
+    // border: 1px solid red;
+}
 
 //HEADER
 header {
@@ -345,7 +348,7 @@ header {
 
 
         li {
-            margin-left: 5em;
+            margin-left: 20vw;
             margin-bottom: 1em;
             text-align: left;
             width: 60%;
@@ -518,7 +521,7 @@ main {
             }
             p {
                 text-transform: capitalize;
-                font-size: .9em;
+                font-size: .8em;
                 font-weight: 200;
                 padding: 0;
                 color: $secondary-color;
@@ -676,8 +679,187 @@ main {
     }
 }
 
-// VIDEOS
+// SERVICES
+.services {
+    position: relative;
+    // background: url('../img/Optimized-techthat.png') no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    // background-image: $primary-gradient-reverse;
+    background-color: $primary-background-lt-grey;
+    position: relative;
+    padding: 1em 0;
+    z-index: 2;
 
+    .section-title {
+        
+        @include lg {
+            // margin: 5vh 10vw;
+        }
+        // margin: 5vh 5vw 10vh;
+        padding-bottom: 3vh;
+        font-family: $font-rose;
+        background-image: $primary-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: .2em;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #ffff;
+        }
+        
+    }
+    .container {
+
+        
+        .service-grid {
+            margin-top: 10vh;
+            @include sm {
+                @include grid(2, 15px)
+            }
+            @include md {
+                @include grid(3, 20px)
+            }
+        }
+        // service items
+        .service {
+            padding: 1em;
+            margin: 80px auto;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 5px;
+                background-color: $primary-color;
+                box-shadow: inset 3px 3px 5px #fffa,
+                            inset -3px -3px 5px #000a,
+                            5px 10px 5px rgba(0, 0, 0, 0.455);
+            }
+
+
+            // icon
+            &-icon {
+                width: 125px;
+                height: 125px;
+                margin: -25% 0 30px;
+                padding: 5px;
+                border-radius: 50%;
+                box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226),
+                    3px 3px 5px #333a,
+                    inset 5px 5px 5px $secondary-color,
+                    inset -5px -5px $primary-color;
+
+                @include md {
+                    width: 160px;
+                    height: 160px;
+                    margin: -110px 0 30px;
+                }
+            }
+            // end of icon
+            // service info
+            .service-info {
+                border-radius: 5px;
+                margin: 0 0em 10vh;
+                padding: .5em;
+            // title
+            h1 {
+                @include md {
+                    height: 10vh;
+                    display: grid;
+                    place-items: center;
+
+                }
+                color: $text-color-white;
+                font-size: 1.2em;
+                font-weight: 700;
+                text-transform: capitalize;
+                font-family: $font-rose;
+                letter-spacing: .1em;
+                border: 1px solid $secondary-color;
+                margin-bottom: 1em;
+                border-radius: 5px;
+                padding: .2em;
+                // text-decoration: underline rgba(255, 255, 255, 0.432);
+            }
+
+            // end of title
+            p {
+                margin: 1em auto;
+                color: $text-color-white;
+                // font-family: $font-rale;
+                font-family: $font-text;
+                color: #ddd;
+                font-size: 1em;
+                font-weight: 400;
+            }
+        }
+            // end of service info
+
+            button {
+                font-size: 1em;
+                border-radius: 5px;
+                padding: .4em 1.5em;
+                font-weight: 500;
+                background-color: $secondary-color;
+                color: $primary-color;
+                position: absolute;
+                border: none;
+                outline: none;
+                bottom: 1em;
+                left: 50%;
+                transform: translate(-50%);
+                transition: .2s ease;
+                font-family: $font-rose;
+                cursor: pointer;
+                letter-spacing: .1em;
+                text-transform: capitalize;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    box-shadow: inset 2px 2px 3px #fffa,
+                        inset -2px -2px 3px #000a;
+                }
+
+
+                &:hover {
+                    letter-spacing: 0;
+                    transition: .2s ease;
+                    transform: translate(-50%) scale(.95);
+                }
+            }
+            }
+        // end of service items
+    }
+}
+//END OF SERVICES
+// VIDEOS
 .about {
     padding: 2em 0;
     background-image: $primary-gradient;
@@ -796,182 +978,9 @@ main {
         }
     }
 }
-
 // END OF VIDEOS
 
-// SERVICES
 
-.services {
-    position: relative;
-    // background: url('../img/Optimized-techthat.png') no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    // background-attachment: fixed;
-    // background-image: $primary-gradient-reverse;
-    background-color: $primary-background-lt-grey;
-    position: relative;
-    padding: 1em 0;
-    z-index: 2;
-
-    .section-title {
-        
-        @include lg {
-            // margin: 5vh 10vw;
-        }
-        // margin: 5vh 5vw 10vh;
-        padding-bottom: 3vh;
-        font-family: $font-rose;
-        background-image: $primary-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        letter-spacing: .2em;
-        font-weight: 500;
-        text-transform: uppercase;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: #ffff;
-        }
-        
-    }
-    .container {
-
-        
-        .service-grid {
-            margin-top: 10vh;
-            @include sm {
-                @include grid(2, 15px)
-            }
-            @include md {
-                @include grid(3, 20px)
-            }
-        }
-        // service items
-        .service {
-            padding: 1em;
-            margin: 80px auto;
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            position: relative;
-            cursor: pointer;
-
-            &::before {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                border-radius: 5px;
-                background-color: $primary-color;
-                box-shadow: inset 3px 3px 5px #fffa,
-                            inset -3px -3px 5px #000a,
-                            5px 10px 5px rgba(0, 0, 0, 0.455);
-            }
-
-
-            // icon
-            &-icon {
-                width: 125px;
-                height: 125px;
-                margin: -25% 0 30px;
-                padding: 5px;
-                border-radius: 50%;
-                box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226),
-                    3px 3px 5px #333a,
-                    inset 5px 5px 5px $secondary-color,
-                    inset -5px -5px $primary-color;
-
-                @include md {
-                    width: 160px;
-                    height: 160px;
-                    margin: -110px 0 30px;
-                }
-            }
-            // end of icon
-            // service info
-            .service-info {
-                // border: 1px solid yellow;
-                margin: 0 .5em 10vh;
-            // title
-            h1 {
-                color: $text-color-white;
-                font-size: 1.25em;
-                font-weight: 700;
-                text-transform: capitalize;
-                font-family: $font-rose;
-                letter-spacing: .1em;
-                // text-decoration: underline rgba(255, 255, 255, 0.432);
-            }
-
-            // end of title
-            p {
-                margin: 1em auto;
-                color: $text-color-white;
-                // font-family: $font-rale;
-                font-family: $font-text;
-                text-transform: capitalize;
-                color: #ddd;
-                font-size: 1em;
-                font-weight: 300;
-            }
-        }
-            // end of service info
-
-            button {
-                font-size: 1em;
-                border-radius: 5px;
-                padding: .4em 1.5em;
-                font-weight: 500;
-                background-color: $secondary-color;
-                color: $primary-color;
-                position: absolute;
-                border: none;
-                outline: none;
-                bottom: 1em;
-                left: 50%;
-                transform: translate(-50%);
-                transition: .2s ease;
-                font-family: $font-rose;
-                cursor: pointer;
-                letter-spacing: .1em;
-                text-transform: capitalize;
-
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    border: none;
-                    outline: none;
-                    box-shadow: inset 3px 3px 3px #fff,
-                        inset -3px -3px 3px #000;
-                }
-
-
-                &:hover {
-                    letter-spacing: 0;
-                    transition: .2s ease;
-                    transform: translate(-50%) scale(.95);
-                }
-            }
-            }
-        // end of service items
-    }
-}
-
-//END OF SERVICES
 
 //FEATURES
 
@@ -1345,11 +1354,19 @@ main {
 
         fieldset {
             color: $secondary-color;
+            background-color: $primary-color-dark;
             border: 3px solid $secondary-color;
-            padding: .5em 1em;
+            padding: 5vh 1em;
             margin: 2em auto;
             border-radius: 5px;
 
+            legend {
+                padding: 0 .2em; 
+                text-transform: capitalize;
+            }
+            label {
+                text-transform: capitalize;
+            }
             select {
                 border-radius: 5px;
                 font-size: 1em;
@@ -1364,30 +1381,23 @@ main {
             }
         }
         #thato-contact {
-            p {
-                margin: 40px 0;
+            p, a {
+                display: block;
+                padding: 1em .5em;
+                margin-bottom: 5vh;
                 font-size: 1em;
-                padding: 1em 0 1em 1em;
                 color: $text-light;
                 background-color: $primary-color-dark;
                 position: relative;
                 transition: .3s ease;
+                border-radius: 5px;
+                box-shadow: inset 2px 2px 3px #ddda,
+                            inset -2px -2px 4px #000a;
 
-                &::before,
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    transition: .3s;
-                }
-
-                &::before {
-                    box-shadow: inset 2px 2px 3px #ddda,
-                        inset -2px -2px 4px #000a;
+                i {
+                    color: #ddd;
+                    font-size: 1em;
+                    margin-right: .5em;
                 }
                 &:hover {
                     color: $secondary-color;
@@ -1444,6 +1454,7 @@ main {
             position: relative;
             display: block;
             transition: .2s ease;
+            text-transform: capitalize;
         }
         
         &:hover {
@@ -1453,10 +1464,10 @@ main {
         }
     }
     .btn {
-        font-family: $font-rose;
-        color: $text-color-white;
+        font-family: $font-rale;
+        color: $primary-color-dark;
         letter-spacing: .2em;
-        font-weight: 500;
+        font-weight: 900;
         border: none;
         outline: none;
         z-index: 2;
@@ -1478,7 +1489,7 @@ main {
             height: 100%;
             border-radius: 5px;
             z-index: -1;
-            background-color: #dc143c;
+            background-color: $secondary-color;
             box-shadow: inset 3px 3px 3px #fffa,
                         inset -3px -3px 3px #000a;
         }

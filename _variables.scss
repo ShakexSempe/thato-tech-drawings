@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;400;700&display=swap');
 // end of more fonts
 
-$primary-color: hsl(240, 100%, 25%);
+$primary-color: #000080;
 $primary-color-dark: hsl(240, 100%, 20%);
 $primary-comp: #808000;
 $primary-color-trans: #0808df8e;
@@ -22,6 +22,7 @@ $progress-gradient: linear-gradient(90deg, &$secondary-color, $primary-color, $s
 $text-color: #333;
 $text-color-white: #eee;
 $text-light: #fff;
+$text-dark: #000;
 $primary-red: #dc143c; 
 $primary-red-gradient: linear-gradient(90deg, maroon, rgb(167, 12, 12), maroon ) ; 
 $container-width: 1200px;
