@@ -445,7 +445,6 @@ main {
     background: url('../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg') no-repeat;
     background-size: cover;
     background-position: top left;
-    background-attachment: fixed;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -454,6 +453,8 @@ main {
     &::after {
         @include lg {
         background: rgba(1, 1, 66, 0.250);
+        background-attachment: fixed;
+
         }
         content: '';
         position: absolute;
@@ -461,7 +462,7 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(1, 1, 66, 0.650);
+        background: rgba(1, 1, 66, 0.350);
         z-index: -1;
     }
     // end of banner overlay
@@ -522,9 +523,11 @@ main {
             p {
                 text-transform: capitalize;
                 font-size: .8em;
+                margin: 1em 0;
                 font-weight: 200;
                 padding: 0;
                 color: $secondary-color;
+                line-height: 1.5;
 
                 @include md {
                     font-size: 1em;
@@ -537,7 +540,6 @@ main {
             }
 
             h2,
-            p,
             .btn {
                 margin: 25px 0;
             }
@@ -689,7 +691,7 @@ main {
     // background-image: $primary-gradient-reverse;
     background-color: $primary-background-lt-grey;
     position: relative;
-    padding: 1em 0;
+    padding: 5vh 0;
     z-index: 2;
 
     .section-title {

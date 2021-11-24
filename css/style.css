@@ -485,7 +485,6 @@ main {
   background: url("../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg") no-repeat;
   background-size: cover;
   background-position: top left;
-  background-attachment: fixed;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -501,11 +500,12 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(1, 1, 66, 0.65);
+    background: rgba(1, 1, 66, 0.35);
     z-index: -1; }
     @media (min-width: 1024px) {
       .banner::after {
-        background: rgba(1, 1, 66, 0.25); } }
+        background: rgba(1, 1, 66, 0.25);
+        background-attachment: fixed; } }
   @media (min-width: 768px) {
     .banner {
       display: flex;
@@ -564,9 +564,11 @@ main {
       .banner .container .banner-content p {
         text-transform: capitalize;
         font-size: .8em;
+        margin: 1em 0;
         font-weight: 200;
         padding: 0;
-        color: #0aceb1; }
+        color: #0aceb1;
+        line-height: 1.5; }
         @media (min-width: 768px) {
           .banner .container .banner-content p {
             font-size: 1em; } }
@@ -578,7 +580,6 @@ main {
           flex-direction: column;
           flex-wrap: wrap; } }
       .banner .container .banner-content h2,
-      .banner .container .banner-content p,
       .banner .container .banner-content .btn {
         margin: 25px 0; }
       .banner .container .banner-content .btn {
@@ -692,7 +693,7 @@ main {
   position: relative;
   background-color: #f4f4f4;
   position: relative;
-  padding: 1em 0;
+  padding: 5vh 0;
   z-index: 2; }
   .services .section-title {
     padding-bottom: 3vh;
