@@ -501,7 +501,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(1, 1, 66, 0.5);
+    background: rgba(1, 1, 66, 0.8);
     z-index: -1; }
     @media (min-width: 1024px) {
       .banner::after {
@@ -555,7 +555,8 @@ main {
       .banner .container .banner-content h1 {
         font-size: 1.5em;
         font-weight: 600;
-        font-family: "Red Rose", cursive; }
+        font-family: "Red Rose", cursive;
+        margin-bottom: .5em; }
         @media (max-width: 360px) {
           .banner .container .banner-content h1 {
             font-size: 1.4em; } }
@@ -565,11 +566,11 @@ main {
       .banner .container .banner-content p {
         text-transform: capitalize;
         font-size: .8em;
-        margin: 1em 0;
+        margin: .5em 0;
         font-weight: 200;
         padding: 0;
         color: #0aceb1;
-        line-height: 1.5; }
+        line-height: 1.2; }
         @media (min-width: 768px) {
           .banner .container .banner-content p {
             font-size: 1em; } }
@@ -594,7 +595,7 @@ main {
         background: none;
         border-radius: 5px;
         letter-spacing: .1em;
-        margin: 5px 0;
+        margin: 1em 0;
         padding: .5em 1.5em;
         transition: all .3s ease;
         position: relative; }

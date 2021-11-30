@@ -464,7 +464,7 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(1, 1, 66, 0.500);
+        background: rgba(1, 1, 66, 0.800);
         z-index: -1;
     }
     // end of banner overlay
@@ -515,6 +515,7 @@ main {
                 font-size: 1.5em;
                 font-weight: 600;
                 font-family: $font-rose;
+                margin-bottom: .5em;
                 @include xsm {
                     font-size: 1.4em;
                 }
@@ -525,11 +526,11 @@ main {
             p {
                 text-transform: capitalize;
                 font-size: .8em;
-                margin: 1em 0;
+                margin: .5em 0;
                 font-weight: 200;
                 padding: 0;
                 color: $secondary-color;
-                line-height: 1.5;
+                line-height: 1.2;
 
                 @include md {
                     font-size: 1em;
@@ -557,7 +558,7 @@ main {
                 background: none;
                 border-radius: 5px;
                 letter-spacing: .1em;
-                margin: 5px 0;
+                margin: 1em 0;
                 padding: .5em 1.5em;
                 transition: all .3s ease;
                 position: relative;
