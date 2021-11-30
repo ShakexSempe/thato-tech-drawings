@@ -1,11 +1,15 @@
 .container {
-    width: $container-width;
+    width: 100%;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 10vw;
+    @media (max-width: 768px) {
+        padding: 0 5vw;
+    }
+    // margin-left: auto;
+    // margin-right: auto;
     // padding-left: 15px;
     // padding-right: 15px;
-    padding: 0 5vw;
+    // margin: 0 10vw;
 }
 
 .btn {

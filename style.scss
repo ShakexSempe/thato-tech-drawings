@@ -41,15 +41,17 @@ header {
     .navbar {
         @include flex(space-between, stretch, column);
         height: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        min-width: 100vw;
+        padding: 1em 5vw;
 
         @include sm {
             flex-direction: row;
             align-items: center;
         }
         @include lg {
-            @include flex(row);
+            @include flex(space-between);
+        padding: 1em 10vw;
+
         }
 
         &-top {
@@ -486,7 +488,7 @@ main {
         .banner-content {
             @include lg {
                 position: absolute;
-                right: 0;
+                right: 10vw;
                 margin: 0;
                 backdrop-filter: blur(.5em);
             }
@@ -656,8 +658,13 @@ main {
         background-size: 100%;
     }
     &.pad1 {
-        background-size: cover;
-        background-image: url(../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg);
+        background-size: 80%;
+        background-image: url(../img/thato-logo.png);
+        @media (max-width: 768px){
+            background-size: 100%;
+            background-color: $primary-color-dark;
+            margin: 0;
+        }
     }
     &.pad3 {
         background-image: url(../img/tpsempe-min.jpg);

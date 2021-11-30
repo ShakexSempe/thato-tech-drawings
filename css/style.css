@@ -24,11 +24,12 @@ img {
   height: auto; }
 
 .container {
-  width: 1200px;
+  width: 100%;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5vw; }
+  padding: 0 10vw; }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 5vw; } }
 
 .btn {
   display: inline-block;
@@ -185,8 +186,8 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    min-width: 100vw;
+    padding: 1em 5vw; }
     @media (min-width: 576px) {
       header .navbar {
         flex-direction: row;
@@ -194,10 +195,11 @@ header {
     @media (min-width: 1024px) {
       header .navbar {
         display: flex;
-        justify-content: row;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        padding: 1em 10vw; } }
     header .navbar-top {
       display: flex;
       justify-content: space-between;
@@ -540,7 +542,7 @@ main {
       @media (min-width: 1024px) {
         .banner .container .banner-content {
           position: absolute;
-          right: 0;
+          right: 10vw;
           margin: 0;
           backdrop-filter: blur(0.5em); } }
       .banner .container .banner-content::before {
@@ -669,8 +671,13 @@ main {
     .section-padding {
       background-size: 100%; } }
   .section-padding.pad1 {
-    background-size: cover;
-    background-image: url(../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg); }
+    background-size: 80%;
+    background-image: url(../img/thato-logo.png); }
+    @media (max-width: 768px) {
+      .section-padding.pad1 {
+        background-size: 100%;
+        background-color: #000066;
+        margin: 0; } }
   .section-padding.pad3 {
     background-image: url(../img/tpsempe-min.jpg);
     background-size: 40%;
