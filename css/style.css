@@ -1176,7 +1176,7 @@ main {
       text-align: center;
       line-height: 1.5;
       font-style: italic;
-      color: #fff; }
+      color: #f4f4f4; }
       .contact .contact-form .form-info-link a {
         color: #0aceb1;
         text-decoration: underline;
@@ -1210,7 +1210,7 @@ main {
       padding: 1em .5em;
       margin-bottom: 5vh;
       font-size: 1em;
-      color: #fff;
+      color: #f4f4f4;
       background-color: #000066;
       position: relative;
       transition: .3s ease;
@@ -1265,10 +1265,10 @@ main {
       .contact .contact-form .input-div:hover label {
         transform: translateY(50%) translateX(0.5em); }
     .contact .contact-form .btn {
-      font-family: "Raleway", sans-serif;
-      color: #000066;
+      font-family: "Red Rose", cursive;
+      color: #f4f4f4;
       letter-spacing: .2em;
-      font-weight: 900;
+      font-weight: 600;
       border: none;
       outline: none;
       z-index: 2;
@@ -1290,7 +1290,7 @@ main {
         height: 100%;
         border-radius: 5px;
         z-index: -1;
-        background-color: #0aceb1;
+        background-image: linear-gradient(0deg, #6b081c, #dc143c);
         box-shadow: inset 3px 3px 3px #fffa, inset -3px -3px 3px #000a; }
       .contact .contact-form .btn:hover {
         transition: .3s;
@@ -1302,7 +1302,7 @@ main {
         transform: scale(0.9); }
 
 .footer-top {
-  padding: 2em; }
+  padding: 10vh 10vw; }
   @media (min-width: 576px) {
     .footer-top {
       display: grid;
@@ -1336,33 +1336,6 @@ main {
     color: #dc143c; }
   .footer-top .footer-item p {
     text-shadow: 0 0 1px #0aceb1; }
-  .footer-top .brand {
-    margin-bottom: 5vh;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 10px 10px 5px #000a; }
-    .footer-top .brand::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      box-shadow: inset 3px 3px 5px #fffa, inset -3px -3px 5px #000a; }
-    .footer-top .brand .footer-logo {
-      width: 100%;
-      border-radius: 5px;
-      transition: .5s; }
-    .footer-top .brand:hover .footer-logo {
-      transform: scale(1.15);
-      transform-origin: right; }
   .footer-top .social .social-icons {
     display: flex;
     justify-content: space-evenly;
@@ -1416,26 +1389,46 @@ main {
         text-shadow: none; }
 
 .footer-bottom {
-  height: auto;
+  height: 100vh;
   font-family: "Red Rose", cursive;
-  padding: 1em;
   font-size: 1em;
-  padding: 5vh 0;
+  padding: 0;
+  background-color: #fff000;
   line-height: 2;
-  background-image: linear-gradient(0deg, #0aceb1 0%, #000080 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000080;
   color: #fff;
-  text-align: center;
-  box-shadow: inset 5px 5px 5px #ddda, inset -5px -5px 5px #000a; }
+  text-align: center; }
   @media (min-width: 576px) {
     .footer-bottom {
-      font-size: 1em; } }
-  .footer-bottom p {
-    line-height: 1.7; }
-    .footer-bottom p a {
-      color: #eee; }
-      .footer-bottom p a:hover {
+      font-size: 1em;
+      flex-direction: row;
+      justify-content: space-around; } }
+  .footer-bottom figure {
+    flex-basis: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-radius: 5px; }
+    .footer-bottom figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .footer-bottom .copyright-div {
+    padding-bottom: 15vh; }
+    .footer-bottom .copyright-div p {
+      line-height: 1.7;
+      font-size: 1.5em;
+      color: #f4f4f4; }
+    .footer-bottom .copyright-div a {
+      color: #0aceb1;
+      font-size: 1.5em; }
+      .footer-bottom .copyright-div a:hover {
         transition: .3s ease-in-out;
-        color: #fff000; }
+        opacity: .7; }
 
 #thanks p {
   font-size: .8em; }
