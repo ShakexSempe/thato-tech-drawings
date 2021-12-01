@@ -737,10 +737,13 @@ main {
         grid-template-columns: repeat(3, 1fr); } }
   .services .container .service {
     padding: 1em;
-    margin: 80px auto;
+    margin: 15vh auto;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     position: relative; }
+    @media (min-width: 576px) {
+      .services .container .service {
+        margin: 10vh auto; } }
     .services .container .service::before {
       position: absolute;
       content: '';
@@ -827,7 +830,7 @@ main {
 
 .about {
   padding: 2em 0;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: #f4f4f4;
   background-size: 140%; }
   .about .section-title {
     position: relative;
@@ -837,7 +840,7 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     padding-bottom: 2vh;
-    margin-bottom: 5vh; }
+    margin-bottom: 10vh; }
     .about .section-title::before {
       background-color: #fff;
       z-index: -2; }
@@ -845,10 +848,10 @@ main {
     text-align: center;
     font-family: 'Raleway', sans-serif; }
     .about-items .about-item {
-      margin: 1em auto;
-      box-shadow: inset 3px 3px 5px rgba(102, 101, 101, 0.667), inset -3px -3px 5px #000a;
+      margin: 2em auto;
+      border: 1px solid #000066;
       border-radius: 10px;
-      padding: 1em .5em;
+      padding: 1em;
       background: #fff; }
       @media (min-width: 576px) {
         .about-items .about-item {
@@ -859,7 +862,6 @@ main {
             order: -1; } }
       @media (min-width: 1024px) {
         .about-items .about-item-content {
-          border: 3px solid rgba(0, 0, 128, 0.308);
           border-radius: 5px; } }
       .about-items .about-item-content h2 {
         margin: 10px 0 30px;
@@ -1044,7 +1046,7 @@ main {
       grid-template-columns: repeat(3, 1fr); } }
   .table-price .price-grid .price-card {
     padding: 1em 1.5em;
-    margin-bottom: 30px;
+    margin: 10vh 0;
     border-radius: 10px;
     outline: none;
     text-align: center;
@@ -1052,6 +1054,9 @@ main {
     transition: .2s ease;
     position: relative;
     isolation: isolate; }
+    @media (min-width: 576px) {
+      .table-price .price-grid .price-card {
+        margin: 1em 0 5vh; } }
     .table-price .price-grid .price-card::before {
       position: absolute;
       content: '';
