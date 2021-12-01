@@ -1524,11 +1524,13 @@ main {
 //FOOTER
 .footer {
     &-top {
-        padding: 10vh 10vw;
+        padding: 5vh 5vw;
 
         @include sm {
             @include grid(2, 1fr);
             gap: 5vw;
+            padding: 5vh 10vw;
+
             .footer-item {
                 margin: 0;
             }
@@ -1543,7 +1545,10 @@ main {
 
         .footer-item {
             // display: none;
-            // margin: 5vh 5vw;
+            margin: 2em 0;
+            padding:  2em .5em;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
             h2 {
                 margin-bottom: 20px;
                 color: $primary-color;
@@ -1553,22 +1558,33 @@ main {
                 text-underline-offset: .3em;
             }
 
+            a {
+                margin: 0 5vw;
+                font-size: 1.15em;
+                font-weight: 600;
+                font-family: $font-rale;
             i{
                 font-size: 1.5em;
-                margin-bottom: 1em;
                 color: $primary-red;
+                padding-right: .5em;
                 
             }
-            a:hover {
+            &:hover {
                 color: $primary-red;
             }
+        }
             p {
                 text-shadow: 0 0 1px $secondary-color;
             }
 
         }
 
-        
+        .youtube {
+            a {
+                display: block;
+                width: 100%;
+            }
+        }
 
         .social {
             // display: none;
@@ -1585,15 +1601,11 @@ main {
 
 
                     i {
-                        font-size: 3em;
+                        font-size: 2.5em;
                         margin-right: 10px;
                         transition: .2s ease;
                         color: $primary-color;
-                        padding: .2em;
                         border-radius: 30px;
-                        box-shadow: 
-                                    inset 3px 3px 5px #e9e8e8aa,
-                                    inset -3px -3px 5px #8a8989aa;
                     }
 
                     &:hover {
@@ -1604,8 +1616,6 @@ main {
                         i {
                             transition: .2s ease;
                             color: #000a;
-                            box-shadow: inset 3px 3px 5px #000a,
-                                    inset -3px -3px 5px #929090aa;
                         }
                     }
                 }

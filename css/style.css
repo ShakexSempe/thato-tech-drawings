@@ -1302,13 +1302,14 @@ main {
         transform: scale(0.9); }
 
 .footer-top {
-  padding: 10vh 10vw; }
+  padding: 5vh 5vw; }
   @media (min-width: 576px) {
     .footer-top {
       display: grid;
       grid-gap: 1fr;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5vw; }
+      gap: 5vw;
+      padding: 5vh 10vw; }
       .footer-top .footer-item {
         margin: 0; } }
   @media (min-width: 768px) {
@@ -1321,21 +1322,34 @@ main {
       display: grid;
       grid-gap: 1fr;
       grid-template-columns: repeat(3, 1fr); } }
-  .footer-top .footer-item h2 {
-    margin-bottom: 20px;
-    color: #000080;
-    text-align: center;
-    text-decoration: .2em underline;
-    text-decoration-color: #0aceb1;
-    text-underline-offset: .3em; }
-  .footer-top .footer-item i {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #dc143c; }
-  .footer-top .footer-item a:hover {
-    color: #dc143c; }
-  .footer-top .footer-item p {
-    text-shadow: 0 0 1px #0aceb1; }
+  .footer-top .footer-item {
+    margin: 2em 0;
+    padding: 2em .5em;
+    border: 1px solid #000080;
+    border-radius: 5px; }
+    .footer-top .footer-item h2 {
+      margin-bottom: 20px;
+      color: #000080;
+      text-align: center;
+      text-decoration: .2em underline;
+      text-decoration-color: #0aceb1;
+      text-underline-offset: .3em; }
+    .footer-top .footer-item a {
+      margin: 0 5vw;
+      font-size: 1.15em;
+      font-weight: 600;
+      font-family: "Raleway", sans-serif; }
+      .footer-top .footer-item a i {
+        font-size: 1.5em;
+        color: #dc143c;
+        padding-right: .5em; }
+      .footer-top .footer-item a:hover {
+        color: #dc143c; }
+    .footer-top .footer-item p {
+      text-shadow: 0 0 1px #0aceb1; }
+  .footer-top .youtube a {
+    display: block;
+    width: 100%; }
   .footer-top .social .social-icons {
     display: flex;
     justify-content: space-evenly;
@@ -1345,21 +1359,18 @@ main {
       cursor: pointer;
       transition: .2s ease; }
       .footer-top .social .social-icons li i {
-        font-size: 3em;
+        font-size: 2.5em;
         margin-right: 10px;
         transition: .2s ease;
         color: #000080;
-        padding: .2em;
-        border-radius: 30px;
-        box-shadow: inset 3px 3px 5px #e9e8e8aa, inset -3px -3px 5px #8a8989aa; }
+        border-radius: 30px; }
       .footer-top .social .social-icons li:hover {
         color: #000a;
         transform: scale(0.98);
         transition: .2s ease; }
         .footer-top .social .social-icons li:hover i {
           transition: .2s ease;
-          color: #000a;
-          box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #929090aa; }
+          color: #000a; }
   @media (min-width: 1024px) {
     .footer-top .social li {
       color: #000a; }
