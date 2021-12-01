@@ -1694,6 +1694,7 @@ main {
         }
         .copyright-div {
             padding-bottom: 15vh;
+            
             p {
                 line-height: 1.7;
                 font-size: 1.5em;
@@ -1706,6 +1707,16 @@ main {
                 &:hover {
                     transition: .3s ease-in-out;
                     opacity: .7;
+                }
+            }
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 1.3em;
+                }
+
+                a {
+                    font-size: 1.3em;
                 }
             }
         }

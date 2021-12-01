@@ -1429,6 +1429,11 @@ main {
       .footer-bottom .copyright-div a:hover {
         transition: .3s ease-in-out;
         opacity: .7; }
+    @media (max-width: 768px) {
+      .footer-bottom .copyright-div p {
+        font-size: 1.3em; }
+      .footer-bottom .copyright-div a {
+        font-size: 1.3em; } }
 
 #thanks p {
   font-size: .8em; }
