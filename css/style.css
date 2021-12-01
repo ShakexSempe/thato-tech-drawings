@@ -151,6 +151,22 @@ img {
     transform: scale(1); } }
 
 /*end of back to top button*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+[data-scroll] {
+  transition: 1s;
+  transform: scale(0.5); }
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1); }
+
+[data-scroll="out"] {
+  opacity: 0; }
+
 header {
   position: fixed;
   top: 0;

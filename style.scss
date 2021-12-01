@@ -5,7 +5,23 @@
 @import 'progress';
 
 * {
-    // border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[data-scroll] {
+    transition: 1s;
+    transform: scale(.5);
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
 }
 
 //HEADER
