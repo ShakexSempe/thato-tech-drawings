@@ -73,7 +73,7 @@ img {
     transform: translateX(-50%);
     height: 5px;
     border-radius: 10px;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
     display: block; }
   .section-title::before {
     content: '';
@@ -250,7 +250,7 @@ header {
       width: 2.5em;
       transform: scale(0.85);
       padding: .3em;
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -281,13 +281,13 @@ header {
         height: 2px;
         width: 25px;
         position: relative;
-        background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+        background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%); }
         header .navbar .menu-toggle .bar::before, header .navbar .menu-toggle .bar::after {
           content: '';
           position: absolute;
           height: 100%;
           width: 100%;
-          background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+          background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
           left: 0;
           transition: .3s ease;
           transition-property: top, bottom; }
@@ -471,7 +471,7 @@ header {
 
 main {
   background-color: #f4f4f4;
-  margin-top: 10%;
+  margin-top: 10vh;
   font-family: 'Raleway', sans-serif; }
   @media (min-width: 1024px) {
     main {
@@ -482,31 +482,25 @@ main {
 
 .banner {
   min-height: 100vh;
-  background: url("../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg") no-repeat;
-  background-size: cover;
-  background-position: top left;
-  background-attachment: fixed;
-  text-align: center;
-  overflow: hidden;
+  background: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
   position: relative;
   z-index: 1; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .banner {
       background: url("../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg");
       background-attachment: fixed; } }
-  .banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(1, 1, 66, 0.8);
-    z-index: -1; }
-    @media (min-width: 1024px) {
-      .banner::after {
-        background: rgba(1, 1, 66, 0.25);
-        background-attachment: fixed; } }
+  @media (min-width: 576px) {
+    .banner::after {
+      background: rgba(1, 1, 66, 0.25);
+      background-attachment: fixed;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(1, 1, 66, 0.8);
+      z-index: -1; } }
   @media (min-width: 768px) {
     .banner {
       display: flex;
@@ -532,26 +526,37 @@ main {
       color: #fff;
       z-index: 2;
       border: none;
+      position: absolute;
+      top: 50%;
       border-radius: 5px;
-      margin: 25vh auto;
-      padding: .5em .7em;
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px); }
-      @media (min-width: 1024px) {
+      margin: 0 auto;
+      padding: .5em .7em; }
+      @media (min-width: 576px) {
         .banner .container .banner-content {
           position: absolute;
           right: 10vw;
           margin: 0;
-          backdrop-filter: blur(0.5em); } }
-      .banner .container .banner-content::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        box-shadow: inset 3px 3px 4px skyblue, inset -3px -3px 4px #0aceb1; }
+          width: auto;
+          backdrop-filter: blur(0.5em); }
+          .banner .container .banner-content::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: inset 3px 3px 4px skyblue, inset -3px -3px 4px #0aceb1; } }
+      @media (max-width: 767px) {
+        .banner .container .banner-content {
+          background: #000066;
+          left: 0;
+          top: 40%;
+          transform: translateY(-50%);
+          margin: 0 5vw;
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: inset 2px 2px 5px #fff, inset -2px -2px 5px rgba(255, 255, 255, 0.404); } }
       .banner .container .banner-content h1 {
         font-size: 1.5em;
         font-weight: 600;
@@ -606,7 +611,7 @@ main {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+          background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
           border-radius: 5px;
           border: none;
           outline: none;
@@ -707,7 +712,7 @@ main {
   .services .section-title {
     padding-bottom: 3vh;
     font-family: "Red Rose", cursive;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -867,7 +872,7 @@ main {
         margin: 10px 0 30px;
         font-size: 1.5em;
         font-family: "Red Rose", cursive;
-        background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+        background: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -927,7 +932,7 @@ main {
   .features h1 {
     font-family: "Red Rose", cursive;
     font-weight: 500;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -1024,7 +1029,7 @@ main {
   .table-price .section-title {
     font-family: "Red Rose", cursive;
     font-weight: 500;
-    background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+    background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1114,11 +1119,11 @@ main {
     .table-price .price-grid .price-card:nth-child(2) .price p {
       color: #000080; }
     .table-price .price-grid .price-card:nth-child(3) h1 {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .btn {
-      background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%); }
+      background-image: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%); }
     .table-price .price-grid .price-card:nth-child(3) .price {
-      background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+      background: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
