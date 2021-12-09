@@ -352,15 +352,12 @@ header {
       display: flex;
       justify-content: space-between; }
     header .navbar .navbar-button {
-      margin-top: .2em auto;
       padding: 0; }
       @media (min-width: 576px) {
         header .navbar .navbar-button {
           margin: 0 auto; } }
       header .navbar .navbar-button .you-btn {
         background-color: #f4f4f4;
-        color: #dc143c;
-        font-size: 2em;
         font-family: 'Red Rose', cursive;
         transition: .2s ease;
         border: none;
@@ -369,6 +366,9 @@ header {
         display: grid;
         place-items: center;
         position: relative; }
+        header .navbar .navbar-button .you-btn i {
+          color: #dc143c;
+          font-size: 2.5em; }
         header .navbar .navbar-button .you-btn:hover {
           transform: scale(1.1); }
 
