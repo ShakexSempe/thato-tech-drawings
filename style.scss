@@ -1036,7 +1036,13 @@ main {
             }
         }
         .feature-item {
+            &[data-scroll="in"]{
+                transition: 1.5s;
+            }
             @include flex(flex-start, center, row, nowrap);
+            @media (max-width: 767px){
+                margin-bottom: 5vh;
+            }
             margin-bottom: 20px;
             padding: 20px 0;
             border-bottom: 1px solid #ddd;

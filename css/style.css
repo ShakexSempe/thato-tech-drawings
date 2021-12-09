@@ -957,6 +957,11 @@ main {
       padding: 20px 0;
       border-bottom: 1px solid #ddd;
       cursor: pointer; }
+      .features-grid .feature-item[data-scroll="in"] {
+        transition: 1.5s; }
+      @media (max-width: 767px) {
+        .features-grid .feature-item {
+          margin-bottom: 5vh; } }
       .features-grid .feature-item h2 {
         font-family: "Red Rose", cursive;
         color: #0aceb1;
