@@ -1379,19 +1379,26 @@ main {
     .footer-top .social .social-icons li {
       cursor: pointer;
       transition: .2s ease; }
-      .footer-top .social .social-icons li i {
-        font-size: 2.5em;
-        margin-right: 10px;
-        transition: .2s ease;
-        color: #000080;
-        border-radius: 30px; }
+      .footer-top .social .social-icons li a {
+        border: none;
+        outline: 2px dashed #000080;
+        border-radius: 5px;
+        display: block; }
+        .footer-top .social .social-icons li a i {
+          font-size: 2.5em;
+          transition: .2s ease;
+          color: #000080;
+          border-radius: 30px;
+          width: 100%;
+          padding: .1em; }
       .footer-top .social .social-icons li:hover {
-        color: #000a;
         transform: scale(0.98);
         transition: .2s ease; }
+        .footer-top .social .social-icons li:hover a {
+          outline: 2px solid #0aceb1; }
         .footer-top .social .social-icons li:hover i {
           transition: .2s ease;
-          color: #000a; }
+          color: #0aceb1; }
   @media (min-width: 1024px) {
     .footer-top .social li {
       color: #000a; }

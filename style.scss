@@ -1641,23 +1641,30 @@ main {
                     cursor: pointer;
                     transition: .2s ease;
 
-
+                    a{
+                        border: none;
+                        outline: 2px dashed $primary-color;
+                        border-radius: 5px;
+                        display: block;
                     i {
                         font-size: 2.5em;
-                        margin-right: 10px;
                         transition: .2s ease;
                         color: $primary-color;
                         border-radius: 30px;
+                        width: 100%;
+                        padding: .1em; 
                     }
-
+                }
                     &:hover {
-                        color: #000a;
+                        a{
+                            outline: 2px solid $secondary-color;
+                        }
                         transform: scale(.98);
                         transition: .2s ease;
 
                         i {
                             transition: .2s ease;
-                            color: #000a;
+                            color: $secondary-color;
                         }
                     }
                 }
