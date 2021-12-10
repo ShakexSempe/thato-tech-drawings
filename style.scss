@@ -444,7 +444,6 @@ main {
     @include sm {
         background: url('../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg');
         background-attachment: fixed;
-    
     }
     background: $primary-gradient-background;
     position: relative;
@@ -496,6 +495,7 @@ main {
             @include sm {
                 position: absolute;
                 right: 10vw;
+                top: 20vh;
                 margin: 0;
                 width: auto;
                 backdrop-filter: blur(.5em);
@@ -1188,6 +1188,9 @@ main {
             @include grid(3, 30px)
         }
         .price-card {
+            &[data-scroll="in"] {
+                transition: 1.5s;
+            }
             padding: 1em 1.5em;
             margin: 10vh 0;
             border-radius: 10px;

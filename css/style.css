@@ -537,6 +537,7 @@ main {
         .banner .container .banner-content {
           position: absolute;
           right: 10vw;
+          top: 20vh;
           margin: 0;
           width: auto;
           backdrop-filter: blur(0.5em); }
@@ -1067,6 +1068,8 @@ main {
     transition: .2s ease;
     position: relative;
     isolation: isolate; }
+    .table-price .price-grid .price-card[data-scroll="in"] {
+      transition: 1.5s; }
     @media (min-width: 576px) {
       .table-price .price-grid .price-card {
         margin: 1em 0 5vh; } }
