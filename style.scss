@@ -586,7 +586,7 @@ main {
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background-image: $primary-gradient-background;
+                    background-image: $primary-gradient;
                     border-radius: 5px;
                     border: none;
                     outline: none;
@@ -664,22 +664,32 @@ main {
 .section-padding {
     height: 100vh;
     @media (max-width: 768px){
-        background-size: 100%;
     }
     &.pad-logo {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 50%;
-        background-size: contain;
-        background-color: $primary-color-dark;
-        background-image: url(../img/thato-logo.png);
+        // background-color: $primary-color-dark;
+        height: auto;
+        padding: 5vh 5vw;
+        [data-scroll="in"] {
+            transform: translateX(0);
+            transition: 1.5s;
+        }
+        figure {
+            // border: 1px solid red;
+            width: 100%;
+            margin: 0 auto;
+            transform: translateX(-100%);
+            img {
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
 
-        @media (max-width: 768px) {
-            background-size: 100%;
-            background-color: $primary-color-dark;
-            margin: 0;
-            height: 85vh;
+        @include sm {
+
+            figure {
+                width: 35%;
+            }
         }
     }
     &.pad-1 {

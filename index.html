@@ -94,7 +94,7 @@
                     <h1>Expert Technical Drawings</h1>
                     <p>Design & Technology drawings tutorials :</p>
                     <p>grade 10-12</p>
-                    <button href="#services" class="btn scroll-link">T.Sempe</button>
+                    <button href="#intro-pad" class="btn scroll-link">T.Sempe</button>
                 </div>
 
                 <div class="banner-image">
@@ -104,7 +104,13 @@
         </section>
 
         <!-- padding section -->
-        <div class="section-padding pad-logo"></div>
+        <div id="intro-pad" class="section-padding pad-logo">
+            <figure data-scroll>
+                <a href="#services">
+                <img src="img/thato-logo.png" alt="logo">
+            </a>
+            </figure>
+        </div>
         <!-- end of padding section -->
 
         <section id="services" class="services bg-gradient">
@@ -363,7 +369,7 @@
         </div>
 
         <section id="contact" class="contact">
-            <div id="maps" class="google-maps">
+            <div data-scroll id="maps" class="google-maps">
                 <!-- GOOGLE MAPS -->
                 <iframe id="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13947.284688422602!2d26.229653174549274!3d-29.081428913286945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fd005c33b491d%3A0xec18ac54fa6e45f6!2sBayswater%2C%20Bloemfontein%2C%209301!5e0!3m2!1sen!2sza!4v1627630181941!5m2!1sen!2sza"
@@ -371,11 +377,11 @@
             </div>
             <form class="contact-form" id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                 <h1 class="section-title">Contact Me</h1>
-                <div class="form-info-link">
+                <div data-scroll class="form-info-link">
                     <p>Enter your contact details in the <a href="#contact-details" class="scroll-link">form</a> below
                         and await a confirmation email</p>
                 </div>
-                <fieldset data-scroll id="thato-contact">
+                <fieldset id="thato-contact">
                     <legend>Thato Sempe</legend>
                     <a href="tel:079 990 3896"><i class="fas fa-mobile-alt"></i> 079 990 3896</a>
                     <a href="mailto:thato@emailaddress.com "><i class="far fa-envelope"></i> thato@emailaddress.com</a>
@@ -383,7 +389,7 @@
                     <p><i class="fas fa-calendar-check"></i>weekdays: 17:00 - 21:00</p>
                     <p><i class="far fa-calendar-check"></i>weekends: 10:00 - 16:00</p>
                 </fieldset>
-                <fieldset data-scroll id="contact-details">
+                <fieldset id="contact-details">
                     <legend>enter your contact details</legend>
                     <div class="input-div">
                         <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name"
@@ -399,7 +405,7 @@
                     </div>
                 </fieldset>
                 <!-- grade and package -->
-                <fieldset data-scroll>
+                <fieldset>
                     <legend>select grade and package</legend>
                     <label for="level">Grade/level</label>
                     <select name="level" required>
