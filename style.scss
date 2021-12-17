@@ -560,6 +560,7 @@ main {
 
 .section-padding {
     height: 100vh;
+    cursor: pointer;
     @media (max-width: 768px){
     }
     &.pad-logo {

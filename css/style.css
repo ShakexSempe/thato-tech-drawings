@@ -665,7 +665,8 @@ main {
           display: none; } }
 
 .section-padding {
-  height: 100vh; }
+  height: 100vh;
+  cursor: pointer; }
   .section-padding.pad-logo {
     height: auto;
     padding: 5vh 5vw; }
