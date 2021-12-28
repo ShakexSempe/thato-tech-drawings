@@ -594,10 +594,13 @@ main {
         // background: pink;
         padding: 1em 5vw;
         height: auto;
+
         figure {
-            // border: 1px solid red;
             width: 100%;
             margin: 0 auto;
+            opacity: 1;
+            transform-style: preserve-3d;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -605,24 +608,45 @@ main {
         }
 
         @include sm {
+
             // background: skyblue;
-        figure {
-            // border: 1px solid red;
-            width: 25%;
-        }
+            figure {
+                // border: 1px solid red;
+                width: 25%;
+            }
         }
     }
-    &.pad4 {
-        height: 60vh;
-        background-color: #ddd;
-        background-position: center;
-        @media (min-width: 1025px){
-            background-position: center bottom;
-            height: 100vh;
+    &.pad-compass {
+        // background: pink;
+        padding: 1em 5vw;
+        height: auto;
+            [data-scroll="in"] {
+                transform: rotateY(0) translateX(0);
+                transition: 1.5s ease-in;
+            }
+        
+        figure {
+            width: 100%;
+            margin: 0 auto;
+            opacity: 1;
+            transform: rotateY(90deg) translateX(50%);
+            transform-style: preserve-3d;
 
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
-        background-image:url(../img/Optimized-techthat.png);
 
+        @include sm {
+
+            // background: skyblue;
+            figure {
+                // border: 1px solid red;
+                width: 25%;
+            }
+        }
+        
     }
 }
 
