@@ -709,7 +709,6 @@ main {
     .section-padding.pad-1 figure {
       width: 100%;
       margin: 0 auto;
-      opacity: 1;
       transform-style: preserve-3d; }
       .section-padding.pad-1 figure img {
         width: 100%;
