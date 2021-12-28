@@ -137,7 +137,7 @@ img {
 
 .section-title {
   margin: .5em auto;
-  font-size: 2.3em;
+  font-size: 2em;
   color: #333;
   padding: .2em .5em;
   position: relative;
@@ -145,7 +145,7 @@ img {
   font-family: "Red Rose", cursive; }
   @media (min-width: 768px) {
     .section-title {
-      font-size: 3em; } }
+      font-size: 2.5em; } }
   .section-title::after {
     content: '';
     width: 20%;
@@ -154,7 +154,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     height: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
     display: block; }
   .section-title::before {
@@ -164,8 +164,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
-    border: 1px dotted #0aceb1; }
+    border-radius: 5px; }
 
 .section-title.center {
   text-align: center; }
@@ -791,9 +790,9 @@ main {
       box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px #333a, inset 5px 5px 5px #0aceb1, inset -5px -5px #000080; }
       @media (min-width: 768px) {
         .services .container .service-icon {
-          width: 160px;
-          height: 160px;
-          margin: -110px 0 30px; } }
+          width: 130px;
+          height: 130px;
+          margin: -90px 0 30px; } }
     .services .container .service .service-info {
       border-radius: 5px;
       margin: 0 0em 10vh;
@@ -877,7 +876,7 @@ main {
     .about-items .about-item {
       margin: 2em auto;
       border: 1px solid #000066;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 1em;
       background: #fff; }
       @media (min-width: 576px) {
@@ -892,7 +891,7 @@ main {
           border-radius: 5px; } }
       .about-items .about-item-content h2 {
         margin: 10px 0 30px;
-        font-size: 1.5em;
+        font-size: .1em;
         font-family: "Red Rose", cursive;
         background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
         background-clip: text;
@@ -901,7 +900,7 @@ main {
         font-weight: 500; }
         @media (min-width: 576px) {
           .about-items .about-item-content h2 {
-            font-size: 2em; } }
+            font-size: 1.5em; } }
       .about-items .about-item-content p {
         margin: 10px 0;
         font-weight: 600;
@@ -933,17 +932,6 @@ main {
         .about-items .about-item-image img {
           border-radius: 5px;
           transition: .3s ease; }
-        .about-items .about-item-image::after {
-          position: absolute;
-          content: 'soon to be link to channel';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: #000a;
-          color: #ddda;
-          border-radius: 5px;
-          box-shadow: inset -3px -3px 5px #000a, inset 3px 3px 5px #ddda; }
         .about-items .about-item-image:hover img {
           transform: scale(1.1); }
 

@@ -715,9 +715,9 @@ main {
                     inset -5px -5px $primary-color;
 
                 @include md {
-                    width: 160px;
-                    height: 160px;
-                    margin: -110px 0 30px;
+                    width: 130px;
+                    height: 130px;
+                    margin: -90px 0 30px;
                 }
             }
             // end of icon
@@ -835,7 +835,7 @@ main {
         .about-item {
             margin: 2em auto;
             border: 1px solid $primary-color-dark;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 1em; 
             background: #fff;
 
@@ -857,7 +857,7 @@ main {
                 }
                 h2 {
                     margin: 10px 0 30px;
-                    font-size: 1.5em;
+                    font-size: .1em;
                     font-family: $font-rose;
                     // font-family: $font-rale;
                     background: $primary-gradient;
@@ -866,7 +866,7 @@ main {
                     -webkit-text-fill-color: transparent;
                     font-weight: 500;
                     @include sm {
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
                 }
 
@@ -900,20 +900,20 @@ main {
                     border-radius: 5px;
                     transition: .3s ease;
                 }
-                &::after {
-                    position: absolute;
-                    content: 'soon to be link to channel';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: #000a;
-                    color: #ddda;
-                    border-radius: 5px;
-                    box-shadow: inset -3px -3px 5px #000a,
-                                inset 3px 3px 5px #ddda;
+                // &::after {
+                //     position: absolute;
+                //     content: 'soon to be link to channel';
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     background: #000a;
+                //     color: #ddda;
+                //     border-radius: 5px;
+                //     box-shadow: inset -3px -3px 5px #000a,
+                //                 inset 3px 3px 5px #ddda;
 
-                }
+                // }
                 &:hover {
                     img {
                         transform:scale(1.1);
