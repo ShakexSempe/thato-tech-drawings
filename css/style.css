@@ -1364,6 +1364,7 @@ main {
     border: 1px solid #000080;
     border-radius: 5px; }
     .footer-top .footer-item h2 {
+      font-size: 1.3em;
       margin-bottom: 20px;
       color: #000080;
       text-align: center;
@@ -1395,7 +1396,7 @@ main {
       transition: .2s ease; }
       .footer-top .social .social-icons li a {
         border: none;
-        outline: 2px dashed #000080;
+        outline: 2px solid #000080;
         border-radius: 5px;
         display: block; }
         .footer-top .social .social-icons li a i {
@@ -1409,7 +1410,7 @@ main {
         transform: scale(0.98);
         transition: .2s ease; }
         .footer-top .social .social-icons li:hover a {
-          outline: 2px solid #0aceb1; }
+          outline: 2px solid #000080; }
         .footer-top .social .social-icons li:hover i {
           transition: .2s ease;
           color: #0aceb1; }

@@ -1490,6 +1490,7 @@ main {
             border: 1px solid $primary-color;
             border-radius: 5px;
             h2 {
+                font-size: 1.3em;
                 margin-bottom: 20px;
                 color: $primary-color;
                 text-align: center;
@@ -1540,7 +1541,7 @@ main {
 
                     a{
                         border: none;
-                        outline: 2px dashed $primary-color;
+                        outline: 2px solid $primary-color;
                         border-radius: 5px;
                         display: block;
                     i {
@@ -1554,7 +1555,7 @@ main {
                 }
                     &:hover {
                         a{
-                            outline: 2px solid $secondary-color;
+                            outline: 2px solid $primary-color;
                         }
                         transform: scale(.98);
                         transition: .2s ease;
