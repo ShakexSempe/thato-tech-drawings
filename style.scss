@@ -102,6 +102,8 @@ header {
             a {
                 padding: 5px 15px;
                 font-size: 1em;
+                color: $primary-color;
+                font-family: $font-rale;
                 position: relative;
                 transition: .2s;
                 display: block;
@@ -1159,7 +1161,8 @@ main {
                     height: 100%;
                     transition: .3s;
                     overflow: hidden;
-
+                    border: none;
+                    outline: none;
                     border-radius: 5px;
                 }
                 &::before{
@@ -1173,6 +1176,7 @@ main {
                 }
                 
                 &:hover {
+                    transform: scale(.97);
                     &::before {opacity: 0}
                     &::after {opacity: 1}
                 }
@@ -1229,7 +1233,7 @@ main {
 
             h1 {
                 padding: .7em 1em;
-                font-size: 1.3em;
+                font-size: 1.2em;
                 border-radius: 5px;
                 margin: .5em auto;
                 background-color: $secondary-color;

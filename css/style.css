@@ -336,6 +336,8 @@ header {
       header .navbar .nav-list a {
         padding: 5px 15px;
         font-size: 1em;
+        color: #000080;
+        font-family: "Raleway", sans-serif;
         position: relative;
         transition: .2s;
         display: block;
@@ -1128,16 +1130,20 @@ main {
         height: 100%;
         transition: .3s;
         overflow: hidden;
+        border: none;
+        outline: none;
         border-radius: 5px; }
       .table-price .price-grid .price-card .btn::before {
         box-shadow: inset 2px 2px 4px #fff, inset -2px -2px 4px #000a; }
       .table-price .price-grid .price-card .btn::after {
         opacity: 0;
         box-shadow: inset 2px 2px 4px #000a, inset -2px -2px 4px #fff; }
-      .table-price .price-grid .price-card .btn:hover::before {
-        opacity: 0; }
-      .table-price .price-grid .price-card .btn:hover::after {
-        opacity: 1; }
+      .table-price .price-grid .price-card .btn:hover {
+        transform: scale(0.97); }
+        .table-price .price-grid .price-card .btn:hover::before {
+          opacity: 0; }
+        .table-price .price-grid .price-card .btn:hover::after {
+          opacity: 1; }
       .table-price .price-grid .price-card .btn:active {
         transform: scale(0.9); }
     .table-price .price-grid .price-card h1 {
@@ -1165,7 +1171,7 @@ main {
       -webkit-text-fill-color: transparent; }
     .table-price .price-grid .price-card h1 {
       padding: .7em 1em;
-      font-size: 1.3em;
+      font-size: 1.2em;
       border-radius: 5px;
       margin: .5em auto;
       background-color: #0aceb1;
