@@ -721,7 +721,7 @@ main {
     height: auto; }
     .section-padding.pad-compass [data-scroll="in"] {
       transform: rotateY(0) translateX(0);
-      transition: 1.5s ease-in; }
+      transition: 2s ease-in; }
     .section-padding.pad-compass figure {
       width: 100%;
       margin: 0 auto;

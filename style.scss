@@ -621,7 +621,7 @@ main {
         height: auto;
             [data-scroll="in"] {
                 transform: rotateY(0) translateX(0);
-                transition: 1.5s ease-in;
+                transition: 2s ease-in;
             }
         
         figure {
