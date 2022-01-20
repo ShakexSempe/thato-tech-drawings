@@ -1412,14 +1412,11 @@ main {
             border: none;
             outline: none;
             border-radius: 5px;
-            background-color: #f4f4f4;
+            background-color: $valid;
+            transition: .5s;
             
             &:invalid {
                 background-color: rgb(224, 206, 203);
-            }
-            &:valid {
-                transition: .3s ease;
-                background-color: $valid;
             }
             &:focus {
                 outline: 2px dashed #fff;

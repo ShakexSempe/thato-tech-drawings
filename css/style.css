@@ -1296,14 +1296,11 @@ main {
         border: none;
         outline: none;
         border-radius: 5px;
-        background-color: #f4f4f4; }
+        background-color: skyblue;
+        transition: .5s; }
         .contact .contact-form .input-div input:invalid,
         .contact .contact-form .input-div textarea:invalid {
           background-color: #e0cecb; }
-        .contact .contact-form .input-div input:valid,
-        .contact .contact-form .input-div textarea:valid {
-          transition: .3s ease;
-          background-color: skyblue; }
         .contact .contact-form .input-div input:focus,
         .contact .contact-form .input-div textarea:focus {
           outline: 2px dashed #fff; }

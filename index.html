@@ -379,13 +379,13 @@
             <form class="contact-form" id="form" action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                 <h1 class="section-title">Contact Me</h1>
                 <div data-scroll class="form-info-link">
-                    <p>Enter your contact details in the <a href="#contact-details" class="scroll-link">form</a> below
+                    <p>Enter your contact details in the <a title="contact form" href="#contact-details" class="scroll-link">form</a> below
                         and await a confirmation email</p>
                 </div>
                 <fieldset id="thato-contact">
                     <legend>Thato Sempe</legend>
-                    <a href="tel:079 990 3896"><i class="fas fa-mobile-alt"></i> 079 990 3896</a>
-                    <a href="mailto:thato@emailaddress.com "><i class="far fa-envelope"></i> thato@emailaddress.com</a>
+                    <a title="Call Thato Sempe" href="tel:079 990 3896"><i class="fas fa-mobile-alt"></i> 079 990 3896</a>
+                    <a title="Send Thato an email" href="mailto:thato@emailaddress.com "><i class="far fa-envelope"></i> thato@emailaddress.com</a>
                     <p><i class="fas fa-map-marked-alt"></i>Bloemfontein</p>
                     <p><i class="fas fa-calendar-check"></i>weekdays: 17:00 - 21:00</p>
                     <p><i class="far fa-calendar-check"></i>weekends: 10:00 - 16:00</p>
@@ -393,15 +393,18 @@
                 <fieldset id="contact-details">
                     <legend>enter your contact details</legend>
                     <div class="input-div">
-                        <label for="name">Name</label><input id="name" type="text" tabindex="1" name="name"
+                        <label for="name">Name</label>
+                        <input id="name" type="text" tabindex="1" name="name"
                             placeholder="first name and surname" minlength="2" required>
                     </div>
                     <div class="input-div">
-                        <label for="tel">Phone Number</label><input id="tel" type="tel" tabindex="2" name="phone number"
-                            placeholder="phone number" min="10" required>
+                        <label for="tel">Phone Number</label>
+                        <input id="tel" type="tel" tabindex="2" name="phone number"
+                            placeholder="phone number" minlength="10" required>
                     </div>
                     <div class="input-div">
-                        <label for="email">Email</label><input id="email" type="email" tabindex="3" name="email"
+                        <label for="email">Email</label>
+                        <input id="email" type="email" tabindex="3" name="email"
                             placeholder="email address" required>
                     </div>
                 </fieldset>
