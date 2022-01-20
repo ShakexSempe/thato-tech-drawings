@@ -1323,13 +1323,13 @@ main {
       z-index: 2;
       width: 100%;
       transition: .3s;
-      border-radius: 5px;
+      border-radius: 15px;
       margin-top: 1em;
       padding: 1em;
       position: relative;
       text-transform: uppercase;
       isolation: isolate; }
-      .contact .contact-form .btn::before {
+      .contact .contact-form .btn::before, .contact .contact-form .btn::after {
         position: absolute;
         content: '';
         top: 0;
@@ -1337,18 +1337,28 @@ main {
         width: 100%;
         transition: .3s;
         height: 100%;
-        border-radius: 5px;
-        z-index: -1;
+        border-radius: 15px;
+        z-index: -1; }
+      .contact .contact-form .btn::before {
         background-image: linear-gradient(0deg, #6b081c, #dc143c);
         box-shadow: inset 3px 3px 3px #fffa, inset -3px -3px 3px #000a; }
-      .contact .contact-form .btn:hover {
+      .contact .contact-form .btn::after {
+        opacity: 0;
+        background-image: linear-gradient(0deg, #dc143c, #6b081c);
+        box-shadow: inset 3px 3px 3px #000a, inset -3px -3px 3px #fffa; }
+      .contact .contact-form .btn:hover, .contact .contact-form .btn:focus {
         transition: .3s;
         letter-spacing: .1em;
-        transform: scale(0.98); }
+        transform: scale(0.98);
+        outline: 2px solid skyblue; }
+        .contact .contact-form .btn:hover::before, .contact .contact-form .btn:focus::before {
+          opacity: 0; }
+        .contact .contact-form .btn:hover::after, .contact .contact-form .btn:focus::after {
+          opacity: 1; }
       .contact .contact-form .btn:active {
-        transition: .3s;
+        transition: .2s;
         letter-spacing: 0;
-        transform: scale(0.9); }
+        transform: scale(0.95); }
 
 .footer-top {
   padding: 5vh 5vw; }

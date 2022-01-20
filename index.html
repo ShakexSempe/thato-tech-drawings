@@ -412,16 +412,17 @@
                 <fieldset>
                     <legend>select grade and package</legend>
                     <label for="level">Grade/level</label>
-                    <select name="level" required>
-                        <optgroup label="Grade" name="grade">
-                            <option>Grade 10</option>
+                    <select tabindex="4" name="level" required>
+                        <optgroup  label="Grade" name="grade">
+                            <option >Grade 10</option>
                             <option>Grade 11</option>
                             <option>Matric</option>
                             <option>Tertiary</option>
                         </optgroup>
                     </select>
 
-                    <label for="package">package</label><select name="package" required>
+                    <label for="package">package</label>
+                    <select name="package" tabindex="5" required>
                         <optgroup label="membership" name="membership">
                             <option>Free</option>
                             <option>Standard</option>
@@ -429,13 +430,13 @@
                         </optgroup>
                     </select>
                     <div class="input-div">
-                        <label for="subject">subject</label><textarea id="subject" tabindex="4" name="subject" cols="10"
+                        <label for="subject">subject</label><textarea id="subject" tabindex="6" name="subject" cols="10"
                             rows="10" placeholder="eg. Grade 10 Assembly Drawing" required></textarea>
                     </div>
                 </fieldset>
                 <!-- grade and package -->
 
-                <button title="submit form" data-scroll type="submit" class="btn">submit form</button>
+                <button title="submit form" data-scroll type="submit" tabindex="10" class="btn">submit form</button>
                 <!-- form options -->
                 <input type="hidden" name="_subject" value="New order has been made">
                 <input type="hidden" name="_autoresponse" value="your tutorial request has been recieved">
