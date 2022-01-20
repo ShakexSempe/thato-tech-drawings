@@ -1476,13 +1476,15 @@ main {
             box-shadow: inset 3px 3px 3px #000a,
                         inset -3px -3px 3px #fffa;
         }
-        &:hover, &:focus {
+        &:hover {
             transition: .3s;
             letter-spacing: .1em;
             transform: scale(.98);
-            outline: 2px solid skyblue;
             &::before {opacity: 0;}
             &::after {opacity: 1;}
+        }
+        &:focus {
+            outline: 2px solid skyblue;
         }
         &:active {
             transition: .2s;

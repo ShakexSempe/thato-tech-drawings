@@ -1346,15 +1346,16 @@ main {
         opacity: 0;
         background-image: linear-gradient(0deg, #dc143c, #6b081c);
         box-shadow: inset 3px 3px 3px #000a, inset -3px -3px 3px #fffa; }
-      .contact .contact-form .btn:hover, .contact .contact-form .btn:focus {
+      .contact .contact-form .btn:hover {
         transition: .3s;
         letter-spacing: .1em;
-        transform: scale(0.98);
-        outline: 2px solid skyblue; }
-        .contact .contact-form .btn:hover::before, .contact .contact-form .btn:focus::before {
+        transform: scale(0.98); }
+        .contact .contact-form .btn:hover::before {
           opacity: 0; }
-        .contact .contact-form .btn:hover::after, .contact .contact-form .btn:focus::after {
+        .contact .contact-form .btn:hover::after {
           opacity: 1; }
+      .contact .contact-form .btn:focus {
+        outline: 2px solid skyblue; }
       .contact .contact-form .btn:active {
         transition: .2s;
         letter-spacing: 0;
