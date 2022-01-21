@@ -3,10 +3,21 @@
 const linksContainer = document.querySelector('.links-container');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
+const toggle = document.getElementById("toggle");
+const sidebar = document.querySelector('.sidebar');
+
+// TOGGLE NAV 
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+  sidebar.classList.toggle("open");
+})
 
 scrollLinks.forEach(link => {
     //prevent default
     link.addEventListener('click', e => {
+        toggle.classList.toggle("active");
+        sidebar.classList.toggle("open");
+
         e.preventDefault();
         //navigate to specific spot
         const id = e.currentTarget.getAttribute('href').slice(1);
@@ -57,3 +68,6 @@ document.addEventListener('scroll', () => {
 /*end of back to top button*/
 
 
+// DYNAMIC DATE 
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear(); 
