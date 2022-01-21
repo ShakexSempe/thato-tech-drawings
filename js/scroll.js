@@ -10,13 +10,17 @@ const sidebar = document.querySelector('.sidebar');
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
   sidebar.classList.toggle("open");
-})
+});
 
+sidebar.addEventListener("click", () => {
+  toggle.classList.remove("active");
+        sidebar.classList.remove("open");
+})
 scrollLinks.forEach(link => {
     //prevent default
     link.addEventListener('click', e => {
-        toggle.classList.toggle("active");
-        sidebar.classList.toggle("open");
+        toggle.classList.remove("active");
+        sidebar.classList.remove("open");
 
         e.preventDefault();
         //navigate to specific spot
