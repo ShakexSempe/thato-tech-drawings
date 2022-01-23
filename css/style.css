@@ -468,7 +468,7 @@ header {
         .sidebar-nav-list li {
           width: 40%; } }
       .sidebar-nav-list li a {
-        color: #fff;
+        color: #f4f4f4;
         background-color: #000080;
         padding: 5px;
         font-size: 1.1em;
@@ -505,7 +505,6 @@ header {
 
 main {
   background-color: #f4f4f4;
-  margin-top: 10vh;
   font-family: 'Raleway', sans-serif;
   z-index: 1;
   position: relative;
