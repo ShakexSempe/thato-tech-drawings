@@ -5,22 +5,26 @@ const scrollLinks = document.querySelectorAll('.scroll-link');
 const navbar = document.getElementById('navbar');
 const toggle = document.getElementById("toggle");
 const sidebar = document.querySelector('.sidebar');
+const main = document.getElementById("main");
 
 // TOGGLE NAV 
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
   sidebar.classList.toggle("open");
+  main.classList.toggle("active");
 });
 
 sidebar.addEventListener("click", () => {
   toggle.classList.remove("active");
         sidebar.classList.remove("open");
+        main.classList.remove("active");
 })
 scrollLinks.forEach(link => {
     //prevent default
     link.addEventListener('click', e => {
         toggle.classList.remove("active");
         sidebar.classList.remove("open");
+        main.classList.remove("active");
 
         e.preventDefault();
         //navigate to specific spot

@@ -506,13 +506,36 @@ header {
 main {
   background-color: #f4f4f4;
   margin-top: 10vh;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+  position: relative;
+  transition: 1s; }
   @media (min-width: 1024px) {
     main {
       margin-top: 100px; } }
   @media (min-width: 768px) {
     main {
       margin-top: 0px; } }
+  main::after {
+    position: fixed;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: -100vw;
+    background-color: #000080;
+    opacity: 0;
+    transition: 1s;
+    z-index: 50; }
+  main.active::after {
+    position: fixed;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #000080;
+    opacity: .8; }
 
 .banner {
   min-height: 100vh;

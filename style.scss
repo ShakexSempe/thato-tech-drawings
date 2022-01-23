@@ -336,6 +336,37 @@ main {
     background-color: $primary-background-lt-grey;
     margin-top: 10vh;
     font-family: 'Raleway', sans-serif;
+    z-index: 1;
+    position: relative;
+    transition: 1s;
+    // MAIN OVERLAY
+    &::after {
+        position: fixed;
+        content: '';
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: -100vw;
+        background-color: $primary-color;
+        opacity: 0;
+        transition: 1s;
+        z-index: 50;
+    }
+    &.active {
+
+        // MAIN OVERLAY
+        &::after {
+            position: fixed;
+            content: '';
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            background-color: $primary-color;
+            opacity: .8;
+        }
+    }
+    
 }
 
 .banner {
