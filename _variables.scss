@@ -15,6 +15,7 @@ $primary-gradient-reverse: linear-gradient(to right, $secondary-color 0%, $prima
 $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 
+$cta-btn: linear-gradient(0deg, hsl(171, 91%, 15%), #0aceb1);
 
 $primary-gradient-trans: linear-gradient(to right, $primary-color-trans 0%, $secondary-color-trans 100%);
 $secondary-gradient-trans: linear-gradient(to right, $secondary-color-trans 0%, $primary-color-trans 100%);
