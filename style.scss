@@ -23,13 +23,13 @@ header {
     z-index: 4;
     background: $primary-background-lt-grey;
     @include flex(center); //MXINS
-    height: 10vh;
+    height: 7vh;
     // padding-bottom: .5em;
     box-shadow: 0 8px 6px -6px #999;
     overflow: hidden;
+
     @include sm {
-        // min-height: 15%;
-        height: 10vh;
+        height: 8vh;
     }
         h1 {
             font-family: 'Fredericka the Great', cursive;
@@ -69,6 +69,7 @@ header {
                 display: block;
 
                 figure {
+                    display: grid;
                     overflow: hidden;
                     width: 7em;
                     height: 100%;
@@ -600,15 +601,14 @@ main {
         // background-color: $primary-color-dark;
         height: auto;
         padding: 5vh 5vw;
-        [data-scroll="in"] {
-            transform: translateX(0);
+        [data-scroll] {
+            transform: scale(1);
             transition: 1.5s;
         }
         figure {
             // border: 1px solid red;
             width: 100%;
             margin: 0 auto;
-            transform: translateX(-100%);
             img {
                 border-radius: 5px;
                 width: 100%;
@@ -629,6 +629,9 @@ main {
         height: auto;
 
         figure {
+            &[data-scroll] {
+                transform: scale(1);
+            }
             width: 100%;
             margin: 0 auto;
             transform-style: preserve-3d;
