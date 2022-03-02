@@ -413,10 +413,10 @@ header {
 .sidebar {
   position: fixed;
   left: -100%;
-  top: 10vh;
+  top: 7vh;
   width: 100%;
   padding-top: 1.5em;
-  height: calc(100vh - 10vh);
+  height: calc(100vh - 7vh);
   background-color: #000066;
   border-right: 2px solid #fffa;
   transition: .5s ease;
@@ -543,24 +543,44 @@ main {
 .banner {
   min-height: 100vh;
   background: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
+  background: url("../img/pc-banner4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-position: center bottom;
   position: relative;
+  isolation: isolate;
   z-index: 1; }
   @media (min-width: 576px) {
     .banner {
       background: url("../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg");
       background-attachment: fixed; } }
-  @media (min-width: 576px) {
-    .banner::after {
-      background: rgba(1, 1, 66, 0.25);
-      background-attachment: fixed;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(1, 1, 66, 0.8);
-      z-index: -1; } }
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 66, 0.9);
+    background: linear-gradient(40deg, transparent 0%, navy 100%);
+    z-index: 1; }
+    @media (min-width: 576px) {
+      .banner::after {
+        background: rgba(1, 1, 66, 0.25);
+        background-attachment: fixed; } }
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1; }
+    @media (min-width: 576px) {
+      .banner::before {
+        display: none; } }
   @media (min-width: 768px) {
     .banner {
       display: flex;
@@ -610,7 +630,6 @@ main {
             box-shadow: inset 3px 3px 4px skyblue, inset -3px -3px 4px #0aceb1; } }
       @media (max-width: 767px) {
         .banner .container .banner-content {
-          background: #000066;
           left: 0;
           top: 40%;
           transform: translateY(-50%);
