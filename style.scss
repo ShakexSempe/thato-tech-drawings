@@ -335,6 +335,7 @@ main {
         margin-top: 0px;
     }
     background-color: $primary-background-lt-grey;
+    background-color: $bg-light;
     // margin-top: 10vh;
     font-family: 'Raleway', sans-serif;
     z-index: 1;
@@ -395,11 +396,10 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(1, 1, 66, 0.900);
         background: linear-gradient(40deg, transparent 0%, $primary-color 100%);
         z-index: 1;
         @include sm {
-        background: rgba(1, 1, 66, 0.250);
+        background: rgba(1, 1, 66, 0.200);
         background-attachment: fixed;   
         }
         
@@ -1171,7 +1171,8 @@ main {
             @include grid(3, 30px)
         }
         .price-card {
-            &[data-scroll="in"] {
+            &[data-scroll] {
+                transform: scale(1);
                 transition: 1.5s;
             }
             padding: 1em 1.5em;
@@ -1197,9 +1198,9 @@ main {
                 transition: 1s ease;
                 background-image: linear-gradient(-40deg, #fff, #f4f4f4);
                 z-index: -1;
-                box-shadow: inset 3px 3px 4px #d6d5d5,
-                            inset -3px -3px 4px #000a,
-                                    5px 10px 5px rgba(0, 0, 0, 0.367);
+                box-shadow: inset 3px 3px 3px #d6d5d5,
+                            inset -3px -3px 3px #000a,
+                                    5px 5px 3px rgba(0, 0, 0, .200);
             }
 
             .btn {
@@ -1208,7 +1209,7 @@ main {
                 font-family: $font-rose;
                 border: none;
                 outline: none;
-                border-radius: 5px;
+                border-radius: 15px;
                 transition: .3s ease;
                 position: relative;
                 &::before,
@@ -1223,16 +1224,18 @@ main {
                     overflow: hidden;
                     border: none;
                     outline: none;
-                    border-radius: 5px;
+                    border-radius: 15px;
                 }
                 &::before{
-                    box-shadow: inset 2px 2px 4px#fff,
-                                inset -2px -2px 4px #000a;
+                    box-shadow: inset 2px 2px 3px#fffa,
+                                inset -2px -2px 3px #000a,
+                                        4px 4px 4px rgba(0, 0, 0, .250);
                 }
                 &::after{
                     opacity: 0;
-                    box-shadow: inset 2px 2px 4px #000a,
-                                inset -2px -2px 4px #fff;
+                    box-shadow: inset 2px 2px 3px #000a,
+                                inset -2px -2px 5px #fffa,
+                                2px 2px 3px rgba(0, 0, 0, .350);
                 }
                 
                 &:hover {
@@ -1246,8 +1249,10 @@ main {
 
             }
             h1 {
-                box-shadow: inset -5px -5px 5px #000a,
-                        inset 5px 5px 5px #ddda;     
+                border: none;
+                outline: none;
+                box-shadow: inset -3px -3px 3px #000a,
+                        inset 3px 3px 3px #ddda;     
             }
                     
             &:nth-child(1) {
@@ -1256,7 +1261,10 @@ main {
                 }
 
                 .btn {
-                    background-color: $secondary-color;
+                    background: $btn-secondary;
+                    &:hover {
+                        background: $btn-secondary-hover;
+                    }
                 }
                 .price p { 
                 color: $secondary-color;
@@ -1268,7 +1276,10 @@ main {
                 }
 
                 .btn {
-                    background-color: $primary-color;
+                    background: $btn-primary;
+                    &:hover {
+                        background: $btn-primary-hover;
+                    }
                 }
                 .price p { 
                     color: $primary-color;
@@ -1280,8 +1291,10 @@ main {
                 }
 
                 .btn {
-                    background-image: $primary-gradient;
-
+                    background-image: $btn-gradient;
+                    &:hover {
+                        background: $btn-gradient-hover;
+                    }
                 }
                 .price {
                     background: $primary-gradient;
