@@ -1768,6 +1768,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
         @include sm {
             font-size: 1em;
             flex-direction: row;
@@ -1792,16 +1793,15 @@ main {
             }
         }
         .copyright-div {
-            padding-bottom: 15vh;
-            
+            padding-bottom: 10vh;
             p {
                 line-height: 1.7;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 color: $text-light;
             }
             a {
                 color: $secondary-color;
-                font-size: 1.5em;
+                font-size: 1em;
 
                 &:hover {
                     transition: .3s ease-in-out;
@@ -1810,6 +1810,13 @@ main {
             }
 
             @media (max-width: 768px) {
+                &[data-scroll] {
+                    transition: 1.5s;
+                    transform: translateY(100%);
+                }
+                &[data-scroll="in"] {
+                    transform: translateY(0);
+                }
                 p {
                     font-size: 1.3em;
                 }
