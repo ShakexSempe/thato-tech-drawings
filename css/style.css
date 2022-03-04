@@ -1316,6 +1316,7 @@ main {
     width: 500px;
     max-width: 100%;
     padding: 25px;
+    padding: .1rem;
     margin: auto;
     cursor: pointer; }
     .contact .contact-form .form-info-link {
@@ -1334,10 +1335,13 @@ main {
     .contact .contact-form fieldset {
       color: #0aceb1;
       background-color: #000066;
-      border: 3px solid #0aceb1;
       padding: 5vh 1em;
       margin: 2em auto;
-      border-radius: 5px; }
+      border: 1px solid #0aceb1; }
+      @media (min-width: 768px) {
+        .contact .contact-form fieldset {
+          border-radius: 5px;
+          border: 3px solid #0aceb1; } }
       .contact .contact-form fieldset legend {
         padding: 0 .2em;
         text-transform: capitalize; }
@@ -1380,14 +1384,14 @@ main {
       margin-right: .5em;
       transition: .3s ease; }
     .contact .contact-form .input-div {
-      padding: .5em; }
+      padding: .5em 0; }
       .contact .contact-form .input-div input,
       .contact .contact-form .input-div textarea {
         font-family: "Red Rose", cursive;
         display: block;
         width: 100%;
         margin: 1em auto;
-        padding: .8em 1em;
+        padding: 1em;
         border: none;
         outline: none;
         border-radius: 5px;
@@ -1407,8 +1411,10 @@ main {
         transition: .2s ease;
         text-transform: capitalize; }
       .contact .contact-form .input-div:hover label {
+        color: #0aceb1;
         transform: translateY(50%) translateX(0.5em); }
     .contact .contact-form .btn {
+      display: block;
       font-family: "Red Rose", cursive;
       color: #f4f4f4;
       letter-spacing: .2em;
@@ -1416,10 +1422,11 @@ main {
       border: none;
       outline: none;
       z-index: 2;
-      width: 100%;
+      width: 90%;
       transition: .3s;
       border-radius: 15px;
-      margin-top: 1em;
+      margin-top: .5em;
+      margin: .5rem auto;
       padding: 1em;
       position: relative;
       text-transform: uppercase;

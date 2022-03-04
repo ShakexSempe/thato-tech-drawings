@@ -1403,6 +1403,7 @@ main {
         width: 500px;
         max-width: 100%;
         padding: 25px;
+        padding: .1rem;
         margin: auto;
         cursor: pointer;
 
@@ -1428,10 +1429,14 @@ main {
         fieldset {
             color: $secondary-color;
             background-color: $primary-color-dark;
-            border: 3px solid $secondary-color;
             padding: 5vh 1em;
             margin: 2em auto;
-            border-radius: 5px;
+            border: 1px solid $secondary-color;
+            @media (min-width: 768px){
+                border-radius: 5px;
+                border: 3px solid $secondary-color;
+
+            }
 
             legend {
                 padding: 0 .2em; 
@@ -1495,7 +1500,10 @@ main {
             }
         }
         .input-div{
-            padding: .5em;
+            padding: .5em 0;
+            // &.subject {
+            //     padding: 1rem 0;
+            // }
         
         input, 
         textarea {
@@ -1503,7 +1511,7 @@ main {
             display: block;
             width: 100%;
             margin: 1em auto;
-            padding: .8em 1em;
+            padding: 1em;
             border: none;
             outline: none;
             border-radius: 5px;
@@ -1517,7 +1525,6 @@ main {
                 outline: 2px dashed #fff;
             }
         } 
-
         label {
             color: #ddd;
             text-transform: capitalize;
@@ -1529,11 +1536,13 @@ main {
         
         &:hover {
             label {
+                color: $secondary-color;
                 transform: translateY(50%) translateX(.5em);
             }
         }
     }
     .btn {
+        display: block;
         font-family: $font-rose;
         color: $text-light;
         letter-spacing: .2em;
@@ -1541,10 +1550,11 @@ main {
         border: none;
         outline: none;
         z-index: 2;
-        width: 100%;
+        width: 90%;
         transition: .3s;
         border-radius: 15px;
-        margin-top: 1em;
+        margin-top: .5em;
+        margin: .5rem auto;
         padding: 1em;
         position: relative;
         text-transform: uppercase;
