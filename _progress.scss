@@ -33,7 +33,8 @@
   display: grid;
   place-items: center;
   border-radius: 5px;
-  color: #fff;
+  color: $text-light;
+  background: $secondary-color;
   animation: bounce 1.5s ease-in-out infinite;
   transition: .5s ease-in;
   opacity: 0;
@@ -52,14 +53,14 @@
     z-index: -1;
     border-radius: 5px;
     transition: .3s;
-    box-shadow: inset 3px 3px 5px #ddda,
-              inset -3px -3px 5px #000a;
+    box-shadow: inset 3px 3px 3px #ddda,
+              inset -3px -3px 3px #000a;
   }
   &::before {
-    background-image: $secondary-gradient;
+    background-image: $btn-gradient;
   }
   &::after {
-    background: $secondary-color;
+    background: $btn-gradient-hover;
     opacity: 0;
   }
   // end of background-colors
