@@ -27,7 +27,7 @@
         height: 100%;
         // background: $primary-color;
         background: linear-gradient(40deg, #000, $primary-color );
-        opacity: .7;
+        opacity: .5;
         z-index: 1;
         @include lg {
         background: rgba(1, 1, 66, 0.200);
