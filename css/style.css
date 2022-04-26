@@ -650,7 +650,7 @@ header .navbar-top a figure img {
   border-radius: 5px;
 }
 header .navbar-top a figure.active-logo {
-  transform: scale(2.5) translateX(12vw) translateY(10vh);
+  transform: scale(2.5) translateX(12vw) translateY(5vh);
 }
 @media (min-width: 576px) {
   header .navbar-top a figure.active-logo {

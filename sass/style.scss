@@ -91,7 +91,7 @@ header {
                     }
 
                     &.active-logo {
-                        transform: scale(2.5) translateX(12vw) translateY(10vh);
+                        transform: scale(2.5) translateX(12vw) translateY(5vh);
                         @include sm {
                             transform: translateX(35vw) translateY(20vh) scale(2.5);
                         }
