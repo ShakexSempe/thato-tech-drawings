@@ -32,15 +32,18 @@
   height: auto;
   display: grid;
   place-items: center;
+  overflow: hidden;
+  border: none;
+  outline: none;
   border-radius: 5px;
   color: $text-light;
   background: $secondary-color;
-  animation: bounce 1.5s ease-in-out infinite;
   transition: .5s ease-in;
   opacity: 0;
-  visibility: hidden;
+  // visibility: hidden;
   isolation: isolate;
-  z-index: -10;
+  // z-index: -10;
+  z-index: 1;
   
   // background-colors
   &::before, &::after {
@@ -50,6 +53,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;
     z-index: -1;
     border-radius: 5px;
     transition: .3s;
@@ -66,7 +70,7 @@
   // end of background-colors
 
   i {
-  font-size: 1.5em;
+  font-size: 1rem;
   padding: .4em;
 
   }
@@ -77,9 +81,10 @@
   }
 }
 .show-link {
-  transition: opacity .5s ease-in-out;
-  visibility: visible;
-  z-index: 10;
+  transition: all .5s ease-in-out;
+  bottom: 5vh;
+  // visibility: visible;
+  // z-index: 10;
   opacity: 1;
 }
 @keyframes bounce {
