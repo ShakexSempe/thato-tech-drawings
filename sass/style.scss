@@ -75,7 +75,7 @@ header {
                     overflow: hidden;
                     width: 7em;
                     height: 100%;
-                    transition: .8s;
+                    transition: .5s;
                     @include md {
                         width: 8.5em;
                     }
@@ -91,7 +91,13 @@ header {
                     }
 
                     &.active-logo {
-                        transform: scale(2.5) translateX(40%) translateY(10vh);
+                        transform: scale(2.5) translateX(12vw) translateY(10vh);
+                        @include sm {
+                            transform: translateX(35vw) translateY(20vh) scale(2.5);
+                        }
+                        @include lg {
+                            transform: scale(3) translateX(19vw) translateY(5vh);
+                        }
                         img {
                             object-fit: cover;
                         }

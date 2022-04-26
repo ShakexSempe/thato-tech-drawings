@@ -180,7 +180,7 @@ img {
   font-family: "Red Rose", cursive;
   text-transform: uppercase;
   color: #eee;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
   border: none;
   outline: none;
@@ -652,7 +652,7 @@ header .navbar-top a figure {
   overflow: hidden;
   width: 7em;
   height: 100%;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   header .navbar-top a figure {
@@ -665,7 +665,17 @@ header .navbar-top a figure img {
   border-radius: 5px;
 }
 header .navbar-top a figure.active-logo {
-  transform: scale(2.5) translateX(40%) translateY(10vh);
+  transform: scale(2.5) translateX(12vw) translateY(10vh);
+}
+@media (min-width: 576px) {
+  header .navbar-top a figure.active-logo {
+    transform: translateX(35vw) translateY(20vh) scale(2.5);
+  }
+}
+@media (min-width: 1024px) {
+  header .navbar-top a figure.active-logo {
+    transform: scale(3) translateX(19vw) translateY(5vh);
+  }
 }
 header .navbar-top a figure.active-logo img {
   object-fit: cover;
