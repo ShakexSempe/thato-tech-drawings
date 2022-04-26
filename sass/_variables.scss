@@ -27,7 +27,7 @@ $btn-gradient-hover: linear-gradient(0deg , #0aceb1, #000080);
 
 $primary-gradient-trans: linear-gradient(to right, $primary-color-trans 0%, $secondary-color-trans 100%);
 $secondary-gradient-trans: linear-gradient(to right, $secondary-color-trans 0%, $primary-color-trans 100%);
-$progress-gradient: linear-gradient(90deg, &$secondary-color, $primary-color, $secondary-color);
+$progress-gradient: linear-gradient(90deg, $secondary-color, $primary-color, $secondary-color);
 
 $text-color: #333;
 $text-color-white: #eee;
