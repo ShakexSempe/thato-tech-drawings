@@ -12,6 +12,9 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
   sidebar.classList.toggle("open");
   main.classList.toggle("active");
+  if(logo.classList.contains("active-logo")){
+    logo.classList.remove("active-logo");
+  }
 });
 
 sidebar.addEventListener("click", () => {
