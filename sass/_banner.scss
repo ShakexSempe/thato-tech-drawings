@@ -11,8 +11,7 @@
     background: url('../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    // background-size: contain;
-    background-position: center bottom;
+    // background-position: center bottom;
     position: relative;
     isolation: isolate;
     z-index: 1;
@@ -66,9 +65,9 @@
         .banner-content {
             width: 90%;
             position: absolute;
-            top: 50vh;
+            top: 30vh;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             color: #fff;
             text-align: center;
             // border: 2px solid red;

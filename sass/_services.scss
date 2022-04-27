@@ -102,7 +102,7 @@
             .service-info {
                 border-radius: 5px;
                 margin: 0 0em 5vh;
-                padding: .5em 1rem;
+                padding: .5em;
             // title
             h1 {
                 @include md {
@@ -132,7 +132,7 @@
                 color: #ddd;
                 font-size: 1em;
                 font-weight: 400;
-                text-align: left;
+                text-align: center;
             }
         }
             // end of service info

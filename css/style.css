@@ -36,7 +36,6 @@ img {
   background: url("../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
   position: relative;
   isolation: isolate;
   z-index: 1;
@@ -91,9 +90,9 @@ img {
 .banner .container .banner-content {
   width: 90%;
   position: absolute;
-  top: 50vh;
+  top: 30vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   color: #fff;
   text-align: center;
   border-radius: 5px;
@@ -340,7 +339,7 @@ img {
 .services .container .service .service-info {
   border-radius: 5px;
   margin: 0 0em 5vh;
-  padding: 0.5em 1rem;
+  padding: 0.5em;
 }
 .services .container .service .service-info h1 {
   color: #eee;
@@ -366,7 +365,7 @@ img {
   color: #ddd;
   font-size: 1em;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
 .services .container .service button {
   font-size: 1em;
@@ -459,7 +458,6 @@ img {
   padding: 1rem 0.5rem;
   background: #fff;
   text-align: center;
-  text-align: left;
 }
 @media (min-width: 576px) {
   .about-items .about-item {
@@ -548,12 +546,13 @@ img {
 
 [data-scroll] {
   transition: 1s;
-  transform: scale(0.5);
+  transform: scale(1) translateY(5vh);
 }
 
 [data-scroll=in] {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
+  transition: 1.5s;
 }
 
 [data-scroll=out] {
@@ -698,7 +697,7 @@ img {
 
 .section-title {
   margin: 0.5em auto 1rem;
-  font-size: 2em;
+  font-size: 2rem;
   color: #333;
   padding: 0.2em 0.5em;
   position: relative;
