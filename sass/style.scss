@@ -12,7 +12,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 7vh;
+    @include sm {
+        scroll-padding-top: 10vh;
+    }
     // border: 1px solid red;
 }
 
