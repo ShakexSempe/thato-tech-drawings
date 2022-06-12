@@ -53,3 +53,10 @@ $head-font-size-sm: 1.5em;
 
 // form
 $valid: skyblue;
+
+// BOX SHADOWS
+$box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.250),
+            inset -2px -2px 3px rgba(0, 0, 0, 0.250);
+
+$box-shadow-hover: inset 2px 2px 3px rgba(255, 255, 255, 0.250),
+                inset -2px -2px 3px rgba(0, 0, 0, 0.250);
