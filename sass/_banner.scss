@@ -33,20 +33,6 @@
         }
         
     }
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: rgba(0, 0, 0, .750);
-    //     z-index: 1;
-    //     @include lg {
-    //         display: none  
-    //     }
-        
-    // }
     // end of banner overlay
 
     @include md {
@@ -117,7 +103,6 @@
             @include md {
                 @include flex(center, center, column)
             }
-
             h2,
             .btn {
                 margin: 25px 0;
@@ -155,7 +140,7 @@
                 }
                 &::before {
                     background: $cta-btn;
-                    box-shadow: $box-shadow-hover;
+                    box-shadow: $box-shadow;
                 }
                 &::after {
                     background: $cta-btn-hover;

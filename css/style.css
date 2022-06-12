@@ -192,7 +192,7 @@ img {
 }
 .banner .container .banner-content .btn::before {
   background: linear-gradient(0deg, #03493f, #0aceb1);
-  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25);
 }
 .banner .container .banner-content .btn::after {
   background: linear-gradient(0deg, #0aceb1, #03493f);

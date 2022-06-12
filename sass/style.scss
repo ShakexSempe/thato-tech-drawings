@@ -37,19 +37,21 @@ header {
     @include sm {
         height: 8vh;
     }
-    
-        h1 {
-            font-family: 'Fredericka the Great', cursive;
-            font-size: 1.5em;
-            font-weight: 500;
-            text-shadow: 0 0 1px $primary-color;
-            span {
-                text-shadow: 0 0 1px $secondary-color;
-            }
-            @include md {
-                font-size: 2em;
-            }
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-shadow: 0 0 1px $primary-color;
+
+        span {
+            text-shadow: 0 0 1px $secondary-color;
         }
+
+        @include md {
+            font-size: 2em;
+        }
+    }
 
 
     .navbar {
@@ -62,9 +64,10 @@ header {
             flex-direction: row;
             align-items: center;
         }
+
         @include lg {
             @include flex(space-between);
-            padding: 0 10vw;  
+            padding: 0 10vw;
 
         }
 
@@ -82,13 +85,15 @@ header {
                     width: 7em;
                     height: 100%;
                     transition: .5s;
+
                     @include md {
                         width: 8.5em;
                     }
+
                     // @include lg {
                     //     width: 10vw;
                     // }
-                    
+
 
                     img {
                         width: 100%;
@@ -98,12 +103,15 @@ header {
 
                     &.active-logo {
                         transform: scale(2.5) translateX(12vw) translateY(5vh);
+
                         @include sm {
                             transform: translateX(35vw) translateY(20vh) scale(2.5);
                         }
+
                         @include lg {
                             transform: scale(3) translateX(19vw) translateY(5vh);
                         }
+
                         img {
                             object-fit: cover;
                         }
@@ -112,7 +120,7 @@ header {
             }
         }
 
-        
+
         // desktop nav list
         .nav-list {
             display: none;
@@ -149,15 +157,18 @@ header {
                 &:hover {
                     transform: scale(1.05);
                     color: $secondary-color;
+
                     &::before {
                         opacity: 1;
                         transform: translate(-50%, 0);
                     }
                 }
+
                 &:active {
                     transition: .2s;
                     transform: scale(.98);
                 }
+
                 &:focus {
                     transition: .3s;
                     transition-delay: .5s;
@@ -165,10 +176,11 @@ header {
                     color: #fff;
                     border-radius: 5px;
                     box-shadow: inset 2px 2px 4px #fffa,
-                                inset -2px -2px 4px #000a;
+                        inset -2px -2px 4px #000a;
                 }
             }
         }
+
         // end of desktop nav list
 
         .navbar-top {
@@ -177,7 +189,8 @@ header {
         }
 
         .navbar-button {
-            padding:0;
+            padding: 0;
+
             @include sm {
                 margin: 0 auto;
             }
@@ -198,10 +211,11 @@ header {
                     font-size: 2.5em;
 
                 }
+
                 &:hover {
                     transform: scale(1.1);
                 }
-                
+
             }
 
         }
@@ -346,8 +360,6 @@ header {
 }
 
 //END OF HEADER
-
-
 main {
     @include lg {
         margin-top: 100px;
@@ -378,7 +390,6 @@ main {
         z-index: 50;
     }
     &.active {
-
         // MAIN OVERLAY
         &::after {
             position: fixed;
