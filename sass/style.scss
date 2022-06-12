@@ -528,7 +528,7 @@ main {
             border-bottom: 1px solid #ddd;
             cursor: pointer;
             h2 {
-            font-family: $font-rose;
+            font-family: $font-rale;
             color: $secondary-color;
             text-transform: capitalize;
             font-size: 1em;
@@ -547,9 +547,7 @@ main {
                 text-align: center;
                 color: $secondary-color;
                 transition: .3s ease;
-                box-shadow: 
-                            inset 4px 4px 4px #ddd,
-                            inset -4px -4px 4px #000a;
+                box-shadow: $box-shadow;
 
                 i {
                     width: 100%;
@@ -561,9 +559,7 @@ main {
                 .feature-item-icon {
                     transition: .3s ease;
                     transform: scale(.95);
-                    box-shadow: 
-                                inset 5px 5px 5px #000a,
-                                inset -5px -5px 5px #ddda;
+                    box-shadow: $box-shadow-hover;
                 }
                 .features-item-description {
                     h2 {
