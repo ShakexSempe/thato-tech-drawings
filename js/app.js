@@ -3,7 +3,7 @@ console.log(logo);
 const banner = document.querySelector('.banner');
 
 const logoOptions = {
-    rootMargin: "-95% 0px 0px 0px",
+    rootMargin: "-100% 0px 0px 0px",
 }
 
 const bannerObserver = new IntersectionObserver(
