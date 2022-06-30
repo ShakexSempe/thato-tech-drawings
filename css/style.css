@@ -138,7 +138,8 @@ header .navbar .nav-list {
 }
 header .navbar .nav-list a {
   padding: 5px 15px;
-  font-size: 1em;
+  font-size: 1rem;
+  font-weight: 400;
   color: #000080;
   font-family: "Raleway", sans-serif;
   font-family: "Red Rose", cursive;
@@ -434,7 +435,8 @@ header .navbar .navbar-button .you-btn:hover {
 .banner .container .banner-content p {
   text-transform: capitalize;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
+  font-family: "Red Rose", cursive;
   padding: 0;
   color: #f4f4f4;
   line-height: 1.5;
@@ -645,8 +647,8 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .services .container .service .service-info h1 {
   color: #eee;
-  font-size: 1.1em;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: capitalize;
   font-family: "Red Rose", cursive;
   letter-spacing: 0.1em;
@@ -663,10 +665,10 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .services .container .service .service-info p {
   color: #eee;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Red Rose", cursive;
   color: #ddd;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 300;
   text-align: center;
 }
 .services .container .service button {
@@ -784,7 +786,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items .about-item-content h2 {
   margin: 10px 0 30px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Red Rose", cursive;
   background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
@@ -801,8 +803,8 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items .about-item-content p {
   margin: 10px 0;
   font-weight: 600;
-  font-size: 1em;
-  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-family: "Red Rose", cursive;
   color: #000;
   padding: 0 0.5em;
   text-transform: capitalize;
