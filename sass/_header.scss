@@ -1,0 +1,340 @@
+//HEADER
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index: 4;
+    background: $primary-background-lt-grey;
+    @include flex(center); 
+    //MXINS
+    height: 7vh;
+    // padding-bottom: .5em;
+    box-shadow: 0 8px 6px -6px #999;
+    // overflow: hidden;
+
+    @include sm {
+        height: 8vh;
+    }
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 1.5em;
+        font-weight: 500;
+        text-shadow: 0 0 1px $primary-color;
+
+        span {
+            text-shadow: 0 0 1px $secondary-color;
+        }
+
+        @include md {
+            font-size: 2em;
+        }
+    }
+
+
+    .navbar {
+        @include flex(space-between, stretch, column);
+        height: 100%;
+        min-width: 100vw;
+        padding: 0 5vw;
+
+        @include sm {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        @include lg {
+            @include flex(space-between);
+            padding: 0 10vw;
+
+        }
+
+        &-top {
+            @include flex(space-between);
+            flex: 1;
+
+            a {
+                display: block;
+                position: relative;
+
+                figure {
+                    display: grid;
+                    overflow: hidden;
+                    width: 10rem;
+                    height: 100%;
+                    transition: .5s;
+                    // border: 1px solid red;
+
+                    @include md {
+                        // width: 8.5em;
+                    }
+
+                    // @include lg {
+                    //     width: 10vw;
+                    // }
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+
+                    &.active-logo {
+                        transform: scale(2) translateX(12vw) translateY(5vh);
+
+                        @include sm {
+                            transform: scale(2.5) translateX(13vw) translateY(5vh);
+                        }
+                        @include lg {
+                            transform: scale(3) translateX(19vw) translateY(5vh);
+                        }
+
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // desktop nav list
+        .nav-list {
+            display: none;
+
+            @include lg {
+                display: flex;
+            }
+
+            a {
+                padding: 5px 15px;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $primary-color;
+                font-family: $font-rale;
+                font-family: $font-rose;
+                position: relative;
+                transition: .2s;
+                display: block;
+                text-transform: capitalize;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(1em);
+                    width: 50%;
+                    height: 2px;
+                    background-color: $secondary-color;
+                    transition: .3s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: $secondary-color;
+
+                    &::before {
+                        opacity: 1;
+                        transform: translate(-50%, 0);
+                    }
+                }
+
+                &:active {
+                    transition: .2s;
+                    transform: scale(.98);
+                }
+
+                &:focus {
+                    transition: .3s;
+                    transition-delay: .5s;
+                    background-color: $secondary-color;
+                    color: #fff;
+                    border-radius: 5px;
+                    box-shadow: inset 2px 2px 4px #fffa,
+                        inset -2px -2px 4px #000a;
+                }
+            }
+        }
+
+        // end of desktop nav list
+
+        .navbar-top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-button {
+            padding: 0;
+
+            @include sm {
+                margin: 0 auto;
+            }
+
+            .you-btn {
+                background-color: $primary-background-lt-grey;
+                font-family: 'Red Rose', cursive;
+                transition: .2s ease;
+                border: none;
+                outline: none;
+                padding: 0;
+                display: grid;
+                place-items: center;
+                position: relative;
+
+                i {
+                    color: #dc143c;
+                    font-size: 2.5em;
+
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 7vh;
+    width: 100%;
+    padding-top: 1.5em;
+    height: calc(100vh - 7vh);
+    background-color: $primary-color-dark;
+    border-right: 2px solid #fffa;
+    transition: .5s ease;
+    z-index: 3;
+    font-family: 'Red Rose', cursive;
+
+    .links-container {
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 10%;
+    }
+    // active sidebar
+    &.open {
+        left: -20%;
+
+        ul {
+            li {
+                transform: translateX(0);
+                opacity: 1;
+                &:nth-child(1) {
+                    transition-delay: .2s;
+                }
+                &:nth-child(2) {
+                    transition-delay: .25s;
+                }
+                &:nth-child(3) {
+                    transition-delay: .3s;
+                }
+                &:nth-child(4) {
+                    transition-delay: .35s;
+                }
+                &:nth-child(5) {
+                    transition-delay: .4s;
+                }
+                &:nth-child(6) {
+                    transition-delay: .45s;
+                }
+            }
+        }
+    }
+
+    @include lg {
+        display: none;
+    }
+
+    &-nav-list {
+        margin: 1em;
+        padding: 10px;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        isolation: isolate;
+
+
+
+        li {
+            margin-left: 20vw;
+            margin-bottom: 1em;
+            text-align: left;
+            width: 60%;
+            // border: 2px solid yellow;
+            outline: none;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 1s;
+            z-index: 1;
+            
+                &:active {
+                    transform: scale(.98);
+                }
+                // end of list item box shadow
+            @include md {
+                width: 40%;
+            }
+            
+
+            a {
+                color: #f4f4f4;
+                background-color: $primary-color;
+                padding: 5px;
+                font-size: 1.1em;
+                cursor: pointer;
+            pointer-events: visible;
+                display: block;
+                border: none;
+                outline: none;
+                transition: .3s;
+                text-transform: capitalize;
+                z-index: 5;
+                position: relative;
+                    // list item box shadow
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                transition: .3s;
+            }
+
+            &::before {
+                box-shadow: inset 2px 2px 4px #ddda,
+                            inset -2px -2px 4px #000a;
+            }
+
+                
+                &:active {
+                    transform: scale(.95);
+                    i {
+                        color:$secondary-color;
+                    }
+                }
+
+                i {
+                    color: #fffa;
+                    margin-right: .5em;
+                    padding: .5em;
+                    border-radius: 10px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
