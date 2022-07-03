@@ -1043,6 +1043,67 @@ header .navbar .navbar-button .you-btn:hover {
   color: #000080;
 }
 
+.loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #000, #161616);
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.loader_bg .wave {
+  width: 0.2rem;
+  height: 5rem;
+  background: linear-gradient(45deg, #0aceb1, #fff);
+  background: linear-gradient(45deg, #000080, #0aceb1);
+  margin: 0.5rem;
+  animation: wave 1s linear infinite;
+  border-radius: 5rem;
+  transform: scale(0);
+}
+.loader_bg .wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader_bg .wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader_bg .wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader_bg .wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader_bg .wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader_bg .wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loader_bg .wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loader_bg .wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.loader_bg .wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
 .progress-container {
   width: 100%;
   height: 0.5rem;
