@@ -642,10 +642,10 @@ header .navbar .navbar-button .you-btn:hover {
 .services .container .service .service-info h1 {
   text-align: left;
   color: #eee;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   border-radius: 5px;
 }
 @media (min-width: 576px) {
@@ -662,7 +662,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .services .container .service .service-info p {
   color: #f4f4f4;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
   text-align: left;
 }

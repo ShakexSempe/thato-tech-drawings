@@ -115,13 +115,13 @@
 
                 }
                 color: $text-color-white;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 font-weight: 700;
                 text-transform: capitalize;
                 // font-family: $font-title;
                 // letter-spacing: .1em;
                 // border: 1px solid $secondary-color;
-                margin-bottom: 1em;
+                margin-bottom: .5em;
                 border-radius: 5px;
                 // text-decoration: underline rgba(255, 255, 255, 0.432);
             }
@@ -131,7 +131,7 @@
                 // font-family: $font-rose;
                 // font-family: $font-text;
                 color: #f4f4f4;
-                font-size: 1rem;
+                font-size: .95rem;
                 font-weight: 400;
                 text-align: left;
                 @include sm {
