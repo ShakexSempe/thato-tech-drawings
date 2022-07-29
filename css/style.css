@@ -1656,13 +1656,13 @@ main.active::after {
   }
 }
 .contact .google-maps {
-  margin: 10px;
+  margin: 1rem;
   height: auto;
 }
 .contact .google-maps #map {
   width: 100%;
   height: 80%;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 .contact .contact-form {
   width: 500px;
@@ -1888,7 +1888,6 @@ main.active::after {
 .footer-top .footer-item {
   margin: 2em 0;
   padding: 2em 0.5em;
-  border: 1px solid #000080;
   border-radius: 5px;
 }
 .footer-top .footer-item h2 {
@@ -1931,7 +1930,6 @@ main.active::after {
 }
 .footer-top .social .social-icons li a {
   border: none;
-  outline: 2px solid #000080;
   border-radius: 5px;
   display: block;
 }
