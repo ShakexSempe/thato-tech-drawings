@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Zilla+Slab:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Rokkitt:wght@300;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400?family=Dancing+Script:wght@400;500;700&display=swap");
 *,
 *::before,
@@ -410,7 +410,6 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .banner .container .banner-content h1 {
   font-weight: 600;
-  font-family: "Zilla Slab", serif;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -643,11 +642,9 @@ header .navbar .navbar-button .you-btn:hover {
 .services .container .service .service-info h1 {
   text-align: left;
   color: #eee;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   text-transform: capitalize;
-  font-family: "Zilla Slab", serif;
-  letter-spacing: 0.1em;
   margin-bottom: 1em;
   border-radius: 5px;
 }
@@ -1609,11 +1606,11 @@ main.active::after {
 .table-price .price-grid .price-card h1 {
   padding: 0.7em 1em;
   font-size: 1.5rem;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   margin: 0.5em auto;
   background-color: #0aceb1;
   color: #fff;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05rem;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -1731,7 +1728,7 @@ main.active::after {
   position: relative;
   transition: 0.3s ease;
   border-radius: 5px;
-  box-shadow: inset 2px 2px 3px #ddda, inset -2px -2px 4px #000a;
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.3), inset -2px -2px 4px rgba(0, 0, 0, 0.35);
 }
 .contact .contact-form #thato-contact p i, .contact .contact-form #thato-contact a i {
   color: #ddd;
@@ -1777,6 +1774,10 @@ main.active::after {
 .contact .contact-form .input-div input:focus,
 .contact .contact-form .input-div textarea:focus {
   outline: 2px dashed #fff;
+}
+.contact .contact-form .input-div input::placeholder,
+.contact .contact-form .input-div textarea::placeholder {
+  text-transform: capitalize;
 }
 .contact .contact-form .input-div label {
   color: #ddd;
