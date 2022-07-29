@@ -1892,8 +1892,8 @@ main.active::after {
   border-radius: 5px;
 }
 .footer-top .footer-item h2 {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: #000080;
   text-align: center;
   text-decoration: 0.2em underline;
@@ -1902,7 +1902,7 @@ main.active::after {
 }
 .footer-top .footer-item a {
   font-size: 1.15em;
-  font-weight: 600;
+  font-weight: 500;
 }
 .footer-top .footer-item a i {
   font-size: 1.5em;
