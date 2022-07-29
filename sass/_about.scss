@@ -21,7 +21,6 @@
     }
     &-items {
         text-align: center;
-        font-family: 'Raleway', sans-serif;
         
 
 
@@ -51,7 +50,7 @@
                 }
                 h2 {
                     margin: 10px 0 30px;
-                    font-size: 1.5rem;
+                    font-size: 1.35rem;
                     // font-family: $font-rose;
                     // font-family: $font-rale;
                     background: $primary-gradient;
@@ -62,7 +61,7 @@
                     text-align: left;
                     @include sm {
                         text-align: center;
-                        font-size: 1.5em;
+                        font-size: 1.5rem;
                     }
                 }
 

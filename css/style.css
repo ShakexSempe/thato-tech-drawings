@@ -761,7 +761,6 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items {
   text-align: center;
-  font-family: "Raleway", sans-serif;
 }
 .about-items .about-item {
   margin: 2em auto;
@@ -788,7 +787,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items .about-item-content h2 {
   margin: 10px 0 30px;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -799,7 +798,7 @@ header .navbar .navbar-button .you-btn:hover {
 @media (min-width: 576px) {
   .about-items .about-item-content h2 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 .about-items .about-item-content p {
@@ -1014,7 +1013,7 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 0.2em 0.5em;
   position: relative;
   text-align: center;
-  font-family: "Zilla Slab", serif;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -1339,7 +1338,6 @@ main.active::after {
   background-color: #fff;
 }
 .features h1 {
-  font-family: "Zilla Slab", serif;
   font-weight: 500;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
@@ -1462,8 +1460,6 @@ main.active::after {
   margin: 10px 0;
 }
 .table-price .section-title {
-  font-family: "Zilla Slab", serif;
-  font-weight: 500;
   background: #fff;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
@@ -1521,9 +1517,9 @@ main.active::after {
   height: 100%;
   border-radius: 10px;
   transition: 1s ease;
-  background-image: linear-gradient(-40deg, #fff, #f4f4f4);
+  background-image: linear-gradient(-40deg, #e9f6fb, #f4f4f4);
   z-index: -1;
-  box-shadow: inset 3px 3px 3px #d6d5d5, inset -3px -3px 3px #000a, 5px 5px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 3px 3px 3px rgba(214, 213, 213, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2), 5px 5px 0px rgba(0, 0, 0, 0.05);
 }
 .table-price .price-grid .price-card .btn {
   margin: 0.5em auto;
@@ -1569,7 +1565,7 @@ main.active::after {
 .table-price .price-grid .price-card h1 {
   border: none;
   outline: none;
-  box-shadow: inset -3px -3px 3px #000a, inset 3px 3px 3px #ddda;
+  box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.2), inset 3px 3px 3px rgba(225, 225, 225, 0.2);
 }
 .table-price .price-grid .price-card:nth-child(1) h1 {
   background-color: #0aceb1;
@@ -1612,14 +1608,13 @@ main.active::after {
 }
 .table-price .price-grid .price-card h1 {
   padding: 0.7em 1em;
-  font-size: 1.2em;
+  font-size: 1.5rem;
   border-radius: 5px;
   margin: 0.5em auto;
   background-color: #0aceb1;
   color: #fff;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: "Zilla Slab", serif;
+  text-transform: capitalize;
   font-weight: 500;
 }
 .table-price .price-grid .price-card .price {
@@ -1627,18 +1622,20 @@ main.active::after {
   margin: 10px 50px;
 }
 .table-price .price-grid .price-card .price p {
-  font-size: 1.8em;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .table-price .price-grid .price-card .price small {
-  font-size: 1.3em;
+  font-size: 1.25rem;
 }
 .table-price .price-grid .price-card .card-list {
-  padding-left: 0.5em;
+  padding: 1rem;
   text-align: left;
 }
 .table-price .price-grid .price-card .card-list li {
-  font-size: 1em;
-  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
   line-height: 1.5;
   list-style: decimal;
   text-transform: capitalize;

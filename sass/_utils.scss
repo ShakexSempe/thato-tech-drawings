@@ -202,7 +202,8 @@
     padding: .2em .5em;
     position: relative;
     text-align: center;
-    font-family: $font-title;
+    font-weight: 600;
+    // font-family: $font-title;
 
     &::after{
         content: '';
