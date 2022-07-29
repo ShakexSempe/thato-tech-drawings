@@ -784,7 +784,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items .about-item-content h2 {
   margin: 10px 0 30px;
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
   -webkit-background-clip: text;
