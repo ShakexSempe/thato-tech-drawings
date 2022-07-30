@@ -641,18 +641,13 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 0.5rem;
 }
 .services .container .service .service-info h1 {
-  text-align: left;
+  text-align: center;
   color: #eee;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0.5em;
   border-radius: 5px;
-}
-@media (min-width: 576px) {
-  .services .container .service .service-info h1 {
-    text-align: center;
-  }
 }
 @media (min-width: 768px) {
   .services .container .service .service-info h1 {
@@ -665,15 +660,11 @@ header .navbar .navbar-button .you-btn:hover {
   color: #f4f4f4;
   font-size: 0.95rem;
   font-weight: 400;
-  text-align: left;
-}
-@media (min-width: 576px) {
-  .services .container .service .service-info p {
-    text-align: center;
-  }
+  text-align: center;
+  line-height: 1.6;
 }
 .services .container .service button {
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   width: 10rem;

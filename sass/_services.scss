@@ -104,10 +104,8 @@
                 padding: .5rem;
             // title
             h1 {
-                text-align: left;
-                @include sm {
-                    text-align: center;
-                }
+                text-align: center;
+                
                 @include md {
                     height: 10vh;
                     display: grid;
@@ -115,7 +113,7 @@
 
                 }
                 color: $text-color-white;
-                font-size: 1rem;
+                font-size: 1.15rem;
                 font-weight: 700;
                 text-transform: capitalize;
                 // font-family: $font-title;
@@ -133,16 +131,14 @@
                 color: #f4f4f4;
                 font-size: .95rem;
                 font-weight: 400;
-                text-align: left;
-                @include sm {
-                    text-align: center;
-                }
+                text-align: center;
+                line-height: 1.6;
             }
         }
             // end of service info
 
             button {
-                font-size: 1em;
+                font-size: 1rem;
                 border-radius: 5px;
                 padding: .5rem 1rem;
                 width: 10rem;
