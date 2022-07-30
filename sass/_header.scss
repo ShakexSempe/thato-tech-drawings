@@ -57,6 +57,21 @@ header {
             a {
                 display: block;
                 position: relative;
+                border: .12rem solid $primary-color;
+                padding: .25rem 0.5rem;
+                border-top-right-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+                h1 {
+                    text-transform: capitalize;
+                    color: $primary-color;
+                    font-size: 1rem;
+                    @include sm {
+                        font-size: 1.5rem;
+                    }
+                    span {
+                        color: $secondary-color;
+                    }
+                }
 
                 figure {
                     display: grid;
@@ -81,20 +96,20 @@ header {
                         border-radius: .5rem;
                     }
 
-                    &.active-logo {
-                        transform: scale(2) translateX(10vw) translateY(5vh);
+                    // &.active-logo {
+                    //     transform: scale(2) translateX(10vw) translateY(5vh);
 
-                        @include sm {
-                            transform: scale(2.5) translateX(13vw) translateY(5vh);
-                        }
-                        @include lg {
-                            transform: scale(3) translateX(19vw) translateY(5vh);
-                        }
+                    //     @include sm {
+                    //         transform: scale(2.5) translateX(13vw) translateY(5vh);
+                    //     }
+                    //     @include lg {
+                    //         transform: scale(3) translateX(19vw) translateY(5vh);
+                    //     }
 
-                        img {
-                            object-fit: cover;
-                        }
-                    }
+                    //     img {
+                    //         object-fit: cover;
+                    //     }
+                    // }
                 }
             }
         }
