@@ -738,11 +738,14 @@ header .navbar .navbar-button .you-btn:hover {
   position: relative;
   z-index: 1;
   color: #000080;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.05rem;
   font-weight: 500;
   text-transform: uppercase;
-  padding-bottom: 2vh;
-  margin-bottom: 10vh;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about .section-title::before {
   background-color: #fff;
@@ -751,8 +754,20 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items {
   text-align: center;
 }
+.about-items h2 {
+  font-size: 1.25rem;
+  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) {
+  .about-items h2 {
+    font-size: 1.5rem;
+  }
+}
 .about-items .about-item {
-  margin: 2em auto;
+  margin: 1rem auto;
   border-radius: 5px;
   padding: 1rem 0.5rem;
   background: #fff;
@@ -760,7 +775,6 @@ header .navbar .navbar-button .you-btn:hover {
 }
 @media (min-width: 576px) {
   .about-items .about-item {
-    border: 1px solid #000066;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -774,20 +788,17 @@ header .navbar .navbar-button .you-btn:hover {
     border-radius: 5px;
   }
 }
-.about-items .about-item-content h2 {
-  margin: 10px 0 30px;
-  font-size: 1.05rem;
-  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
+.about-items .about-item-content h3 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  color: #000080;
+  font-weight: 500;
   text-align: left;
 }
 @media (min-width: 576px) {
-  .about-items .about-item-content h2 {
+  .about-items .about-item-content h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .about-items .about-item-content p {
@@ -1456,6 +1467,7 @@ main.active::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10vh;
+  font-weight: 500;
 }
 @media (min-width: 576px) {
   .table-price .price-grid {
