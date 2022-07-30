@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Rokkitt:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400?family=Dancing+Script:wght@400;500;700&display=swap");
 *,
 *::before,
@@ -106,6 +106,7 @@ header .navbar-top a {
 header .navbar-top a h1 {
   text-transform: capitalize;
   color: #000080;
+  font-family: "Sanchez", serif;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
@@ -115,6 +116,7 @@ header .navbar-top a h1 {
 }
 header .navbar-top a h1 span {
   color: #0aceb1;
+  font-family: inherit;
 }
 header .navbar-top a figure {
   display: grid;
@@ -410,9 +412,10 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .banner .container .banner-content h1 {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-family: "Sanchez", serif;
 }
 @media (max-width: 360px) {
   .banner .container .banner-content h1 {
@@ -644,8 +647,10 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: center;
   color: #eee;
   font-size: 1.15rem;
-  font-weight: 700;
   text-transform: capitalize;
+  font-family: "Sanchez", serif;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
   margin-bottom: 0.5em;
   border-radius: 5px;
 }
@@ -755,6 +760,8 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: center;
 }
 .about-items h2 {
+  font-family: "Sanchez", serif;
+  letter-spacing: 0.1rem;
   font-size: 1.25rem;
   background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
@@ -791,6 +798,7 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items .about-item-content h3 {
   margin: 1rem 0;
   font-size: 1.25rem;
+  font-family: "Sanchez", serif;
   color: #000080;
   font-weight: 500;
   text-align: left;
@@ -1014,6 +1022,7 @@ header .navbar .navbar-button .you-btn:hover {
   position: relative;
   text-align: center;
   font-weight: 600;
+  font-family: "Sanchez", serif;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -1462,6 +1471,7 @@ main.active::after {
 }
 .table-price .section-title {
   background: #fff;
+  font-family: "Sanchez", serif;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1896,6 +1906,7 @@ main.active::after {
   border-radius: 5px;
 }
 .footer-top .footer-item h2 {
+  font-family: "Sanchez", serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #000080;

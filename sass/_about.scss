@@ -27,6 +27,8 @@
     &-items {
         text-align: center;
         h2 {
+            font-family: $font-title;
+            letter-spacing: .1rem;
             font-size: 1.25rem;
             background: $primary-gradient;
             background-clip: text;
@@ -65,7 +67,7 @@
                     margin: 1rem 0;
                     font-size: 1.25rem;
                     // font-family: $font-rose;
-                    // font-family: $font-rale;
+                    font-family: $font-title;
                     color: $primary-color;
                     font-weight: 500;
                     text-align: left;
