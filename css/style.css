@@ -390,7 +390,7 @@ header .navbar .navbar-button .you-btn:hover {
 .banner .container .banner-content {
   width: 90%;
   position: absolute;
-  top: 30vh;
+  top: 25vh;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
