@@ -1318,12 +1318,23 @@ main.active::after {
   height: auto;
 }
 .section-padding.pad-1 figure {
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   transform-style: preserve-3d;
 }
 .section-padding.pad-1 figure[data-scroll] {
   transform: scale(1);
+}
+.section-padding.pad-1 figure[data-scroll] img {
+  transform: scale(2);
+}
+.section-padding.pad-1 figure[data-scroll=in] {
+  transform: scale(1);
+}
+.section-padding.pad-1 figure[data-scroll=in] img {
+  transform: scale(1);
+  transition: 1.5s;
 }
 .section-padding.pad-1 figure img {
   width: 100%;

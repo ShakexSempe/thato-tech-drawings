@@ -105,8 +105,19 @@ main {
         height: auto;
 
         figure {
+            overflow: hidden;
             &[data-scroll] {
                 transform: scale(1);
+                img {
+                    transform: scale(2);
+                }
+            }
+            &[data-scroll="in"] {
+                transform: scale(1);
+                img {
+                    transform: scale(1);
+                    transition: 1.5s;
+                }
             }
             width: 100%;
             margin: 0 auto;
