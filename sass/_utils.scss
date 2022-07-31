@@ -151,14 +151,9 @@
     background-color: $primary-color;
     color: #fff;
     text-align: center;
-    border-radius: 1px;
+    border-radius: 1rem;
     cursor: pointer;
 }
-
-.btn:hover {
-    background-color: #000;
-}
-
 .bg-gradient {
     // min-height: 420px;
     // padding: 100px 0;

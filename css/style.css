@@ -1012,12 +1012,8 @@ header .navbar .navbar-button .you-btn:hover {
   background-color: #000080;
   color: #fff;
   text-align: center;
-  border-radius: 1px;
+  border-radius: 1rem;
   cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #000;
 }
 
 .bg-gradient::before, .bg-gradient::after {
@@ -1568,9 +1564,10 @@ main.active::after {
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 15px;
+  border-radius: 1rem;
   transition: 0.3s ease;
   position: relative;
+  isolation: isolate;
 }
 .table-price .price-grid .price-card .btn::before, .table-price .price-grid .price-card .btn::after {
   content: "";
@@ -1579,30 +1576,47 @@ main.active::after {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.3s;
   overflow: hidden;
   border: none;
   outline: none;
-  border-radius: 15px;
+  border-radius: 1rem;
+  transition: 0.25s;
+  z-index: -1;
 }
 .table-price .price-grid .price-card .btn::before {
-  box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a, 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25);
 }
 .table-price .price-grid .price-card .btn::after {
   opacity: 0;
-  box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 5px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(255, 255, 255, 0.25);
 }
-.table-price .price-grid .price-card .btn:hover {
-  transform: scale(0.97);
+@media (max-width: 768px) {
+  .table-price .price-grid .price-card .btn {
+    letter-spacing: normal;
+  }
+  .table-price .price-grid .price-card .btn:active {
+    transform: scale(0.97);
+  }
+  .table-price .price-grid .price-card .btn:active::before {
+    opacity: 0;
+  }
+  .table-price .price-grid .price-card .btn:active::after {
+    opacity: 1;
+  }
 }
-.table-price .price-grid .price-card .btn:hover::before {
-  opacity: 0;
-}
-.table-price .price-grid .price-card .btn:hover::after {
-  opacity: 1;
-}
-.table-price .price-grid .price-card .btn:active {
-  transform: scale(0.9);
+@media (min-width: 768px) {
+  .table-price .price-grid .price-card .btn {
+    letter-spacing: normal;
+  }
+  .table-price .price-grid .price-card .btn:hover {
+    transform: scale(0.97);
+  }
+  .table-price .price-grid .price-card .btn:hover::before {
+    opacity: 0;
+  }
+  .table-price .price-grid .price-card .btn:hover::after {
+    opacity: 1;
+  }
 }
 .table-price .price-grid .price-card h1 {
   border: none;
@@ -1613,9 +1627,12 @@ main.active::after {
   background-color: #0aceb1;
 }
 .table-price .price-grid .price-card:nth-child(1) .btn {
+  background: #0aceb1;
+}
+.table-price .price-grid .price-card:nth-child(1) .btn::before {
   background: linear-gradient(0deg, #079c86, #0aceb1);
 }
-.table-price .price-grid .price-card:nth-child(1) .btn:hover {
+.table-price .price-grid .price-card:nth-child(1) .btn::after {
   background: linear-gradient(0deg, #0aceb1, #079c86);
 }
 .table-price .price-grid .price-card:nth-child(1) .price p {
@@ -1625,9 +1642,12 @@ main.active::after {
   background-color: #000080;
 }
 .table-price .price-grid .price-card:nth-child(2) .btn {
+  background: #000080;
+}
+.table-price .price-grid .price-card:nth-child(2) .btn::before {
   background: linear-gradient(0deg, #000066, #0000b3);
 }
-.table-price .price-grid .price-card:nth-child(2) .btn:hover {
+.table-price .price-grid .price-card:nth-child(2) .btn::after {
   background: linear-gradient(0deg, #0000b3, #000066);
 }
 .table-price .price-grid .price-card:nth-child(2) .price p {
@@ -1637,9 +1657,12 @@ main.active::after {
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn {
-  background-image: linear-gradient(0deg, #000080, #0aceb1);
+  background: linear-gradient(0deg, #000080, #0aceb1);
 }
-.table-price .price-grid .price-card:nth-child(3) .btn:hover {
+.table-price .price-grid .price-card:nth-child(3) .btn::before {
+  background: linear-gradient(0deg, #000080, #0aceb1);
+}
+.table-price .price-grid .price-card:nth-child(3) .btn::after {
   background: linear-gradient(0deg, #0aceb1, #000080);
 }
 .table-price .price-grid .price-card:nth-child(3) .price {
