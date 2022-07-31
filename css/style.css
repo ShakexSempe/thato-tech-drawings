@@ -603,9 +603,6 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: center;
   border-radius: 0.5rem;
 }
-.services .container .service[data-scroll] {
-  transform: scale(1);
-}
 @media (min-width: 576px) {
   .services .container .service {
     margin: 10vh auto;
@@ -733,6 +730,27 @@ header .navbar .navbar-button .you-btn:hover {
   .services .container .service button:hover::after {
     opacity: 1;
   }
+}
+.services .container .service[data-scroll] {
+  transform: scale(1);
+  opacity: 1;
+}
+.services .container .service[data-scroll] .service-icon {
+  transform: translateY(5vh);
+}
+.services .container .service[data-scroll] .service-info p {
+  transform: translateY(-2rem);
+  opacity: 0;
+  transition: 1.5s;
+}
+.services .container .service[data-scroll=in] .service-icon {
+  transition: 2s;
+  transform: translateY(0);
+  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #000080, inset -5px -5px #0aceb1;
+}
+.services .container .service[data-scroll=in] .service-info p {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .about {
