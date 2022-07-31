@@ -419,7 +419,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 @media (max-width: 390px) {
   .banner .container .banner-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 576px) {
