@@ -975,22 +975,25 @@ header .navbar .navbar-button .you-btn:hover {
   margin: 1em auto;
   padding: 1em;
   border: none;
-  outline: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background-color: skyblue;
   transition: 0.5s;
 }
 .contact .contact-form .input-div input:invalid,
 .contact .contact-form .input-div textarea:invalid {
-  background-color: #e0cecb;
-}
-.contact .contact-form .input-div input:focus,
-.contact .contact-form .input-div textarea:focus {
-  outline: 2px dashed #fff;
+  background-color: #ddd;
 }
 .contact .contact-form .input-div input::placeholder,
 .contact .contact-form .input-div textarea::placeholder {
   text-transform: capitalize;
+  opacity: 0;
+  letter-spacing: 0.1rem;
+  transition: 0.25s;
+}
+.contact .contact-form .input-div input:focus::placeholder,
+.contact .contact-form .input-div textarea:focus::placeholder {
+  opacity: 1;
+  letter-spacing: normal;
 }
 .contact .contact-form .input-div label {
   color: #ddd;

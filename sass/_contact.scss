@@ -143,19 +143,27 @@
             margin: 1em auto;
             padding: 1em;
             border: none;
-            outline: none;
-            border-radius: 5px;
+            border-radius:.5rem;
             background-color: $valid;
             transition: .5s;
             
             &:invalid {
-                background-color: rgb(224, 206, 203);
+                background-color: #ddd;
             }
-            &:focus {
-                outline: 2px dashed #fff;
-            }
+            
             &::placeholder {
                 text-transform: capitalize;
+                opacity: 0;
+                letter-spacing: .1rem;
+                transition: .25s;
+            }
+
+            &:focus {
+                // outline: 2px dashed #fff;
+                &::placeholder {
+                    opacity: 1;
+                    letter-spacing: normal;
+                }
             }
         } 
         label {
