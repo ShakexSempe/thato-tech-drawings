@@ -4,26 +4,7 @@
     // background-image: $primary-gradient;
     // background-image: $primary-background-lt-grey;
     background-size: 140%;
-
-    .section-title {
-        position: relative;
-        z-index: 1;
-        color: $primary-color;
-        letter-spacing: .05rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        // padding-bottom: 2vh;
-        margin-bottom: 2rem;
-        background: $primary-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        &::before {
-            background-color: #fff;
-            z-index: -2;
-        }
-    }
+    
     &-items {
         text-align: center;
         h2 {
