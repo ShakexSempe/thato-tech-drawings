@@ -755,7 +755,7 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .about-items .about-item {
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
   border-radius: 5px;
   padding: 1rem 0;
   background: #fff;
@@ -1207,7 +1207,7 @@ header .navbar .navbar-button .you-btn:hover {
   border: none;
   color: #fff;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   position: relative;
   letter-spacing: 0.05rem;
@@ -1221,7 +1221,7 @@ header .navbar .navbar-button .you-btn:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   z-index: -1;
   transition: 0.25s;
 }
