@@ -10,20 +10,22 @@
         h2 {
             font-family: $font-title;
             letter-spacing: .1rem;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             color: $primary-color;
+            text-align: left;
             // background: $primary-gradient;
             // background-clip: text;
             // -webkit-background-clip: text;
             // -webkit-text-fill-color: transparent;
             @include md {
                 font-size: 1.5rem;
+                text-align: center;
             }
         }
         .about-item {
             margin: 1rem auto;
             border-radius: 5px;
-            padding: 1rem .5rem; 
+            padding: 1rem 0; 
             background: #fff;
             text-align: center;
             // border: 1px solid #000;
@@ -47,16 +49,16 @@
                 }
                 h3 {
                     margin: 1rem 0;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     // font-family: $font-rose;
                     font-family: $font-title;
                     color: $primary-color;
                     font-weight: 600;
                     text-align: left;
-                    background: $primary-gradient;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    // background: $primary-gradient;
+                    // background-clip: text;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
                     @include sm {
                         text-align: center;
                         font-size: 1.8rem;
@@ -79,6 +81,13 @@
                 }
                 @include lg {
                     @include flex(center, center, column);
+                }
+
+                a {
+                    display: block;
+                    width: 10rem;
+                    margin: 1rem 0;
+                    text-transform: capitalize;
                 }
             }
 

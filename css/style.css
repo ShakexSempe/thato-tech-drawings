@@ -744,18 +744,20 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items h2 {
   font-family: "Sanchez", serif;
   letter-spacing: 0.1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #000080;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .about-items h2 {
     font-size: 1.5rem;
+    text-align: center;
   }
 }
 .about-items .about-item {
   margin: 1rem auto;
   border-radius: 5px;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   background: #fff;
   text-align: center;
 }
@@ -776,15 +778,11 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items .about-item-content h3 {
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Sanchez", serif;
   color: #000080;
   font-weight: 600;
   text-align: left;
-  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 576px) {
   .about-items .about-item-content h3 {
@@ -818,6 +816,12 @@ header .navbar .navbar-button .you-btn:hover {
     flex-direction: column;
     flex-wrap: wrap;
   }
+}
+.about-items .about-item-content a {
+  display: block;
+  width: 10rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
 }
 .about-items .about-item-image {
   width: 100%;
@@ -1200,10 +1204,59 @@ header .navbar .navbar-button .you-btn:hover {
   display: inline-block;
   padding: 10px 17px;
   background-color: #000080;
+  border: none;
   color: #fff;
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;
+  position: relative;
+  letter-spacing: 0.05rem;
+  isolation: isolate;
+  transition: 0.25s;
+}
+.btn::before, .btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: 0.25s;
+}
+.btn::before {
+  background: linear-gradient(0deg, #000080, #0aceb1);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25);
+}
+.btn::after {
+  background: linear-gradient(0deg, #0aceb1, #000080);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.25), inset -2px -2px 3px rgba(255, 255, 255, 0.25);
+  opacity: 0;
+}
+@media (max-width: 820px) {
+  .btn:active {
+    letter-spacing: normal;
+    transform: scale(0.98);
+  }
+  .btn:active::before {
+    opacity: 0;
+  }
+  .btn:active::after {
+    opacity: 1;
+  }
+}
+@media (min-width: 820px) {
+  .btn:hover {
+    letter-spacing: normal;
+    transform: scale(0.98);
+  }
+  .btn:hover::before {
+    opacity: 0;
+  }
+  .btn:hover::after {
+    opacity: 1;
+  }
 }
 
 .bg-gradient::before, .bg-gradient::after {
@@ -1220,8 +1273,8 @@ header .navbar .navbar-button .you-btn:hover {
 }
 
 .section-title {
-  margin: 0.5em auto 1rem;
-  font-size: 2rem;
+  margin: 0.5em auto 5vh;
+  font-size: 2.5rem;
   color: #333;
   padding: 0.2em 0.5em;
   position: relative;
