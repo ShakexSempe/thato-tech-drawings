@@ -100,8 +100,7 @@ header .navbar-top a {
   position: relative;
   border: 0.12rem solid #000080;
   padding: 0.25rem 0.5rem;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 header .navbar-top a h1 {
   text-transform: capitalize;
