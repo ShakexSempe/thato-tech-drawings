@@ -221,13 +221,31 @@ header .navbar .navbar-button .you-btn:hover {
   border-right: 2px solid #fffa;
   transition: 0.5s ease;
   z-index: 3;
-  font-family: "Red Rose", cursive;
 }
 .sidebar .links-container {
   display: grid;
   place-items: center;
   position: relative;
-  top: 10%;
+}
+.sidebar .links-container .contact-links {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding-left: 10vw;
+  margin-top: 5vh;
+}
+.sidebar .links-container .contact-links a {
+  color: #fff;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+.sidebar .links-container .contact-links a i {
+  padding-right: 0.5rem;
+  transform: translateX(-2rem);
+  transition: inherit;
 }
 .sidebar.open {
   left: -20%;
@@ -254,14 +272,26 @@ header .navbar .navbar-button .you-btn:hover {
 .sidebar.open ul li:nth-child(6) {
   transition-delay: 0.45s;
 }
+.sidebar.open .contact-links a {
+  opacity: 1;
+}
+.sidebar.open .contact-links a i {
+  transform: translateX(0);
+}
+.sidebar.open .contact-links a:nth-child(1) {
+  transition-delay: 0.7s;
+}
+.sidebar.open .contact-links a:nth-child(2) {
+  transition-delay: 1s;
+}
 @media (min-width: 1024px) {
   .sidebar {
     display: none;
   }
 }
 .sidebar-nav-list {
-  margin: 1em;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   height: 60vh;
   width: 100%;
   display: flex;
@@ -270,8 +300,7 @@ header .navbar .navbar-button .you-btn:hover {
   isolation: isolate;
 }
 .sidebar-nav-list li {
-  margin-left: 20vw;
-  margin-bottom: 1em;
+  margin-left: 25vw;
   text-align: left;
   width: 60%;
   outline: none;
@@ -291,14 +320,15 @@ header .navbar .navbar-button .you-btn:hover {
 .sidebar-nav-list li a {
   color: #f4f4f4;
   background-color: #000080;
-  padding: 5px;
-  font-size: 1.1em;
+  padding: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
   pointer-events: visible;
   display: block;
   border: none;
-  outline: none;
-  transition: 0.3s;
+  transition: 0.25s;
+  letter-spacing: 0.25rem;
+  border-radius: 0.5rem;
   text-transform: capitalize;
   z-index: 5;
   position: relative;
@@ -310,14 +340,15 @@ header .navbar .navbar-button .you-btn:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
-  transition: 0.3s;
+  border-radius: 0.5rem;
+  transition: 0.25s;
 }
 .sidebar-nav-list li a::before {
-  box-shadow: inset 2px 2px 4px #ddda, inset -2px -2px 4px #000a;
+  box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.3);
 }
 .sidebar-nav-list li a:active {
-  transform: scale(0.95);
+  letter-spacing: normal;
+  transform: scale(0.97);
 }
 .sidebar-nav-list li a:active i {
   color: #0aceb1;
