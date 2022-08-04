@@ -421,14 +421,15 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .banner .container .banner-content {
-  width: 90%;
+  width: 100%;
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
   text-align: center;
   text-align: left;
+  padding-left: 5vw;
   border-radius: 5px;
   z-index: 2;
 }
@@ -446,16 +447,24 @@ header .navbar .navbar-button .you-btn:hover {
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.7rem;
+  font-size: 2.25rem;
   font-family: "Sanchez", serif;
+}
+.banner .container .banner-content h1 span {
+  display: block;
 }
 @media (max-width: 390px) {
   .banner .container .banner-content h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .banner .container .banner-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .banner .container .banner-content h1 span {
+    display: inline-block;
   }
 }
 @media (min-width: 1024px) {
