@@ -327,7 +327,7 @@ header .navbar .navbar-button .you-btn:hover {
   display: block;
   border: none;
   transition: 0.25s;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.05rem;
   border-radius: 0.5rem;
   text-transform: capitalize;
   z-index: 5;
