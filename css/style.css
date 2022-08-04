@@ -229,8 +229,8 @@ header .navbar .navbar-button .you-btn:hover {
 .sidebar .links-container .contact-links {
   display: flex;
   flex-direction: column;
-  width: 60vw;
-  padding-left: 10vw;
+  width: 100vw;
+  padding-left: 25vw;
   margin-top: 5vh;
 }
 .sidebar .links-container .contact-links a {
