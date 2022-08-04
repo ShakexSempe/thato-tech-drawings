@@ -321,6 +321,7 @@ header .navbar .navbar-button .you-btn:hover {
   background-color: #000080;
   padding: 0.5rem;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   pointer-events: visible;
   display: block;
