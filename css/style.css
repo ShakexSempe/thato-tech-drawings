@@ -452,10 +452,11 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .banner .container .banner-content h1 span {
   display: block;
+  font-family: inherit;
 }
 @media (max-width: 390px) {
   .banner .container .banner-content h1 {
-    font-size: 2rem;
+    font-size: 2.05rem;
   }
 }
 @media (min-width: 768px) {
