@@ -54,7 +54,7 @@ header h1 {
   text-shadow: 0 0 1px #000080;
 }
 header h1 span {
-  text-shadow: 0 0 1px #0aceb1;
+  text-shadow: 0 0 1px #75b9f0;
 }
 @media (min-width: 768px) {
   header h1 {
@@ -114,7 +114,7 @@ header .navbar-top a h1 {
   }
 }
 header .navbar-top a h1 span {
-  color: #0aceb1;
+  color: #75b9f0;
   font-family: inherit;
 }
 header .navbar-top a figure {
@@ -156,13 +156,13 @@ header .navbar .nav-list a::before {
   transform: translateX(-50%) translateY(1em);
   width: 50%;
   height: 2px;
-  background-color: #0aceb1;
+  background-color: #75b9f0;
   transition: 0.3s;
   opacity: 0;
 }
 header .navbar .nav-list a:hover {
   transform: scale(1.05);
-  color: #0aceb1;
+  color: #75b9f0;
 }
 header .navbar .nav-list a:hover::before {
   opacity: 1;
@@ -175,7 +175,7 @@ header .navbar .nav-list a:active {
 header .navbar .nav-list a:focus {
   transition: 0.3s;
   transition-delay: 0.5s;
-  background-color: #0aceb1;
+  background-color: #75b9f0;
   color: #fff;
   border-radius: 5px;
   box-shadow: inset 2px 2px 4px #fffa, inset -2px -2px 4px #000a;
@@ -352,7 +352,7 @@ header .navbar .navbar-button .you-btn:hover {
   transform: scale(0.97);
 }
 .sidebar-nav-list li a:active i {
-  color: #0aceb1;
+  color: #75b9f0;
 }
 .sidebar-nav-list li a i {
   color: #fffa;
@@ -366,7 +366,7 @@ header .navbar .navbar-button .you-btn:hover {
   min-height: 100vh;
   width: 100vw;
   position: relative;
-  background: linear-gradient(-50deg, #000066 30%, #000080, #0aceb1 100%);
+  background: linear-gradient(-50deg, #000066 30%, #000080, #75b9f0 100%);
   background: url("../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,17 +450,18 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .banner .container .banner-content h1 {
   font-weight: 600;
+  margin-bottom: 0.5rem;
   font-size: 1.7rem;
   font-size: 2.25rem;
+  line-height: 1.3;
   font-family: "Taviraj", serif;
 }
 .banner .container .banner-content h1 span {
-  display: block;
   font-family: inherit;
 }
 @media (max-width: 390px) {
   .banner .container .banner-content h1 {
-    font-size: 2.05rem;
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 768px) {
@@ -475,7 +476,6 @@ header .navbar .navbar-button .you-btn:hover {
   .banner .container .banner-content h1 {
     font-size: 3.5rem;
     color: #000;
-    line-height: 1.3;
   }
   .banner .container .banner-content h1 span {
     display: block;
@@ -485,7 +485,6 @@ header .navbar .navbar-button .you-btn:hover {
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 400;
-  padding: 0;
   color: #f4f4f4;
   line-height: 1.5;
 }
@@ -539,7 +538,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 @media (min-width: 1024px) {
   .banner .container .banner-content .btn::before {
-    background: linear-gradient(0deg, #000066, #0000b3);
+    background: linear-gradient(0deg, #000066, #47a1eb);
   }
 }
 .banner .container .banner-content .btn::after {
@@ -652,7 +651,7 @@ header .navbar .navbar-button .you-btn:hover {
   margin: -25% 0 30px;
   padding: 5px;
   border-radius: 50%;
-  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #0aceb1, inset -5px -5px #000080;
+  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #75b9f0, inset -5px -5px #000080;
 }
 @media (min-width: 768px) {
   .services .container .service-icon {
@@ -697,7 +696,7 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 0.5rem 1rem;
   width: 10rem;
   font-weight: 500;
-  background-color: #0aceb1;
+  background-color: #75b9f0;
   color: #f4f4f4;
   border: none;
   outline: none;
@@ -720,7 +719,7 @@ header .navbar .navbar-button .you-btn:hover {
   height: 100%;
   border-radius: 5px;
   transition: 0.2s ease;
-  background: #0aceb1;
+  background: #75b9f0;
   z-index: -1;
 }
 .services .container .service button::before {
@@ -772,7 +771,7 @@ header .navbar .navbar-button .you-btn:hover {
 .services .container .service[data-scroll=in] .service-icon {
   transition: 2s;
   transform: translateY(0);
-  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #000080, inset -5px -5px #0aceb1;
+  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #000080, inset -5px -5px #75b9f0;
 }
 .services .container .service[data-scroll=in] .service-info p {
   transform: translateY(0);
@@ -903,7 +902,7 @@ header .navbar .navbar-button .you-btn:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   opacity: 0.4;
 }
 .about-items .about-item-image:hover img {
@@ -955,7 +954,7 @@ header .navbar .navbar-button .you-btn:hover {
   color: #f4f4f4;
 }
 .contact .contact-form .form-info-link a {
-  color: #0aceb1;
+  color: #75b9f0;
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -964,16 +963,16 @@ header .navbar .navbar-button .you-btn:hover {
   text-decoration: none;
 }
 .contact .contact-form fieldset {
-  color: #0aceb1;
+  color: #75b9f0;
   background-color: #000066;
   padding: 5vh 1em;
   margin: 2em auto;
-  border: 1px solid #0aceb1;
+  border: 1px solid #75b9f0;
 }
 @media (min-width: 768px) {
   .contact .contact-form fieldset {
     border-radius: 5px;
-    border: 3px solid #0aceb1;
+    border: 3px solid #75b9f0;
   }
 }
 .contact .contact-form fieldset legend {
@@ -1016,11 +1015,11 @@ header .navbar .navbar-button .you-btn:hover {
   width: 1.5rem;
 }
 .contact .contact-form #thato-contact p:hover {
-  color: #0aceb1;
+  color: #75b9f0;
 }
 .contact .contact-form #thato-contact p:hover i {
   transition: 0.5s;
-  color: #0aceb1;
+  color: #75b9f0;
 }
 @media (max-width: 330px) {
   .contact .contact-form p {
@@ -1071,7 +1070,7 @@ header .navbar .navbar-button .you-btn:hover {
   text-transform: capitalize;
 }
 .contact .contact-form .input-div:hover label {
-  color: #0aceb1;
+  color: #75b9f0;
   transform: translateY(50%) translateX(0.5em);
 }
 .contact .contact-form .btn {
@@ -1164,7 +1163,7 @@ header .navbar .navbar-button .you-btn:hover {
   height: 2em;
   width: 2em;
   padding: 0.3em;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1196,7 +1195,7 @@ header .navbar .navbar-button .you-btn:hover {
   height: 0.2em;
   width: 1.8em;
   position: relative;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   transition: 0.5s;
 }
 .menu-toggle .bar::before, .menu-toggle .bar::after {
@@ -1204,7 +1203,7 @@ header .navbar .navbar-button .you-btn:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   left: 0;
   transition: 0.5s ease;
   transition-property: top, bottom;
@@ -1345,7 +1344,7 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: center;
   font-weight: 500;
   font-family: "Taviraj", serif;
-  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1364,7 +1363,7 @@ header .navbar .navbar-button .you-btn:hover {
   transform: translateX(-50%);
   height: 0.2rem;
   border-radius: 5px;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
 }
 
 .section-title.center {
@@ -1394,8 +1393,8 @@ header .navbar .navbar-button .you-btn:hover {
 .loader_bg .wave {
   width: 0.2rem;
   height: 5rem;
-  background: linear-gradient(45deg, #0aceb1, #fff);
-  background: linear-gradient(45deg, #000080, #0aceb1);
+  background: linear-gradient(45deg, #75b9f0, #fff);
+  background: linear-gradient(45deg, #000080, #75b9f0);
   margin: 0.5rem;
   animation: wave 1s linear infinite;
   border-radius: 5rem;
@@ -1462,7 +1461,7 @@ header .navbar .navbar-button .you-btn:hover {
 .progress-bar {
   height: 0.15rem;
   margin: 5px 0;
-  background-image: linear-gradient(90deg, #0aceb1, #000080, #0aceb1);
+  background-image: linear-gradient(90deg, #75b9f0, #000080, #75b9f0);
   width: 0%;
   border-bottom: 1px solid #f7e92985;
 }
@@ -1481,7 +1480,7 @@ header .navbar .navbar-button .you-btn:hover {
   outline: none;
   border-radius: 0.25rem;
   color: #f4f4f4;
-  background: #0aceb1;
+  background: #75b9f0;
   transition: 0.5s ease-in;
   opacity: 0;
   isolation: isolate;
@@ -1686,7 +1685,7 @@ main.active::after {
 }
 .features h1 {
   font-weight: 500;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1726,7 +1725,7 @@ main.active::after {
   }
 }
 .features-grid .feature-item h2 {
-  color: #0aceb1;
+  color: #75b9f0;
   text-transform: capitalize;
   font-size: 1em;
   margin-bottom: 0.5em;
@@ -1739,7 +1738,7 @@ main.active::after {
   outline: none;
   border-radius: 50%;
   text-align: center;
-  color: #0aceb1;
+  color: #75b9f0;
   transition: 0.3s ease;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px #0002;
 }
@@ -1809,7 +1808,7 @@ main.active::after {
 .table-price .section-title {
   background: #fff;
   font-family: "Taviraj", serif;
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1935,10 +1934,10 @@ main.active::after {
   box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.2), inset 3px 3px 3px rgba(225, 225, 225, 0.2);
 }
 .table-price .price-grid .price-card:nth-child(1) h1 {
-  background-color: #0aceb1;
+  background-color: #75b9f0;
 }
 .table-price .price-grid .price-card:nth-child(1) .btn {
-  background: #0aceb1;
+  background: #75b9f0;
 }
 .table-price .price-grid .price-card:nth-child(1) .btn::before {
   background: linear-gradient(0deg, #079c86, #0aceb1);
@@ -1947,7 +1946,7 @@ main.active::after {
   background: linear-gradient(0deg, #0aceb1, #079c86);
 }
 .table-price .price-grid .price-card:nth-child(1) .price p {
-  color: #0aceb1;
+  color: #75b9f0;
 }
 .table-price .price-grid .price-card:nth-child(2) h1 {
   background-color: #000080;
@@ -1956,7 +1955,7 @@ main.active::after {
   background: #000080;
 }
 .table-price .price-grid .price-card:nth-child(2) .btn::before {
-  background: linear-gradient(0deg, #000066, #0000b3);
+  background: linear-gradient(0deg, #000066, #47a1eb);
 }
 .table-price .price-grid .price-card:nth-child(2) .btn::after {
   background: linear-gradient(0deg, #0000b3, #000066);
@@ -1965,7 +1964,7 @@ main.active::after {
   color: #000080;
 }
 .table-price .price-grid .price-card:nth-child(3) h1 {
-  background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background-image: linear-gradient(to right, #000080 0%, #75b9f0 100%);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn {
   background: linear-gradient(0deg, #000080, #0aceb1);
@@ -1977,7 +1976,7 @@ main.active::after {
   background: linear-gradient(0deg, #0aceb1, #000080);
 }
 .table-price .price-grid .price-card:nth-child(3) .price {
-  background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
+  background: linear-gradient(to right, #000080 0%, #75b9f0 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1987,7 +1986,7 @@ main.active::after {
   font-size: 1.5rem;
   border-radius: 0.5rem;
   margin: 0.5em auto;
-  background-color: #0aceb1;
+  background-color: #75b9f0;
   color: #fff;
   letter-spacing: 0.05rem;
   text-transform: capitalize;
@@ -2058,7 +2057,7 @@ main.active::after {
   color: #000080;
   text-align: center;
   text-decoration: 0.2em underline;
-  text-decoration-color: #0aceb1;
+  text-decoration-color: #75b9f0;
   text-underline-offset: 0.3em;
 }
 .footer-top .footer-item a {
@@ -2074,7 +2073,7 @@ main.active::after {
   color: #dc143c;
 }
 .footer-top .footer-item p {
-  text-shadow: 0 0 1px #0aceb1;
+  text-shadow: 0 0 1px #75b9f0;
 }
 .footer-top .youtube a {
   display: block;
@@ -2112,7 +2111,7 @@ main.active::after {
 }
 .footer-top .social .social-icons li:hover i {
   transition: 0.2s ease;
-  color: #0aceb1;
+  color: #75b9f0;
 }
 @media (min-width: 1024px) {
   .footer-top .social li {
@@ -2138,7 +2137,7 @@ main.active::after {
 .footer-top .blog .post img {
   max-width: 100px;
   margin-right: 15px;
-  border: 1px solid #0aceb1;
+  border: 1px solid #75b9f0;
   border-radius: 5px;
 }
 .footer-top .blog .post-date {
@@ -2178,7 +2177,6 @@ main.active::after {
   overflow: hidden;
   width: 100%;
   height: 50%;
-  border-radius: 5px;
 }
 .footer-bottom figure img {
   width: 100%;
@@ -2194,7 +2192,7 @@ main.active::after {
   color: #f4f4f4;
 }
 .footer-bottom .copyright-div a {
-  color: #0aceb1;
+  color: #75b9f0;
   font-size: 1em;
 }
 .footer-bottom .copyright-div a:hover {

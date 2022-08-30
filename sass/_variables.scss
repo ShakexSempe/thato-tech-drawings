@@ -9,8 +9,9 @@ $primary-comp: #808000;
 $primary-color-trans: #0808df8e;
 $primary-background-lt-grey: #f4f4f4;
 $bg-light: #ffff;
-$secondary-color: #76b9f0;
+$secondary-color: skyblue;
 $secondary-color: #0aceb1;
+$secondary-color: hsl(207, 80%, 70%);
 $secondary-color-trans: #0aceb18f;
 $primary-gradient: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
 $primary-gradient-background: linear-gradient(-50deg, $primary-color-dark 30%, $primary-color, $secondary-color 100% );
@@ -20,7 +21,7 @@ $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary
 
 $cta-btn: linear-gradient(0deg, #03493f, #0aceb1);
 $cta-btn-hover: linear-gradient(0deg, #0aceb1, hsl(171, 91%, 15%));
-$btn-primary: linear-gradient(0deg, hsl(240, 100%, 20%), hsl(240, 100%, 35%));
+$btn-primary: linear-gradient(0deg, hsl(240, 100%, 20%), hsl(207, 80%, 60%));
 $btn-primary-hover: linear-gradient(0deg , hsl(240, 100%, 35%), hsl(240, 100%, 20%));
 $btn-secondary: linear-gradient(0deg, hsl(171, 91%, 32%), #0aceb1);
 $btn-secondary-hover: linear-gradient(0deg , #0aceb1, hsl(171, 91%, 32%));
