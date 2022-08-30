@@ -58,7 +58,9 @@ $valid: skyblue;
 
 // BOX SHADOWS
 $box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.250),
-            inset -2px -2px 3px rgba(0, 0, 0, 0.250);
+            inset -2px -2px 3px rgba(0, 0, 0, 0.250),
+                    4px 4px 4px #0002;
 
 $box-shadow-hover: inset 2px 2px 3px rgba(0, 0, 0, 0.250),
-                inset -2px -2px 3px rgba(255, 255, 255, 0.250) ;
+                inset -2px -2px 3px rgba(255, 255, 255, 0.250),
+                2px 2px 2px #0004 ;

@@ -4,8 +4,11 @@
     width: 100vw;
     position: relative;
     @include lg {
-        background: url('../img/joanna-kosinska-7ACuHoezUYk-unsplash-min.jpg');
+        background: url('../img/light-hero.jpg');
         background-attachment: fixed;
+        background-size: 100%;
+        background-position: bottom right;
+        background-repeat: no-repeat;
     }
     background: $primary-gradient-background;
     background: url('../img/sergey-zolkin-m9qMoh-scfE-unsplash-min.jpg');
@@ -29,7 +32,9 @@
         z-index: 1;
         @include lg {
         background: rgba(1, 1, 66, 0.200);
-        background-attachment: fixed;   
+        background: linear-gradient(40deg, rgba(245, 245, 245, 0.5) 10%, transparent );
+        background-attachment: fixed; 
+        opacity: .5;  
         }
         
     }
@@ -51,22 +56,26 @@
             width: 100%;
             position: absolute;
             top: 20vh;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 5vw;
+            // transform: translateX(-50%);
             color: #fff;
             text-align: center;
             text-align: left;
-            padding-left:5vw;
-            // border: 2px solid red;
+            // padding-left:5vw;
+            // border: 2px solid $secondary-color;
             border-radius: 5px;
             z-index: 2;
             @include lg {
                 position: absolute;
-                right: 5vw;
-                top: 50vh;
-                transform: translateY(-50%);
-                margin: 0;
-                width: auto;
+                left: 10vw;
+                top: 30vh;
+                transform: translateX(0);
+                padding: 1rem;
+                width: max-content;
+                // top: 50vh;
+                // margin: 0;
+                // width: auto;
+                border: 3px solid $primary-color;
             }
             
             
@@ -75,7 +84,7 @@
                 // border: 1px solid yellow;
                 font-weight: 600;
                 // font-family: $font-title;
-                margin-bottom: .5rem;
+                // margin-bottom: .5rem;
                 font-size: 1.7rem;
                 font-size: 2.25rem;
                 font-family: $font-title;
@@ -88,13 +97,18 @@
                 }
                 @include md {
                     font-size: 2.5rem;
-                    text-align: center;
+                    // text-align: center;
                     span {
                         display: inline-block;
                     }
                 }
                 @include lg {
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
+                    color: #000;
+                    line-height: 1.3;
+                    span {
+                        display: block;
+                    }
                 }
             }
             p {
@@ -108,13 +122,14 @@
                     font-size: 1.25em;
                 }
                 @include lg {
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
+                    color: #000;
                 }
             }
 
 
             @include md {
-                @include flex(center, center, column)
+                // @include flex(center, center, column)
             }
             h2,
             .btn {
@@ -129,7 +144,7 @@
                 color: $text-color-white;
                 font-size: 1.15rem;
                 width: 15rem;
-                overflow: hidden;
+                // overflow: hidden;
                 font-weight: 500;
                 border: none;
                 outline: none;
@@ -156,6 +171,9 @@
                 &::before {
                     background: $cta-btn;
                     box-shadow: $box-shadow;
+                    @include lg {
+                    background: $btn-primary;
+                    }
                 }
                 &::after {
                     background: $cta-btn-hover;
