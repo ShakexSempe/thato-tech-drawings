@@ -210,7 +210,7 @@ main {
             border-bottom: 1px solid #ddd;
             cursor: pointer;
             h2 {
-            color: $secondary-color;
+            color: $primary-color;
             text-transform: capitalize;
             font-size: 1em;
             margin-bottom: .5em;
@@ -226,6 +226,7 @@ main {
                 border-radius: 50%;
                 text-align: center;
                 color: $secondary-color;
+                color: $primary-color;
                 transition: .3s ease;
                 box-shadow: $box-shadow;
 
