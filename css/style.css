@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Taviraj:wght@100;200;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400?family=Dancing+Script:wght@400;500;700&display=swap");
 *,
 *::before,
@@ -99,13 +99,13 @@ header .navbar-top a {
   display: block;
   position: relative;
   border: 0.12rem solid #000080;
-  padding: 0.25rem 0.5rem;
+  padding: 0.025rem 0.5rem;
   border-radius: 0.5rem;
 }
 header .navbar-top a h1 {
   text-transform: capitalize;
   color: #000080;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
@@ -448,7 +448,7 @@ header .navbar .navbar-button .you-btn:hover {
   margin-bottom: 0.5rem;
   font-size: 1.7rem;
   font-size: 2.25rem;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
 }
 .banner .container .banner-content h1 span {
   display: block;
@@ -667,7 +667,7 @@ header .navbar .navbar-button .you-btn:hover {
   color: #eee;
   font-size: 1.15rem;
   text-transform: capitalize;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   font-weight: 600;
   letter-spacing: 0.05rem;
   margin-bottom: 0.5em;
@@ -783,7 +783,7 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: center;
 }
 .about-items h2 {
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   color: #000080;
@@ -822,7 +822,7 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items .about-item-content h3 {
   margin: 1rem 0;
   font-size: 1.25rem;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   color: #000080;
   font-weight: 600;
   text-align: left;
@@ -1340,7 +1340,7 @@ header .navbar .navbar-button .you-btn:hover {
   text-transform: capitalize;
   text-align: center;
   font-weight: 500;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   background: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1804,7 +1804,7 @@ main.active::after {
 }
 .table-price .section-title {
   background: #fff;
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   background-image: linear-gradient(to right, #000080 0%, #0aceb1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -2048,7 +2048,7 @@ main.active::after {
   border-radius: 5px;
 }
 .footer-top .footer-item h2 {
-  font-family: "Sanchez", serif;
+  font-family: "Taviraj", serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #000080;
