@@ -2058,12 +2058,22 @@ main.active::after {
 .footer-top .footer-item h2 {
   font-family: "Taviraj", serif;
   font-size: 1.5rem;
+  text-transform: capitalize;
   margin-bottom: 1rem;
   color: #000066;
   text-align: center;
-  text-decoration: 0.2em underline;
-  text-decoration-color: #47a1eb;
-  text-underline-offset: 0.3em;
+  position: relative;
+}
+.footer-top .footer-item h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  height: 0.25rem;
+  background: #47a1eb;
+  border-radius: 0.5rem;
 }
 .footer-top .footer-item a {
   font-size: 1.15em;
@@ -2085,9 +2095,6 @@ main.active::after {
   width: 100%;
 }
 .footer-top .social .social-icons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   margin-top: 2em;
 }
 .footer-top .social .social-icons li {
@@ -2098,6 +2105,7 @@ main.active::after {
   border: none;
   border-radius: 5px;
   display: block;
+  width: max-content;
 }
 .footer-top .social .social-icons li a i {
   font-size: 2.5em;
@@ -2195,6 +2203,7 @@ main.active::after {
   line-height: 1.7;
   font-size: 1.2em;
   color: #f4f4f4;
+  font-family: "Taviraj", serif;
 }
 .footer-bottom .copyright-div a {
   color: #47a1eb;
