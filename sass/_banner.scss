@@ -68,14 +68,15 @@
             @include lg {
                 position: absolute;
                 left: 10vw;
-                top: 30vh;
+                top: 20vh;
                 transform: translateX(0);
                 padding: 1rem;
                 width: max-content;
                 // top: 50vh;
                 // margin: 0;
                 // width: auto;
-                border: 3px solid $primary-color;
+                // border: 3px solid $primary-color;
+                background: hsla(0, 0%, 90%, .3);
             }
             
             
@@ -170,9 +171,6 @@
                 &::before {
                     background: $cta-btn;
                     box-shadow: $box-shadow;
-                    @include lg {
-                    background: $btn-primary;
-                    }
                 }
                 &::after {
                     background: $cta-btn-hover;

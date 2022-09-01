@@ -3,7 +3,7 @@
 $font-title: 'Taviraj', serif;
 $font-content: 'Montserrat', sans-serif;
 
-$primary-color: #000080;
+$primary-color: hsl(240, 100%, 20%);
 $primary-color-dark: #000066;
 $primary-comp: #808000;
 $primary-color-trans: #0808df8e;
@@ -11,7 +11,7 @@ $primary-background-lt-grey: #f4f4f4;
 $bg-light: #ffff;
 $secondary-color: skyblue;
 $secondary-color: #0aceb1;
-$secondary-color: hsl(207, 80%, 70%);
+$secondary-color: hsl(207, 80%, 60%);
 $secondary-color-trans: #0aceb18f;
 $primary-gradient: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
 $primary-gradient-background: linear-gradient(-50deg, $primary-color-dark 30%, $primary-color, $secondary-color 100% );
@@ -20,11 +20,12 @@ $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 1
 $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 
 $cta-btn: linear-gradient(0deg, #03493f, #0aceb1);
-$cta-btn-hover: linear-gradient(0deg, #0aceb1, hsl(171, 91%, 15%));
-$btn-primary: linear-gradient(0deg, hsl(240, 100%, 20%), hsl(207, 80%, 60%));
-$btn-primary-hover: linear-gradient(0deg , hsl(240, 100%, 35%), hsl(240, 100%, 20%));
-$btn-secondary: linear-gradient(0deg, hsl(171, 91%, 32%), #0aceb1);
-$btn-secondary-hover: linear-gradient(0deg , #0aceb1, hsl(171, 91%, 32%));
+$cta-btn: linear-gradient(0deg, $primary-color, $secondary-color);
+$cta-btn-hover: linear-gradient(0deg, hsl(207, 80%, 60%), hsl(240, 100%, 25%));
+$btn-primary: linear-gradient(0deg, hsl(240, 100%, 25%), hsl(240, 100%, 40%));
+$btn-primary-hover: linear-gradient(0deg , hsl(207, 80%, 60%), hsl(240, 100%, 20%));
+$btn-secondary: linear-gradient(0deg, hsl(207, 80%, 35%), $secondary-color);
+$btn-secondary-hover: linear-gradient(0deg , $secondary-color, hsl(207, 80%, 35%));
 $btn-gradient: linear-gradient(0deg, #000080, #0aceb1);
 $btn-gradient-hover: linear-gradient(0deg , #0aceb1, #000080);
 

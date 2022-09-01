@@ -225,10 +225,10 @@ main {
                 outline: none;
                 border-radius: 50%;
                 text-align: center;
-                color: $secondary-color;
                 color: $primary-color;
                 transition: .3s ease;
-                box-shadow: $box-shadow;
+                border-right: 1px solid $secondary-color;
+                // box-shadow: $box-shadow;
 
                 i {
                     width: 100%;
@@ -466,6 +466,7 @@ main {
                     background: $btn-gradient;
                     &::before {
                         background: $btn-gradient;
+                        background: $primary-gradient;
                     }
                     &::after {
                         background: $btn-gradient-hover;
