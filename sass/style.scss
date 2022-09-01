@@ -465,11 +465,11 @@ main {
                 .btn {
                     background: $btn-gradient;
                     &::before {
-                        background: $btn-gradient;
                         background: $primary-gradient;
+                        background: $cta-btn;
                     }
                     &::after {
-                        background: $btn-gradient-hover;
+                        background: $cta-btn-hover;
                     }
                 }
                 .price {

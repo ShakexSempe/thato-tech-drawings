@@ -4,6 +4,7 @@
     background-color: $primary-color;
     .form-title {
         text-align: center;
+        text-align: left;
         margin: 1rem 0;
         color: #fff;
         font-size: 2rem;
@@ -15,7 +16,7 @@
     }
 
     .google-maps {
-        margin: 1rem;
+        margin: 0 5vw 1rem;
         height: auto;
 
         #map {
@@ -28,21 +29,22 @@
     .contact-form {
         width: 500px;
         max-width: 100%;
-        padding: 25px;
-        padding: .1rem;
+        padding: .1rem 5vw;
         margin: auto;
         cursor: pointer;
 
         .form-info-link {
-            padding: .5em;
             text-align: center;
+            text-align: left;
             line-height: 1.5;
-            font-style: italic;
             color: $text-light;
+            font-weight: 200;
             a {
-                color: $secondary-color;
                 text-decoration: underline;
                 transition: .2s;
+                font-weight: 400;
+                color: inherit;
+                font-family: $font-title;
 
                 &:hover {
                 color: #ddd;
@@ -53,11 +55,11 @@
         
 
         fieldset {
-            color: $secondary-color;
             background-color: $primary-color-dark;
-            padding: 5vh 1em;
+            padding: 5vh .5rem;
             margin: 2em auto;
             border: 1px solid $secondary-color;
+            border-radius: .25rem;
             @media (min-width: 768px){
                 border-radius: 5px;
                 border: 3px solid $secondary-color;
@@ -67,9 +69,13 @@
             legend {
                 padding: 0 .5rem; 
                 text-transform: capitalize;
+                color: #ddd;
+                font-family: $font-title;
+                font-weight: 600;
             }
             label {
                 text-transform: capitalize;
+                color: #f4f4f4;
             }
             select {
                 border-radius: 5px;
@@ -186,7 +192,8 @@
         display: block;
         color: $text-light;
         letter-spacing: .05rem;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 1.05rem;
         border: none;
         outline: none;
         z-index: 2;
@@ -195,7 +202,7 @@
         border-radius: 1rem;
         margin-top: .5em;
         margin: .5rem auto;
-        padding: 1em;
+        padding: 1rem .5rem;
         position: relative;
         text-transform: capitalize;
         isolation: isolate;

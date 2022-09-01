@@ -22,8 +22,8 @@ $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary
 $cta-btn: linear-gradient(0deg, #03493f, #0aceb1);
 $cta-btn: linear-gradient(0deg, $primary-color, $secondary-color);
 $cta-btn-hover: linear-gradient(0deg, hsl(207, 80%, 60%), hsl(240, 100%, 25%));
-$btn-primary: linear-gradient(0deg, hsl(240, 100%, 25%), hsl(240, 100%, 40%));
-$btn-primary-hover: linear-gradient(0deg , hsl(207, 80%, 60%), hsl(240, 100%, 20%));
+$btn-primary: linear-gradient(0deg, hsl(240, 100%, 20%), hsl(240, 100%, 35%));
+$btn-primary-hover: linear-gradient(0deg , hsl(240, 100%, 35%), hsl(240, 100%, 20%));
 $btn-secondary: linear-gradient(0deg, hsl(207, 80%, 35%), $secondary-color);
 $btn-secondary-hover: linear-gradient(0deg , $secondary-color, hsl(207, 80%, 35%));
 $btn-gradient: linear-gradient(0deg, #000080, #0aceb1);

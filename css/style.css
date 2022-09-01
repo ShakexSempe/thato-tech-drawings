@@ -915,6 +915,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .contact .form-title {
   text-align: center;
+  text-align: left;
   margin: 1rem 0;
   color: #fff;
   font-size: 2rem;
@@ -927,7 +928,7 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .contact .google-maps {
-  margin: 1rem;
+  margin: 0 5vw 1rem;
   height: auto;
 }
 .contact .google-maps #map {
@@ -938,33 +939,34 @@ header .navbar .navbar-button .you-btn:hover {
 .contact .contact-form {
   width: 500px;
   max-width: 100%;
-  padding: 25px;
-  padding: 0.1rem;
+  padding: 0.1rem 5vw;
   margin: auto;
   cursor: pointer;
 }
 .contact .contact-form .form-info-link {
-  padding: 0.5em;
   text-align: center;
+  text-align: left;
   line-height: 1.5;
-  font-style: italic;
   color: #f4f4f4;
+  font-weight: 200;
 }
 .contact .contact-form .form-info-link a {
-  color: #47a1eb;
   text-decoration: underline;
   transition: 0.2s;
+  font-weight: 400;
+  color: inherit;
+  font-family: "Taviraj", serif;
 }
 .contact .contact-form .form-info-link a:hover {
   color: #ddd;
   text-decoration: none;
 }
 .contact .contact-form fieldset {
-  color: #47a1eb;
   background-color: #000066;
-  padding: 5vh 1em;
+  padding: 5vh 0.5rem;
   margin: 2em auto;
   border: 1px solid #47a1eb;
+  border-radius: 0.25rem;
 }
 @media (min-width: 768px) {
   .contact .contact-form fieldset {
@@ -975,9 +977,13 @@ header .navbar .navbar-button .you-btn:hover {
 .contact .contact-form fieldset legend {
   padding: 0 0.5rem;
   text-transform: capitalize;
+  color: #ddd;
+  font-family: "Taviraj", serif;
+  font-weight: 600;
 }
 .contact .contact-form fieldset label {
   text-transform: capitalize;
+  color: #f4f4f4;
 }
 .contact .contact-form fieldset select {
   border-radius: 5px;
@@ -1074,7 +1080,8 @@ header .navbar .navbar-button .you-btn:hover {
   display: block;
   color: #f4f4f4;
   letter-spacing: 0.05rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.05rem;
   border: none;
   outline: none;
   z-index: 2;
@@ -1083,7 +1090,7 @@ header .navbar .navbar-button .you-btn:hover {
   border-radius: 1rem;
   margin-top: 0.5em;
   margin: 0.5rem auto;
-  padding: 1em;
+  padding: 1rem 0.5rem;
   position: relative;
   text-transform: capitalize;
   isolation: isolate;
@@ -1952,10 +1959,10 @@ main.active::after {
   background: #000066;
 }
 .table-price .price-grid .price-card:nth-child(2) .btn::before {
-  background: linear-gradient(0deg, navy, #0000cc);
+  background: linear-gradient(0deg, #000066, #0000b3);
 }
 .table-price .price-grid .price-card:nth-child(2) .btn::after {
-  background: linear-gradient(0deg, #47a1eb, #000066);
+  background: linear-gradient(0deg, #0000b3, #000066);
 }
 .table-price .price-grid .price-card:nth-child(2) .price p {
   color: #000066;
@@ -1967,11 +1974,11 @@ main.active::after {
   background: linear-gradient(0deg, #000080, #0aceb1);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn::before {
-  background: linear-gradient(0deg, #000080, #0aceb1);
   background: linear-gradient(to right, #000066 0%, #47a1eb 100%);
+  background: linear-gradient(0deg, #000066, #47a1eb);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn::after {
-  background: linear-gradient(0deg, #0aceb1, #000080);
+  background: linear-gradient(0deg, #47a1eb, navy);
 }
 .table-price .price-grid .price-card:nth-child(3) .price {
   background: linear-gradient(to right, #000066 0%, #47a1eb 100%);
