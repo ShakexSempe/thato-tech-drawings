@@ -2177,16 +2177,15 @@ main.active::after {
   height: 100vh;
   font-size: 1em;
   padding: 0;
-  background-color: #fff000;
   line-height: 2;
+  background: linear-gradient(0deg, #000066, #0000cc);
+  color: #fff;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: #000066;
-  color: #fff;
-  text-align: center;
 }
 @media (min-width: 576px) {
   .footer-bottom {
@@ -2212,21 +2211,33 @@ main.active::after {
   }
 }
 .footer-bottom .copyright-div {
-  padding-bottom: 10vh;
+  text-align: left;
+  margin-bottom: 15vh;
 }
 .footer-bottom .copyright-div p {
-  line-height: 1.7;
-  font-size: 1.2em;
-  color: #f4f4f4;
   font-family: "Taviraj", serif;
+  line-height: 1.7;
+  font-size: 1.25rem;
+  color: #f4f4f4;
+  text-transform: capitalize;
 }
-.footer-bottom .copyright-div a {
-  color: #47a1eb;
-  font-size: 1em;
+@media (min-width: 768px) {
+  .footer-bottom .copyright-div p {
+    font-size: 1.5rem;
+  }
 }
-.footer-bottom .copyright-div a:hover {
+.footer-bottom .copyright-div a, .footer-bottom .copyright-div span {
+  color: #eee;
+  font-size: 1.1rem;
+}
+.footer-bottom .copyright-div a:hover, .footer-bottom .copyright-div span:hover {
   transition: 0.3s ease-in-out;
   opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .footer-bottom .copyright-div a, .footer-bottom .copyright-div span {
+    font-size: 1.25rem;
+  }
 }
 @media (max-width: 768px) {
   .footer-bottom .copyright-div[data-scroll] {
@@ -2235,12 +2246,6 @@ main.active::after {
   }
   .footer-bottom .copyright-div[data-scroll=in] {
     transform: translateY(0);
-  }
-  .footer-bottom .copyright-div p {
-    font-size: 1.3em;
-  }
-  .footer-bottom .copyright-div a {
-    font-size: 1.3em;
   }
 }
 

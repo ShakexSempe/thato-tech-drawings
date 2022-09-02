@@ -18,6 +18,7 @@ $primary-gradient-background: linear-gradient(-50deg, $primary-color-dark 30%, $
 $primary-gradient-reverse: linear-gradient(to right, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+$footer-gradient: linear-gradient(0deg, $primary-color, hsl(240, 100%, 40%));
 
 $cta-btn: linear-gradient(0deg, #03493f, #0aceb1);
 $cta-btn: linear-gradient(0deg, $primary-color, $secondary-color);

@@ -702,8 +702,11 @@ main {
         height: 100vh;
         font-size: 1em;
         padding: 0;
-        background-color: #fff000;
         line-height: 2;
+        // background-color: $primary-color;
+        background: $footer-gradient;
+        color: #fff;
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -714,9 +717,7 @@ main {
             flex-direction: row;
             justify-content: space-around;
         }
-        background-color: $primary-color;
-        color: #fff;
-        text-align: center;
+       
 
         figure {
             flex-basis: 50%;
@@ -736,20 +737,28 @@ main {
             }
         }
         .copyright-div {
-            padding-bottom: 10vh;
+            text-align: left;
+            margin-bottom: 15vh;
             p {
-                line-height: 1.7;
-                font-size: 1.2em;
-                color: $text-light;
                 font-family: $font-title;
+                line-height: 1.7;
+                font-size: 1.25rem;
+                color: $text-light;
+                text-transform: capitalize;
+                @include md {
+                    font-size: 1.5rem;
+                }
             }
-            a {
-                color: $secondary-color;
-                font-size: 1em;
+            a, span {
+                color: #eee;
+                font-size: 1.1rem;
 
                 &:hover {
                     transition: .3s ease-in-out;
                     opacity: .7;
+                }
+                @include md {
+                    font-size: 1.25rem;
                 }
             }
 
@@ -760,13 +769,6 @@ main {
                 }
                 &[data-scroll="in"] {
                     transform: translateY(0);
-                }
-                p {
-                    font-size: 1.3em;
-                }
-
-                a {
-                    font-size: 1.3em;
                 }
             }
         }
