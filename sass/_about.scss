@@ -94,10 +94,10 @@
                     text-transform: capitalize;
                     &::before {
                         background: $btn-secondary;
-                        background: $btn-secondary;
+                        background: $cta-btn;
                     }
                     &::after {
-                        background: $btn-secondary-hover;
+                        background: $cta-btn-hover;
                     }
                 }
             }
