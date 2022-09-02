@@ -1731,9 +1731,13 @@ main.active::after {
 .features-grid .feature-item h2 {
   color: #000066;
   text-transform: capitalize;
-  font-size: 1em;
+  font-family: "Taviraj", serif;
+  font-size: 1rem;
   margin-bottom: 0.5em;
   letter-spacing: 0.03em;
+}
+.features-grid .feature-item p {
+  font-weight: 400;
 }
 .features-grid .feature-item-icon {
   padding: 20px;
@@ -1744,7 +1748,7 @@ main.active::after {
   text-align: center;
   color: #000066;
   transition: 0.3s ease;
-  border-right: 1px solid #47a1eb;
+  border-right: 2px solid #47a1eb;
 }
 .features-grid .feature-item-icon i {
   width: 100%;
@@ -2097,6 +2101,12 @@ main.active::after {
 .footer-top .social .social-icons {
   margin-top: 2em;
 }
+@media (min-width: 576px) {
+  .footer-top .social .social-icons {
+    display: grid;
+    place-items: center;
+  }
+}
 .footer-top .social .social-icons li {
   cursor: pointer;
   transition: 0.2s ease;
@@ -2195,6 +2205,11 @@ main.active::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (min-width: 576px) {
+  .footer-bottom figure img {
+    border-radius: 0.5rem;
+  }
 }
 .footer-bottom .copyright-div {
   padding-bottom: 10vh;
