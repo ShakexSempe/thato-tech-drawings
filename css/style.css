@@ -718,7 +718,7 @@ header .navbar .navbar-button .you-btn:hover {
   z-index: -1;
 }
 .services .container .service button::before {
-  background: linear-gradient(0deg, #000066, #47a1eb);
+  background: linear-gradient(0deg, #1260a1, #47a1eb);
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 4px 4px 4px #0002;
 }
 .services .container .service button::after {
