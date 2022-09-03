@@ -3,7 +3,7 @@
 $font-title: 'Taviraj', serif;
 $font-content: 'Montserrat', sans-serif;
 
-$primary-color: hsl(240, 100%, 20%);
+$primary-color: hsl(240, 100%, 25%);
 $primary-color-dark: #000066;
 $primary-comp: #808000;
 $primary-color-trans: #0808df8e;
@@ -19,12 +19,13 @@ $primary-gradient-reverse: linear-gradient(to right, $secondary-color 0%, $prima
 $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient-reverse: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 $footer-gradient: linear-gradient(0deg, $primary-color, hsl(240, 100%, 40%));
+$item-gradient: linear-gradient( 0deg, hsl(240, 100%, 20%), hsl(240, 100%, 35%));
 
 $cta-btn: linear-gradient(0deg, #03493f, #0aceb1);
 $cta-btn: linear-gradient(0deg, $primary-color, $secondary-color);
 $cta-btn-hover: linear-gradient(0deg, hsl(207, 80%, 60%), hsl(240, 100%, 25%));
-$btn-primary: linear-gradient(0deg, hsl(240, 100%, 20%), hsl(240, 100%, 35%));
-$btn-primary-hover: linear-gradient(0deg , hsl(240, 100%, 35%), hsl(240, 100%, 20%));
+$btn-primary: linear-gradient(0deg, hsl(240, 100%, 30%), hsl(240, 100%, 35%), hsl(240, 100%, 45%));
+$btn-primary-hover: linear-gradient(0deg , hsl(240, 100%, 45%), hsl(240, 100%, 35%), hsl(240, 100%, 30%));
 $btn-secondary: linear-gradient(0deg, hsl(207, 80%, 50%), $secondary-color, hsl(207, 80%, 65%));
 $btn-secondary-hover: linear-gradient(0deg, hsl(207, 80%, 65%), $secondary-color, hsl(207, 80%, 50%));
 $btn-gradient: linear-gradient(0deg, #000080, #0aceb1);

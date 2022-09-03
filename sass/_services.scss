@@ -42,7 +42,8 @@
                 height: 100%;
                 z-index: -1;
                 border-radius: .5rem;
-                background-color: $primary-color;
+                // background-color: $primary-color;
+                background: $item-gradient;
                 box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35),
                     inset -2px -2px 2px rgba(0, 0, 0, 0.35),
                     5px 5px 3px rgba(0, 0, 0, 0.150);
