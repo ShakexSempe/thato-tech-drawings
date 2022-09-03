@@ -1846,9 +1846,9 @@ main.active::after {
   }
 }
 .table-price .price-grid .price-card {
-  padding: 1em 1.5em;
+  padding: 1rem;
   margin: 10vh 0;
-  border-radius: 10px;
+  border-radius: 1rem;
   outline: none;
   text-align: center;
   border: none;
@@ -1876,7 +1876,7 @@ main.active::after {
   transition: 1s ease;
   background-image: linear-gradient(-40deg, #e9f6fb, #f4f4f4);
   z-index: -1;
-  box-shadow: inset 3px 3px 3px rgba(214, 213, 213, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2), 5px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 3px 3px 3px rgba(214, 213, 213, 0.2), inset -3px -3px 2px rgba(0, 0, 0, 0.05), 5px 5px 2px rgba(0, 0, 0, 0.04);
 }
 .table-price .price-grid .price-card .btn {
   margin: 0.5em auto;
@@ -1940,7 +1940,7 @@ main.active::after {
 .table-price .price-grid .price-card h1 {
   border: none;
   outline: none;
-  box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.2), inset 3px 3px 3px rgba(225, 225, 225, 0.2);
+  box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.2), inset 3px 3px 3px rgba(225, 225, 225, 0.25);
 }
 .table-price .price-grid .price-card:nth-child(1) h1 {
   background-color: #47a1eb;
@@ -1958,10 +1958,7 @@ main.active::after {
   color: #47a1eb;
 }
 .table-price .price-grid .price-card:nth-child(2) h1 {
-  background-color: navy;
-}
-.table-price .price-grid .price-card:nth-child(2) .btn {
-  background: navy;
+  background-color: #0000b3;
 }
 .table-price .price-grid .price-card:nth-child(2) .btn::before {
   background: linear-gradient(0deg, #000099, #0000b3, #0000e6);
