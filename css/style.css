@@ -1874,9 +1874,9 @@ main.active::after {
   height: 100%;
   border-radius: 10px;
   transition: 1s ease;
-  background-image: linear-gradient(-40deg, #e9f6fb, #f4f4f4);
+  background: #f7f7f7;
   z-index: -1;
-  box-shadow: inset 3px 3px 3px rgba(214, 213, 213, 0.2), inset -3px -3px 2px rgba(0, 0, 0, 0.05), 5px 5px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 2px 2px 2px rgba(214, 213, 213, 0.2), inset -2px -2px 2px rgba(0, 0, 0, 0.05), 3px 3px 5px rgba(0, 0, 0, 0.04);
 }
 .table-price .price-grid .price-card .btn {
   margin: 0.5em auto;
