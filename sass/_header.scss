@@ -59,11 +59,12 @@ header {
                 position: relative;
                 border: .12rem solid $primary-color;
                 padding: .025rem .5rem;
-                border-radius: .5rem;
-                h1 {
+                border-radius: .25rem;
+                p {
                     text-transform: capitalize;
                     color: $primary-color;
-                    font-family: $font-title;
+                    font-weight: bold;
+                    // font-family: $font-title;
                     font-size: 1rem;
                     @include sm {
                         font-size: 1.5rem;
