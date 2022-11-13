@@ -453,6 +453,11 @@ header .navbar .navbar-button .you-btn:hover {
   font-size: 2rem;
   line-height: 1.3;
 }
+@media (max-width: 400px) {
+  .banner .container .banner-content h1 {
+    font-size: 1.85rem;
+  }
+}
 @media (min-width: 1024px) {
   .banner .container .banner-content h1 {
     font-size: 3.5rem;

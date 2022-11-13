@@ -91,7 +91,9 @@
                 font-size: 2rem;
                 line-height: 1.3;
                 // font-family: $font-title;
-                
+                @media (max-width: 400px){
+                    font-size: 1.85rem;
+                }
                 @include lg {
                     font-size: 3.5rem;
                     color: #000;
