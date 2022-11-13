@@ -179,7 +179,7 @@ main {
     margin: 0;
     padding: 5vh 0;
     background-color: #fff;
-    h1 {
+    h2 {
         // font-family: $font-title;
         font-weight: 500;
         background-image: $primary-gradient;
@@ -209,10 +209,10 @@ main {
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
-            h2 {
+            h3 {
             color: $primary-color;
             text-transform: capitalize;
-            font-family: $font-title;
+            // font-family: $font-title;
             font-size: 1rem;
             margin-bottom: .5em;
             letter-spacing: .03em;
@@ -312,7 +312,7 @@ main {
 
     .section-title {
         background: #fff;
-        font-family: $font-title;
+        // font-family: $font-title;
         background-image: $primary-gradient;
         background-clip: text;
         -webkit-background-clip: text;
@@ -416,7 +416,7 @@ main {
                     }
                 }
             }
-            h1 {
+            h3 {
                 border: none;
                 outline: none;
                 box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.20),
@@ -484,7 +484,7 @@ main {
                 }
             }
 
-            h1 {
+            h3 {
                 padding: .7em 1em;
                 font-size: 1.5rem;
                 border-radius: .5rem;
@@ -561,7 +561,7 @@ main {
             // border: 1px solid $primary-color;
             border-radius: 5px;
             h2 {
-                font-family: $font-title;
+                // font-family: $font-title;
                 font-size: 1.5rem;
                 text-transform: capitalize;
                 margin-bottom: 1rem;
@@ -573,11 +573,11 @@ main {
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: 0;
+                    bottom: -.25rem;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 35%;
-                    height: .25rem;
+                    height: .2rem;
                     background: $secondary-color;
                     border-radius: .5rem;
                 }
@@ -742,7 +742,7 @@ main {
             text-align: left;
             margin-bottom: 15vh;
             p {
-                font-family: $font-title;
+                // font-family: $font-title;
                 line-height: 1.7;
                 font-size: 1.25rem;
                 color: $text-light;
@@ -753,7 +753,7 @@ main {
             }
             a, span {
                 color: #eee;
-                font-size: 1.1rem;
+                font-size: 1.25rem;
 
                 &:hover {
                     transition: .3s ease-in-out;

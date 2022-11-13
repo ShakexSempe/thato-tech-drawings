@@ -7,8 +7,8 @@
     
     &-items {
         text-align: center;
-        h2 {
-            font-family: $font-title;
+        h3 {
+            // font-family: $font-title;
             letter-spacing: .1rem;
             font-size: 1.5rem;
             color: #000;
@@ -52,11 +52,11 @@
                     // border: 3px solid rgba(0, 0, 128, 0.308);
                 border-radius: 5px;
                 }
-                h3 {
+                h4 {
                     margin: 1rem 0;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     // font-family: $font-rose;
-                    font-family: $font-title;
+                    // font-family: $font-title;
                     color: #000;
                     font-weight: 600;
                     text-align: left;

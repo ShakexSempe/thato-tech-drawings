@@ -452,7 +452,6 @@ header .navbar .navbar-button .you-btn:hover {
   font-size: 1.7rem;
   font-size: 2rem;
   line-height: 1.3;
-  font-family: "Taviraj", serif;
 }
 @media (min-width: 1024px) {
   .banner .container .banner-content h1 {
@@ -642,19 +641,18 @@ header .navbar .navbar-button .you-btn:hover {
   margin: 0 0em 5vh;
   padding: 0.5rem;
 }
-.services .container .service .service-info h1 {
+.services .container .service .service-info .service-title {
   text-align: center;
   color: #eee;
   font-size: 1.15rem;
   text-transform: capitalize;
-  font-family: "Taviraj", serif;
   font-weight: 600;
   letter-spacing: 0.05rem;
   margin-bottom: 0.5em;
   border-radius: 5px;
 }
 @media (min-width: 768px) {
-  .services .container .service .service-info h1 {
+  .services .container .service .service-info .service-title {
     height: 10vh;
     display: grid;
     place-items: center;
@@ -762,8 +760,7 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items {
   text-align: center;
 }
-.about-items h2 {
-  font-family: "Taviraj", serif;
+.about-items h3 {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   color: #000;
@@ -772,7 +769,7 @@ header .navbar .navbar-button .you-btn:hover {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .about-items h2 {
+  .about-items h3 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -801,16 +798,15 @@ header .navbar .navbar-button .you-btn:hover {
     border-radius: 5px;
   }
 }
-.about-items .about-item-content h3 {
+.about-items .about-item-content h4 {
   margin: 1rem 0;
-  font-size: 1.5rem;
-  font-family: "Taviraj", serif;
+  font-size: 1.25rem;
   color: #000;
   font-weight: 600;
   text-align: left;
 }
 @media (min-width: 576px) {
-  .about-items .about-item-content h3 {
+  .about-items .about-item-content h4 {
     text-align: center;
     font-size: 1.8rem;
   }
@@ -938,7 +934,6 @@ header .navbar .navbar-button .you-btn:hover {
   transition: 0.2s;
   font-weight: 400;
   color: inherit;
-  font-family: "Taviraj", serif;
 }
 .contact .contact-form .form-info-link a:hover {
   color: #ddd;
@@ -961,7 +956,6 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 0 0.5rem;
   text-transform: capitalize;
   color: #ddd;
-  font-family: "Taviraj", serif;
   font-weight: 600;
 }
 .contact .contact-form fieldset label {
@@ -1330,7 +1324,6 @@ header .navbar .navbar-button .you-btn:hover {
   text-transform: capitalize;
   text-align: center;
   font-weight: 500;
-  font-family: "Taviraj", serif;
   background: linear-gradient(to right, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1670,7 +1663,7 @@ main.active::after {
   padding: 5vh 0;
   background-color: #fff;
 }
-.features h1 {
+.features h2 {
   font-weight: 500;
   background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
   background-clip: text;
@@ -1711,10 +1704,9 @@ main.active::after {
     margin-bottom: 5vh;
   }
 }
-.features-grid .feature-item h2 {
+.features-grid .feature-item h3 {
   color: navy;
   text-transform: capitalize;
-  font-family: "Taviraj", serif;
   font-size: 1rem;
   margin-bottom: 0.5em;
   letter-spacing: 0.03em;
@@ -1798,7 +1790,6 @@ main.active::after {
 }
 .table-price .section-title {
   background: #fff;
-  font-family: "Taviraj", serif;
   background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1919,7 +1910,7 @@ main.active::after {
     opacity: 1;
   }
 }
-.table-price .price-grid .price-card h1 {
+.table-price .price-grid .price-card h3 {
   border: none;
   outline: none;
   box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.2), inset 3px 3px 3px rgba(225, 225, 225, 0.25);
@@ -1970,7 +1961,7 @@ main.active::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.table-price .price-grid .price-card h1 {
+.table-price .price-grid .price-card h3 {
   padding: 0.7em 1em;
   font-size: 1.5rem;
   border-radius: 0.5rem;
@@ -2040,7 +2031,6 @@ main.active::after {
   border-radius: 5px;
 }
 .footer-top .footer-item h2 {
-  font-family: "Taviraj", serif;
   font-size: 1.5rem;
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -2051,11 +2041,11 @@ main.active::after {
 .footer-top .footer-item h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.25rem;
   left: 50%;
   transform: translateX(-50%);
   width: 35%;
-  height: 0.25rem;
+  height: 0.2rem;
   background: #47a1eb;
   border-radius: 0.5rem;
 }
@@ -2195,7 +2185,6 @@ main.active::after {
   margin-bottom: 15vh;
 }
 .footer-bottom .copyright-div p {
-  font-family: "Taviraj", serif;
   line-height: 1.7;
   font-size: 1.25rem;
   color: #f4f4f4;
@@ -2208,7 +2197,7 @@ main.active::after {
 }
 .footer-bottom .copyright-div a, .footer-bottom .copyright-div span {
   color: #eee;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 .footer-bottom .copyright-div a:hover, .footer-bottom .copyright-div span:hover {
   transition: 0.3s ease-in-out;

@@ -75,7 +75,7 @@
                 padding: .5rem;
 
                 // SERVICE TITLE H1
-                h1 {
+                .service-title {
                     text-align: center;
 
                     @include md {
@@ -88,7 +88,7 @@
                     color: $text-color-white;
                     font-size: 1.15rem;
                     text-transform: capitalize;
-                    font-family: $font-title;
+                    // font-family: $font-title;
                     font-weight: 600;
                     letter-spacing: .05rem;
                     // border: 1px solid $secondary-color;

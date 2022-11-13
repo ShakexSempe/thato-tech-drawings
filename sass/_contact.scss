@@ -44,7 +44,7 @@
                 transition: .2s;
                 font-weight: 400;
                 color: inherit;
-                font-family: $font-title;
+                // font-family: $font-title;
 
                 &:hover {
                 color: #ddd;
@@ -70,7 +70,7 @@
                 padding: 0 .5rem; 
                 text-transform: capitalize;
                 color: #ddd;
-                font-family: $font-title;
+                // font-family: $font-title;
                 font-weight: 600;
             }
             label {
