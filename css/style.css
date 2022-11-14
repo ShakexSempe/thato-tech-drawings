@@ -105,7 +105,7 @@ header .navbar-top a {
 header .navbar-top a p {
   text-transform: capitalize;
   color: navy;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
