@@ -1619,7 +1619,7 @@ main.active::after {
   transform: scale(1);
 }
 .section-padding.pad-1 figure[data-scroll] img {
-  transform: scale(2);
+  transform: scale(1.15);
 }
 .section-padding.pad-1 figure[data-scroll=in] {
   transform: scale(1);
