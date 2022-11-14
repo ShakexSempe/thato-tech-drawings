@@ -105,7 +105,7 @@ header .navbar-top a {
 header .navbar-top a p {
   text-transform: capitalize;
   color: navy;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
@@ -1178,7 +1178,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .menu-toggle .bar {
   font-size: 10px;
-  height: 0.15rem;
+  height: 0.125rem;
   width: 1.8em;
   position: relative;
   background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
