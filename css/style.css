@@ -759,11 +759,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 
 .about {
-  padding-top: 5vh;
   background-size: 140%;
-}
-.about-items {
-  text-align: center;
 }
 .about-items h3 {
   letter-spacing: 0.1rem;
@@ -1321,31 +1317,28 @@ header .navbar .navbar-button .you-btn:hover {
 }
 
 .section-title {
-  margin: 0.5em auto 5vh;
-  font-size: 2.5rem;
   color: #333;
   padding: 0;
+  margin: 5vh 0;
   position: relative;
-  text-transform: capitalize;
-  text-align: center;
-  font-weight: 500;
+  background: linear-gradient(0deg, red, yellow);
   background: linear-gradient(to right, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 2.5rem;
-  }
+.section-title h2 {
+  color: #000;
+  font-size: 2rem;
+  font-size: clamp(2rem, 8vw, 2.5rem);
 }
 .section-title::after {
   content: "";
-  width: 20%;
+  width: 25%;
   position: absolute;
-  bottom: 0rem;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -0.25rem;
+  left: 0;
   height: 0.2rem;
   border-radius: 5px;
   background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
