@@ -41,7 +41,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   height: 7vh;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 6px -6px #b3b3b3;
 }
 @media (min-width: 576px) {
   header {
@@ -625,7 +625,8 @@ header .navbar .navbar-button .you-btn:hover {
   height: 100%;
   z-index: -1;
   border-radius: 0.5rem;
-  background: #fff;
+  background-color: navy;
+  background: #ffff;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35), inset -2px -2px 2px rgba(0, 0, 0, 0.35), 0.025rem 0.5rem 0.5rem rgba(0, 0, 128, 0.15);
 }
 .services .container .service-icon {
@@ -1304,10 +1305,6 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 0;
   margin: 5vh 0;
   position: relative;
-  background: linear-gradient(0deg, navy 0%, #47a1eb 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-transform: capitalize;
 }
 .section-title h2 {
