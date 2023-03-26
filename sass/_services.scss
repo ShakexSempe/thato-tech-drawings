@@ -2,7 +2,7 @@
 .services {
     position: relative;
     background-color: $primary-background-lt-grey;
-    background-color: #fff;
+    background-color: #fafafa;
     position: relative;
     padding: 5vh 0;
     z-index: 2;
@@ -23,8 +23,8 @@
         }
         // service items
         .service {
-            padding: 5vh 0 10vh;
-            margin: 10vh auto 20vh;
+            padding: 5vh 0;
+            margin: 5vh auto 15vh;
             position: relative;
             text-align: center;
             border-radius: .5rem;
@@ -32,7 +32,6 @@
 
             @include sm {
                 margin: 10vh auto;
-                padding: 5vh 0 1rem;
             }
 
             // ITEM BACKGROUND AND SHADOW
@@ -46,10 +45,10 @@
                 z-index: -1;
                 border-radius: .5rem;
                 // background-color: $primary-color;
-                background: $item-gradient;
+                background: #fff;
                 box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35),
                     inset -2px -2px 2px rgba(0, 0, 0, 0.35),
-                    .025rem .5rem 1rem rgba(0, 0, 0, 0.20);
+                    .025rem .5rem .5rem rgba(0, 0, 128, .15);
             }
 
             // SERVICE ICON
@@ -91,6 +90,7 @@
                     }
 
                     color: $text-color-white;
+                    color: $primary-color;
                     font-size: 1.15rem;
                     text-transform: capitalize;
                     // font-family: $font-title;
@@ -105,8 +105,9 @@
                     // border: 2px solid red;
                     margin-bottom: 1rem;
                     color: #f4f4f4;
+                    color: #000;
                     font-size: 1rem;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: 1.6;
                 }
             }
@@ -156,7 +157,7 @@
                 }
 
                 &::before {
-                    background: $btn-secondary;
+                    background: $btn-primary;
                     box-shadow: $box-shadow;
                 }
 

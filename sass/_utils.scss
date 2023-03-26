@@ -241,7 +241,7 @@
     margin: 5vh 0;
     // border: 2px solid red;
     position: relative;
-    background: linear-gradient(0deg, red, yellow);
+    // background: linear-gradient(0deg, red, yellow);
     background: $primary-gradient;
     background-clip: text;
     -webkit-background-clip: text;
@@ -251,6 +251,7 @@
     h2 {
         color: #000;
         // border: 2px solid green;
+        // font-family: $font-title;
         font-size: 2rem;
         font-size: clamp(2rem, 8vw, 2.5rem);
 
