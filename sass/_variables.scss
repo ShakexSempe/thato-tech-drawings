@@ -14,7 +14,7 @@ $secondary-color: skyblue;
 $secondary-color: #0aceb1;
 $secondary-color: hsl(207, 80%, 60%);
 $secondary-color-trans: #0aceb18f;
-$primary-gradient: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+$primary-gradient: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 $primary-gradient-background: linear-gradient(-50deg, $primary-color-dark 30%, $primary-color, $secondary-color 100% );
 $primary-gradient-reverse: linear-gradient(to right, $secondary-color 0%, $primary-color 100%);
 $secondary-gradient: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);

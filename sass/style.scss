@@ -316,11 +316,11 @@ main {
         }
 
         @include lg {
-            @include grid(2, 30px);
-        }
-        @include xl {
             @include grid(3, 30px);
         }
+        // @include xl {
+        //     @include grid(3, 30px);
+        // }
         .price-card {
             &[data-scroll] {
                 transform: scale(1);
@@ -352,11 +352,21 @@ main {
                 transition: .3s ease;
                 position: relative;
                 isolation: isolate;
+                width: 10rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
                 @include md {
                     position: absolute;
                     bottom: 1rem;
                     right: 50%;
                     transform: translateX(50%);
+                    width: 10rem;
+                }
+
+                i {
+
                 }
                 &::before,
                 &::after {

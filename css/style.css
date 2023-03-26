@@ -41,7 +41,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   height: 7vh;
-  box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 576px) {
   header {
@@ -1125,7 +1125,7 @@ header .navbar .navbar-button .you-btn:hover {
   height: 2em;
   width: 2em;
   padding: 0.3em;
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1157,7 +1157,7 @@ header .navbar .navbar-button .you-btn:hover {
   height: 0.125rem;
   width: 1.8em;
   position: relative;
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   transition: 0.5s;
 }
 .menu-toggle .bar::before, .menu-toggle .bar::after {
@@ -1165,7 +1165,7 @@ header .navbar .navbar-button .you-btn:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   left: 0;
   transition: 0.5s ease;
   transition-property: top, bottom;
@@ -1302,7 +1302,7 @@ header .navbar .navbar-button .you-btn:hover {
   margin: 5vh 0;
   position: relative;
   background: linear-gradient(0deg, red, yellow);
-  background: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1321,7 +1321,7 @@ header .navbar .navbar-button .you-btn:hover {
   left: 0;
   height: 0.2rem;
   border-radius: 5px;
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
 }
 @media (min-width: 768px) {
   .section-title::after {
@@ -1648,7 +1648,7 @@ main.active::after {
 }
 .features h2 {
   font-weight: 500;
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1783,13 +1783,6 @@ main.active::after {
   .table-price .price-grid {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1400px) {
-  .table-price .price-grid {
-    display: grid;
-    grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1825,6 +1818,11 @@ main.active::after {
   transition: 0.3s ease;
   position: relative;
   isolation: isolate;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 @media (min-width: 768px) {
   .table-price .price-grid .price-card .btn {
@@ -1832,6 +1830,7 @@ main.active::after {
     bottom: 1rem;
     right: 50%;
     transform: translateX(50%);
+    width: 10rem;
   }
 }
 .table-price .price-grid .price-card .btn::before, .table-price .price-grid .price-card .btn::after {
@@ -1916,20 +1915,20 @@ main.active::after {
   color: navy;
 }
 .table-price .price-grid .price-card:nth-child(3) h3 {
-  background-image: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background-image: linear-gradient(0deg, navy 0%, #47a1eb 100%);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn {
   background: linear-gradient(0deg, #000080, #0aceb1);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn::before {
-  background: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   background: linear-gradient(0deg, navy, #47a1eb);
 }
 .table-price .price-grid .price-card:nth-child(3) .btn::after {
   background: linear-gradient(0deg, #47a1eb, navy);
 }
 .table-price .price-grid .price-card:nth-child(3) .price {
-  background: linear-gradient(to right, navy 0%, #47a1eb 100%);
+  background: linear-gradient(0deg, navy 0%, #47a1eb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

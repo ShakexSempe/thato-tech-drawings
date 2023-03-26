@@ -10,7 +10,8 @@ header {
     //MXINS
     height: 7vh;
     // padding-bottom: .5em;
-    box-shadow: 0 8px 6px -6px #999;
+    // box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 .25rem 1rem rgba(0, 0,0, .15);
     // overflow: hidden;
 
     @include sm {
