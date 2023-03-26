@@ -204,7 +204,8 @@ header .navbar .navbar-button .you-btn {
 }
 header .navbar .navbar-button .you-btn i {
   color: #dc143c;
-  font-size: 2.5em;
+  font-size: 2rem;
+  background: transparent;
 }
 header .navbar .navbar-button .you-btn:hover {
   transform: scale(1.1);

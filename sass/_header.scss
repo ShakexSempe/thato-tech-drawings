@@ -201,10 +201,12 @@ header {
                 display: grid;
                 place-items: center;
                 position: relative;
+                // border: 2px solid blue;
 
                 i {
                     color: #dc143c;
-                    font-size: 2.5em;
+                    font-size: 2rem;
+                    background: transparent;
 
                 }
 
