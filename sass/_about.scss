@@ -1,6 +1,8 @@
 // VIDEOS
 .about {
     // border: 2px solid red;
+    background: #f4f4f4;
+    padding: 5vh 0;
     // background-image: $primary-gradient;
     // background-image: $primary-background-lt-grey;
     background-size: 140%;
@@ -20,21 +22,21 @@
             // -webkit-text-fill-color: transparent;
             @include md {
                 font-size: 1.5rem;
-                text-align: center;
+                // text-align: center;
                 margin-bottom: 2rem;
 
             }
         }
         .about-item {
-            margin: 0 auto 1rem;
+            margin: 0 auto 5vh;
             border-radius: .5rem;
-            padding: 1rem 0; 
+            padding: 1rem .5rem; 
             background: #fff;
-            text-align: center;
+            text-align: left;
             // border: 1px solid #000;
 
             @include sm {
-            background: #f4f4f4;
+            // background: #f4f4f4;
                 // border: 1px solid $primary-color-dark;
                 @include grid(2, 20px);
 
@@ -51,9 +53,11 @@
                     // border: 3px solid rgba(0, 0, 128, 0.308);
                 border-radius: 5px;
                 }
+                // border: 2px solid red;
                 h4 {
                     margin: 1rem 0;
                     font-size: 1.25rem;
+                    // border: 2px solid green;
                     // font-family: $font-rose;
                     // font-family: $font-title;
                     color: #000;
@@ -64,7 +68,7 @@
                     // -webkit-background-clip: text;
                     // -webkit-text-fill-color: transparent;
                     @include sm {
-                        text-align: center;
+                        // text-align: center;
                         font-size: 1.8rem;
                     }
                 }
@@ -79,19 +83,22 @@
                     text-align: left;
                     
                 }  
-                @include sm {
-                    text-align: center;
-                    @include flex(center, flex-start, column);
-                }
-                @include lg {
-                    @include flex(center, center, column);
-                }
+                // @include sm {
+                //     text-align: center;
+                //     @include flex(center, flex-start, column);
+                // }
+                // @include lg {
+                //     @include flex(center, center, column);
+                // }
 
                 .btn {
                     display: block;
-                    width: 10rem;
+                    width: 12rem;
                     margin: 1rem 0;
                     text-transform: capitalize;
+                    text-align: left;
+                    display: flex;
+                    justify-content: space-between;
                     &::before {
                         background: $btn-secondary;
                         background: $cta-btn;

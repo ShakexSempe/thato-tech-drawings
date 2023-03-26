@@ -28,11 +28,14 @@
             position: relative;
             text-align: center;
             border-radius: .5rem;
+            // border: 1px solid red;
 
             @include sm {
                 margin: 10vh auto;
+                padding: 5vh 0 1rem;
             }
 
+            // ITEM BACKGROUND AND SHADOW
             &::before {
                 position: absolute;
                 content: '';
@@ -46,7 +49,7 @@
                 background: $item-gradient;
                 box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35),
                     inset -2px -2px 2px rgba(0, 0, 0, 0.35),
-                    5px 5px 3px rgba(0, 0, 0, 0.150);
+                    .025rem .5rem 1rem rgba(0, 0, 0, 0.20);
             }
 
             // SERVICE ICON
@@ -71,17 +74,19 @@
             // SERVICE INFO
             .service-info {
                 border-radius: 5px;
-                margin: 0 0em 5vh;
-                padding: .5rem;
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+                // border: 2px solid green;
+                text-align: left;
 
                 // SERVICE TITLE H1
                 .service-title {
-                    text-align: center;
+                    // text-align: center;
 
                     @include md {
-                        height: 10vh;
-                        display: grid;
-                        place-items: center;
+                        // height: 10vh;
+                        // display: grid;
+                        // place-items: center;
 
                     }
 
@@ -90,47 +95,51 @@
                     text-transform: capitalize;
                     // font-family: $font-title;
                     font-weight: 600;
-                    letter-spacing: .05rem;
-                    // border: 1px solid $secondary-color;
-                    margin-bottom: .5em;
+                    line-height: 1.5;
+                    // border: 1px solid RED;
+                    margin-bottom: .5rem;
                     border-radius: 5px;
                     // text-decoration: underline rgba(255, 255, 255, 0.432);
                 }
-
-                // end of title
                 p {
-                    // font-family: $font-rose;
-                    // font-family: $font-text;
+                    // border: 2px solid red;
+                    margin-bottom: 1rem;
                     color: #f4f4f4;
-                    font-size: .95rem;
+                    font-size: 1rem;
                     font-weight: 400;
-                    text-align: center;
                     line-height: 1.6;
                 }
             }
 
-            // end of service info
-
+            // SERVICE ITEM BUTTON CTA
             button {
+                color: $text-light;
+                background-color: $secondary-color;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
                 font-size: 1rem;
-                border-radius: 5px;
                 padding: .5rem 1rem;
                 width: 10rem;
                 font-weight: 500;
-                background-color: $secondary-color;
-                color: $text-light;
-                border: none;
-                outline: none;
-                position: absolute;
-                bottom: 2rem;
-                left: 50%;
-                transform: translateX(-50%);
-                transition: .2s ease;
-                // font-family: $font-rose;
-                cursor: pointer;
-                letter-spacing: .1rem;
                 text-transform: capitalize;
+                border: none;
+                border-radius: 5px;
+                transition: .2s ease;
+                cursor: pointer;
+                position: relative;
                 isolation: isolate;
+
+                // @include md {
+                //     position: absolute;
+                //     bottom: 5vh;
+                // }
+
+                i {
+                    transition: .25s;
+
+                }
 
                 &::before,
                 &::after {
@@ -160,10 +169,11 @@
                 // HOVER & ACTIVE STATE MEDIA QUERY
                 @media (max-width: 820px) {
                     &:active {
-                        letter-spacing: normal;
+                        transform: scale(.98);
                         transition: .2s;
-                        transform: translateX(-50%) scale(.98);
-
+                        i {
+                            transform: translateX(-.25rem);
+                        }
                         &::before {
                             opacity: 0
                         }
@@ -176,7 +186,6 @@
 
                 @media (min-width: 820px) {
                     &:hover {
-                        letter-spacing: normal;
                         transition: .2s;
 
                         // transform: scale(.99);

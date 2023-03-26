@@ -266,6 +266,9 @@
         border-radius: 5px;
         background-image: $primary-gradient ;
         // display: block;
+        @include md {
+            width: 10%;
+        }
     }
 }
 
