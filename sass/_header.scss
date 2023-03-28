@@ -227,7 +227,7 @@ header {
     padding: 5vh 5vw 5vh 10vw;
     height: calc(100vh - 7vh);
     background-color: $primary-color-dark;
-    border-right: 2px solid #fffa;
+    border-right: 2px solid $primary-color-darker;
     transition: .5s ease;
     z-index: 3;
     // border: 5px solid green;
