@@ -588,6 +588,7 @@ header .navbar .navbar-button .you-btn:hover {
   position: relative;
   text-align: center;
   border-radius: 0.5rem;
+  color: #eee;
 }
 @media (min-width: 576px) {
   .services .container .service {
@@ -603,9 +604,9 @@ header .navbar .navbar-button .you-btn:hover {
   height: 100%;
   z-index: -1;
   border-radius: 0.5rem;
-  background-color: navy;
   background: #ffff;
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35), inset -2px -2px 2px rgba(0, 0, 0, 0.35), 0.025rem 0.5rem 0.5rem rgba(0, 0, 128, 0.15);
+  background-color: navy;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35), inset -2px -2px 2px rgba(0, 0, 0, 0.35), 0.0125rem 0.5rem 0.5rem rgba(0, 0, 128, 0.25);
 }
 .services .container .service-icon {
   width: 125px;
@@ -613,7 +614,7 @@ header .navbar .navbar-button .you-btn:hover {
   margin: -25% 0 30px;
   padding: 5px;
   border-radius: 50%;
-  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px #47a1eb, inset -5px -5px navy;
+  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 0.5rem 1rem 1rem rgba(0, 0, 0, 0.6), inset 5px 5px 5px #47a1eb, inset -5px -5px navy;
 }
 @media (min-width: 768px) {
   .services .container .service-icon {
@@ -629,8 +630,6 @@ header .navbar .navbar-button .you-btn:hover {
   text-align: left;
 }
 .services .container .service .service-info .service-title {
-  color: #eee;
-  color: navy;
   font-size: 1.15rem;
   text-transform: capitalize;
   font-weight: 600;
@@ -640,8 +639,6 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .services .container .service .service-info p {
   margin-bottom: 1rem;
-  color: #f4f4f4;
-  color: #000;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
@@ -654,7 +651,7 @@ header .navbar .navbar-button .you-btn:hover {
   align-items: center;
   text-align: left;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   width: 10rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -681,7 +678,7 @@ header .navbar .navbar-button .you-btn:hover {
   z-index: -1;
 }
 .services .container .service button::before {
-  background: linear-gradient(0deg, #000099, #0000b3, #0000e6);
+  background: linear-gradient(0deg, #1a8ae6, #47a1eb, #5eaded);
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -2px -2px 3px rgba(0, 0, 0, 0.25), 0.025rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 .services .container .service button::after {
@@ -730,7 +727,7 @@ header .navbar .navbar-button .you-btn:hover {
 .services .container .service[data-scroll=in] .service-icon {
   transition: 2s;
   transform: translateY(0);
-  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 3px 3px 5px rgba(0, 0, 0, 0.3), inset 5px 5px 5px navy, inset -5px -5px #47a1eb;
+  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4), inset 5px 5px 5px navy, inset -5px -5px #47a1eb;
 }
 .services .container .service[data-scroll=in] .service-info p {
   transform: translateY(0);

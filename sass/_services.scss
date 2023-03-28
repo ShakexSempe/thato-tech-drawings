@@ -28,6 +28,7 @@
             position: relative;
             text-align: center;
             border-radius: .5rem;
+            color: $text-color-white;
             // border: 1px solid red;
 
             @include sm {
@@ -44,11 +45,11 @@
                 height: 100%;
                 z-index: -1;
                 border-radius: .5rem;
-                background-color: $primary-color;
                 background: #ffff;
+                background-color: $primary-color;
                 box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.35),
                     inset -2px -2px 2px rgba(0, 0, 0, 0.35),
-                    .025rem .5rem .5rem rgba(0, 0, 128, .15);
+                    .0125rem .5rem .5rem rgba(0, 0, 128, .25);
             }
 
             // SERVICE ICON
@@ -59,7 +60,7 @@
                 padding: 5px;
                 border-radius: 50%;
                 box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226),
-                    3px 3px 5px rgba(0, 0, 0, .3),
+                            .5rem 1rem 1rem rgba(0, 0, 0, .6),
                     inset 5px 5px 5px $secondary-color,
                     inset -5px -5px $primary-color;
 
@@ -80,7 +81,12 @@
 
                 // SERVICE TITLE H1
                 .service-title {
-                    // text-align: center;
+                    font-size: 1.15rem;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin-bottom: .5rem;
+                    border-radius: 5px;
 
                     @include md {
                         // height: 10vh;
@@ -89,23 +95,10 @@
 
                     }
 
-                    color: $text-color-white;
-                    color: $primary-color;
-                    font-size: 1.15rem;
-                    text-transform: capitalize;
-                    // font-family: $font-title;
-                    font-weight: 600;
-                    line-height: 1.5;
-                    // border: 1px solid RED;
-                    margin-bottom: .5rem;
-                    border-radius: 5px;
-                    // text-decoration: underline rgba(255, 255, 255, 0.432);
                 }
                 p {
                     // border: 2px solid red;
                     margin-bottom: 1rem;
-                    color: #f4f4f4;
-                    color: #000;
                     font-size: 1rem;
                     font-weight: 500;
                     line-height: 1.6;
@@ -121,7 +114,7 @@
                 align-items: center;
                 text-align: left;
                 font-size: 1rem;
-                padding: .5rem 1rem;
+                padding: .7rem 1rem;
                 width: 10rem;
                 font-weight: 500;
                 text-transform: capitalize;
@@ -157,7 +150,7 @@
                 }
 
                 &::before {
-                    background: $btn-primary;
+                    background: $btn-secondary;
                     box-shadow: $box-shadow;
                 }
 
@@ -223,7 +216,7 @@
                     transition: 2s;
                     transform: translateY(0);
                     box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226),
-                    3px 3px 5px rgba(0, 0, 0, .3),
+                    .25rem .5rem .5rem rgba(0, 0, 0, .4),
                     inset 5px 5px 5px $primary-color,
                     inset -5px -5px $secondary-color;
                 }
