@@ -209,32 +209,31 @@ main {
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
+            // ITEM TITLE
             h3 {
             color: $primary-color;
             text-transform: capitalize;
-            // font-family: $font-title;
             font-size: 1rem;
             margin-bottom: .5em;
-            letter-spacing: .03em;
             }
             p {
-                font-weight: 400;
+                font-weight: 500;
             }
             &-icon {
-                padding: 20px;
-                margin-right: 1em;
-                border: none;
-                outline: none;
-                border-radius: 50%;
-                text-align: center;
+                padding-right: .5rem;
                 color: $primary-color;
                 transition: .3s ease;
-                border-right: 2px solid $secondary-color;
-                // box-shadow: $box-shadow;
+                font-size: 2.5rem;
+                opacity: .3;
 
-                i {
-                    width: 100%;
-                    font-size: 1.5em;
+                // WATER-ICON
+                &.water-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 5rem;
+                opacity: .1;
+                z-index: -1;
                 }
 
             }
@@ -242,7 +241,6 @@ main {
                 .feature-item-icon {
                     transition: .3s ease;
                     transform: scale(.95);
-                    box-shadow: $box-shadow-hover;
                 }
                 .features-item-description {
                     h2 {
