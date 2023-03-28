@@ -224,107 +224,36 @@ header {
     left: -100%;
     top: 7vh;
     width: 100%;
-    padding-top: 1.5em;
+    padding: 5vh 5vw 5vh 10vw;
     height: calc(100vh - 7vh);
     background-color: $primary-color-dark;
     border-right: 2px solid #fffa;
     transition: .5s ease;
     z-index: 3;
-    // font-family: 'Red Rose', cursive;
-
-    .links-container {
-        display: grid;
-        place-items: center;
-        position: relative;
-
-        .contact-links {
-            // border: 2px solid yellow;
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-            padding-left: 25vw;
-            margin-top: 5vh;
-            a {
-                color: #fff;
-                letter-spacing: .05rem;
-                font-size: 1rem;
-                margin-bottom: 1rem;
-                opacity: 0;
-                transition: 1s;
-                i {
-                    padding-right: .5rem;
-                    transform: translateX(-2rem);
-                    transition: inherit;
-                }
-            }
-        }
-    }
-    // active sidebar
-    &.open {
-        left: -20%;
-
-        ul {
-            li {
-                transform: translateX(0);
-                opacity: 1;
-                &:nth-child(1) {
-                    transition-delay: .2s;
-                }
-                &:nth-child(2) {
-                    transition-delay: .25s;
-                }
-                &:nth-child(3) {
-                    transition-delay: .3s;
-                }
-                &:nth-child(4) {
-                    transition-delay: .35s;
-                }
-                &:nth-child(5) {
-                    transition-delay: .4s;
-                }
-                &:nth-child(6) {
-                    transition-delay: .45s;
-                }
-            }
-        }
-        .contact-links {
-            a {
-                opacity: 1;
-                i {
-                    transform: translateX(0);
-                }
-                &:nth-child(1){
-                    transition-delay: .7s;
-                }
-                &:nth-child(2){
-                    transition-delay: 1s;
-                }
-            }
-        }
-    }
+    // border: 5px solid green;
 
     @include lg {
         display: none;
     }
 
+    // PAGE NAV LIST
     &-nav-list {
         margin: 0;
         padding: 0;
-        height: 60vh;
+        // height: 60vh;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        // align-items: flex-start;
+        gap: 1rem;
         isolation: isolate;
         // border: 2px solid red;
 
         li {
-            margin-left: 25vw;
-            text-align: left;
-            width: 60%;
-            // border: 2px solid yellow;
-            outline: none;
-            transform: translateX(-50%);
+            width: 100%;
+            border-bottom: 2px solid hsla(197, 71%, 73%, .3);
+            padding-bottom: .25rem;
             opacity: 0;
             transition: 1s;
             z-index: 1;
@@ -340,8 +269,8 @@ header {
 
             a {
                 color: #f4f4f4;
-                background-color: $primary-color;
-                padding: .5rem;
+                // background-color: $primary-color;
+                // padding: .5rem;
                 font-size: 1rem;
                 font-weight: 500;
                 cursor: pointer;
@@ -349,43 +278,98 @@ header {
                 display: block;
                 border: none;
                 transition: .25s;
-                letter-spacing: .05rem;
-                border-radius: .5rem;
                 text-transform: capitalize;
                 z-index: 5;
                 position: relative;
-                    // list item box shadow
-            &::before {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: .5rem;
-                transition: .25s;
-            }
 
-            &::before {
-                box-shadow: inset 2px 2px 3px rgba(225, 225, 225, 0.250),
-                            inset -2px -2px 3px rgba(0, 0, 0, 0.300);
-            }
+                i {
+                    color: #fff9;
+                    width: 2rem;
+                }
 
                 
                 &:active {
-                    letter-spacing: normal;
                     transform: scale(.97);
                     i {
                         color:$secondary-color;
                     }
                 }
 
+                
+            }
+        }
+    }
+
+     // CONTACT LINKS
+    .links-container {
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        .contact-links {
+            // border: 2px solid yellow;
+            background: $primary-color-darker;
+            padding:  1rem .5rem 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: .25rem;
+            margin-top: 5vh;
+            a {
+                color: #fff;
+                letter-spacing: .05rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                opacity: 0;
+                transition: .5s;
                 i {
-                    color: #fffa;
-                    margin-right: .5em;
-                    padding: .5em;
-                    border-radius: 10px;
-                    position: relative;
+                    padding-right: .5rem;
+                    transform: translateX(-2rem);
+                    transition: inherit;
+                }
+            }
+        }
+    }
+
+    // ACTIVE SIDEBAR
+    &.open {
+        left: -5vw;
+
+        ul {
+            li {
+                transform: translateX(0);
+                opacity: 1;
+                &:nth-child(1) {
+                    transition-delay: .2s;
+                }
+                &:nth-child(2) {
+                    transition-delay: .3s;
+                }
+                &:nth-child(3) {
+                    transition-delay: .4s;
+                }
+                &:nth-child(4) {
+                    transition-delay: .5s;
+                }
+                &:nth-child(5) {
+                    transition-delay: .6s;
+                }
+                &:nth-child(6) {
+                    transition-delay: .7s;
+                }
+            }
+        }
+        .contact-links {
+            a {
+                opacity: 1;
+                i {
+                    transform: translateX(0);
+                }
+                &:nth-child(1){
+                    transition-delay: .5s;
+                }
+                &:nth-child(2){
+                    transition-delay: .6s;
                 }
             }
         }
