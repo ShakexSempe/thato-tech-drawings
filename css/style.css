@@ -851,6 +851,7 @@ header .navbar .navbar-button .you-btn:hover {
 .contact {
   padding: 10vh 0;
   background-color: navy;
+  position: relative;
 }
 .contact .form-title {
   text-align: center;
@@ -867,17 +868,27 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .contact .google-maps {
-  margin: 0 5vw 1rem;
-  height: auto;
+  margin: 5vh 5vw 0;
+  height: 50vh;
+}
+@media (min-width: 768px) {
+  .contact .google-maps {
+    height: 70vh;
+    position: sticky;
+    top: 10vh;
+  }
 }
 .contact .google-maps #map {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 0.5rem;
 }
+@media (min-width: 768px) {
+  .contact .google-maps #map {
+    height: 100%;
+  }
+}
 .contact .contact-form {
-  width: 500px;
-  max-width: 100%;
   padding: 0.1rem 5vw;
   margin: auto;
   cursor: pointer;
@@ -1016,17 +1027,16 @@ header .navbar .navbar-button .you-btn:hover {
 .contact .contact-form .btn {
   display: block;
   color: #f4f4f4;
-  letter-spacing: 0.05rem;
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 1rem;
   border: none;
   outline: none;
   z-index: 2;
-  width: 90%;
+  width: 100%;
   transition: 0.25s;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-top: 0.5em;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   padding: 1rem 0.5rem;
   position: relative;
   text-transform: capitalize;
@@ -1040,23 +1050,22 @@ header .navbar .navbar-button .you-btn:hover {
   width: 100%;
   transition: 0.25s;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   z-index: -1;
 }
 .contact .contact-form .btn::before {
   background-image: linear-gradient(0deg, #6b081c, #dc143c);
-  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.3), inset -3px -3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.15), inset -3px -3px 3px rgba(0, 0, 0, 0.15), 0.125rem 0.5rem 0.5rem #0003;
 }
 .contact .contact-form .btn::after {
   opacity: 0;
   background-image: linear-gradient(0deg, #dc143c, #6b081c);
-  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.25), inset -3px -3px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(255, 255, 255, 0.2), 0rem 0.25rem 0.25rem #0004;
 }
 @media (max-width: 820px) {
   .contact .contact-form .btn:active {
     transition: 0.2s;
     transform: scale(0.98);
-    letter-spacing: normal;
   }
   .contact .contact-form .btn:active::before {
     opacity: 0;
