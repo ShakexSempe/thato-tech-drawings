@@ -34,7 +34,7 @@ header {
   left: 0;
   max-width: 100%;
   z-index: 4;
-  background: #f4f4f4;
+  background: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +196,7 @@ header .navbar .navbar-button {
   }
 }
 header .navbar .navbar-button .you-btn {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   transition: 0.2s ease;
   border: none;
   outline: none;
@@ -561,7 +561,7 @@ header .navbar .navbar-button .you-btn:hover {
 
 .services {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   background-color: #fafafa;
   position: relative;
   padding: 5vh 0;
@@ -1599,7 +1599,7 @@ footer .footer-item p {
 }
 
 main {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   background-color: #ffff;
   width: 100%;
   overflow-x: hidden;
