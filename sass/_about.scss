@@ -30,15 +30,16 @@
         .about-item {
             margin: 0 auto 5vh;
             border-radius: .5rem;
-            padding: 1rem .5rem; 
-            background: #fff;
+            // padding: 1rem .5rem; 
             text-align: left;
-            // border: 1px solid #000;
+            border-radius: .25rem;
+            overflow: hidden;
+            box-shadow: 0 .5rem 1rem #0002;
 
             @include sm {
-            // background: #f4f4f4;
-                // border: 1px solid $primary-color-dark;
+                margin: 0 auto 10vh;
                 @include grid(2, 20px);
+                background: #fff;
 
                 &:nth-child(even) {
                     .about-item-image {
@@ -50,10 +51,13 @@
 
             &-content {
                 @include lg {
-                    // border: 3px solid rgba(0, 0, 128, 0.308);
-                border-radius: 5px;
+                    padding: 1rem;
+                    background: transparent;
                 }
+
                 // border: 2px solid red;
+                padding: 1rem .5rem;
+                background: #fff;
                 h4 {
                     margin: 1rem 0;
                     font-size: 1.25rem;
@@ -110,48 +114,47 @@
             }
 
             &-image {
-                @include sm {
-                    max-width: 300px;
-                }
                 width: 100%;
-                padding: 1rem; 
+                padding: 0; 
                 margin: 0 auto;
                 position: relative;
                 cursor: pointer;
                 overflow: hidden;
-                border-radius: .5rem;
-                // border: .1rem solid $primary-color;
+                border-bottom-left-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+                border: 2px solid red;
+                border: none;
+                @include md {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
                 img {
                     width: 100%;
-                    height: auto;
                     transition: .3s ease;
+                    border-bottom-left-radius: .25rem;
+                    border-bottom-right-radius: .25rem;
+
+                    @include md {
+                        height: 100%;
+                        border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    }
                 }
                 // OVERLAY
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: $primary-color;
-                    background: #000;
-                    opacity: .4;
-                }
-                &:hover {
-                    img {
-                        transform:scale(1.1);
-                    }
-                }
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     background: $primary-color;
+                //     background: #000;
+                //     opacity: .4;
+                // }
+                
             }
-            // image zoom on item hover
-            &:hover {
-                .about-item-image {
-                    img {
-                        transform: scale(1.2);
-                    }
-                }
-            }
+            
         }
     }
 }
