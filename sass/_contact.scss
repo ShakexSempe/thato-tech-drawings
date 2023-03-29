@@ -147,9 +147,6 @@
         }
         .input-div{
             padding: .5em 0;
-            // &.subject {
-            //     padding: 1rem 0;
-            // }
         
         input, 
         textarea {
@@ -190,12 +187,12 @@
             text-transform: capitalize;
         }
         
-        &:hover {
-            label {
-                color: $secondary-color;
-                transform: translateY(50%) translateX(.5em);
-            }
-        }
+        // &:hover {
+        //     label {
+        //         color: $secondary-color;
+        //         transform: translateY(50%) translateX(.5em);
+        //     }
+        // }
     }
     .btn {
         display: block;

@@ -1033,10 +1033,6 @@ header .navbar .navbar-button .you-btn:hover {
   transition: 0.2s ease;
   text-transform: capitalize;
 }
-.contact .contact-form .input-div:hover label {
-  color: #47a1eb;
-  transform: translateY(50%) translateX(0.5em);
-}
 .contact .contact-form .btn {
   display: block;
   color: #f4f4f4;
