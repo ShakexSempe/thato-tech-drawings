@@ -227,7 +227,7 @@ header .navbar .navbar-button .you-btn:hover {
   background-color: #000066;
   border-right: 2px solid #00004d;
   transition: 0.5s ease;
-  z-index: 3;
+  z-index: 5;
 }
 @media (min-width: 1024px) {
   .sidebar {
