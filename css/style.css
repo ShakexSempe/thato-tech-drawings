@@ -99,22 +99,25 @@ header .navbar-top a {
   display: block;
   position: relative;
   border: 0.12rem solid navy;
+  border: 0.12rem solid #000;
   padding: 0.025rem 0.5rem;
   border-radius: 0.25rem;
 }
 header .navbar-top a p {
   text-transform: capitalize;
   color: navy;
+  color: #000;
   font-weight: 500;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
   header .navbar-top a p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 header .navbar-top a p span {
   color: #47a1eb;
+  color: navy;
   font-family: inherit;
 }
 header .navbar-top a figure {
@@ -219,7 +222,7 @@ header .navbar .navbar-button .you-btn:hover {
   padding: 5vh 5vw 5vh 10vw;
   height: calc(100vh - 7vh);
   background-color: #000066;
-  border-right: 2px solid #000033;
+  border-right: 2px solid #00004d;
   transition: 0.5s ease;
   z-index: 3;
 }
@@ -282,7 +285,7 @@ header .navbar .navbar-button .you-btn:hover {
   position: relative;
 }
 .sidebar .links-container .contact-links {
-  background: #000033;
+  background: #00004d;
   padding: 1rem 0.5rem 0;
   display: flex;
   flex-direction: column;
@@ -1089,7 +1092,7 @@ header .navbar .navbar-button .you-btn:hover {
 }
 
 footer {
-  background: #000033;
+  background: #00004d;
   color: #f4f4f4;
   padding: 10vh 5vw 10vh;
   position: relative;
