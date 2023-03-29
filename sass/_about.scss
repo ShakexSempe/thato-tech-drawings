@@ -9,11 +9,9 @@
     
     &-items {
         h3 {
-            // font-family: $font-title;
-            letter-spacing: .1rem;
-            font-size: 1.5rem;
-            color: #000;
+            font-size: 1.25rem;
             color: $primary-color;
+            color: #000;
             text-align: left;
             margin-bottom: 1rem;
             // background: $primary-gradient;
@@ -23,57 +21,70 @@
             @include md {
                 font-size: 1.5rem;
                 // text-align: center;
-                margin-bottom: 2rem;
+                margin-bottom: 5vh;
 
             }
         }
         .about-item {
-            margin: 0 auto 5vh;
+            margin: 0 auto 10vh;
             border-radius: .5rem;
-            // padding: 1rem .5rem; 
             text-align: left;
             border-radius: .25rem;
             overflow: hidden;
-            box-shadow: 0 .5rem 1rem #0002;
+            box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.15);
 
             @include sm {
-                margin: 0 auto 10vh;
+                margin: 0 auto 5vh;
                 @include grid(2, 20px);
                 background: #fff;
 
                 &:nth-child(even) {
                     .about-item-image {
-                        order: -1;
+                        // order: -1;
                     }
                 }
 
             }
 
             &-content {
+                // border: 2px solid blue;
+                padding: 1rem .5rem;
+                background: #fff;
+                position: relative;
+                @include sm {
+                    // padding: 0;
+                }
                 @include lg {
                     padding: 1rem;
                     background: transparent;
                 }
 
-                // border: 2px solid blue;
-                padding: 1rem .5rem;
-                background: #fff;
                 h4 {
                     margin: 1rem 0;
                     font-size: 1.25rem;
-                    // border: 2px solid green;
-                    // font-family: $font-rose;
-                    // font-family: $font-title;
                     color: #000;
+                    color: $primary-color;
                     font-weight: 600;
                     text-align: left;
-                    // background: $primary-gradient;
-                    // background-clip: text;
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
                     @include sm {
                         // text-align: center;
                         font-size: 1.8rem;
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 1rem;
+                        right: 5vw;
+                        font-size: 5rem;
+                        opacity: .1;
+
+                        @include lg {
+                            // top: 50%;
+                            // transform: translateY(-50%);
+                            top: unset;
+                            bottom: 5vh;
+                            font-size: 8rem;
+                        }
                     }
                 }
 
@@ -117,7 +128,7 @@
                 width: 100%;
                 position: relative;
                 cursor: pointer;
-                overflow: hidden;
+                // overflow: hidden;
                 border-bottom-left-radius: .25rem;
                 border-bottom-right-radius: .25rem;
                 border: none;

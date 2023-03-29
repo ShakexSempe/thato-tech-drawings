@@ -743,42 +743,39 @@ header .navbar .navbar-button .you-btn:hover {
   background-size: 140%;
 }
 .about-items h3 {
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.25rem;
   color: navy;
+  color: #000;
   text-align: left;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .about-items h3 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5vh;
   }
 }
 .about-items .about-item {
-  margin: 0 auto 5vh;
+  margin: 0 auto 10vh;
   border-radius: 0.5rem;
   text-align: left;
   border-radius: 0.25rem;
   overflow: hidden;
-  box-shadow: 0 0.5rem 1rem #0002;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 576px) {
   .about-items .about-item {
-    margin: 0 auto 10vh;
+    margin: 0 auto 5vh;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     background: #fff;
   }
-  .about-items .about-item:nth-child(even) .about-item-image {
-    order: -1;
-  }
 }
 .about-items .about-item-content {
   padding: 1rem 0.5rem;
   background: #fff;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .about-items .about-item-content {
@@ -790,12 +787,27 @@ header .navbar .navbar-button .you-btn:hover {
   margin: 1rem 0;
   font-size: 1.25rem;
   color: #000;
+  color: navy;
   font-weight: 600;
   text-align: left;
 }
 @media (min-width: 576px) {
   .about-items .about-item-content h4 {
     font-size: 1.8rem;
+  }
+}
+.about-items .about-item-content h4 i {
+  position: absolute;
+  top: 1rem;
+  right: 5vw;
+  font-size: 5rem;
+  opacity: 0.1;
+}
+@media (min-width: 1024px) {
+  .about-items .about-item-content h4 i {
+    top: unset;
+    bottom: 5vh;
+    font-size: 8rem;
   }
 }
 .about-items .about-item-content p {
@@ -826,7 +838,6 @@ header .navbar .navbar-button .you-btn:hover {
   width: 100%;
   position: relative;
   cursor: pointer;
-  overflow: hidden;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   border: none;
