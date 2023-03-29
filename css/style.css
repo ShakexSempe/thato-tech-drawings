@@ -715,27 +715,6 @@ header .navbar .navbar-button .you-btn:hover {
     opacity: 1;
   }
 }
-.services .container .service[data-scroll] {
-  transform: scale(1);
-  opacity: 1;
-}
-.services .container .service[data-scroll] .service-icon {
-  transform: translateY(5vh);
-}
-.services .container .service[data-scroll] .service-info p {
-  transform: translateY(-2rem);
-  opacity: 0;
-  transition: 1.5s;
-}
-.services .container .service[data-scroll=in] .service-icon {
-  transition: 2s;
-  transform: translateY(0);
-  box-shadow: -2px -2px 2px rgba(221, 221, 221, 0.226), 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4), inset 5px 5px 5px navy, inset -5px -5px #47a1eb;
-}
-.services .container .service[data-scroll=in] .service-info p {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 .about {
   background: #f4f4f4;
@@ -1686,19 +1665,6 @@ main.active::after {
   margin: 0 auto;
   transform-style: preserve-3d;
 }
-.section-padding.pad-1 figure[data-scroll] {
-  transform: scale(1);
-}
-.section-padding.pad-1 figure[data-scroll] img {
-  transform: scale(1.15);
-}
-.section-padding.pad-1 figure[data-scroll=in] {
-  transform: scale(1);
-}
-.section-padding.pad-1 figure[data-scroll=in] img {
-  transform: scale(1);
-  transition: 1.5s;
-}
 .section-padding.pad-1 figure img {
   width: 100%;
   height: 100%;
@@ -1713,15 +1679,10 @@ main.active::after {
   padding: 1em 5vw;
   height: auto;
 }
-.section-padding.pad-compass [data-scroll=in] {
-  transform: rotateY(0) translateX(0);
-  transition: 2s ease-in;
-}
 .section-padding.pad-compass figure {
   width: 60%;
   margin: 0 auto;
   opacity: 1;
-  transform: rotateY(90deg) translateX(50%);
   transform-style: preserve-3d;
 }
 .section-padding.pad-compass figure img {
@@ -1762,9 +1723,6 @@ main.active::after {
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
-}
-.features-grid .feature-item[data-scroll=in] {
-  transition: 1.5s;
 }
 @media (max-width: 767px) {
   .features-grid .feature-item {

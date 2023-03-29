@@ -108,19 +108,7 @@ main {
 
         figure {
             overflow: hidden;
-            &[data-scroll] {
-                transform: scale(1);
-                img {
-                    transform: scale(1.15);
-                }
-            }
-            &[data-scroll="in"] {
-                transform: scale(1);
-                img {
-                    transform: scale(1);
-                    transition: 1.5s;
-                }
-            }
+            
             width: 100%;
             margin: 0 auto;
             transform-style: preserve-3d;
@@ -145,16 +133,12 @@ main {
         // background: pink;
         padding: 1em 5vw;
         height: auto;
-            [data-scroll="in"] {
-                transform: rotateY(0) translateX(0);
-                transition: 2s ease-in;
-            }
         
         figure {
             width: 60%;
             margin: 0 auto;
             opacity: 1;
-            transform: rotateY(90deg) translateX(50%);
+            // transform: rotateY(90deg) translateX(50%);
             transform-style: preserve-3d;
 
             img {
@@ -199,9 +183,6 @@ main {
             }
         }
         .feature-item {
-            &[data-scroll="in"]{
-                transition: 1.5s;
-            }
             // @include flex(flex-start, center, row, nowrap);
             @media (max-width: 767px){
                 margin-bottom: 5vh;
@@ -256,18 +237,6 @@ main {
                 }
 
             }
-            // &:hover {
-            //     .feature-item-icon {
-            //         transition: .3s ease;
-            //         transform: scale(.95);
-            //     }
-            //     .features-item-description {
-            //         h2 {
-            //             transition: .3s ease;
-            //             letter-spacing: .07em;
-            //         }
-            //     }
-            // }
         }
         
     }
