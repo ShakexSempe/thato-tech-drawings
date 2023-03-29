@@ -225,7 +225,7 @@ main {
                 color: $primary-color;
                 transition: .3s ease;
                 font-size: 2.5rem;
-                opacity: .3;
+                opacity: 1;
 
                 // WATER-ICON
                 &.water-icon {
@@ -235,6 +235,14 @@ main {
                 font-size: 5rem;
                 opacity: .1;
                 z-index: -1;
+                }
+
+                // BIG ICON
+                &.big-icon {
+                    border-right: 2px solid #0005;
+                    opacity: .3;
+                    width: 8rem;
+                    font-size: 3rem;
                 }
 
             }
