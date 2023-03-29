@@ -59,12 +59,14 @@ header {
                 position: relative;
                 border: .12rem solid $primary-color;
                 border: .12rem solid #000;
-                padding: .025rem .5rem;
+                border-bottom-color: $primary-color;
+                padding: .25rem .5rem;
                 border-radius: .25rem;
+                background: #fff;
                 p {
                     text-transform: capitalize;
-                    color: $primary-color;
                     color: #000;
+                    color: $primary-color;
                     font-weight: 500;
                     // font-family: $font-title;
                     font-size: 1rem;
@@ -74,6 +76,7 @@ header {
                     span {
                         color: $secondary-color;
                         color: $primary-color;
+                        color: #000;
                         font-family: inherit;
                     }
                 }

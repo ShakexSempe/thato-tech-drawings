@@ -100,13 +100,15 @@ header .navbar-top a {
   position: relative;
   border: 0.12rem solid navy;
   border: 0.12rem solid #000;
-  padding: 0.025rem 0.5rem;
+  border-bottom-color: navy;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  background: #fff;
 }
 header .navbar-top a p {
   text-transform: capitalize;
-  color: navy;
   color: #000;
+  color: navy;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -118,6 +120,7 @@ header .navbar-top a p {
 header .navbar-top a p span {
   color: #47a1eb;
   color: navy;
+  color: #000;
   font-family: inherit;
 }
 header .navbar-top a figure {
@@ -384,30 +387,6 @@ header .navbar .navbar-button .you-btn:hover {
     opacity: 0.5;
   }
 }
-@media (min-width: 768px) {
-  .banner {
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-.banner .container {
-  height: 100vh;
-}
-@media (min-width: 768px) {
-  .banner .container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 .banner .container .banner-content {
   top: 20vh;
   color: #fff;
@@ -419,12 +398,6 @@ header .navbar .navbar-button .you-btn:hover {
 }
 @media (min-width: 768px) {
   .banner .container .banner-content {
-    position: absolute;
-    left: 10vw;
-    top: 20vh;
-    transform: translateX(0);
-    padding: 1rem;
-    width: max-content;
     background: rgba(230, 230, 230, 0.3);
   }
 }
@@ -730,9 +703,9 @@ header .navbar .navbar-button .you-btn:hover {
   position: relative;
 }
 .about-items h3 i {
-  font-size: 5rem;
+  font-size: 1.5rem;
   opacity: 0.1;
-  display: block;
+  margin-left: 1rem;
 }
 @media (min-width: 768px) {
   .about-items h3 {
@@ -1095,7 +1068,7 @@ footer {
 }
 @media (min-width: 820px) {
   footer {
-    padding: 10vh 5vw;
+    padding: 10vh 10vw;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
@@ -1747,6 +1720,9 @@ main.active::after {
   filter: drop-shadow(0.125rem 0.25rem 0.15rem rgba(0, 0, 0, 0.15));
 }
 .features-grid .feature-item-icon.water-icon {
+  position: relative;
+}
+.features-grid .feature-item-icon.water-icon i {
   position: absolute;
   top: 0;
   right: 0;
@@ -1799,10 +1775,6 @@ main.active::after {
   isolation: isolate;
   background: #fff;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.125);
-}
-.table-price .price-grid .price-card[data-scroll] {
-  transform: scale(1);
-  transition: 1.5s;
 }
 @media (min-width: 768px) {
   .table-price .price-grid .price-card {

@@ -208,15 +208,21 @@ main {
                 font-size: 2.5rem;
                 opacity: 1;
                 filter: drop-shadow(.125rem .25rem .15rem rgba(0, 0, 0, .15));
+                
                 // WATER-ICON
                 &.water-icon {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 5rem;
-                opacity: .1;
-                z-index: -1;
-                filter: none;
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 5rem;
+                        opacity: .1;
+                        // color: #000;
+                        z-index: -1;
+                        filter: none;
+                    }
                 }
 
                 // BIG ICON
@@ -263,10 +269,6 @@ main {
         //     @include grid(3, 30px);
         // }
         .price-card {
-            &[data-scroll] {
-                transform: scale(1);
-                transition: 1.5s;
-            }
             padding: 1rem;
             margin: 10vh 0;
             border-radius: .5rem;

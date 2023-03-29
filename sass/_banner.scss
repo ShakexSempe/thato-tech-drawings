@@ -41,15 +41,16 @@
     // end of banner overlay
 
     @include md {
-        @include flex(stretch, center);
+        // @include flex(stretch, center);
     }
 
     .container {
-        height: 100vh;
-        @include md {
-            @include flex(space-evenly, center, column, nowrap);
-            @include grid(1, 10px);
-        }
+        // height: 100vh;
+        // @include md {
+        //     @include flex(space-evenly, center, column, nowrap);
+        //     @include grid(1, 10px);
+        //     border: 2px solid red;
+        // }
 
 
         .banner-content {
@@ -67,12 +68,11 @@
             border-radius: 5px;
             z-index: 2;
             @include md {
-                position: absolute;
-                left: 10vw;
-                top: 20vh;
-                transform: translateX(0);
-                padding: 1rem;
-                width: max-content;
+                // position: absolute;
+                // left: 10vw;
+                // top: 10vh;
+                // padding: 1rem;
+                // width: max-content;
                 // top: 50vh;
                 // margin: 0;
                 // width: auto;
