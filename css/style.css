@@ -748,6 +748,12 @@ header .navbar .navbar-button .you-btn:hover {
   color: #000;
   text-align: left;
   margin-bottom: 1rem;
+  position: relative;
+}
+.about-items h3 i {
+  font-size: 5rem;
+  opacity: 0.1;
+  display: block;
 }
 @media (min-width: 768px) {
   .about-items h3 {
@@ -801,7 +807,7 @@ header .navbar .navbar-button .you-btn:hover {
   top: 1rem;
   right: 5vw;
   font-size: 5rem;
-  opacity: 0.1;
+  opacity: 0;
 }
 @media (min-width: 1024px) {
   .about-items .about-item-content h4 i {

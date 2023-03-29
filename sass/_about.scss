@@ -14,6 +14,14 @@
             color: #000;
             text-align: left;
             margin-bottom: 1rem;
+            position: relative;
+
+            i {
+                font-size: 5rem;
+                opacity: .1;
+                display: block;
+                // margin: 1rem 0 0 -2rem;
+            }
             // background: $primary-gradient;
             // background-clip: text;
             // -webkit-background-clip: text;
@@ -76,7 +84,7 @@
                         top: 1rem;
                         right: 5vw;
                         font-size: 5rem;
-                        opacity: .1;
+                        opacity: 0;
 
                         @include lg {
                             // top: 50%;
