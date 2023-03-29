@@ -55,7 +55,7 @@
                     background: transparent;
                 }
 
-                // border: 2px solid red;
+                // border: 2px solid blue;
                 padding: 1rem .5rem;
                 background: #fff;
                 h4 {
@@ -115,24 +115,21 @@
 
             &-image {
                 width: 100%;
-                padding: 0; 
-                margin: 0 auto;
                 position: relative;
                 cursor: pointer;
                 overflow: hidden;
                 border-bottom-left-radius: .25rem;
                 border-bottom-right-radius: .25rem;
-                border: 2px solid red;
                 border: none;
+                // border: 2px solid red;
                 @include md {
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                 }
                 img {
+                    display: block;
                     width: 100%;
                     transition: .3s ease;
-                    border-bottom-left-radius: .25rem;
-                    border-bottom-right-radius: .25rem;
 
                     @include md {
                         height: 100%;

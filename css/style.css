@@ -824,14 +824,11 @@ header .navbar .navbar-button .you-btn:hover {
 }
 .about-items .about-item-image {
   width: 100%;
-  padding: 0;
-  margin: 0 auto;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  border: 2px solid red;
   border: none;
 }
 @media (min-width: 768px) {
@@ -841,10 +838,9 @@ header .navbar .navbar-button .you-btn:hover {
   }
 }
 .about-items .about-item-image img {
+  display: block;
   width: 100%;
   transition: 0.3s ease;
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
 }
 @media (min-width: 768px) {
   .about-items .about-item-image img {
