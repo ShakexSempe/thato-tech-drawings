@@ -862,7 +862,6 @@ header .navbar .navbar-button .you-btn:hover {
 .contact .contact-form {
   padding: 0rem 5vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 .contact .contact-form .form-info-link {
   text-align: center;
