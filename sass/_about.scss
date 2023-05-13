@@ -20,15 +20,9 @@
                 font-size: 1.5rem;
                 opacity: .1;
                 margin-left: 1rem;
-                // margin: 1rem 0 0 -2rem;
             }
-            // background: $primary-gradient;
-            // background-clip: text;
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
             @include md {
                 font-size: 1.5rem;
-                // text-align: center;
                 margin-bottom: 5vh;
 
             }
@@ -45,12 +39,6 @@
                 margin: 0 auto 5vh;
                 @include grid(2, 20px);
                 background: #fff;
-
-                &:nth-child(even) {
-                    .about-item-image {
-                        // order: -1;
-                    }
-                }
 
             }
 
@@ -135,8 +123,6 @@
             &-image {
                 width: 100%;
                 position: relative;
-                cursor: pointer;
-                // overflow: hidden;
                 border-bottom-left-radius: .25rem;
                 border-bottom-right-radius: .25rem;
                 border: none;

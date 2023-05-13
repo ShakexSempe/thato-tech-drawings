@@ -795,7 +795,6 @@ header .navbar .navbar-button .you-btn:hover {
 .about-items .about-item-image {
   width: 100%;
   position: relative;
-  cursor: pointer;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   border: none;
